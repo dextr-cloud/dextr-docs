@@ -12,6 +12,8 @@
   #   url: /sitemap/
   
   docs:
+  - title: "Introduction"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Onboarding"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Login"
