@@ -25,6 +25,13 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
 search: true
+search_provider: algolia
+
+algolia:
+  application_id: ULZ9NIOSDY
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: 8d62cc32ce0918016922c87bdc3ed4ca
+  powered_by: true
 
 # Build settings
 markdown: kramdown
@@ -41,7 +48,7 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude: [vendor]
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
