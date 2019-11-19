@@ -1,7 +1,7 @@
 # main links
-# main:
-#   - title: "Quick-Start Guide"
-#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+main:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,24 +10,3 @@
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  
-  docs:
-  - title: "Introduction"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Onboarding"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Login"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Home"
-    url: /year-archive/
-  - title: "Engage"
-    url: /collection-archive/
-  - title: "Activity"
-    url: /sitemap/
-  - title: "Directory"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Users"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Settings"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-    
