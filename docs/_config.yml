@@ -25,6 +25,7 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
 search: true
+search_full_content: true
 search_provider: algolia
 
 algolia:
