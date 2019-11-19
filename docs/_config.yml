@@ -29,7 +29,7 @@ search_provider: algolia
 
 algolia:
   application_id: ULZ9NIOSDY
-  index_name: # YOUR_INDEX_NAME
+  index_name: Main
   search_only_api_key: 8d62cc32ce0918016922c87bdc3ed4ca
   powered_by: true
 
