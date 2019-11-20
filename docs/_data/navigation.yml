@@ -1,5 +1,6 @@
 main:
   - title: Release Notes
+    url: /release-notes/
 
 docs:
   - title: Getting Started
@@ -23,5 +24,3 @@ docs:
         url: /docs/users/
       - title: "Settings"
         url: /docs/settings/
-
-  
