@@ -31,7 +31,7 @@ Dextr also can be shaped and moved around to suit your screen real estate requir
 
 ### What is Dextr-docs?
 
-Dextr-docs is Dextr documentation site. In this page, you'll be able to learn about all the features that Dextr presents and how to use them. You can also keep track of the Release Notes, so when an update is released and Dextr version is upgraded, you can check the Release note to stay tuned for the new features.
+Dextr-docs is Dextr documentation site. In this page, you'll be able to learn all the features present in Dextr and how to use them. You can also keep track of the Release Notes, so when an update is released and Dextr version is upgraded, you can check the [Release notes](/release-notes/) to stay tuned for the new features.
 
-For an in-depth explanation about Dextr features, click any of the items listed in the Menu on your left side. Welcome aboard! 
+For an in-depth explanation about Dextr features, click any of the items listed in the Menu on your left side. If you're just getting started and haven't finished the onboarding process, you can check the [Onboarding](/docs/onboarding/) section. 
 
