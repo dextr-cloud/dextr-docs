@@ -83,29 +83,56 @@ After clicking the Claim Instance button, a modal window will pop up prompting y
 
 #### Step 3. Grant Access 
 
-- In order to grant access, we must first deploy a few resources in the AWS environment. When clicking the Deploy Resources button, you'll redirected to AWS in order to create a Stack. After the Stack is created you'll have to wait for some Events to finish deployment and for the Output tab to have both your Access and Secret keys. This might take a few minutes, but when AWS gives you both keys, you can copy/paste them into their respective field and proceed forward.
+- In order to grant access, we must first deploy a few resources in the AWS environment. When clicking the Deploy Resources button, you'll redirected to AWS in order to create a Stack. After the Stack is created you'll have to wait for some Events to finish deployment and for the Output tab to have both your Access and Secret keys. This might take a few minutes, but when AWS gives you both keys, you can copy/paste them into their respective field.
 <figure>
-   <img src="{{ '/assets/images/step3.png' }}" alt="Deploy Resources">
-   <span >Figure 9. Deploy Resources</span>
+   <img src="{{ '/assets/images/deploy-resources.gif' }}" alt="Deploy Resources">
+</figure>
+
+- After pasting both keys, you can verify credentials and proceed forward to the next step.
+<figure>
+   <img src="{{ '/assets/images/credentials-verified.png' }}" alt="Credentials verified">
+   <span >Figure 9. Credentials verified Step 3</span>
 </figure>
 ----
 
 #### Step 4. Data Stream
 
-- In this step you can export Contact Tracer Records (CTRs) and Agent Events to perform analysis on your data. You can do so by enabling data streaming in the **Data Streaming** tab in Amazon Connect (Figure 10) and set a Kinesis stream with your InstanceID, both in the CTR and Agent Events section. If you'd like you could also create a new Kinesis Stream, having one for CTR and another one for Agent Events.
+- In this step you can export Contact Tracer Records (CTRs) and Agent Events to perform analysis on your data. You can do so by enabling data streaming in the **Data Streaming** tab in Amazon Connect (Figure 10), then set a Kinesis stream with your InstanceID for both CTR and Agent Events. If you'd like you could also create a new [Kinesis Stream](https://docs.aws.amazon.com/streams/latest/dev/introduction.html) to have one for CTR and another one for Agent Events.
 
 <figure>
-   <img src="{{ '/assets/images/step4.png' }}" alt="Deploy Resources">
-   <span >Figure 10. Data Streaming</span>
+   <img src="{{ '/assets/images/step4.png' }}" alt="Kinesis Stream">
+   <span >Figure 10. Kinesis Stream</span>
 </figure>
 ----
-After setting up the Data Streaming in Amazon Connect, you can verify it in Step 4 from the onboarding process and then proceed to the next step. If you don't want to set up Data Streaming, you can skip this step and proceed to Step 5.
+After setting up the Data Stream in Amazon Connect, you can click the Generate Data button from the onboarding process, get the Connected status and proceed to the next step (Figure 11). If you don't want to set up Data Streaming, you can skip this step and proceed to Step 5.
 
-#### Step 5. Choosing Timezone
+<figure>
+   <img src="{{ '/assets/images/connected-step4.png' }}" alt="Connected Stream">
+   <span >Figure 11. Stream Connected</span>
+</figure>
+----
 
-- You can choose and set a Timezone for your Instance. This is important as this is the time that will be displayed when creating Events through the Hours of Operation tab in the Settings dashboard from Dextr.
+#### Step 5. Choosing Timezone and Directory
 
-#### Step 6. Summary
+- You can set a Timezone and Directory for your Instance (Figure 12). This is important as this is the time that will be displayed when creating Events through the Hours of Operation tab in the Settings Dashboard from Dextr.
 
-- Lastly, in this step you'll be shown a summary of all the chosen data when going through the Onboarding process. If you're having second thoughts you can always go to a previous step and change it. After this, you'll be redirected to your Call center as the Instance administrator!
+<figure>
+   <img src="{{ '/assets/images/step5.png' }}" alt="Timezone">
+   <span >Figure 12. Timezone and Directory</span>
+</figure>
+----
 
+#### Step 6. Review and Confirm
+
+- And finally the last step. In this step you'll be shown a summary of all the data that was chosen in the Onboarding process. If you're having second thoughts you can always go to a previous step and change the information or data that you chose. 
+<figure>
+   <img src="{{ '/assets/images/step6.png' }}" alt="Summary">
+   <span >Figure 13. Review and Confirm</span>
+</figure>
+----
+After this, you can click the **Go to Dashboard** button and you'll be redirected to your Call center as the Instance administrator!
+
+Congratulations, you're now able to enjoy Dextr features and Supercharge your Call Center!
+<figure>
+   <img src="{{ '/assets/images/IA-login.png' }}" alt="Instance Admin Login">
+</figure>
