@@ -18,7 +18,6 @@ The first thing you'll notice when login into Dextr is that there are a lot of c
 </figure>
 
 ----
-All of these components will be explained accordingly:
 
 ### Header
 
