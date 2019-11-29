@@ -21,7 +21,7 @@ The first thing you'll notice when login into Dextr is that there are a lot of c
 
 ### Header
 
-This is a global section of Dextr that will always be displayed. You can always see your Agent Status, a Handset, a Bell and the Instance logo.
+This is a global section of Dextr that will always be displayed. You'll see your Agent Status, a Handset, a Bell and the Instance logo.
 
 #### Agent Status
 
@@ -38,7 +38,7 @@ Your Dextr Administrator may also enable other codes for you to select as your c
 
 #### Quick Dial
 
-The Handset is for quick dial. You can either type or paste a number (Figure 3), and after a calls you'll have a dropdown list with the phone numbers of the recent calls you've made. Remember to choose the proper flag for calling.
+The Handset is for quick dial. You can either type or paste a number (Figure 3), and after a call you'll have a dropdown list with the phone numbers of the recent calls you've made. Remember to choose the proper flag for calling.
 
 <figure>
    <img src="{{ '/assets/images/quick-dial.jpg' }}" alt="Quick dial">
@@ -71,16 +71,36 @@ In the top corner of Home dashboard you can also spot 2 icons in the right corne
 
 #### Contacts in Queue
 
+On this card you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the numbers shown. 
+
 #### My Recent Activity
+
+On this card a list of all your activity through the day will be shown as records. You'll see Inbound, Outbound and even your Missed calls. 
+
+You can also right click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call.
 
 #### Contacts
 
+This is a queue card. You'll be able to see how many calls have been handled, abandoned or transferred by all team members.
+
 #### My Perfomance
+
+This is a card that shows up your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
 
 #### Handling Time
 
+Also a queue  metric, it displays the average handling time that agents have spent on contacts, including hold time and after contact work.
+
 #### Wait Time
+
+A queue metric that displays how long the contacts have been waiting on the queue. It shows the average time between all the contacts, and the longest time a contact spent waiting.
 
 #### Agent Availability
 
+This a global card that displays the amount of agents logged in the Instance and their various status.
+
 ### Team Status Drawer
+
+A Dextr component that displays other agents assigned to your queue or routing profile. You can right click each agent to engage either in chat, a call, or add them as favorites. 
+
+You also have the option to hide offline agents or to display all.
