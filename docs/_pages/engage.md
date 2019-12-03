@@ -46,4 +46,4 @@ If you right click any of the records, you can either copy the number or call it
 
 ### Favorites
 
-When creating contacts from the [Directory](/docs/directory/), you can add them as favorites. All contacts tagged as Favorites will display in this panel. Clicking any of them will give you the option to call them.
+When creating contacts from the [Directory](/docs/directory/), you can add them as favorites. All contacts tagged as Favorites will be displayed in this panel. Clicking any of them will give you the option to call them.
