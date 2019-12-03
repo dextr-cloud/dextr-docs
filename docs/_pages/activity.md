@@ -20,6 +20,6 @@ This is located at the top / header of the Activity dashboard. **Date Range** fi
 
 **Keyword** searches for any matchup for inputs you make in the field, while the **number of calls** filter is used as the number of calls that will first load in the dashboard. By default this is initially set to 50, so when entering the Activity dashboard it will load the first 50 calls of the Instance from the most recent to the latest. If you scroll down to the bottom a "See more" button will display, when clicked you will load 50 more calls.
 
-#### Filter bar
+### Filter bar
 
 Located at the left corner, it is used to filter and sort calls by Queues, Users, Direction and Disposition if enabled.
