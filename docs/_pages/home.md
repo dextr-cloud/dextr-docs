@@ -73,34 +73,82 @@ In the top corner of Home dashboard you can also spot 2 icons in the right corne
 
 On this card you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the numbers shown. 
 
+<figure>
+   <img src="{{ '/assets/images/contact-queue.jpg' }}" alt="Contacts in Queue" style="height: 450px; width: 400px">
+   <span>Figure 5. Contacts in Queue</span>
+</figure>
+----
+
 #### My Recent Activity
 
-On this card a list of all your activity through the day will be shown as records. You'll see Inbound, Outbound and even your Missed calls. 
+On this card a list of all your activity through the day will be shown as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
 
-You can also right click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call.
+You can also click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call. Below you'll see some retailers name instead of phone numbers because they were added as contacts in the [Directory](/docs/directory/) TAB.
+
+<figure>
+   <img src="{{ '/assets/images/recent-activity.gif' }}" alt="Recent Activity">
+</figure>
+----
 
 #### Contacts
 
-This is a queue card. You'll be able to see how many calls have been handled, abandoned or transferred by all team members.
+This is a Queue card. You'll be able to see how many calls have been handled, abandoned or transferred by all team members either globally between all Queues, or in your Queue.
+
+<figure>
+   <img src="{{ '/assets/images/contacts.jpg' }}" alt="Contacts" style="height: 400px; width: 550px">
+   <span>Figure 6. Contacts</span>
+</figure>
+----
 
 #### My Perfomance
 
-This is a card that shows up your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
+This is a card that shows up your perfomance (Figure 7). It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
+
+<figure>
+   <img src="{{ '/assets/images/my-perfomance.jpg' }}" alt="My Perfomance" style="height: 250px; width: 400px">
+</figure>
+Figure 7. My Perfomance
+
+----
 
 #### Handling Time
 
 Also a queue  metric, it displays the average handling time that agents have spent on contacts, including hold time and after contact work.
 
+<figure>
+   <img src="{{ '/assets/images/handling-time.jpg' }}" alt="Handling Time" style="height: 150px; width: 400px">
+</figure>
+Figure 8. Handling Time
+
+----
+
 #### Wait Time
 
 A queue metric that displays how long the contacts have been waiting on the queue. It shows the average time between all the contacts, and the longest time a contact spent waiting.
+
+<figure>
+   <img src="{{ '/assets/images/wait-time.jpg' }}" alt="Wait Time" style="height: 120px; width: 400px">
+</figure>
+Figure 9. Wait Time
+
+----
 
 #### Agent Availability
 
 This a global card that displays the amount of agents logged in the Instance and their various status.
 
+<figure>
+   <img src="{{ '/assets/images/agent-availability.jpg' }}" alt="Agent Availability" style="height: 450px; width: 400px">
+   <span>Figure 10. Agent Availability</span>
+</figure>
+----
+
 ### Team Status Drawer
 
-A Dextr component that displays other agents assigned to your queue or routing profile. You can right click each agent to engage either in chat, a call, or add them as favorites. 
+A Dextr component that displays other agents assigned to your queue or routing profile. You can right click each agent to engage either in chat, a call, or add them as favorites so that they're displayed at the top.
 
-You also have the option to hide offline agents or to display all.
+You also have the option to hide offline agents or to display all of them.
+
+<figure>
+   <img src="{{ '/assets/images/team-status.gif' }}" alt="Team Status Drawer">
+</figure>
