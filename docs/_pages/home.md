@@ -34,9 +34,8 @@ Your Dextr Administrator may also enable other codes for you to select as your c
    <span>Figure 2. Agent Status</span>
 </figure>
 
-----
-
 #### Quick Dial
+
 
 The Handset is for quick dial. You can either type or paste a number (Figure 3), and after a call you'll have a dropdown list with the phone numbers of the recent calls you've made. Remember to choose the proper flag for calling.
 
@@ -44,8 +43,6 @@ The Handset is for quick dial. You can either type or paste a number (Figure 3),
    <img src="{{ '/assets/images/quick-dial.jpg' }}" alt="Quick dial">
    <span>Figure 3. Quick dial</span>
 </figure>
-
-----
 
 #### Announcements
 
@@ -59,6 +56,7 @@ By clicking the Bell icon in the header, you'll open the Announcements. Here you
 ----
 
 ### Home Dashboard & Cards
+----
 
 This area is for the display of real time metrics for all queues in near real time activity. Clicking on a queue name in the dropdown will show the metrics for that queue while the Global view summarizes all queues. 
 
@@ -144,6 +142,7 @@ This a global card that displays the amount of agents logged in the Instance and
 ----
 
 ### Team Status Drawer
+----
 
 A Dextr component that displays other agents assigned to your queue or routing profile. You can right click each agent to engage either in chat, a call, or add them as favorites so that they're displayed at the top.
 
