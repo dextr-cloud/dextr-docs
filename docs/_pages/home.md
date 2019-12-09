@@ -151,3 +151,16 @@ You also have the option to hide offline agents or to display all of them.
 <figure>
    <img src="{{ '/assets/images/team-status.gif' }}" alt="Team Status Drawer">
 </figure>
+
+----
+#### Silent Monitor and Whisper Coach
+
+When an agent is on call and you see the **Connected** status in the Team Drawer, after a right click you have the option to either Silent Monitor or Whisper Coach.
+
+**Silent Monitor** allows you to silently hear the call between the agent and the contact, while **Whisper Coach** allows you to whisper/speak with the agent without the contact being able to hear you. 
+
+<figure>
+   <img src="{{ '/assets/images/silent-monitor.jpg' }}" alt="Agent Availability">
+   <span>Figure 11. Silent Monitor & Whisper Coach</span>
+</figure>
+
