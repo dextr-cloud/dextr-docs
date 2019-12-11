@@ -1,6 +1,6 @@
 ---
 title: "Onboarding"
-permalink: /docs/onboarding/
+permalink: /onboarding/
 layout: single
 toc: true
 toc_sticky: true

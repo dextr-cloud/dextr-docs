@@ -1,6 +1,6 @@
 ---
 title: "Directory"
-permalink: /docs/directory/
+permalink: /directory/
 layout: single
 toc: true
 toc_sticky: true

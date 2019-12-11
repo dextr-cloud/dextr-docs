@@ -1,6 +1,6 @@
 ---
-title: "Home"
-permalink: /docs/home/
+title: "Dextr Home"
+permalink: /home/
 layout: single
 toc: true
 toc_sticky: true

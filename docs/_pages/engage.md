@@ -1,6 +1,6 @@
 ---
 title: "Engage"
-permalink: /docs/engage/
+permalink: /engage/
 layout: single
 toc: true
 toc_sticky: true

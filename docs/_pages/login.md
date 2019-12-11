@@ -1,6 +1,6 @@
 ---
 title: "Login"
-permalink: /docs/login/
+permalink: /login/
 layout: single
 toc: true
 toc_sticky: true

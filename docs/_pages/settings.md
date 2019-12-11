@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-permalink: /docs/settings/
+permalink: /settings/
 layout: single
 toc: true
 toc_sticky: true
@@ -49,7 +49,7 @@ If you enable Secondary, it will play the ringtone you choose with an Output dev
 
 ### General
 
-This is for users who the security profile level of an admin. General has the following sections:
+This is for users who have the security profile level of an admin. General has the following sections:
 - Brand
 - Account
 - Configuration

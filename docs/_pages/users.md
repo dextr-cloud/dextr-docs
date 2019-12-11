@@ -1,6 +1,6 @@
 ---
 title: "Users"
-permalink: /docs/users/
+permalink: /users/
 layout: single
 toc: true
 toc_sticky: true

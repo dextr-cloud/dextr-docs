@@ -6,21 +6,21 @@ docs:
   - title: Getting Started
     children:
       - title: "Onboarding"
-        url: /docs/onboarding/
+        url: /onboarding/
       - title: "Login"
-        url: /docs/login/
+        url: /login/
 
   - title: Dextr Dashboard
     children:
       - title: "Home"
-        url: /docs/home/
+        url: /home/
       - title: "Engage"
-        url: /docs/engage/
+        url: /engage/
       - title: "Activity"
-        url: /docs/activity/
+        url: /activity/
       - title: "Directory"
-        url: /docs/directory/
+        url: /directory/
       - title: "Users"
-        url: /docs/users/
+        url: /users/
       - title: "Settings"
-        url: /docs/settings/
+        url: /settings/

@@ -1,6 +1,6 @@
 ---
 title: "Activity"
-permalink: /docs/activity/
+permalink: /activity/
 layout: single
 toc: true
 toc_sticky: true
