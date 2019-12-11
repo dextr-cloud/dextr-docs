@@ -10,7 +10,7 @@ sidebar:
 
 ### Login page
 
-The Login process is the same for all Dextr dashboard users.  It assumes that your Amazon Connect Instance administrator has gone through the [Onboarding](/docs/onboarding/) process, found under the Free Trial request at **https://Dextr.Cloud**.  Once this has been accomplished you will be given a login URL that is in the format of https://go.dextr.cloud/yourcompanylogin and can click the Secure Login button.  Here we will be using **https://go.dextr.cloud/docs-example**  
+The Login process is the same for all Dextr dashboard users.  It assumes that your Amazon Connect Instance administrator has gone through the [Onboarding](/docs/onboarding/) process, found under the Free Trial request at **https://Dextr.Cloud**.  Once this has been accomplished you will be given a login URL that is in the format of **https://go.dextr.cloud/yourcompanylogin** and can click the Secure Login button.  Here we will be using **https://go.dextr.cloud/docs-example**  
 
 <figure>
    <img src="{{ '/assets/images/login.jpg' }}" alt="Login Page">

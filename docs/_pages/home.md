@@ -25,7 +25,7 @@ This is a global section of Dextr that will always be displayed. You'll see your
 
 #### Agent Status
 
-On login you're offline, so remember to change your Status from Offline to Available to be able to receive calls.  By default every Dextr Instance only has 2 status at the beginning, "Available" and "Offline", if you see "Forced Released" as a status is because you missed an incoming call sent to your dashboard. 
+On login by default your status is set to Offline, so remember to change your Status from Offline to Available to be able to receive calls.  At the beginning every Dextr Instance only has 2 status, "Available" and "Offline", if you see "Forced Released" as a status is because you missed an incoming call sent to your dashboard. 
 
 Your Dextr Administrator may also enable other codes for you to select as your current status and as seen by your teammates.
 
@@ -60,7 +60,7 @@ By clicking the Bell icon in the header, you'll open the Announcements. Here you
 
 This area is for the display of real time metrics for all queues in near real time activity. Clicking on a queue name in the dropdown will show the metrics for that queue while the Global view summarizes all queues. 
 
-In the top corner of Home dashboard you can also spot 2 icons in the right corner, one for entering fullscreen and another to rearrange your card placement.
+In the top corner of Home dashboard you can also spot 2 icons at the right side, one for entering fullscreen mode and another one to rearrange your card placement.
 
 <figure>
    <img src="{{ '/assets/images/cards-rearrange.gif' }}" alt="Cards Rearrangement">
@@ -81,10 +81,11 @@ On this card you'll be able to see how many contacts are currently on voice and 
 
 On this card a list of all your activity through the day will be shown as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
 
-You can also click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call. Below you'll see some retailers name instead of phone numbers because they were added as contacts in the [Directory](/docs/directory/) TAB.
+You can also click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call. Below you'll see some retailer names instead of phone numbers because they were added as contacts in the [Directory](/docs/directory/) TAB.
 
 <figure>
    <img src="{{ '/assets/images/recent-activity.gif' }}" alt="Recent Activity">
+   <span>Gif 1. Clicking Recent Activity to Engage in Call</span>
 </figure>
 ----
 
@@ -150,6 +151,7 @@ You also have the option to hide offline agents or to display all of them.
 
 <figure>
    <img src="{{ '/assets/images/team-status.gif' }}" alt="Team Status Drawer">
+   <span>Gif 2. Showing Favorite, Hide Offline Button, All users and Chat</span>
 </figure>
 
 ----
