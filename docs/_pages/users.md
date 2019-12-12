@@ -24,6 +24,7 @@ Between the fields you have the usual personal information of your agent (Name, 
 
 <figure>
    <img src="{{ '/assets/images/create-user.gif' }}" alt="Create User">
+   <span>Gif 1. Users Creation Modal Window</span>
 </figure>
 ----
 
@@ -71,6 +72,7 @@ By clicking the pencil icon in the **Action** column, you enable the Edit mode w
 
 <figure>
    <img src="{{ '/assets/images/editing-users.gif' }}" alt="Editing User">
+   <span>Gif 2. Editing Users</span>
 </figure>
 ----
 
