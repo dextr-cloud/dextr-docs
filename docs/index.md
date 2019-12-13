@@ -27,6 +27,12 @@ All users Dashboard will have the Home, Engage, Activity and Directory tabs, tho
 
 Dextr also can be shaped and moved around to suit your screen real estate requirements, since the dashboard is auto sized depending on the device you are using to view it (e.g. iPad, Smart Phone, computer screen).   
 
+<figure>
+   <img src="{{ '/assets/images/dextr-features.gif' }}" alt="Dextr Features">
+   <span>Dextr Features: Showing Login, Agent Chat, Agent Call, Dialing a contact with Quick Dial Dropdown and receiving an Incoming ACD call</span>
+</figure>
+
+
 - - - -
 
 ### What is Dextr-docs?
