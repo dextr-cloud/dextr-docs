@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 logo: "/assets/images/big-d-black.png"
 title: Documentation
-subtitle: Version 0.8.4
+subtitle: Version 0.8.5
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -95,15 +95,10 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
+    - label: "Dextr"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "/dextr.cloud/"
+
 
 defaults:
   # _posts

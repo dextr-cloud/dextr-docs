@@ -44,7 +44,7 @@ Easily see if configured for soft phone or desk phone.
 
 ### Free form disposition input
 
-If enabled by admin, you're now able to write a dispositions after a call.
+If enabled by admin, you're now able to write a disposition after a call.
 
 <figure>
    <img src="{{ '/assets/images/write-disposition.jpg' }}" alt="Write Disposition" style="height: 200px; width: 550px">
