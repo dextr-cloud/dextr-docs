@@ -3,7 +3,7 @@ title: "v0.8.5"
 excerpt_separator: "<!--more-->"
 collection: release_notes
 permalink: /:categories/:title/
-date: 2019-12-09
+date: 2019-12-16
 layout: single
 categories:
   - Release Notes
