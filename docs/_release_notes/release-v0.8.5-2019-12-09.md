@@ -5,6 +5,8 @@ collection: release_notes
 permalink: /:categories/:title/
 date: 2019-12-16
 layout: single
+toc: true
+toc_sticky: true
 categories:
   - Release Notes
 sidebar:
@@ -14,23 +16,39 @@ sidebar:
 ## Dextr Release Notes, December 2019
 ### Supported Browsers: 
 
-Google Chrome Version 75.0.3770.100 or later  Welcome to the December 2019 release of Dextr. 
+Google Chrome Version 75.0.3770.100 or later. Welcome to the December 2019 release of Dextr. 
 
 There are a number of updates in this version that we hope you like, and some of the key highlights include: 
 
 ### Omni channel expansion to include web and mobile chat
 
-Simply right click a team member who is on a call and you will see two new options: Silent Monitor and Whisper Coach. 
-
  In line with [Amazon’s announcement](https://aws.amazon.com/blogs/aws/new-omnichannel-contact-center-web-and-mobile-chat-for-amazon-connect/), Dextr now fully supports web and mobile chat through its Engage interface accompanying Voice, SMS and Email. 
+
+<figure>
+   <img src="{{ '/assets/images/engage-chat.jpg' }}" alt="Engage Chat" style="height: 500px; width: 400px">
+   <span>Figure 1. Web and Mobile Chat</span>
+</figure>
+----
 
 ### Activity Details
 
-Enhanced activity reporting with improved recording playback and/or  chat transcription review. From within Activity page, clicking the details button shows a richer metric view and ability to follow the life cycle of the interaction as well as any previous interactions from the same customer. 
+Enhanced activity reporting with improved recording playback and/or chat transcription review. From within Activity page, clicking the details button shows a richer metric view and ability to follow the life cycle of the interaction as well as any previous interactions from the same customer. 
+
+<figure>
+   <img src="{{ '/assets/images/activity-detail.jpg' }}" alt="Activity Details">
+   <span>Figure 2. Activity Details</span>
+</figure>
+----
 
 ### Activity Notes
 
 Easily leave notes for a specific contact that is being displayed to any new interactions with the same contact. Notes can be created and reviewed by customer endpoint or contact ID. 
+
+<figure>
+   <img src="{{ '/assets/images/activity-notes.jpg' }}" alt="Activity Notes">
+   <span>Figure 3. Activity Notes</span>
+</figure>
+----
 
 ### Insiders: 
 

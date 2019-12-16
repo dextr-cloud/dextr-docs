@@ -5,6 +5,8 @@ collection: release_notes
 permalink: /:categories/:title/
 date: 2019-09-09
 layout: single
+toc: true
+toc_sticky: true
 categories:
   - Release Notes
 sidebar:
@@ -14,7 +16,7 @@ sidebar:
 ## Dextr Release Notes, September 2019
 ### Supported Browsers: 
 
-Google Chrome Version 75.0.3770.100 or later  Welcome to the September 2019 release of Dextr. 
+Google Chrome Version 75.0.3770.100 or later. Welcome to the September 2019 release of Dextr. 
 
 There are a number of updates in this version that we hope you like, and some of the key highlights include: 
 
@@ -24,7 +26,9 @@ Simply right click a team member who is on a call and you will see two new optio
 
 <figure>
    <img src="{{ '/assets/images/silent-monitor.jpg' }}" alt="Silent Monitor">
+   <span>Figure 1. Silent Monitor and Whisper Coach</span>
 </figure>
+----
 
 ### Agent's current status is more prominent 
 
@@ -32,7 +36,9 @@ We found sometimes agents did not know they were offline. There is a much cleare
 
 <figure>
    <img src="{{ '/assets/images/status-prominent.jpg' }}" alt="Prominent Status" style="height: 60px; width: 280px">
+   <span>Figure 2. Offline Status more prominent</span>
 </figure>
+----
 
 ### Show phone type in header 
 
@@ -40,7 +46,9 @@ Easily see if configured for soft phone or desk phone.
 
 <figure>
    <img src="{{ '/assets/images/deskphone-softphone.jpg' }}" alt="Phone Type Header Icon" style="height: 202px; width: 527px">
+   <span>Figure 3. Phone Type Icon</span>
 </figure>
+----
 
 ### Free form disposition input
 
@@ -48,8 +56,9 @@ If enabled by admin, you're now able to write a disposition after a call.
 
 <figure>
    <img src="{{ '/assets/images/write-disposition.jpg' }}" alt="Write Disposition" style="height: 200px; width: 550px">
+   <span>Figure 4. Call disposition</span>
 </figure>
-
+----
 
 ### Team status drawer shows all users in a Connect instance 
 
@@ -57,7 +66,9 @@ Now that there are favoriting and filtering methods, we can organize this list a
 
 <figure>
    <img src="{{ '/assets/images/all-users.jpg' }}" alt="All Users">
+   <span>Figure 5. All Users button</span>
 </figure>
+----
 
 ### There is also:
 
