@@ -22,7 +22,7 @@ Here, you can see that the Onboarding process consists of 2 steps:
 
 Verify ownership consists of 2 steps. The first one would be to whitelist https://go.dextr.cloud . The second one is to login in Connect as an administrator.
 
-#### Step 1.1 Whitelisting the page
+#### Step 1.1 - Whitelisting the page
 
 - When whitelisting dextr.cloud you're allowing incoming popups, which is important since they will be used to claim the instance and use other features. 
 
@@ -33,7 +33,7 @@ Verify ownership consists of 2 steps. The first one would be to whitelist https:
    <span >Figure 2. Application Integration Tab</span>
 </figure>
 ----
-#### Step 1.2 Login in Amazon Connect as Administrator
+#### Step 1.2 - Login in Amazon Connect as Administrator
 
 In the Overview tab an option to Login as Administrator will be shown.
 
