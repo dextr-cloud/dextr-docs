@@ -42,7 +42,7 @@ You can also do a call transfers, which can be either **Blind** or **Warm**.
 ----
 #### Call dispositions
 
-If the administrator has this option on, when call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/docs/activity/) tab for a specific call.
+If the administrator has this option on, when call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/activity/) tab for a specific call.
 
 <figure>
    <img src="{{ '/assets/images/call-disposition.gif' }}" alt="Call Disposition">
@@ -75,7 +75,7 @@ If you right click any of the records, you can either copy the number or call it
 ### Favorites
 ----
 
-When creating contacts from the [Directory](/docs/directory/), you can add them as favorites. All contacts tagged as Favorites will be displayed in this panel. Clicking any of them will give you the option to call them.
+When creating contacts from the [Directory](/directory/), you can add them as favorites. All contacts tagged as Favorites will be displayed in this panel. Clicking any of them will give you the option to call them.
 
 <figure>
    <img src="{{ '/assets/images/engage-favorites.jpg' }}" alt="Engage Favorites">

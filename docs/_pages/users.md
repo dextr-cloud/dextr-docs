@@ -68,7 +68,7 @@ After filling all the fields and clicking next, a summary with all the data of y
 
 ### Editing users
 
-By clicking the pencil icon in the **Action** column, you enable the Edit mode where you can change all of the fields with the exception of **Phone type** (this is changed in [Settings](/docs/settings/)). Once finished, you can click the check button to save your changes, or you can also press the "x" button to cancel them.
+By clicking the pencil icon in the **Action** column, you enable the Edit mode where you can change all of the fields with the exception of **Phone type** (this is changed in [Settings](/settings/)). Once finished, you can click the check button to save your changes, or you can also press the "x" button to cancel them.
 
 <figure>
    <img src="{{ '/assets/images/editing-users.gif' }}" alt="Editing User">

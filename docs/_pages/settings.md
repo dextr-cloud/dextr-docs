@@ -190,9 +190,9 @@ SMS enables KEYWORDS to be used to match an incoming SMS first word to select th
 
 #### Email
 
-Email works like SMS, but instead of a Number you provide and set up an Email Address for the Instance. After that you set up an Email flow for queues and you'll be able to redirect the emails sent to the Instance, to the queues added in the flow. 
+Email works like SMS, but instead of a Number you provide and set up an Email Address for the Instance. After that you set up an Email flow for queues and you'll be able to redirect the emails sent to the Instance by the queues added in the flow. 
 
-Both SMS and EMAIL are “sticky” meaning that the conversation will stay with the same agent through out that conversation until ended. If that agent is unavailable, the entire conversation will be forwarded to the next available logged in agent. 
+Both SMS and EMAIL are “sticky” meaning that the conversation will stay with the same agent until ended. If that agent is unavailable, the entire conversation will be forwarded to the next available logged in agent. 
 
 <figure>
    <img src="{{ '/assets/images/channels-email.jpg' }}" alt="Settings Email">

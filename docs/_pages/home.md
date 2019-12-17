@@ -81,7 +81,7 @@ On this card you'll be able to see how many contacts are currently on voice and 
 
 On this card a list of all your activity through the day will be shown as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
 
-You can also click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call. Below you'll see some retailer names instead of phone numbers because they were added as contacts in the [Directory](/docs/directory/) TAB.
+You can also click any of the records, and choose the option to call the specified number which will trigger a modal window, allowing you to engage in a call. Below you'll see some retailer names instead of phone numbers because they were added as contacts in the [Directory](/directory/) TAB.
 
 <figure>
    <img src="{{ '/assets/images/recent-activity.gif' }}" alt="Recent Activity">
