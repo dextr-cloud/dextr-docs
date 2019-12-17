@@ -22,7 +22,7 @@ There are a number of updates in this version that we hope you like, and some of
 
 ### Omni channel expansion to include web and mobile chat
 
- In line with [Amazon’s announcement](https://aws.amazon.com/blogs/aws/new-omnichannel-contact-center-web-and-mobile-chat-for-amazon-connect/), Dextr now fully supports web and mobile chat through its Engage interface accompanying Voice, SMS and Email. 
+ In line with [Amazon’s announcement](https://aws.amazon.com/blogs/aws/new-omnichannel-contact-center-web-and-mobile-chat-for-amazon-connect/), Dextr now fully supports web and mobile chat through the Engage interface accompanying Voice, SMS and Email. 
 
 <figure>
    <img src="{{ '/assets/images/engage-chat.jpg' }}" alt="Engage Chat" style="height: 500px; width: 400px">

@@ -12,7 +12,7 @@ sidebar:
 
 The Activity display is the Instance history of phone calls. The rows will display: Caller, Timestamp, Duration of the call, Direction (if Inbound, Outbound, Callback or Missed), Queue, Disposition if enabled, Username, and lastly an option to download or play the recordings.
 
-The Activity dashboard also features filters, and when one of the caller records is clicked, you trigger a modal window to engage in a call with the specified number.
+The Activity dashboard also features filters and Activity details, and when one of the ***Caller*** records is clicked, you trigger a modal window to engage in a call with the specified number.
 
 <figure>
    <img src="{{ '/assets/images/activity-dashboard.jpg' }}" alt="Activity dashboard">
@@ -20,7 +20,7 @@ The Activity dashboard also features filters, and when one of the caller records
 </figure>
 ----
 
-### Date Range, Keyword and number of calls Filter
+#### Date Range, Keyword and number of calls Filter
 
 This is located at the top / header of the Activity dashboard:
 
@@ -41,11 +41,47 @@ This is located at the top / header of the Activity dashboard:
 </figure>
 ----
 
-### Filter bar
+#### Filter bar
 
-Located at the left corner, it is used to filter and sort calls by Queues, Users, Direction and Disposition (if enabled). If you click in one of the records either Direction, Queue, Disposition or Username you also activate the filter.
+Located at the left corner, it is used to filter and sort calls by: 
+
+- Queues. 
+- Users. 
+- Direction. 
+- Disposition (if enabled). 
+
+If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you also activate the filter.
 
 <figure>
    <img src="{{ '/assets/images/filter-bar.jpg' }}" alt="Filter bar">
    <span>Figure 3. Filter bar</span>
 </figure>
+----
+
+#### Activity Details
+
+In the right corner of the dashboard there is a zoom icon that if clicked, enhances the level of details shown per record.
+
+<figure>
+   <img src="{{ '/assets/images/activity-details-1.jpg' }}" alt="Activity Details 1">
+   <span>Figure 4. Activity Dashboard Zoom Icon</span>
+</figure>
+
+This will show a richer metric view through different sections (General, Agent, Queue, Attributes). You also have the option to keep track of the interactions with a customer through the ***Related activity tab*** (bottom right corner), showing any previous interaction you had with the customer.
+
+<figure>
+   <img src="{{ '/assets/images/activity-details-2.jpg' }}" alt="Activity Details 2">
+   <span>Figure 5. Activity Details with Related Activity</span>
+</figure>
+----
+
+#### Activity Notes
+
+On Activity Details you also have the option to add Notes per call by clicking the **Add Note** button, allowing better tracking and inquiry.
+
+<figure>
+   <img src="{{ '/assets/images/activity-note.jpg' }}" alt="Activity Notes">
+   <span>Figure 6. Activity Details Notes</span>
+</figure>
+
+
