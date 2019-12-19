@@ -8,17 +8,17 @@ sidebar:
   nav: "docs"
 ---
 
-The Engage TAB is one of Dextr main features since it's the place where you'll be having your calls. The left side consists of the dialpad (Figure 1. Component 1), while the right side consists of Recent Calls (Figure 1. Component 2) and Favorites (Figure 1. Component 3).
+The Engage TAB is one of Dextr main features since it's the place where you'll be having your calls and when entering the Engage tab you'll be redirected to the Phone Tab. The left side consists of the **Dialpad** (Figure 1. Component 1), while the right side consists of **Recent Calls** (Figure 1. Component 2) and **Favorites** (Figure 1. Component 3).
 
 <figure>
    <img src="{{ '/assets/images/engage-tab.jpg' }}" alt="Engage Tab">
-   <span>Figure 1. Engage Tab</span>
+   <span>Figure 1. Engage - Phone Tab</span>
 </figure>
 
 ----
-### Dialpad
+### Phone Tab
 
-Here you can type, paste or click the dialpad numbers to input a phone number and make a call. Remember to have the correct country code. When on call, you also have the option to put it on hold. 
+Here you can type and paste a number in the ***Quick Dial*** or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code. When on call, you also have the option to put it on hold. 
 
 <figure>
    <img src="{{ '/assets/images/call-hold.gif' }}" alt="Call on Hold">
@@ -28,11 +28,11 @@ Here you can type, paste or click the dialpad numbers to input a phone number an
 ----
 #### Call Transfers
 
-You can also do a call transfers, which can be either **Blind** or **Warm**. 
+When on call, you're also able to do call transfers, which can be either **Blind** or **Warm**: 
 
-**Blind** transfers gets the call on a selected Queue, making the contact wait until is taken by the next Available agent while also leaving you completely out of the call. 
+- **Blind** transfers gets the call on a selected Queue, making the contact wait until is taken by the next Available agent while also leaving you completely out of the call. 
 
-**Warm** transfers on the other hand, allows you to remain and monitor the call when another agent takes it.
+- **Warm** transfers on the other hand, allows you to remain and monitor the call when another agent takes it.
 
 <figure>
    <img src="{{ '/assets/images/transfer-call.gif' }}" alt="Call Transfer">
@@ -53,14 +53,7 @@ If you don't select a disposition when timer ends, then no disposition will be a
 
 ----
 
-### SMS & Email
-
-**SMS** is for text message routing while **Email** is for inbound Email routing. When a contact sends an email to the Instance, an incoming modal window will show up asking you for permission to engage with the contact. If you accept then the email will be routed to your inbox (email assigned to your Dextr account), and you'll also be able to see the email conversation within Dextr Engage tab.
-
-Important to note is that you're unable to write answers from Dextr. To answer, you must do so with your email account outside of Dextr. 
-
-----
-### Recent Calls
+#### Recent Calls
 
 This panel keeps a track of all your calls. All calls have a label and a timestamp assigned to them. Inbound, Outbound and Missed calls will be registered as such.
 
@@ -70,10 +63,9 @@ If you right click any of the records, you can either copy the number or call it
    <img src="{{ '/assets/images/recent-calls.jpg' }}" alt="Recent Calls">
    <span>Figure 2. Recent calls</span>
 </figure>
+----
 
-----
-### Favorites
-----
+#### Favorites
 
 When creating contacts from the [Directory](/directory/), you can add them as favorites. All contacts tagged as Favorites will be displayed in this panel. Clicking any of them will give you the option to call them.
 
@@ -81,3 +73,15 @@ When creating contacts from the [Directory](/directory/), you can add them as fa
    <img src="{{ '/assets/images/engage-favorites.jpg' }}" alt="Engage Favorites">
    <span>Figure 3. Engage Favorites section</span>
 </figure>
+----
+
+### SMS & Email
+
+**SMS** is for text message routing while **Email** is for inbound Email routing. When a contact sends an email to the Instance, an incoming modal window will show up asking you for permission to engage with the contact. If you accept then the email will be routed to your inbox (email assigned to your Dextr account), and you'll also be able to see the email conversation within Dextr Engage tab.
+
+Important to note is that you're unable to write answers from Dextr. To answer, you must do so with your email account outside of Dextr. 
+
+----
+### Omni-Chat
+
+Like Email and SMS, your Admin builds a flow and use it across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) you use for voice engagements since Customers will be put in a Queue and attended by the next available agent.
