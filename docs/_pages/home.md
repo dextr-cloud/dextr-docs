@@ -25,9 +25,9 @@ This is a global section of Dextr that will always be displayed. You'll see your
 
 #### Agent Status
 
-On login by default your status is set to Offline, so remember to change your Status from Offline to Available to be able to receive calls.  At the beginning every Dextr Instance only has 2 status, "Available" and "Offline", if you see "Forced Released" as a status is because you missed an incoming call sent to your dashboard. 
+Every Dextr Instance only has 2 status after being onboarded: **Available** and **Offline**. By default your status is set to ***Offline*** on login, so remember to change your status from ***Offline*** to ***Available*** to be able to receive calls. Also, if you see **Forced Released** as a status is because you missed an incoming call sent to your dashboard. 
 
-Your Dextr Administrator may also enable other codes for you to select as your current status and as seen by your teammates.
+Your Dextr Administrator may also enable other status for you to select and to be seen by your teammates.
 
 <figure>
    <img src="{{ '/assets/images/agent-status.jpg' }}" alt="Agent Status">

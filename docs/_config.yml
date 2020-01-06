@@ -96,7 +96,7 @@ author:
 footer:
   links:
     - label: "Dextr"
-      icon: "fab fa-fw fa-github"
+      icon: "fas fa-cloud"
       url: "https://dextr.cloud"
 
 
