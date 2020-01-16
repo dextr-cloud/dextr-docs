@@ -41,3 +41,6 @@ Dextr-docs is Dextr documentation site. In this page, you'll be able to learn al
 
 For an in-depth explanation about Dextr features, click any of the items listed in the Menu on your left side. If you're just getting started and haven't finished the onboarding process, you can check the [Onboarding](/onboarding/) section. 
 
+### Dextr Main site
+
+For information regarding pricing and a trial version, please visit [Dextr main site](https://dextr.cloud).

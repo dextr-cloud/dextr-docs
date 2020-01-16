@@ -1,6 +1,9 @@
 main:
+  - title: Dextr Main site
+    url: https://dextr.cloud/
   - title: Release Notes
     url: /release-notes/
+
 
 docs:
   - title: Getting Started
