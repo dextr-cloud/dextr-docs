@@ -30,15 +30,20 @@ You can type / paste a number in the ***Quick Dial*** or click the numbers in th
 ----
 #### Call Transfers
 
-When on call you're also able to do call transfers, which can be either **Blind** or **Warm**: 
+When on call you're also able to do call transfers, and as of v0.9.0 Dextr can quick-connect to directory entries through either **Blind** or **Warm** transfers: 
 
-- **Blind** transfers gets the call on a selected Queue, making the contact wait until is taken by the next Available agent while also leaving you completely out of the call. 
+- **Blind** transfers gets the call either on a selected Queue or a Directory contact. If the transfer was done to a Queue it will  make the contact wait until is taken by the next Available agent while also leaving you completely out of the call. If it was done to a Directory contact, it will transfer the call directly to it.
 
-- **Warm** transfers on the other hand, allows you to remain and monitor the call when another agent takes it.
+- **Warm** transfers on the other hand, allows you to remain and monitor the call, also allowing you join it and enter **Conference Call** mode (Figure 2).
 
 <figure>
    <img src="{{ '/assets/images/transfer-call.gif' }}" alt="Call Transfer">
    <span>Gif 2. Call Transfer</span>
+</figure>
+
+<figure>
+   <img src="{{ '/assets/images/conference-call.jpg' }}" alt="Call Transfer">
+   <span>Figure 2. Conference Call</span>
 </figure>
 
 ----
@@ -63,7 +68,7 @@ If you right click any of the records, you can either copy the number or call it
 
 <figure>
    <img src="{{ '/assets/images/recent-calls.jpg' }}" alt="Recent Calls">
-   <span>Figure 2. Recent calls</span>
+   <span>Figure 3. Recent calls</span>
 </figure>
 ----
 
@@ -73,7 +78,7 @@ When creating contacts from the [Directory](/directory/), you can add them as fa
 
 <figure>
    <img src="{{ '/assets/images/engage-favorites.jpg' }}" alt="Engage Favorites">
-   <span>Figure 3. Engage Favorites section</span>
+   <span>Figure 4. Engage Favorites section</span>
 </figure>
 ----
 

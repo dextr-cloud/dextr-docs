@@ -166,3 +166,18 @@ When an agent is on call and you see the **Connected** status in the Team Drawer
    <span>Figure 11. Silent Monitor & Whisper Coach</span>
 </figure>
 
+----
+
+#### Team Status Durations
+
+As of v0.9.0, Dextr is currently able to show the duration of each agent status. Team Status will update under 2 conditions: 
+- Approximately after 15 seconds have passed.
+- Whenever an Agent changes status, it will inmediatly update and display **Just now**.
+
+<figure>
+   <img src="{{ '/assets/images/agent-status-duration.jpg' }}" alt="Team Status Durations">
+   <span>Figure 12. Team Status Durations</span>
+</figure>
+
+
+

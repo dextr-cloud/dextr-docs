@@ -49,12 +49,21 @@ Located at the left corner, it is used to filter and sort calls by:
 - Users. 
 - Direction. 
 - Disposition (if enabled). 
+- Channel.
+- Duration.
 
-If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you also activate the filter.
+As of v0.9.0, Dextr enhanced the looks of the Activity dashboard. If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you also activate the filter functionality (Figure 3).
 
 <figure>
    <img src="{{ '/assets/images/filter-bar.jpg' }}" alt="Filter bar">
-   <span>Figure 3. Filter bar</span>
+   <span>Figure 3. Filter bar functionality on dashboard</span>
+</figure>
+
+There is also Channel (SMS, Email, Voice, Chat, Callback) and Durations (Queued or Connected) filters to help you accomodate your search.
+
+<figure>
+   <img src="{{ '/assets/images/activity-durations-filter.jpg' }}" alt="Filter bar duration">
+   <span>Figure 4. Filter Bars Durations</span>
 </figure>
 ----
 
@@ -64,14 +73,14 @@ In the right corner of the dashboard there is a zoom icon that if clicked, enhan
 
 <figure>
    <img src="{{ '/assets/images/activity-details-1.jpg' }}" alt="Activity Details 1">
-   <span>Figure 4. Activity Dashboard Zoom Icon</span>
+   <span>Figure 5. Activity Dashboard Zoom Icon</span>
 </figure>
 
 This will show a richer metric view through different sections (General, Agent, Queue, Attributes). You also have the option to keep track of the interactions with a customer through the ***Related activity tab*** (bottom right corner), showing any previous interaction you had with the customer.
 
 <figure>
    <img src="{{ '/assets/images/activity-details-2.jpg' }}" alt="Activity Details 2">
-   <span>Figure 5. Activity Details with Related Activity</span>
+   <span>Figure 6. Activity Details with Related Activity</span>
 </figure>
 ----
 
@@ -81,7 +90,7 @@ On Activity Details you also have the option to add Notes per call by clicking t
 
 <figure>
    <img src="{{ '/assets/images/activity-note.jpg' }}" alt="Activity Notes">
-   <span>Figure 6. Activity Details Notes</span>
+   <span>Figure 7. Activity Details Notes</span>
 </figure>
 
 

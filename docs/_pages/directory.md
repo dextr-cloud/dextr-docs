@@ -38,9 +38,18 @@ By clicking the **Edit** option you can add more information, change it, or dele
 
 #### Favoriting contacts
 
-This option will move the contact from your Personal list to your Favorite list by clicking the star symbol. This will also enable the Favorite panel in the Engage TAB, allowing you to see and quickly reach your Favorite contacts for calling. 
+This option will mark the contact from your Personal list as Favorite. This will enable you to see and quickly reach your Favorite contacts for calling in the Engage tab. 
 
 <figure>
-   <img src="{{ '/assets/images/favorites-directory.jpg' }}" alt="Favorites" style="height: 450px; width: 350px">
+   <img src="{{ '/assets/images/favorites-directory.jpg' }}" alt="Favorites">
 </figure>
-Figure 4. Favorites
+Figure 4. Favorites Contacts
+
+#### Global contacts
+
+By clicking the global checkbox when creating a contact, you create global entries/contacts that all agents present in the Instance can see from their directory.
+
+<figure>
+   <img src="{{ '/assets/images/global-entries.jpg' }}" alt="Global entries">
+</figure>
+Figure 5. Global contacts
