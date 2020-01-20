@@ -1,6 +1,6 @@
 main:
-  - title: Dextr Main site
-    url: https://dextr.cloud/
+  - title: FAQ
+    url: /faq/
   - title: Release Notes
     url: /release-notes/
 
