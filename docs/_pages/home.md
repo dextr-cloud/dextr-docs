@@ -10,7 +10,7 @@ sidebar:
 
 ### First Look
 
-The first thing you'll notice when login into Dextr is that there are a lot of components showing up. At the top of the screen there is a header (Figure 1 - Component 1). At the right corner there is a Team Status Drawer (Figure 1 - Component 2) and in the left corner a Side Navigation bar (Figure 1 - Component 3) that allows you to travel around Dextr main tabs and components.
+The first thing you'll notice when doing log in  into Dextr is that there are a lot of components showing up. At the top of the screen there is a header (Figure 1 - Component 1). At the right corner there is a Team Status Drawer (Figure 1 - Component 2) and in the left corner a Side Navigation bar (Figure 1 - Component 3) that allows you to travel around Dextr main tabs and components.
 
 <figure>
    <img src="{{ '/assets/images/first-look.jpg' }}" alt="First Look">
@@ -142,42 +142,7 @@ This a global card that displays the amount of agents logged in the Instance and
 </figure>
 ----
 
-### Team Status Drawer
-----
 
-A Dextr component that displays other agents assigned to your queue or routing profile. You can right click each agent to engage either in chat, a call, or add them as favorites so that they're displayed at the top.
-
-You also have the option to hide offline agents or to display all of them.
-
-<figure>
-   <img src="{{ '/assets/images/team-status.gif' }}" alt="Team Status Drawer">
-   <span>Gif 2. Showing Favorite, Hide Offline Button, All users and Chat</span>
-</figure>
-
-----
-#### Silent Monitor and Whisper Coach
-
-When an agent is on call and you see the **Connected** status in the Team Drawer, after a right click you have the option to either Silent Monitor or Whisper Coach.
-
-**Silent Monitor** allows you to silently hear the call between the agent and the contact, while **Whisper Coach** allows you to whisper/speak with the agent without the contact being able to hear you. 
-
-<figure>
-   <img src="{{ '/assets/images/silent-monitor.jpg' }}" alt="Agent Availability">
-   <span>Figure 11. Silent Monitor & Whisper Coach</span>
-</figure>
-
-----
-
-#### Team Status Durations
-
-As of v0.9.0, Dextr is currently able to show the duration of each agent status. Team Status will update under 2 conditions: 
-- Approximately after 15 seconds have passed.
-- Whenever an Agent changes status, it will inmediatly update and display **Just now**.
-
-<figure>
-   <img src="{{ '/assets/images/agent-status-duration.jpg' }}" alt="Team Status Durations">
-   <span>Figure 12. Team Status Durations</span>
-</figure>
 
 
 

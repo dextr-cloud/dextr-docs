@@ -42,7 +42,7 @@ Create directory entries that all agents can use for click-to-call, transferring
 
 ### Team Status Durations 
 
-The team status drawer now shows status durations alongside each team member’s current status. You can check more information about this in [Home](/home/), in the Team Status Drawer section.
+The team status drawer now shows status durations alongside each team member’s current status. You can check more information about this in the [Team Status Drawer](//teamStatus//) section.
 
 <figure>
    <img src="{{ '/assets/images/status-duration.jpg' }}" alt="Agent Status Duration">
