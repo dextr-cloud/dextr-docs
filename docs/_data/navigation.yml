@@ -27,5 +27,5 @@ docs:
         url: /users/
       - title: "Settings"
         url: /settings/
-      - title: "Team Status"
+      - title: "Team Status Drawer"
         url: /teamStatus/
