@@ -36,7 +36,7 @@ This is located at the top / header of the Activity dashboard:
 - **Number of calls** filter (Gif 1) will determine the number of calls that will first load in the Activity tab. By default this is initially set to 50, so when entering the Activity dashboard it will load the first 50 calls of the Instance from the most recent to the latest. If you scroll down to the bottom a "See more" button will display, if clicked it will load more calls. Below it loads 100 more because the filter was changed to 50 to 100, showing 200 calls at the top left corner.
 
 <figure>
-   <img src="{{ '/assets/images/calls-number-filter.gif' }}" alt="Call numbers filter">
+   <img src="{{ '/assets/images/load-more.gif' }}" alt="Call numbers filter">
    <span>Gif 1. Showing Number of Calls Load and See More button</span>
 </figure>
 ----
@@ -52,7 +52,7 @@ Located at the left corner, it is used to filter and sort calls by:
 - Channel.
 - Duration.
 
-As of v0.9.0, Dextr enhanced the looks of the Activity dashboard. If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you also activate the filter functionality (Figure 3).
+If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you also activate the filter functionality (Figure 3).
 
 <figure>
    <img src="{{ '/assets/images/filter-bar.jpg' }}" alt="Filter bar">
