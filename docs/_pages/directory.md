@@ -38,7 +38,7 @@ By clicking the **Edit** option you can add more information, change it, or dele
 
 #### Favoriting contacts
 
-This option will mark the contact from your Personal list as Favorite. This will enable you to see and quickly reach your Favorite contacts for calling in the Engage tab. 
+This option will mark the contact from your Personal list as Favorite. This will enable you to see and quickly reach your Favorite contacts for calling in the Engage tab. The star icon will get green coloured when the contact is added as Favorite.
 
 <figure>
    <img src="{{ '/assets/images/favorites-directory.jpg' }}" alt="Favorites">
