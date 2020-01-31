@@ -22,10 +22,6 @@ Because of our architecture we take full advantage of the AWS elasticity, resili
 
 Amazon Connect uses a technology similar to sip based voice over IP generally referred to as WebRTC.  WebRTC is still not an industry standard and though Chrome, Firefox and Opus have agreed to the same configuration Apple and Microsoft are going a different route.  For this reason we recommend CHROME though Firefox will work.
  
-- ***What happens if Dextr is down?***
-
-Because of our architecture we take full advantage of the AWS elasticity, resiliency and redundancy.  In the highly unlikely event that Dextr would fail, you would use your Amazon Connect CCP as a backup.
- 
 - ***Does Dextr publish an API?***
 
 Currently we do not, but stay tuned for late breaking news.  If you are a developer or have an idea for a Dextr integration we are very interested in talking to you, so do not hesitate to contact us!
@@ -36,7 +32,7 @@ Dextr is designed to be used as an agent desktop for Amazon Connect call centers
  
 - ***Does Dextr build anything in our AWS  portal?***
 
-During the onboarding process, Dextr uses a CloudFormation template to create an IAM user, Dextr, that has permissions necessary to the configuration of your Amazon Connect instance.  Dextr also generates several lambda functions and a Kinesis stream in your portal.
+During the onboarding process, Dextr uses a CloudFormation template to create an IAM user that has permissions necessary to the configuration of your Amazon Connect instance.  Dextr also generates several lambda functions and a Kinesis stream in your portal.
  
 - ***Does Dextr use Encryption?***
 
@@ -54,11 +50,11 @@ Dextr works with the users that may be using the CCP.  For example if you are us
  
 - ***How do you release new versions of Dextr?***
 
-Dextr is in a continual cycle of product improvement and enhancements.   Hot Fixes are pushed out as required to mitigate any issues that effect performance or operation.  New feature packages however, are announced and made available to all for evaluation before the release date. The staging environment ([https://stage.dextr.cloud](https://stage.dextr.cloud)) is available for review and testing of all new feature packages before they are pushed to production on the announced release date.  This give all Dextr subscribers an opportunity to test the new version in their environment and report back any issues that might surface.
+Dextr is in a continual cycle of product improvement and enhancements.   Hot Fixes are pushed out as required to mitigate any issues that effect performance or operation.  New feature packages however, are announced and made available to all for evaluation before the release date. The staging environment ([https://stage.dextr.cloud](https://stage.dextr.cloud)) is available for review and testing of all new feature packages before they are pushed to production on the announced release date.  This gives all Dextr subscribers an opportunity to test the new version in their environment and report back any issues that might surface.
  
 - ***Do All Subscribers get the same features?***
 
-Currently, Dextr is made available to all subscribers.  Subscribers do not currently have the ability to block new features.  Most features, however, are permission based and to the extent that you create and manage your own security profiles, you may be able to use permissions to control features.
+Currently, Dextr is made available to all subscribers.  Subscribers do not currently have the ability to block new features.  Most features, however, are permission based and to the extent that you create and manage your own security profiles so you may be able to use permissions to control features.
  
  
 ### Amazon Connect Call Center 
