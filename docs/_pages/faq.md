@@ -45,6 +45,16 @@ Dextr is globalized and available in any Regional in which AWS has release Amazo
 - ***Does every agent need Dextr?***
 
 Dextr works with the users that may be using the CCP.  For example if you are using a CRM with an embedded CCP, Dextr will still report your activities and status.  We think the feature set of Dextr is such that you may want to run both, but users with Dextr will see other agents who only use the CCP.  Some features, like agent to agent chat will not work between Dextr and CCP, however.
+
+- ***Where does Dextr metrics come from? How can I be sure that the data displayed is accurate?***
+
+Dextr metrics comes from Amazon Connect Historical and Real Time Metrics. Historical metrics include data about past, completed activities and perfomance of the contact center. They can be CTR-driven or Agent activity-driven.
+
+Real Time Metrics on the other hand consists of various agent metrics that can be used to generate reports: their status, personal information, activities and handling of contacts. For more information you can check Amazon Connect [documentation](https://docs.aws.amazon.com/connect/latest/adminguide/real-time-metrics-definitions.html).
+
+- ***How long do I have to wait for the data to update in the Instance?*** 
+
+Dextr sends a request every minute. This allows the Instance to keep track and update some metrics (Queues & Routing Profiles metrics) approximately every 60 seconds.
  
 ### Support Maintenance and Software Release Protocol
  
