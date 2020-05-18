@@ -132,13 +132,25 @@ Figure 9. Wait Time
 
 ----
 
-#### Agent Availability
+#### Agent Perfomance
 
-This a global card that displays the amount of agents logged in the Instance and their various status.
+As of version 0.9.2, Agent Availability is changed to Agent Perfomance. This a global card that displays all agents logged in the Instance and their agent status (Figure 10).
 
 <figure>
-   <img src="{{ '/assets/images/agent-availability.jpg' }}" alt="Agent Availability" style="height: 450px; width: 400px">
-   <span>Figure 10. Agent Availability</span>
+   <img src="{{ '/assets/images/agent perfomance.jpg' }}" alt="Agent Perfomance" style="height: 450px; width: 400px">
+   <span>Figure 10. Agent Perfomance</span>
+</figure>
+----
+
+By clicking the top right corner you're able to expand the size of the card and have a better look at all metrics, which includes: Handled In, Handled Out, Handled Callbacks, AHT(Average Handle Time), Missed, Avg ACW (Average Call Work state), Holds, Hold Duration and Longest Hold. 
+
+**Handled In, Handled Out, and Handled Callbacks** corresponds to Inbound, Outbound and Callbacks respectively. **AHT** is the average time the agent has been engaged in a call, while **Missed** is the amount of missed calls. **Avg ACW** stands for the average time the agent has been in ACW status (after a call ends). **Holds** is the amount of holds an agent has had through the day, **Hold duration** is the average time the agent has been on Hold, and **Longest Hold** is the max time the agent has been on hold.
+
+You're also able to both filter Agents per status, and sort them by increasing/descending order by clicking the arrows (Figure 11).
+
+<figure>
+   <img src="{{ '/assets/images/expanded perfomance.jpg' }}" alt="Agent Perfomance Filters">
+   <span>Figure 11. Agent Perfomance Filters</span>
 </figure>
 ----
 
