@@ -144,7 +144,8 @@ As of version 0.9.2, Agent Availability is changed to Agent Perfomance. This a g
 
 By clicking the top right corner you're able to expand the size of the card and have a better look at all metrics, which includes: Handled In, Handled Out, Handled Callbacks, AHT(Average Handle Time), Missed, Avg ACW (Average After Contact Work), Holds, Hold Duration and Longest Hold. 
 
-- **Handled In, Handled Out, and Handled Callbacks** corresponds to the number of Inbound, Outbound and Callbacks handled respectively. - **AHT** is the average time the agent has been engaged in a call.
+- **Handled In, Handled Out, and Handled Callbacks** corresponds to the number of Inbound, Outbound and Callbacks handled respectively
+- **AHT** is the average time the agent has been engaged in a call.
 - **Missed** is the amount of missed calls. 
 - **Avg ACW** stands for the average time the agent has been in ACW status (after a call ends). 
 - **Holds** corresponds to the amount of holds an agent has had through the day.
