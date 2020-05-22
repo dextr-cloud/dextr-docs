@@ -29,3 +29,8 @@ docs:
         url: /settings/
       - title: "Team Status Drawer"
         url: /teamStatus/
+
+  - title: Advanced
+    children:
+      - title: "Use an Existing Kinesis Stream"
+      - url: /kinesis/
