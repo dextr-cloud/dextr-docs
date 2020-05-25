@@ -69,6 +69,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll_picture_tag
 
 collections:
   release_notes:
