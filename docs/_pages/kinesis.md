@@ -10,7 +10,7 @@ sidebar:
 
 If you already have a Kinesis Stream for your Amazon Connect instance, you may wish to keep that in place. In this section you will learn how to use your existing kinesis stream to feed Dextr its required data.
 
-### 1. Amazon Connect
+### Section 1 - Amazon Connect
 
 #### 1.1 Click on your Instance Alias
 
@@ -33,7 +33,7 @@ If you already have a Kinesis Stream for your Amazon Connect instance, you may w
 </figure>
 ----
 
-### 2. Lambda
+### Section 2 - Lambda
 
 #### 2.1 Search Lambda for ctrStreamHandler
 
