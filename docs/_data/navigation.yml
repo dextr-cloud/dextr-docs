@@ -32,5 +32,5 @@ docs:
 
   - title: Advanced
     children:
-      - title: "Use an Existing Kinesis Stream"
+      - title: "Use an existing Kinesis Stream"
         url: /kinesis/
