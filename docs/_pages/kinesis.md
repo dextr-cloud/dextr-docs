@@ -68,9 +68,11 @@ If you already have a Kinesis Stream for your Amazon Connect instance, you may w
 ----
 
 
-
-
-
+<style>
+   h4 {
+      font-size: 18px;
+   }
+</style>
 
 
 
