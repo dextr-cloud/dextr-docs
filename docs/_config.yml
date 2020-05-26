@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-logo: "/assets/images/base/big-d-black.png"
+logo: "/assets/images/big-d-black.png"
 title: Documentation
 subtitle: Version 0.9.2
 email:
@@ -99,10 +99,6 @@ footer:
     - label: "Dextr"
       icon: "fas fa-cloud"
       url: "https://dextr.cloud"
-
-picture:
-  source: "assets/images/base"
-  output: "assets/images/generated"
   
 defaults:
   # _posts
