@@ -15,21 +15,21 @@ If you already have a Kinesis Stream for your Amazon Connect instance, you may w
 #### 1.1 Click on your Instance Alias
 
 <figure>
-   <img src="{{ '/assets/images/dextr-instance-alias.jpg' }}" alt="Instance Alias in Contact Center">
+   {% picture dextr-instance-alias.jpg %}
 </figure>
 ----
 
 #### 1.2 Click on Data Streaming
 
 <figure>
-   <img src="{{ '/assets/images/data-streaming.jpg' }}" alt="Data Streaming Tab">
+   <img src="{{ '/assets/images/base/data-streaming.jpg' }}" alt="Data Streaming Tab">
 </figure>
 ----
 
 #### 1.3 Note the name of your existing kinesis stream(s)
 
 <figure>
-   <img src="{{ '/assets/images/kinesis-stream.jpg' }}" alt="Kinesis Stream">
+   <img src="{{ '/assets/images/base/kinesis-stream.jpg' }}" alt="Kinesis Stream">
 </figure>
 ----
 
@@ -38,42 +38,42 @@ If you already have a Kinesis Stream for your Amazon Connect instance, you may w
 #### 2.1 Search Lambda for ctrStreamHandler
 
 <figure>
-   <img src="{{ '/assets/images/ctrStreamHandler.jpg' }}" alt="Stream Handler Keyword">
+   <img src="{{ '/assets/images/base/ctrStreamHandler.jpg' }}" alt="Stream Handler Keyword">
 </figure>
 ----
 
 #### 2.2 Click on dextr-"your-instance-id"-ctrStreamHandler.
 
 <figure>
-   <img src="{{ '/assets/images/stream-instance-alias-handler.jpg' }}" alt="Function name stream handler">
+   <img src="{{ '/assets/images/base/stream-instance-alias-handler.jpg' }}" alt="Function name stream handler">
 </figure>
 ----
 
 #### 2.3 Click on + Add trigger.
 
 <figure>
-   <img src="{{ '/assets/images/add-trigger.jpg' }}" alt="Add trigger">
+   <img src="{{ '/assets/images/base/add-trigger.jpg' }}" alt="Add trigger">
 </figure>
 ----
 
 #### 2.4 Click on Kinesis
 
 <figure>
-   <img src="{{ '/assets/images/kinesis-trigger.jpg' }}" alt="Kinesis trigger">
+   <img src="{{ '/assets/images/base/kinesis-trigger.jpg' }}" alt="Kinesis trigger">
 </figure>
 ----
 
 #### 2.5 Select your existing kinesis stream
 
 <figure>
-   <img src="{{ '/assets/images/kinesis-configuration.jpg' }}" alt="Kinesis Configuration">
+   <img src="{{ '/assets/images/base/kinesis-configuration.jpg' }}" alt="Kinesis Configuration">
 </figure>
 ----
 
 #### 2.6 Change batch size to "5" and click Add
 
 <figure>
-   <img src="{{ '/assets/images/batch-size.jpg' }}" alt="Batch Size">
+   <img src="{{ '/assets/images/base/batch-size.jpg' }}" alt="Batch Size">
 </figure>
 ----
 
