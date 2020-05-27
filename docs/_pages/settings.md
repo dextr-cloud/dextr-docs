@@ -23,14 +23,14 @@ This option enables either soft phone or desk phone (Figure 1). Click the pencil
 
 #### User Info
 
-In this section you can change your Avatar, First Name, Last Name and Email (Figure 1). By clicking the avatar symbol you pop up Windows (or your OS) explorer, which will allow you to choose an image. 
+In this section you can change your Avatar, First Name, Last Name and Email (Figure 1).
 
-By clicking the pencil icon you can also edit the other fields. Email is important since that's the address where Contact's mail messages will be redirected to when you accept an incoming Email flow.
+By clicking the pencil icon you're able to edit the fields. The Email field is where you'll receive the emails when engaging in an Email flow.
 
-<figure>
-   <img src="{{ '/assets/images/phone-user-info.png' }}" alt="Settings. Phone and User">
-   <span>Figure 1. Settings: Preference - Phone & User Info</span>
-</figure>
+![Phone and User](/assets/images/phone-user-info.png)
+
+Figure 1. Settings: Preference - Phone & User Info
+
 ----
 
 #### Sounds

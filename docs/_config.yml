@@ -99,8 +99,7 @@ footer:
     - label: "Dextr"
       icon: "fas fa-cloud"
       url: "https://dextr.cloud"
-
-
+  
 defaults:
   # _posts
   - scope:

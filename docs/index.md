@@ -11,9 +11,7 @@ sidebar:
 
 Dextr.cloud is an Unified-communications-as-a-service (UCaaS) portal that enables a fully featured Agent, Supervisor and Real Time Metric display for Amazon Connect Contact Center, enabling popular features requested from the most demanding Call Center Managers.
 
-<figure>
-   <img src="{{ '/assets/images/supercharge.png' }}" alt="Supercharge your Amazon Call Center">
-</figure>
+![Supercharge your Amazon Call Center](/assets/images/supercharge.png)
 
  The Dashboard provides features that range from omni-channel solutions including Voice, SMS, and Email routing to monitoring and coaching, call disposition code, team status displays, team chat and voice calls, holiday schedules and “ad hoc” queue closings for team meetings with custom caller prompts. Dextr enables supervisors to monitor and coach team members during an active phone call.  Collaboration is achieved by enabling Agent to Agent chat or voice calls. 
 
