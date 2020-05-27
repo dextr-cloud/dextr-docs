@@ -91,9 +91,7 @@ Figure 8. Choosing Landing page
 
 - In order to grant access, we must first deploy a few resources in the AWS environment. When clicking the Deploy Resources button, you'll redirected to AWS in order to create a Stack. After the Stack is created you'll have to wait for some Events to finish deployment and for the Output tab to have both your Access and Secret keys. This might take a few minutes, but when AWS gives you both keys in the **Ouput** tab of your Stack, you can copy it then paste them into their respective field in the Onboarding modal window.
 
-![Deploy Resources](/assets/images/deploy-resources.gif)
-
-Gif 1. Deploying Resources and Retrieving Access and Secret Keys
+{% include figure image_path="/assets/images/deploy-resources.gif" alt="Deploy Resources" caption="Gif 1. Deploying Resources and Retrieving Access and Secret Keys"%}
 
 ----
 
