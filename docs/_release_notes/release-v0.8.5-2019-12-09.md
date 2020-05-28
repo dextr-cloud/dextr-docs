@@ -24,30 +24,24 @@ There are a number of updates in this version that we hope you like, and some of
 
  In line with [Amazon’s announcement](https://aws.amazon.com/blogs/aws/new-omnichannel-contact-center-web-and-mobile-chat-for-amazon-connect/), Dextr now fully supports web and mobile chat through the Engage interface accompanying Voice, SMS and Email. 
 
-<figure>
-   <img src="{{ '/assets/images/engage-chat.jpg' }}" alt="Engage Chat" style="height: 500px; width: 400px">
-   <span>Figure 1. Web and Mobile Chat</span>
-</figure>
+ ![Engage Chat](/assets/images/engage-chat.jpg)
+
 ----
 
 ### Activity Details
 
 Enhanced activity reporting with improved recording playback and/or chat transcription review. From within Activity page, clicking the details button shows a richer metric view and ability to follow the life cycle of the interaction as well as any previous interactions from the same customer. 
 
-<figure>
-   <img src="{{ '/assets/images/activity-detail.jpg' }}" alt="Activity Details">
-   <span>Figure 2. Activity Details</span>
-</figure>
+[![Activity Details](/assets/images/activity-detail.jpg)](/assets/images/activity-detail.jpg)
+
 ----
 
 ### Activity Notes
 
 Easily leave notes for a specific contact that is being displayed to any new interactions with the same contact. Notes can be created and reviewed by customer endpoint or contact ID. 
 
-<figure>
-   <img src="{{ '/assets/images/activity-notes.jpg' }}" alt="Activity Notes">
-   <span>Figure 3. Activity Notes</span>
-</figure>
+[![Activity Notes](/assets/images/activity-notes.jpg)](/assets/images/activity-notes.jpg)
+
 ----
 
 ### Insiders: 
