@@ -24,40 +24,32 @@ There are a number of updates in this version that we hope you like, and some of
 
 Directory entries created in Dextr are now Amazon Connect quick connects. This allows agents to use them for transfer and conference destinations while on a call.
 
-<figure>
-   <img src="{{ '/assets/images/transfer-directory-contacts.jpg' }}" alt="Transfer Directory Contacts">
-   <span>Figure 1. Quick Connect / Directory Contacts</span>
-</figure>
+[![Directory Contacts](/assets/images/transfer-directory-contacts.jpg)](/assets/images/transfer-directory-contacts.jpg)
+
 ----
 
 ### Global Directory
 
 Create directory entries that all agents can use for click-to-call, transferring and conferencing. 
 
-<figure>
-   <img src="{{ '/assets/images/global-contacts.jpg' }}" alt="Global Contacts">
-   <span>Figure 2. Global Directory entries</span>
-</figure>
+[![Global Contacts](/assets/images/global-contacts.jpg)](/assets/images/global-contacts.jpg)
+
 ----
 
 ### Team Status Durations 
 
 The team status drawer now shows status durations alongside each team member’s current status. You can check more information about this in the [Team Status Drawer](/teamStatus/) section.
 
-<figure>
-   <img src="{{ '/assets/images/status-duration.jpg' }}" alt="Agent Status Duration">
-   <span>Figure 3. Team Status Duration</span>
-</figure>
+[![Agent Status Duration](/assets/images/status-duration.jpg)](/assets/images/status-duration.jpg)
+
 ----
 
 ### New Activity filters
 
-Filter current activity result set by Channel (Voice, Chat, Email, SMS and Callbacks), by Queued and Connected Durations. You can check more information about this in [Activity](/activity/).
+Filter current activity results set by Channel (Voice, Chat, Email, SMS and Callbacks), by Queued and Connected Durations. You can check more information about this in [Activity](/activity/).
 
-<figure>
-   <img src="{{ '/assets/images/activity-channel.jpg' }}" alt="Activity Channel">
-   <span>Figure 4. Activity  New Filters / Queue Duration </span>
-</figure>
+[![Activity Channel](/assets/images/activity-channel.jpg)](/assets/images/activity-channel.jpg)
+
 ----
 
 ### Bug fixes
