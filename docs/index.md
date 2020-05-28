@@ -27,7 +27,6 @@ Dextr also can be shaped and moved around to suit your screen real estate requir
 
 <figure>
    <img src="{{ '/assets/images/dextr-features.gif' }}" alt="Dextr Features">
-   <span>Dextr Features: Showing Login, Agent Chat, Agent Call, Dialing a contact with Quick Dial Dropdown and receiving an Incoming ACD call</span>
 </figure>
 
 
