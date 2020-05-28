@@ -14,16 +14,11 @@ The Login process is the same for all Dextr dashboard users.  It assumes that yo
 
 [![Login Page](/assets/images/login.jpg)](/assets/images/login.jpg)
 
-
-Figure 1. Login Page
-
 ----
 
-You can also login by going to **https://go.dextr.cloud**  and entering the name of the Instance chosen by your Administrator (Figure 2). In this example **dextr-docs** was typed in the Instance Alias field. 
+You can also login by going to **https://go.dextr.cloud**  and entering the name of the Instance chosen by your Administrator. In this example **dextr-docs** was typed in the Instance Alias field. 
 
 [![Login Page 2](/assets/images/login-2.jpg)](/assets/images/login-2.jpg)
-
-Figure 2. Another way to login
 
 ----
 
@@ -33,15 +28,11 @@ By clicking the Secure Login button you'll also trigger Amazon Connect CCP windo
 
 [![User Login](/assets/images/login-ccp.jpg)](/assets/images/login-ccp.jpg)
 
-Figure 3. Amazon Connect CCP
-
 ----
 
-After entering your username and password, Amazon Connect CCP window will be replaced with the login summary (Figure 4). Clicking on the **Go to Dashboard** button will bring you to Dextr Home Dashboard.
+After entering your username and password, Amazon Connect CCP window will be replaced with the login summary. Clicking on the **Go to Dashboard** button will bring you to Dextr Home Dashboard.
 
 [![User Summary](/assets/images/username-login.jpg)](/assets/images/username-login.jpg)
-
-Figure 4. Login Summary
 
 ----
 
@@ -51,17 +42,11 @@ If you are using the Softphone options, with a headset plugged in to a USB port 
 
 [![Enabling mic](/assets/images/microphone.jpg)](/assets/images/microphone.jpg)
 
-Figure 5. Enabling Microphone
-
 ----
 
 When entering Dextr without granting permission to use your microphone, Dextr will remind you to please grant access whenever you try to make a call or change your Agent Status.
 
 [![Mic blocked](/assets/images/mic-blocked.jpg)](/assets/images/mic-blocked.jpg)
-
-Figure 6. Allowing Access to Microphone
-
-----
 
 
  
