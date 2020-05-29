@@ -43,3 +43,9 @@ This option will mark the contact from your Personal list as Favorite, enabling 
 By clicking the global checkbox when creating a contact, you create global entries/contacts that all agents present in the Instance can see from their directory.
 
 [![Global entries](/assets/images/global-entries.jpg)](/assets/images/global-entries.jpg)
+
+<style>
+   h4 {
+      font-size: 18px;
+   }
+</style>
