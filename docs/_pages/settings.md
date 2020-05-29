@@ -8,28 +8,24 @@ sidebar:
   nav: "docs"
 ---
 
-The Settings TAB is composed of many sections where you'll be able to change your profile picture, company logo, enable call dispositions, set up security options, channels and a lot more:
+The Settings TAB is composed of many sections where you'll be able to change your profile picture, company logo, enable call dispositions, set up security options and channels.
 
 ### Preferences
 
-This is the starting page since it will be the one you're redirected to when you navigate to the Settings Tab, and is composed of:
+This is the starting page and is composed of:
 - Phone
 - User info
 - Sounds
 
 #### Phone
 
-This option enables either soft phone or desk phone (Figure 1). Click the pencil icon to change from softphone to desk phone and enter your direct dial telephone number.  All calls that come to your dashboard will ring to your phone when desk phone is enabled, and it's also possible to set this to a cell phone if you want to take calls while running around the globe. Be sure to set a Wrap time so your dashboard is not stuck in the Wrap up status, waiting to be made Available after the last call.
+This option enables either soft phone or desk phone. Click the pencil icon to change from softphone to desk phone and enter your direct dial telephone number.  All calls that come to your dashboard will ring to your phone when desk phone is enabled, and it's also possible to set this to a cell phone if you want to take calls while running around the globe. Be sure to set a Wrap time so your dashboard is not stuck in the Wrap up status, waiting to be made Available after the last call.
 
 #### User Info
 
-In this section you can change your Avatar, First Name, Last Name and Email (Figure 1).
-
-By clicking the pencil icon you're able to edit the fields. The Email field is where you'll receive the emails when engaging in an Email flow.
+You can change your Avatar, First Name, Last Name and Email by editing the fields. The Email field is where you'll receive the emails when engaging in an Email flow.
 
 ![Phone and User](/assets/images/phone-user-info.png)
-
-Figure 1. Settings: Preference - Phone & User Info
 
 ----
 
@@ -43,7 +39,6 @@ If you enable Secondary, it will play the ringtone you choose with an Output dev
 
 <figure>
    <img src="{{ '/assets/images/sounds-settings.jpg' }}" alt="Settings Sounds">
-   <span>Figure 2. Settings: Preference - Sounds</span>
 </figure>
 ----
 
@@ -56,28 +51,26 @@ This is for users who have the security profile level of an admin. General has t
 
 #### Brand
 
-In this section you can change the logo present in Dextr header. The principle to change it is the same one applied for your avatar profile picture (just click and choose an image from your file explorer). You can also change Dextr header color to either the default color (blue) or a light one (white).
+In this section you can change the logo present in the header. You can also change Dextr header color to either the default color (blue) or a light one (white).
 
 <figure>
    <img src="{{ '/assets/images/general-brand.jpg' }}" alt="General Brand">
-   <span>Figure 3. Settings: General - Brand</span>
 </figure>
 ----
 
 #### Account
 
-This is a general portait of all the information relevant to the Instance. It displays the Admin Connect information, and it also gives you the option to edit Company Name, Admin Name and Email.
+This section displays the Admin Connect information, and it also gives you the option to edit Company Name, Admin Name and Email.
 
 <figure>
    <img src="{{ '/assets/images/account.jpg' }}" alt="General Account">
-   <span>Figure 4. Settings: General - Account</span>
 </figure>
 
 ----
 
 #### Configuration
 
-Here you can configure Presented Not Answered behavior (when you miss a call), and it gives you 3 options:
+Here you can configure Presented Not Answered behavior (when you miss a call), giving you 3 options:
 
 1. Forced Release - When you or another agent misses an ACD call, it will put you in a Forced Release Status (or the Configured label set by the admin) until you manually change it to another (e.g manually changing status to Available after being in the "missed call" label).
 2. Wrap Up - When you or another agent misses an ACD call a countdown will start. After the countdown from configured wrap up time (**User Phone Configuration Wrap Time**) finishes, your status will be automatically changed to Available.
@@ -87,17 +80,14 @@ There is also Call Dispositions. By default this is disabled, but by enabling it
 
 <figure>
    <img src="{{ '/assets/images/general-configuration.jpg' }}" alt="General Configuration">
-   <span>Figure 5. Settings: General - Configuration</span>
 </figure>
 ----
 
-Lastly, you can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Shift+D, and to test incoming call you do so with Ctrl+Shift+I.
+You can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Shift+D, and to test incoming call you do so with Ctrl+Shift+I.
 
 <figure>
    <img src="{{ '/assets/images/demo-mode.jpg' }}" alt="Demo mode">
-   <span>Figure 6. Demo mode - Home Dashboard</span>
 </figure>
-
 
 ### Integrations
 
@@ -109,7 +99,6 @@ Here you can see the already integrated core functionalities within Dextr (Amazo
 
 <figure>
    <img src="{{ '/assets/images/integration.jpg' }}" alt="Integration">
-   <span>Figure 7. Settings: Integration</span>
 </figure>
 ----
 
@@ -119,7 +108,6 @@ This TAB enables you to establish Holiday and “Ad Hoc” queue closings.
 
 <figure>
    <img src="{{ '/assets/images/hours-operation.jpg' }}" alt="Hours of Operation">
-   <span>Figure 8. Settings: Hours of Operation</span>
 </figure>
 ----
 
@@ -129,7 +117,6 @@ This section is used to see the timezone set for the Instance. Timezone can be c
 
 <figure>
    <img src="{{ '/assets/images/global-timezone.jpg' }}" alt="Global Timezone">
-   <span>Figure 9. Settings: H.Operations - Timezone</span>
 </figure>
 ----
 
@@ -141,7 +128,6 @@ You will also have the opportunity to enter a TEXT to SPEECH prompt which will b
 
 <figure>
    <img src="{{ '/assets/images/hours-events.jpg' }}" alt="H.Operation Events">
-   <span>Figure 10. Settings: H.Operations - Multiple Day Event</span>
 </figure>
 
 ### Security
@@ -150,7 +136,6 @@ This TAB is used to create very specific ROLES, but you can also edit or delete 
 
 <figure>
    <img src="{{ '/assets/images/settings-security.jpg' }}" alt="Settings Security">
-   <span>Figure 11. Settings: Security</span>
 </figure>
 ----
 
@@ -160,7 +145,6 @@ You can add them by clicking the **+Security Profile** button, and add permissio
 
 <figure>
    <img src="{{ '/assets/images/create-security.jpg' }}" alt="Settings Security Profile">
-   <span>Figure 12. Settings: Security - Create Security Profile</span>
 </figure>
 ----
 
@@ -170,7 +154,6 @@ This TAB enables you to purchase an SMS number for use in routing inbound text c
 
 <figure>
    <img src="{{ '/assets/images/phone-numbers.jpg' }}" alt="Settings Phone Number">
-   <span>Figure 13. Settings: Phone Numbers</span>
 </figure>
 ----
 
@@ -184,7 +167,6 @@ SMS enables KEYWORDS to be used to match an incoming SMS first word to select th
 
 <figure>
    <img src="{{ '/assets/images/channels-sms.jpg' }}" alt="Settings SMS">
-   <span>Figure 14. Settings: Channels - SMS</span>
 </figure>
 ----
 
@@ -196,6 +178,11 @@ Both SMS and EMAIL are “sticky” meaning that the conversation will stay with
 
 <figure>
    <img src="{{ '/assets/images/channels-email.jpg' }}" alt="Settings Email">
-   <span>Figure 15. Settings: Channels - Email</span>
 </figure>
 ----
+
+<style>
+    h4 {
+       font-size: 18px;
+    }
+</style>
