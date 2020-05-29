@@ -65,8 +65,6 @@ When creating contacts from the [Directory](/directory/), you can add them as fa
 
 [![Engage Favorites](/assets/images/engage-favorites.jpg)](/assets/images/engage-favorites.jpg)
 
-Figure 4. Engage Favorites section
-
 ----
 
 ### SMS & Email
