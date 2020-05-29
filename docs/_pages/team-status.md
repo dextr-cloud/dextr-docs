@@ -18,9 +18,7 @@ You can right click each agent to engage either in chat, a call, or add them as 
 
 By clicking this option you add agents as Favorites. This will put them on the top side of the Team Status. If an agent is already favorited, you can Unfavorite them any time. 
 
-![Team Status Favorites](/assets/images/ts-favorites.jpg)
-
-Figure 1. Team Status Drawer - Favorites
+[![Team Status Favorites](/assets/images/ts-favorites.jpg)](/assets/images/ts-favorites.jpg)
 
 ----
 
@@ -28,12 +26,7 @@ Figure 1. Team Status Drawer - Favorites
 
 By clicking this option you're able to call agents who are online (either Available or in a custom status provided by the Instance Admin). Please do take into account that **you're unable to call agents who have the Offline** status, and that these calls are recorded in ***My Perfomance Card*** in the Peer to Peer call section.
 
-When an agent calls you, an Incoming call modal window will display in your dashboard (Figure 2).
-
 [![Agent Call](/assets/images/agent-call.jpg)](/assets/images/agent-call.jpg)
-
-
-Figure 2. Incoming call modal window
 
 ----
 
@@ -42,8 +35,6 @@ Figure 2. Incoming call modal window
 By clicking this option you trigger the Chat UI. Here you will be able to communicate with other agents by sending, receiving and reading messages.
 
 [![Agent Chat](/assets/images/agent-chat.jpg)](/assets/images/agent-chat.jpg)
-
-Figure 3. Agent Chat UI
 
 ----
 
@@ -56,14 +47,12 @@ When an agent is on call and you see the **Connected** status in the Team Drawer
 
 [![Silent monitor](/assets/images/silent-monitor.jpg)](/assets/images/silent-monitor.jpg)
 
-Figure 4. Silent Monitor & Whisper Coach
-
 ----
 ### Hide Offline / Show all Agents
 
 You have the option to hide offline agents or to display all of them by clicking the corresponding button.
 
-{% include figure image_path="/assets/images/team-status.gif" alt="Team Drawer" caption="Gif 1. Showing Favorite, Hide Offline Button, All users and Chat" %}
+{% include figure image_path="/assets/images/team-status.gif" alt="Team Drawer"%}
 
 ----
 
@@ -75,16 +64,18 @@ Dextr is currently able to show the duration of each agent status. Your Team Sta
 
 [![Team Status Durations](/assets/images/agent-status-duration.jpg)](/assets/images/agent-status-duration.jpg)
 
-Figure 5. Team Status Durations
-
 ----
 
 ### Search Input
 
-At the very bottom of the Status Drawer, you also have a **Search** input to help you find an agent per it's name.
+At the very bottom of the Status Drawer, you also have a **Search** input to help you find an agent by name.
 
 [![Team Status Search](/assets/images/ts-search.jpg)](/assets/images/ts-search.jpg)
 
-Figure 6. Team Status Search Input
-
 ----
+
+<style>
+    h4 {
+      font-size: 18px;
+    }
+</style>
