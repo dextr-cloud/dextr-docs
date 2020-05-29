@@ -8,44 +8,42 @@ sidebar:
   nav: "docs"
 ---
 
-The Engage TAB is one of Dextr main features since it's the place where you'll be having your calls and interacting with customers. 
+The Engage TAB is one of Dextr main features since it's the place where you'll be interacting with customers. 
 
 ### Phone Tab
 
-When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad** (Figure 1. Component 1), **Recent Calls** (Figure 1. Component 2) and the **Favorites** (Figure 1. Component 3) sections.
+When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad** (Component 1), **Recent Calls** (Component 2) and the **Favorites** (Component 3) sections.
 
 [![Engage Tab](/assets/images/engage-tab.jpg)](/assets/images/engage-tab.jpg)
 
-Figure 1. Engage - Phone Tab
+You can type a number in the ***Quick Dial*** or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code. When on call, you also have the option to put it on hold. 
 
-----
-
-You can type / paste a number in the ***Quick Dial*** or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code. When on call, you also have the option to put it on hold. 
-
-{% include figure image_path="/assets/images/call-hold.gif" alt="Call on Hold" caption="Gif 1. Making calls through Dialpad"%}
+{% include figure image_path="/assets/images/call-hold.gif" alt="Call on Hold"%}
 
 ----
 
 #### Call Transfers
 
-When on call you're also able to do call transfers, and as of v0.9.0 Dextr can quick-connect to directory entries through either **Blind** or **Warm** transfers: 
+You're able to do call transfers, and as of v0.9.0 Dextr can quick-connect to directory entries through either **Blind** or **Warm** transfers: 
 
-- **Blind** transfers gets the call either on a selected Queue or a Directory contact. If the transfer was done to a Queue it will  make the contact wait until is taken by the next Available agent while also leaving you completely out of the call. If it was done to a Directory contact, it will transfer the call directly to it.
+- **Blind** transfers gets the call either on a selected Queue or a Directory contact. If the transfer was made to a Queue it will  make the contact wait until is taken by the next Available agent while also leaving you completely out of the call. If it was done to a Directory contact, it will transfer the call directly to it.
 
-- **Warm** transfers on the other hand, allows you to remain and monitor the call, also allowing you join it and enter **Conference Call** mode (Figure 2).
+- **Warm** transfers on the other hand, allows you to remain and monitor the call, also allowing you join it and enter **Conference Call** mode.
 
-{% include figure image_path="/assets/images/transfer-call.gif" alt="Call Transfer" caption="Gif 2. Call Transfer"%}
+A call transfer:
+
+{% include figure image_path="/assets/images/transfer-call.gif" alt="Call Transfer"%}
+
+A conference call:
 
 [![Conference Call](/assets/images/conference-call.jpg)](/assets/images/conference-call.jpg)
-
-Figure 2. Conference Call
 
 ----
 #### Call dispositions
 
 If the administrator enables this option in [Settings-General](/settings/), when a call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/activity/) tab for a specific call.
 
-{% include figure image_path="/assets/images/call-disposition.gif" alt="Call Disposition" caption="Gif 3. Call Disposition"%}
+{% include figure image_path="/assets/images/call-disposition.gif" alt="Call Disposition"%}
 
 If you don't select a disposition when timer ends, then no disposition will be assigned to the call.
 
@@ -81,3 +79,9 @@ Important to note is that you're unable to write answers from Dextr. To answer, 
 ### Omni-Chat
 
 Like Email and SMS, your administrator builds a flow and use it across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) you use for voice engagements since Customers will be put in a Queue and attended by the next available agent.
+
+<style>
+   h4 {
+      font-size: 18px;
+   }
+</style>
