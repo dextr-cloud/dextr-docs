@@ -25,7 +25,7 @@ This option enables either soft phone or desk phone. Click the pencil icon to ch
 
 You can change your Avatar, First Name, Last Name and Email by editing the fields. The Email field is where you'll receive the emails when engaging in an Email flow.
 
-![Phone and User](/assets/images/phone-user-info.png)
+[![Phone and User](/assets/images/phone-user-info.png)](/assets/images/phone-user-info.png)
 
 ----
 
@@ -37,9 +37,8 @@ If you enable Secondary, it will play the ringtone you choose with an Output dev
 
 **Peer call** on the other hand is the ringtone that will play when receiving a call from one of your teammates (another agent), and **New Chat message** is the one that plays when you receive a chat message.
 
-<figure>
-   <img src="{{ '/assets/images/sounds-settings.jpg' }}" alt="Settings Sounds">
-</figure>
+[![Settings Sounds](/assets/images/sounds-settings.jpg)](/assets/images/sounds-settings.jpg)
+
 ----
 
 ### General
@@ -49,26 +48,23 @@ This is for users who have the security profile level of an admin. General has t
 - Account
 - Configuration
 
-#### Brand
+**Brand**
 
-In this section you can change the logo present in the header. You can also change Dextr header color to either the default color (blue) or a light one (white).
+In this section you can change the logo. You can also change the header color to either default (blue) or a light one (white).
 
-<figure>
-   <img src="{{ '/assets/images/general-brand.jpg' }}" alt="General Brand">
-</figure>
+[![General Brand](/assets/images/general-brand.jpg)](/assets/images/general-brand.jpg)
+
 ----
 
-#### Account
+**Account**
 
 This section displays the Admin Connect information, and it also gives you the option to edit Company Name, Admin Name and Email.
 
-<figure>
-   <img src="{{ '/assets/images/account.jpg' }}" alt="General Account">
-</figure>
+[![General Account](/assets/images/account.jpg)](/assets/images/account.jpg)
 
 ----
 
-#### Configuration
+**Configuration**
 
 Here you can configure Presented Not Answered behavior (when you miss a call), giving you 3 options:
 
@@ -78,6 +74,8 @@ Here you can configure Presented Not Answered behavior (when you miss a call), g
 
 There is also Call Dispositions. By default this is disabled, but by enabling it, you can add new call dispositions by clicking the **+Add Call Disposition** button, so that they're shown in a dropdown when a call finishes. **Allow Custom Input** can also be turned on, allowing agents to manually write the disposition of the call.
 
+[![Settings Sounds](/assets/images/general-configuration.jpg)](/assets/images/general-configuration.jpg)
+
 <figure>
    <img src="{{ '/assets/images/general-configuration.jpg' }}" alt="General Configuration">
 </figure>
@@ -85,104 +83,98 @@ There is also Call Dispositions. By default this is disabled, but by enabling it
 
 You can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Shift+D, and to test incoming call you do so with Ctrl+Shift+I.
 
-<figure>
-   <img src="{{ '/assets/images/demo-mode.jpg' }}" alt="Demo mode">
-</figure>
+[![Demo mode](/assets/images/demo-mode.jpg)](/assets/images/demo-mode.jpg)
 
 ### Integrations
 
 General information about integrations within the application.
 
-#### Core & Extensions
+**Core & Extensions**
 
-Here you can see the already integrated core functionalities within Dextr (Amazon Connect and Kinesis) and the things that are being worked on (Alexa).
+You can see the already integrated core functionalities within Dextr (Amazon Connect and Kinesis) and the things that are being worked on (Alexa).
 
-<figure>
-   <img src="{{ '/assets/images/integration.jpg' }}" alt="Integration">
-</figure>
+[![Integration](/assets/images/integration.jpg)](/assets/images/integration.jpg)
+
 ----
 
 ### Hours of Operation
 
 This TAB enables you to establish Holiday and “Ad Hoc” queue closings.  
 
-<figure>
-   <img src="{{ '/assets/images/hours-operation.jpg' }}" alt="Hours of Operation">
-</figure>
+[![Hours of Operation](/assets/images/hours-operation.jpg)](/assets/images/hours-operation.jpg)
+
 ----
 
-#### Global
+ **Global**
 
-This section is used to see the timezone set for the Instance. Timezone can be changed by clicking the dropdown.
+This section is used to see the timezone set for the Instance.
 
-<figure>
-   <img src="{{ '/assets/images/global-timezone.jpg' }}" alt="Global Timezone">
-</figure>
+[![Global Timezone](/assets/images/global-timezone.jpg)](/assets/images/global-timezone.jpg)
+
 ----
 
-#### Events
+ **Events**
 
 You can add an event by clicking the **+EVENT** button. Choose a Name, select a Queue, and then select if this is a single day or multiple day event by clicking the **All day** switch below the calendar, which is also used to determine the date, and start/end time. 
 
 You will also have the opportunity to enter a TEXT to SPEECH prompt which will be played to the caller during the closed period.  This is very useful if you want to close a single queue for a team meeting, or if you want to list out your Holiday closings for the year. 
 
-<figure>
-   <img src="{{ '/assets/images/hours-events.jpg' }}" alt="H.Operation Events">
-</figure>
+[![H.Operation Events](/assets/images/hours-events.jpg)](/assets/images/hours-events.jpg)
+
+----
 
 ### Security
 
 This TAB is used to create very specific ROLES, but you can also edit or delete specific permissions within the profiles.
 
-<figure>
-   <img src="{{ '/assets/images/settings-security.jpg' }}" alt="Settings Security">
-</figure>
+[![Settings Security](/assets/images/settings-security.jpg)](/assets/images/settings-security.jpg)
+
 ----
 
-#### Security profiles
+ **Security profiles**
 
-You can add them by clicking the **+Security Profile** button, and add permissions to that role. You can then assign the role through the USER TAB to individual members. 
+You can create Custom Security profiles by clicking the **+Security Profile** button and then add permissions.
 
-<figure>
-   <img src="{{ '/assets/images/create-security.jpg' }}" alt="Settings Security Profile">
-</figure>
+[![Settings Security Profile](/assets/images/create-security.jpg)](/assets/images/create-security.jpg)
+
 ----
 
 ### Phone Numbers
 
 This TAB enables you to purchase an SMS number for use in routing inbound text calls to specific queues. This is an optional feature and has a service charge based on the number of text messages sent and received. 
 
-<figure>
-   <img src="{{ '/assets/images/phone-numbers.jpg' }}" alt="Settings Phone Number">
-</figure>
+[![Settings Phone Number](/assets/images/phone-numbers.jpg)](/assets/images/phone-numbers.jpg)
+
 ----
 
 ### Channels
 
 Channels enable you to select SMS or EMAIL to create unique routing rules for each type of channel. Each configuration enables you to select a Queue to receive either the SMS or the Email. Multiple emails can be created each with a different target queue.  
 
-#### SMS
+ **SMS**
 
-SMS enables KEYWORDS to be used to match an incoming SMS first word to select the target queue.  This way you can have one text number that can handle TAC, SALES, Queues, etc.  Optionally you can have an Queue for each number rather than a keywork. 
+SMS enables KEYWORDS to be used to match an incoming SMS first word to select the target queue.  This way you can have one text number that can handle TAC, SALES, Queues, etc.  Optionally you can have an Queue for each number rather than a keyword. 
 
-<figure>
-   <img src="{{ '/assets/images/channels-sms.jpg' }}" alt="Settings SMS">
-</figure>
+[![Settings SMS](/assets/images/channels-sms.jpg)](/assets/images/channels-sms.jpg)
+
 ----
 
-#### Email
+ **Email**
 
-Email works like SMS, but instead of a Number you provide and set up an Email Address for the Instance. After that you set up an Email flow for queues and you'll be able to redirect the emails sent to the Instance by the queues added in the flow. 
+Email works like SMS, but instead of a number you provide and set up an Email Address for the Instance. 
 
-Both SMS and EMAIL are “sticky” meaning that the conversation will stay with the same agent until ended. If that agent is unavailable, the entire conversation will be forwarded to the next available logged in agent. 
+Both SMS and EMAIL are “sticky”, meaning that the conversation will stay with the same agent until ended. If that agent is unavailable, the entire conversation will be forwarded to the next available logged in agent. 
 
-<figure>
-   <img src="{{ '/assets/images/channels-email.jpg' }}" alt="Settings Email">
-</figure>
+[![Settings Email](/assets/images/channels-email.jpg)](/assets/images/channels-email.jpg)
+
 ----
 
 <style>
     h4 {
+       font-size: 18px;
+    }
+
+    strong {
        font-size: 18px;
     }
 </style>
