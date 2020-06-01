@@ -76,12 +76,9 @@ There is also Call Dispositions. By default this is disabled, but by enabling it
 
 [![Settings Sounds](/assets/images/general-configuration.jpg)](/assets/images/general-configuration.jpg)
 
-<figure>
-   <img src="{{ '/assets/images/general-configuration.jpg' }}" alt="General Configuration">
-</figure>
 ----
 
-You can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Shift+D, and to test incoming call you do so with Ctrl+Shift+I.
+You can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Alt+D, and to test incoming call you do so with Ctrl+Alt+I.
 
 [![Demo mode](/assets/images/demo-mode.jpg)](/assets/images/demo-mode.jpg)
 

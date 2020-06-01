@@ -43,7 +43,7 @@ By clicking the Bell icon in the header, you'll open the Announcements. Here you
 
 ----
 
-### Home Dashboard & Cards
+### Home Dashboard & Widgets
 ----
 
 This area is for the display of real time metrics for all queues in near real time activity. Clicking on a queue name in the dropdown will show the metrics for that queue while the Global view summarizes all queues. 
@@ -56,7 +56,7 @@ In the top corner of Home dashboard you can also spot 2 icons at the right side,
 
 #### Contacts in Queue
 
-On this card you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the numbers shown. 
+Here you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the numbers shown. 
 
 ![Contacts in Queue](/assets/images/contact-queue.jpg)
 
@@ -64,7 +64,7 @@ On this card you'll be able to see how many contacts are currently on voice and 
 
 #### My Recent Activity
 
-This card lists of all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
+This widget lists of all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
 
 You can also click any of the records, and choose the option to call the specified number. Below you can some retailer names instead of phone numbers because they were added as contacts in the [Directory](/directory/) TAB.
 
@@ -74,7 +74,7 @@ You can also click any of the records, and choose the option to call the specifi
 
 #### Contacts
 
-This is a Queue card. You'll be able to see how many calls have been handled, abandoned or transferred by all team members either globally between all Queues, or in your Queue.
+This is a Queue widget. You'll be able to see how many calls have been handled, abandoned or transferred by all team members either globally between all Queues, or in your Queue.
 
 ![Contacts](/assets/images/contacts.jpg)
 
@@ -82,7 +82,7 @@ This is a Queue card. You'll be able to see how many calls have been handled, ab
 
 #### My Perfomance
 
-This is a card that shows up your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
+This shows your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
 
 ![My Perfomance](/assets/images/my-perfomance.jpg)
 
@@ -106,7 +106,7 @@ A queue metric that displays how long the contacts have been waiting on the queu
 
 #### Agent Perfomance
 
-As of version 0.9.2, Agent Availability is changed to Agent Perfomance. This a global card that displays all agents logged in the Instance and their agent status.
+As of version 0.9.2, Agent Availability is expanded to include all agents in the Instance and their metrics through the day.
 
 <figure>
    <a href="/assets/images/agent perfomance.jpg">

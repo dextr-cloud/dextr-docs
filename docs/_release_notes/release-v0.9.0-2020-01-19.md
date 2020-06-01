@@ -54,9 +54,9 @@ Filter current activity results set by Channel (Voice, Chat, Email, SMS and Call
 
 ### Bug fixes
 
-- Intermittently, the team status drawer wouldn't show an agent’s connected phone number.
-- Intermittently, an agent’s connected duration would not match with default CCP.
-- Notes added during a call wouldn't be shown in activity details page. 
+- ✓ #407 Intermittently, the team status drawer wouldn't show an agent’s connected phone number.
+- ✓ #411 Intermittently, an agent’s connected duration would not match with default CCP.
+- ✓ #439 Notes added during a call wouldn't be shown in activity details page. 
 
 ### Insiders: 
 
