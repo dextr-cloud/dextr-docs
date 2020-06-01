@@ -23,7 +23,7 @@ There are a number of updates in this version that we hope you like, and some of
 
 ### Agent Perfomance widget
 
-The Agent Availability widget has been expanded to include each agent's contact metrics for the day. 
+The Agent Availability widget has been expanded to include each agent's contact metrics for the day. You can see more details in [Dextr Home dashboard](/home/#agent-perfomance)
 
 [![Agent Perfomance](/assets/images/perfomance-expanded.jpg)](/assets/images/perfomance-expanded.jpg)
 
