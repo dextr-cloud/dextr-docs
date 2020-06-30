@@ -37,9 +37,17 @@ The Handset is for quick dial and you can input a phone number to make a call. A
 
 #### Announcements
 
-By clicking the Bell icon in the header, you'll open the Announcements. Here you can see all the announcements related to your queue. If you're an admin, you will be able to post announcements by clicking the pencil icon in the bottom side.
+By clicking the Bell icon in the header, you'll open the Announcements. Here you can see all the announcements related to your queue. If you're an admin, you're able to post announcements by clicking the pencil icon in the bottom side. 
 
 [![Announcements](/assets/images/announcements.jpg)](/assets/images/announcements.jpg)
+
+To post an announcement, you need to fill out the Title, select at least one queue and write the body message. If the Urgency level is **Info**, when announcements are posted the agents will see the following screen pop:
+
+[![Urgency-Info](/assets/images/urgency-info.jpg)](/assets/images/urgency-info.jpg)
+
+In contrast, if the Urgency level is **Emergency**, the icon displayed will change:
+
+[![Urgency-Emergency](/assets/images/urgency-emergency.jpg)](/assets/images/urgency-emergency.jpg)
 
 ----
 
