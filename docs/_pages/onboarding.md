@@ -8,116 +8,111 @@ sidebar:
   nav: "docs"
 ---
 
-After your email has been verified, you'll be redirected to the Onboarding portal in order to claim the instance and start your Call Center.
+After your subscription to Dextr, you'll be redirected to the Onboarding portal in order to claim your instance.
 
-[![Onboarding Portal](/assets/images/onboarding-portal.png)](/assets/images/onboarding-portal.png)
+[![Onboarding Portal](/assets/images/newOnboarding.jpg)](/assets/images/newOnboarding.jpg)
 
 ----
-Here, you can see that the Onboarding process consists of 2 steps:
-1. Verify Ownership
-2. Claim instance
+The Onboarding process consists of 5 steps, and the first 3 steps have an ***Explainer video*** that you can watch for guidance.
 
 ### Step 1. Verify Ownership
 
-Verify ownership consists of 2 steps. The first one would be to whitelist https://go.dextr.cloud . The second one is to login in Connect as an administrator.
+Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.dextr.cloud to allow incoming popups.
 
-#### Step 1.1 - Whitelisting the page
+[![Verify Ownership](/assets/images/verifyOwnership.jpg)](/assets/images/verifyOwnership.jpg)
 
-- When whitelisting dextr.cloud you're allowing incoming popups, which is important since they will be used to claim the instance and use other features. 
+#### Step 1.1 - Application integration
 
-- You also need to add an Approved origin in Amazon Connect. Through the Amazon Web Service console, you can enter Amazon Connect, click the name of your instance and then go to the **Application Integration** tab, in which you can add an approved origin. When the modal window is displayed, type **https://go.dextr.cloud** and click the add button. After a few seconds the origin should be added.
+You require an ***Approved origin*** in Amazon Connect. Through the Amazon Web Service console:
+
+- Go to Amazon Connect and click the name of your instance.
+[![Clicking Instance](/assets/images/clickingInstance.jpg)](/assets/images/clickingInstance.jpg)
+
+- Go to the **Application Integration** tab and click ***Add origin***. Input **https://go.dextr.cloud** and add it.
 
 [![Application Integration](/assets/images/app-integration.png)](/assets/images/app-integration.png)
    
 ----
-#### Step 1.2 - Login in Amazon Connect as Administrator
+#### Step 1.2 - Log into Amazon Connect as Root Administrator
 
-In the Overview tab an option to Login as Administrator will be shown.
+- In the Overview tab, click ***Log in for emergency access***.
 
 [![Login As Administrator](/assets/images/connect-login.png)](/assets/images/connect-login.png)
 
 ----
-After clicking the Login button, if you still haven't claimed a number you'll be redirected to the **Claim Phone Number** section, where you'll need to select a country, type and phone number. For onboarding purposes you can omit the first call process shown through the CCP (Contact Control Panel) but you need to claim a phone number if you want to set up Data Stream during the Claim Instance process in **Step 2**.
+- This will bring you to the **Amazon Connect Dashboard**. If you still haven't claimed a number remember to do so in the **Claim Phone Number** section, where you'll need to select a country, type and phone number. This allows to set Data Streaming later.
 
 [![Claim Phone Number](/assets/images/administrator-first-login.png)](/assets/images/administrator-first-login.png)
-
-----
-If you already claimed a phone number, then login as Administrator will redirect you to the **Amazon Connect Dashboard**.
-
-[![Amazon Connect Dashboard](/assets/images/claimed-number-login.png)](/assets/images/claimed-number-login.png)
-
 ----
 
-Lastly, after having a tab open with your Amazon Connect dashboard (logged as Administrator) and having whitelisted go.dextr.cloud, you can type your Instance Alias and click the Verify button. When the status changes to verified, you can proceed and claim the Instance.
+- After adding ***Application origin*** and being logged as ***Root Administrator*** , type your Instance Alias and click the Verify button, which will grant you the ***Verified*** status.
 
-[![Verified Status](/assets/images/verified-ownership.png)](/assets/images/verified-ownership.png)
+
+[![Verified Status](/assets/images/verifiedOwnership.jpg)](/assets/images/verifiedOwnership.jpg)
 
 ----
 
-### Step 2. Claim Instance
+### Step 2. Grant Access
 
-After clicking the Claim Instance button, a modal window will pop up prompting you to go through 6 steps.
+The second step is granting access by deploying support resources. 
 
-#### Step 2.1 - Company Name
+[![Grant Access](/assets/images/grantAccess.jpg)](/assets/images/grantAccesss.jpg)
 
-- Type the name of your company.
-
-[![Company Name](/assets/images/step1.png)](/assets/images/step1.png)
-
-----
-
-#### Step 2.2 - Landing Page
-- In this step you type the URL where users will be able to access your portal after the onboarding process is finished.
-
-[![Landing Page](/assets/images/step2.png)](/assets/images/step2.png)
-
-----
-
-#### Step 2.3 - Grant Access 
-
-- In order to grant access, we must first deploy a few resources in the AWS environment. When clicking the Deploy Resources button, you'll redirected to AWS in order to create a Stack. After the Stack is created you'll have to wait for some Events to finish deployment and for the Output tab to have both your Access and Secret keys. This might take a few minutes, but when AWS gives you both keys in the **Ouput** tab of your Stack, you can copy it then paste them into their respective field in the Onboarding modal window.
+- Click **Deploy Resources**.
+- You'll be redirected to AWS console to create a stack. Create it by scrolling down, check ***I acknowledge that AWS CloudFormation might create IAM resources with custom names*** and click ***Create stack***.
 
 {% include figure image_path="/assets/images/deploy-resources.gif" alt="Deploy Resources"%}
 
-----
+- After waiting a few moments the option to **Validate** will be unlocked. Click to proceed and get the **Deployed** status.
 
-- After pasting both keys, you can verify credentials and proceed forward to the next step.
+[![Grant Access](/assets/images/deployed.jpg)](/assets/images/deployed.jpg)
 
-[![Credentials verified](/assets/images/credentials-verified.png)](/assets/images/credentials-verified.png)
+### Step 3. Data Streaming
 
-----
+In this step you can export Contact Tracer Records (CTRs) and Agent Events to perform analysis on your data. You can do so by enabling data streaming in the **Data Streaming** tab in Amazon Connect for both CTR and Agent Events. From Amazon Connect:
 
-#### Step 2.4 - Data Stream
+- Click Data Streaming TAB.
+- Check **Enable Data Streaming**.
+- Mark **Kinesis Stream**.
+- In the dropdown choose: "dextr-yourInstanceAlias-connectStream" both for Contact Trace Records and Agent Events.
+- Click **Save**.
 
-- In this step you can export Contact Tracer Records (CTRs) and Agent Events to perform analysis on your data. You can do so by enabling data streaming in the **Data Streaming** tab in Amazon Connect, then set a Kinesis stream with your InstanceID for both CTR and Agent Events. If you'd like you could also create a new [Kinesis Stream](https://docs.aws.amazon.com/streams/latest/dev/introduction.html).
+The connection will be set automatically as soon as you start making calls and interacting with other Agents (e.g. Agent chat). 
 
-[![Kinesis Stream](/assets/images/step4.png)](/assets/images/step4.png)
-
-----
-After setting up the Data Stream in Amazon Connect, you can click the Generate Data button from the onboarding process, get the Connected status and proceed to the next step. If you don't want to set up Data Streaming, you can skip this step and proceed to Step 5.
-
-[![Connected Stream](/assets/images/connected-step4.png)](/assets/images/connected-step4.png)
-
-----
-
-#### Step 2.5 - Choosing Timezone and Directory
-
-- You can set a Timezone and Directory for your Instance. This is important as this is the time that will be displayed when creating Events through the Hours of Operation tab in the Settings Dashboard from Dextr.
-
-[![Timezone](/assets/images/step5.png)](/assets/images/step5.png)
+[![Kinesis Stream](/assets/images/dataStreaming.jpg)](/assets/images/dataStreaming.jpg)
 
 ----
 
-#### Step 2.6 - Review and Confirm
+### Step 4. Info & Preferences
 
-- You'll be shown a summary of all the data that was chosen in the Onboarding process. You can always go to a previous step to change the data. 
+In this step you're required to fill 5 obligatory fields in order to proceed to the next step. These are:
 
-[![Summary](/assets/images/step6.png)](/assets/images/step6.png)
+- Choose a product tier (if you want to select 30 day Free trial, Dextr Voice Only or Dextr OmniChannel plan).
+- Write the name of your Company.
+- Write the Login URL.
+- Choose a Timezone.
+- Choose directory (If Local or SAML).
+
+You also have the option to set Track Usage location.
+
+[![Info&Preference](/assets/images/info&preferences.jpg)](/assets/images/info&preferences.jpg)
 
 ----
-After this, you can click the **Go to Dashboard** button and you'll be redirected to your Call center as the Instance administrator.
 
-[![Instance Admin Login](/assets/images/IA-login.png)](/assets/images/IA-login.png)
+### Step 5 - Review and Confirm
+
+- You'll be shown a summary of all the data that was chosen in the Onboarding process. You can always go back to a previous step to confirm and change the data you chose in Step 4. 
+
+[![Summary](/assets/images/reviewConfirm.jpg)](/assets/images/reviewConfirm.jpg)
+
+----
+After this, you can click the **Finish** button and you'll be redirected to the dashboard. Click Login, which will redirect you to the Login URL of your company and then click **Secure Login** . 
+
+[![Secure Login](/assets/images/onboarder.jpg)](/assets/images/onboarder.jpg)
+
+And That's it! You have now logged in as the Instance Admin and can start using Dextr.
+
+[![Instance Admin Login](/assets/images/IA-login.jpg)](/assets/images/IA-login.jpg)
 
 <style>
    h4 {
