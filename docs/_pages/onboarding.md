@@ -10,7 +10,7 @@ sidebar:
 
 After your subscription to Dextr, you'll be redirected to the Onboarding portal in order to claim your instance.
 
-[![Onboarding Portal](/assets/images/newOnboarding.jpg)](/assets/images/newOnboarding.jpg)
+{% include figure image_path="/assets/images/dextrLoginOnboarding.gif" alt="Onboarding Portal"%}
 
 ----
 The Onboarding process consists of 5 steps, and the first 3 steps have an ***Explainer video*** that you can watch for guidance.
