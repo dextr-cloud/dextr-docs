@@ -11,7 +11,7 @@ sidebar:
 ### AWS Marketplace
 
 You can discover Dextr now since it is available in all regions via the AWS Marketplace. We offer
-Subscription (Pay-as-you-go) and Contract (Fixed price) products
+subscription (Pay-as-you-go) and contract (Fixed price) products.
 
 [![AWS Marketplace](/assets/images/discover.jpg)](/assets/images/discover.jpg)
 
