@@ -8,14 +8,36 @@ sidebar:
   nav: "docs"
 ---
 
-After your subscription to Dextr, you'll be redirected to the Onboarding portal in order to claim your instance.
+### AWS Marketplace
+
+You can discover Dextr now since it is available in all regions via the AWS Marketplace. We offer
+Subscription (Pay-as-you-go) and Contract (Fixed price) products
+
+[![AWS Marketplace](/assets/images/discover.jpg)](/assets/images/discover.jpg)
+
+#### Subscription
+
+From AWS Marketplace, you can start your subscription process by clicking ***Continue to Subscribe***.
+
+[![AWS Subscription](/assets/images/subscription.jpg)](/assets/images/subscription.jpg)
+
+#### Set up your account
+
+After subscribing, you will be redirected to Dextr Admin portal, where you'll set up your account. 
+
+[![Dextr Account](/assets/images/setAccount.jpg)](/assets/images/setAccount.jpg)
+
+After your subscription to Dextr and setting up your account, you'll be redirected to the Onboarding portal in order to claim your instance.
 
 {% include figure image_path="/assets/images/dextrLoginOnboarding.gif" alt="Onboarding Portal"%}
 
 ----
+
+### Onboarding
+
 The Onboarding process consists of 5 steps, and the first 3 steps have an ***Explainer video*** that you can watch for guidance.
 
-### Step 1. Verify Ownership
+#### Step 1. Verify Ownership
 
 Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.dextr.cloud to allow incoming popups.
 
@@ -52,7 +74,7 @@ You require an ***Approved origin*** in Amazon Connect. Through the Amazon Web S
 
 ----
 
-### Step 2. Grant Access
+#### Step 2. Grant Access
 
 The second step is granting access by deploying support resources. 
 
@@ -67,7 +89,7 @@ The second step is granting access by deploying support resources.
 
 [![Grant Access](/assets/images/deployed.jpg)](/assets/images/deployed.jpg)
 
-### Step 3. Data Streaming
+####  Step 3. Data Streaming
 
 In this step you can export Contact Tracer Records (CTRs) and Agent Events to perform analysis on your data. You can do so by enabling data streaming in the **Data Streaming** tab in Amazon Connect for both CTR and Agent Events. From Amazon Connect:
 
@@ -83,7 +105,7 @@ The connection will be set automatically as soon as you start making calls and i
 
 ----
 
-### Step 4. Info & Preferences
+#### Step 4. Info & Preferences
 
 In this step you're required to fill 5 obligatory fields in order to proceed to the next step. These are:
 
@@ -99,7 +121,7 @@ You also have the option to set Track Usage location.
 
 ----
 
-### Step 5 - Review and Confirm
+#### Step 5 - Review and Confirm
 
 - You'll be shown a summary of all the data that was chosen in the Onboarding process. You can always go back to a previous step to confirm and change the data you chose in Step 4. 
 

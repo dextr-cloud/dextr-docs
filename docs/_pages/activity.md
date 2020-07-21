@@ -58,7 +58,7 @@ There is also Channel (SMS, Email, Voice, Chat, Callback) and Durations (Queued 
 
 ----
 
-#### Activity Details
+### Activity Details
 
 In the right corner of the dashboard there is a zoom icon that if clicked, enhances the level of details shown per record.
 
@@ -74,9 +74,16 @@ You also have the option to keep track of the interactions with a customer throu
 
 #### Activity Notes
 
-On Activity Details you can add Notes per call by clicking the **Add Note** button.
+Per records, you're able to add notes by creating them. This is done when clicking the **Add a note** button. 
 
 [![Activity Notes](/assets/images/activity-note.jpg)](/assets/images/activity-note.jpg)
+
+#### Contact Lens
+
+You can also view transcripts, sentiment analysis and smart recording playback thanks to the  ***Contact Lens*** integration.
+
+[![Analysis](/assets/images/analysis.jpg)](/assets/images/analysis.jpg)
+
 
 <style>
    h4 {

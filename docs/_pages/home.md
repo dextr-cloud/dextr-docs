@@ -37,17 +37,20 @@ The Handset is for quick dial and you can input a phone number to make a call. A
 
 #### Announcements
 
-By clicking the Bell icon in the header, you'll open the Announcements. Here you can see all the announcements related to your queue. If you're an admin, you're able to post announcements by clicking the pencil icon in the bottom side. 
+By clicking the Bell icon in the header, you'll open the Announcements. Here you can see all the announcements related to your queue. If you're an admin, you're able to post announcements by clicking the pencil icon in the bottom side, or delete them by clicking the trash icon. 
 
 [![Announcements](/assets/images/announcements.jpg)](/assets/images/announcements.jpg)
 
-To post an announcement, you need to fill out the Title, select at least one queue and write the body message. If the Urgency level is **Info**, when announcements are posted the agents will see the following screen pop:
+To post an announcement, you need to fill out the Title, select at least one queue, write the body message and choose a delivery method:
+- Screen pop delivers the announcement with an incoming dialogue.
+- Marquee scroller displays the announcement in a new row just below Dextr header.
+- Active calls displays the announcement when you're on an active call, in ***Contact Details***. 
 
-[![Urgency-Info](/assets/images/urgency-info.jpg)](/assets/images/urgency-info.jpg)
+[![Announcements 2](/assets/images/enhanced-announcements.jpg)](/assets/images/enhanced-announcements.jpg)
 
-In contrast, if the Urgency level is **Emergency**, the icon displayed will change:
+If the Urgency level is **Info**, when announcements are posted the agents will see the the announcements surrounded by a blue colour, while **Emergency** will surround it by a red colour. Clicking an announcement, either in ***Active call*** or ***Marquee*** will open the announcement drawer in the corresponding post.
 
-[![Urgency-Emergency](/assets/images/urgency-emergency.jpg)](/assets/images/urgency-emergency.jpg)
+[![Announcements 3](/assets/images/enhanced-announcements2.jpg)](/assets/images/enhanced-announcements2.jpg)
 
 ----
 
