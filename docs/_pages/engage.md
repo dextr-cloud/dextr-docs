@@ -69,9 +69,19 @@ When creating contacts from the [Directory](/directory/), you can add them as fa
 
 ### SMS & Email
 
-**SMS** is for text message routing while **Email** is for inbound Email routing. When a contact sends an email to the Instance, an incoming modal window will show up asking you for permission to engage with the contact. If you accept then the email will be routed to your inbox (email assigned to your Dextr account), and you'll also be able to see the email conversation within Dextr Engage tab.
+**SMS** is for text message routing while **Email** is for inbound Email routing. 
 
-Important to note is that you're unable to write answers from Dextr. To answer, you must do so with your email account outside of Dextr. 
+#### Email
+
+When a customer sends an email to the Instance, an incoming modal window will show up asking for permission to engage with the contact.
+
+[![Email](/assets/images/emailDocs.jpg)](/assets/images/emailDocs.jpg)
+
+If an agent accepts the email will be routed to his inbox (email assigned to Dextr account), and the email will be displayed in Dextr Engage TAB. If an agent doesn't accept, the email will be left in Queue until an Agent accepts it.
+
+[![Email Tab](/assets/images/emailTab.jpg)](/assets/images/emailTab.jpg)
+
+To answer emails and keep a conversation, you must do so with your email account and Dextr will keep track of every response until ***End Conversation*** is clicked. This will put an end to the conversation with the customer, sending an automated final response.  
 
 ----
 ### Omni-Chat
