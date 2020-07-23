@@ -158,11 +158,31 @@ SMS enables KEYWORDS to be used to match an incoming SMS first word to select th
 
  **Email**
 
-Email works like SMS, but instead of a number you provide and set up an Email Address for the Instance. 
+Email works like SMS, but instead of a number you provide and set up an Email Address for the Instance. Both SMS and EMAIL are “sticky”, meaning that the conversation will stay with the same agent until ended.
 
-Both SMS and EMAIL are “sticky”, meaning that the conversation will stay with the same agent until ended. If that agent is unavailable, the entire conversation will be forwarded to the next available logged in agent. 
+#### Email Address & Flow
 
-[![Settings Email](/assets/images/channels-email.jpg)](/assets/images/channels-email.jpg)
+**Email Address**
+
+To add an Email Address you need to provide both the address and the password of the email, and set up IMAP/SMTP from your email host. Once done, you provide the ports and click the Save button.
+
+[![Settings Email](/assets/images/emailAddress.jpg)](/assets/images/emailAddress.jpg)
+
+**Email Flow**
+
+Email flow allows routing from the main email address to the assigned queue, which then delivers the emails to the corresponding agent address. To add an email flow you need to:
+
+- Provide the name of the flow and assign an Email Address.
+
+[![Setting Name&Address](/assets/images/emailFlow.jpg)](/assets/images/emailFlow.jpg)
+
+- Select the queues that will serve as the destination.
+
+[![Setting Destination](/assets/images/emailDestination.jpg)](/assets/images/emailDestination.jpg)
+
+- And finally, set up Initial Response (first automated message that will be emailed to the customer) and Final Response (when conversation is ended, the final message delivered to customer). 
+
+[![Settings Email](/assets/images/emailResponses.jpg)](/assets/images/emailResponses.jpg)
 
 ----
 
