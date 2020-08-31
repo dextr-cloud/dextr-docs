@@ -35,6 +35,49 @@ This is located at the top / header of the Activity dashboard:
 
 ----
 
+#### Simple search
+
+The search box will accept simple searches. When a keyword is not specified all available columns are searched with
+the given input.
+
+Ex. `sales` will return all items from both the queue Sales and items with a disposition of Sales
+
+[![Simple search](/assets/images/simple-search.jpg)](/assets/images/simple-search.jpg)
+
+----
+
+#### Composite search
+
+Alternitively, you can specify which columns are searched. This allows you to be more granular in the records
+you wish to see.
+
+Ex. `queue: sales` will return only items from the queue Sales
+
+##### Chain composite searches with the '&' operator.
+
+Ex. `queue: sales & channel: voice` will return voice items from the queue Sales.
+
+##### Searching for attributes
+
+You can search for a given attribute and its value.
+
+Ex. `attribute: spanishQueue, true` will return all contacts with the Contact Attribute `spanishQueue` equaling true.
+
+----
+
+#### Available keywords
+
+- agent
+- queue
+- disposition
+- time_queued
+- time_connected
+- channel
+- attribute
+- customer_endpoint
+- system_endpoint
+- transcript
+
 #### Filter bar
 
 Located at the left corner, it is used to filter and sort calls by: 
@@ -87,6 +130,10 @@ You can also view transcripts, sentiment analysis and smart recording playback t
 
 <style>
    h4 {
+      font-size: 20px;
+   }
+
+   h5 {
       font-size: 18px;
    }
 </style>
