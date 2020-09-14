@@ -12,13 +12,10 @@ The Engage TAB is one of Dextr main features since it's the place where you'll b
 
 ### Phone Tab
 
-When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad** (Component 1), **Recent Calls** (Component 2) and the **Favorites** (Component 3) sections.
+When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad** (Component 1), **Recent Calls** (Component 2) and the **Favorites** (Component 3) sections. You can either type or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code.
 
 [![Engage Tab](/assets/images/engage-tab.jpg)](/assets/images/engage-tab.jpg)
 
-You can type a number in the ***Quick Dial*** or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code. When on call, you also have the option to put it on hold. 
-
-{% include figure image_path="/assets/images/call-hold.gif" alt="Call on Hold"%}
 
 ----
 
@@ -32,7 +29,7 @@ You're able to do call transfers, and as of v0.9.0 Dextr can quick-connect to di
 
 A call transfer:
 
-{% include figure image_path="/assets/images/transfer-call.gif" alt="Call Transfer"%}
+![Call Transfer](/assets/images/transfer-call.gif)
 
 A conference call:
 
@@ -43,7 +40,7 @@ A conference call:
 
 If the administrator enables this option in [Settings-General](/settings/), when a call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/activity/) tab for a specific call.
 
-{% include figure image_path="/assets/images/call-disposition.gif" alt="Call Disposition"%}
+![Call Disposition](/assets/images/call-disposition.gif)]
 
 If you don't select a disposition when timer ends, then no disposition will be assigned to the call.
 
@@ -77,7 +74,7 @@ When a customer sends an email to the Instance, an incoming modal window will sh
 
 [![Email](/assets/images/emailDocs.jpg)](/assets/images/emailDocs.jpg)
 
-If an agent accepts the email will be routed to his inbox (email assigned to Dextr account), and the email will be displayed in Dextr Engage TAB. If an agent doesn't accept, the email will be left in Queue until an Agent accepts it.
+If an agent accepts, the email will be routed to his inbox (email assigned to Dextr account) and will also be displayed in Dextr Engage TAB. If an agent doesn't accept, the email will be left in queue until an available agent accepts it.
 
 [![Email Tab](/assets/images/emailTab.jpg)](/assets/images/emailTab.jpg)
 
