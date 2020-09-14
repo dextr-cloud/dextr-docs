@@ -61,7 +61,7 @@ This area is for the display of real time metrics for all queues in near real ti
 
 In the top corner of Home dashboard you can also spot 2 icons at the right side, one for entering fullscreen mode and another one to rearrange your card placement.
 
-{% include figure image_path="assets/images/cards-rearrange.gif" alt="Cards Rearrangement"%}
+![Cards Rearrangement](/assets/images/cards-rearrange.gif)
 
 ----
 
@@ -75,11 +75,11 @@ Here you'll be able to see how many contacts are currently on voice and callback
 
 #### My Recent Activity
 
-This widget lists of all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
+This widget lists all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
 
-You can also click any of the records, and choose the option to call the specified number. Below you can some retailer names instead of phone numbers because they were added as contacts in the [Directory](/directory/) TAB.
+You can also click any of the records, and choose the option to call the specified number.
 
-{% include figure image_path="assets/images/recent-activity.gif" alt="Recent Activity"%}
+![Recent Activity](/assets/images/recent-activity.gif)
 
 ----
 
