@@ -10,9 +10,17 @@ sidebar:
 
 ### The Dasbhboard
 
-The Activity dashboard is the Instance history of phone calls. The rows will display: Caller, Timestamp, Duration of the call, Direction (if Inbound, Outbound, Callback or Missed), Queue, Disposition if enabled, Username, and lastly an option to download or play the recordings.
+The Activity dashboard is the Instance history of phone calls. The rows will display: 
+- Contact 
+- Date/Time
+- Duration (Connected and Queued)
+- Direction (Inbound, Outbound, Callback or Missed)
+- Queue
+- Type (Voice/Announcement)
+- Disposition (if enabled in settings) 
+- Agent
 
-The Activity dashboard also features filters and Activity details.
+The Activity dashboard also features filters and details upon click.
 
 [![Activity Dashboard](/assets/images/activity-dashboard.jpg)](/assets/images/activity-dashboard.jpg)
 
@@ -26,12 +34,6 @@ This is located at the top / header of the Activity dashboard:
 - **Keyword** filter (Component 2) searches for any matchup you input in the field.
 
 [![Date&Keyword Filter](/assets/images/date-keyword-filter.jpg)](/assets/images/date-keyword-filter.jpg)
-
-----
-
-- **Number of calls** filter will determine the number of calls that will first load in the Activity tab. By default this is initially set to 50. If you scroll down to the bottom a "See more" button will display, if clicked it will load more calls. 
-
-{% include figure image_path="/assets/images/load-more.gif" alt="Call numbers filter"%}
 
 ----
 
@@ -80,30 +82,21 @@ Ex. `attribute: spanishQueue, true` will return all contacts with the Contact At
 
 #### Filter bar
 
-Located at the left corner, it is used to filter and sort calls by: 
+Located at the left corner, it's used to filter and sort calls by: 
 
+- Type.
 - Queues. 
 - Users. 
-- Direction. 
-- Disposition (if enabled). 
-- Channel.
-- Duration.
-
-If you click the label in one of the records corresponding to either Direction, Queue, Disposition or Username you can activate the filter functionality.
+- Dispositions. 
+- Initiation method. 
 
 [![Filter bar](/assets/images/filter-bar.jpg)](/assets/images/filter-bar.jpg)
 
 ----
 
-There is also Channel (SMS, Email, Voice, Chat, Callback) and Durations (Queued or Connected) filters.
-
-[![Filter bar duration](/assets/images/activity-durations-filter.jpg)](/assets/images/activity-durations-filter.jpg)
-
-----
-
 ### Activity Details
 
-In the right corner of the dashboard there is a zoom icon that if clicked, enhances the level of details shown per record.
+This is activated upon clicking a record, and enhances the level of details.
 
 [![Activity Details 1](/assets/images/activity-details-1.jpg)](/assets/images/activity-details-1.jpg)
 
