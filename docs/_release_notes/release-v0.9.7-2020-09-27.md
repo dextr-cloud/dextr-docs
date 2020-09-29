@@ -23,7 +23,7 @@ There are a number of updates in this version that we hope you like, and some of
 
 ### BYOChannel
 
-Using Dextr Flex’s new Webhook Channel, route any business event to the next available agent using a RESTful API. Include any meta data that is helpful in handling the contact. Use Historical and real-time reporting to stay on top of the metrics
+Using Dextr Flex’s new Webhook Channel, route any business event to the next available agent using a RESTful API. Include any meta data that is helpful in handling the contact. Use Historical and real-time reporting to stay on top of the metrics.
 
 ----
 
@@ -49,20 +49,28 @@ a look at per-agent/queue MOS scores in real-time or via historical reporting.
 
 Want to find records with specific words in your omni-channel transcripts? How about calls with a MOS score less than 3? Do this and more with a powerful and easy to use query language.
 
+[![MOS Query](/assets/images/mos-query.jpg)](/assets/images/mos-query.jpg)
+
 ### Customize columns for all tables
 
 For all datasets/tables in Dextr Flex, choose the columns you care about. Set their width and order. Do this once
 and dextr will remember your preferences.
+
+[![Table Customizing](/assets/images/customize-table.jpg)](/assets/images/customize-table.jpg)
 
 ### Dark mode
 
 Did you know the advantages of Dark Mode include things such as improved visual ergonomics by reducing eye strain and providing
 comfort of use at night or in dark environments? 
 
+[![Dark mode](/assets/images/dark-mode.jpg)](/assets/images/dark-mode.jpg)
+
 ### Enhanced supervisor powers
 
 - Edit global contacts no matter who created them.
+[![Edit Global Supervisor](/assets/images/edit-global-supervisor.jpg)](/assets/images/edit-global-supervisor.jpg)
 - Lower agents “raised hands” after assisting them.
+[![Lower Hand](/assets/images/lower-hand.jpg)](/assets/images/lower-hand.jpg)
 
 ### Reject voice calls
 
@@ -71,6 +79,8 @@ Users can now reject a voice call. Any rejected calls will be counted as MISSED 
 ### Make announcements reportable 
 
 Find announcements and their metadata in real-time and/or historically
+
+[![Announcement Activity](/assets/images/announcement-activity.jpg)](/assets/images/announcement-activity.jpg)
 
 ### Dramatic perfomance improvements
 
