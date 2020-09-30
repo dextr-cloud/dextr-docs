@@ -21,6 +21,8 @@ docs:
         url: /engage/
       - title: "Activity"
         url: /activity/
+      - title: "Historical Reports"
+        url: /historicalReports/
       - title: "Directory"
         url: /directory/
       - title: "Users"
