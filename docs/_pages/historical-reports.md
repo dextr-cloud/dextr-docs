@@ -36,36 +36,24 @@ You can also look at the amount of contacts attended with Contacts by Interval (
 
 [![Contacts By Interval](/assets/images/contacts-by-interval.jpg)](/assets/images/contacts-by-interval.jpg)
 
-#### DNIS
+#### DNIS, Queue Detail, Agent Detail
 
-This is a customizable table (you can customize it by clicking the `Configure Table` button) containing metrics filtered by DNIS.
+These are customizable tables. You can customize them by clicking the `Configure Table` button to hide or change the order of the metadata. Depending of the tab, the metadata will be filtered by either DNIS, Queue or Agents activity.
 
 [![DNIS Customize](/assets/images/dnis-customize.jpg)](/assets/images/dnis-customize.jpg)
 
-The table contains details about: `Contacts Handled`, `Missed`, `Avg. Talk Time`, `Talk Time`, `Avg. ACW`, `Holds`, `Holds Duration` and `Longest Hold`. 
+The metrics found inside of these tables are: `Contacts Handled`, `Missed`, `Avg. Talk Time`, `Talk Time`, `Avg. ACW`, `Holds`, `Holds Duration`, `Longest Hold` and `Abandoned`. 
 
 [![DNIS Details](/assets/images/dnis-detail.jpg)](/assets/images/dnis-detail.jpg)
 
-#### Queue Detail
+#### Actions
 
-Also a customizable table that contains metrics filtered by Queue and Agent. The table contains details about: `Contacts Handled`, `Missed`, `Avg. Talk Time`, `Talk Time`, `Avg. ACW`, `Holds`, `Holds Duration`, `Longest Hold` and `Abandoned`.
-
-[![Queue Details](/assets/images/queue-detail.jpg)](/assets/images/queue-detail.jpg)
-
-#### Agent Detail
-
-The last of the customizable tables. This table contains metrics filtered by Agent and contains details about: `Contacts Handled`, `Missed`, `Avg. Talk Time`, `Talk Time`, `Avg. ACW`, `Holds`, `Holds Duration` and `Longest Hold`.
-
-[![Agent Details](/assets/images/agent-detail.jpg)](/assets/images/agent-detail.jpg)
-
-#### Action
-
-By clicking the Action button, you're able to:
+By clicking the Actions button, you're able to:
 - **Export** the report a PDF. Please take note that all modifications done to the table will be reflected in the PDF file.
 
 [![Export Report](/assets/images/export-report.jpg)](/assets/images/export-report.jpg)
 
-- **Schedule** the release of reports (by day, week, month). You can also set up a Delivery by Email.
+- **Schedule** the release of reports (by day, week, month). You can also set up the delivery of these by sending them to an Email.
 
 [![Schedule Report](/assets/images/schedule-report.jpg)](/assets/images/schedule-report.jpg)
 

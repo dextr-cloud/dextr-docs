@@ -27,6 +27,10 @@ You can change your Avatar, First Name, Last Name and Email by editing the field
 
 [![Phone and User](/assets/images/phone-user-info.png)](/assets/images/phone-user-info.png)
 
+There is also the option to enable **Dark mode**. This will change Dextr default theme into a dark one for your eyes comfort.
+
+[![Dark mode](/assets/images/dark-mode-settings.jpg)](/assets/images/dark-mode-settings.jpg)
+
 ----
 
 #### Sounds
@@ -77,10 +81,6 @@ There is also Call Dispositions. By default this is disabled, but by enabling it
 [![Settings Sounds](/assets/images/general-configuration.jpg)](/assets/images/general-configuration.jpg)
 
 ----
-
-You can turn **Demo Mode** on to simulate a real work environment. This will preview some of Dextr dashboard features and metrics with prepopulated data in the Home Dashboard. You can also turn this on and off with Ctrl+Alt+D, and to test incoming call you do so with Ctrl+Alt+I.
-
-[![Demo mode](/assets/images/demo-mode.jpg)](/assets/images/demo-mode.jpg)
 
 ### Integrations
 
@@ -188,10 +188,6 @@ Email flow allows routing from the main email address to the assigned queue, whi
 
 <style>
     h4 {
-       font-size: 18px;
-    }
-
-    strong {
        font-size: 18px;
     }
 </style>

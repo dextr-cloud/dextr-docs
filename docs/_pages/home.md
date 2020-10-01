@@ -117,7 +117,7 @@ A queue metric that displays how long the contacts have been waiting on the queu
 
 #### Agent Perfomance
 
-As of version 0.9.2, Agent Availability is expanded to include all agents in the Instance and their metrics through the day.
+Agent Availability is expanded to include all agents in the Instance and their metrics through the day.
 
 <figure>
    <a href="/assets/images/agent perfomance.jpg">
@@ -135,9 +135,13 @@ You can expand the size of the card and have a better look at all metrics:
 - **Holds** corresponds to the amount of holds an agent has had through the day.
 - **Hold duration** and **Longest Hold**, stand for the average time the agent has been on Hold, and the max time the agent has been on hold respectively.
 
-You're also able to filter Agents per status (clicking any status below the chart), or sort them by increasing/descending order.
+You can filter Agents per status (clicking any status below the chart), or sort them by increasing/descending order.
 
 [![Agent Perfomance Filters](/assets/images/expanded perfomance.jpg)](/assets/images/expanded perfomance.jpg)
+
+You're also able to customize the table to suit your needs by hiding and changing the order of the columns.
+
+[![Customize Agent Perfomance](/assets/images/customize-agent-perfomance.jpg)](/assets/images/customize-agent-perfomance.jpg)
 
 ----
 

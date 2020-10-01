@@ -18,7 +18,7 @@ This TAB will only appear when you have an **Administrator security profile**. Y
 
 By clicking the **+Users** button you will start the user creation process. 
 
-{% include figure image_path="/assets/images/create-user.gif" alt="Create User"%}
+[![Users Creation](/assets/images/users-creation.jpg)](/assets/images/users-creation.jpg)
 
 ----
 
@@ -60,7 +60,7 @@ The Summary with all the data will show up as the next step. When clicking the *
 
 By clicking the pencil icon in the **Action** column, you can edit all the agent fields with the exception of **Phone type** (this is changed in [Settings](/settings/)). Once finished, you can click the check button to save your changes, or you can also press the "x" button to undo them.
 
-{% include figure image_path="/assets/images/editing-users.gif" alt="Editing User"%}
+[![Users Creation](/assets/images/users-edit.jpg)](/assets/images/users-edit.jpg)
 
 ----
 

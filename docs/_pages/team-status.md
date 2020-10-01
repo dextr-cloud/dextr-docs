@@ -24,7 +24,7 @@ By clicking this option you add agents as Favorites. This will put them on the t
 
 #### Call (Peer to Peer call)
 
-By clicking this option you're able to call agents who are online (either Available or in a custom status provided by the Instance Admin). Please do take into account that **you're unable to call agents who have the Offline** status, and that these calls are recorded in ***My Perfomance Card*** in the Peer to Peer call section.
+You're able to call agents who are online (either Available or in a custom status provided by the Instance Admin). Please do take into account that **you're unable to call agents who have the Offline** status, and that these calls are recorded in ***My Perfomance Card*** in the Peer to Peer call section.
 
 [![Agent Call](/assets/images/agent-call.jpg)](/assets/images/agent-call.jpg)
 
@@ -32,11 +32,17 @@ By clicking this option you're able to call agents who are online (either Availa
 
 #### Chat (Agent to Agent Chat)
 
-By clicking this option you trigger the Chat UI. Here you will be able to communicate with other agents by sending, receiving and reading messages.
+This option redirects you to the Chat UI. Here you will be able to communicate with other agents by sending, receiving and reading messages.
 
 [![Agent Chat](/assets/images/agent-chat.jpg)](/assets/images/agent-chat.jpg)
 
 ----
+
+#### Change Agent Status
+
+As a supervisor, you're also able to change an agent status if you spot that they have been in a released or offline state for too long.
+
+[![Change Agent Status](/assets/images/change-status2.jpg)](/assets/images/change-status2.jpg)
 
 #### Silent Monitor and Whisper Coach
 

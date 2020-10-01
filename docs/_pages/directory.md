@@ -24,11 +24,22 @@ When a contact is created you can click him from your Directory, which  will ope
 
 ----
 
+#### Global contacts
+
+By clicking the global checkbox when creating a contact, you create global entries/contacts that all agents in the Instance can see from their directory.
+
+[![Global entries](/assets/images/global-entries.jpg)](/assets/images/global-entries.jpg)
+
 #### Edit and Deletion of contacts
 
-By clicking the **Edit** option you can add more information, change it, or delete one of the fields. To **delete a contact**, you click the trashcan icon and confirm.
+- By clicking the **Edit** option you can add more information, change it, or delete one of the fields.
+- To **delete a contact**, you click the trashcan icon and confirm.
 
 [![Edit & Delete](/assets/images/edit-contact.jpg)](/assets/images/edit-contact.jpg)
+
+- If you're a Supervisor, you can also **edit or delete** global contacts no matter who created them. Removing the **Global status** will also return the previously global contact to the creator Personal list.
+
+[![Edit Global Supervisor](/assets/images/edit-global-supervisor.jpg)](/assets/images/edit-global-supervisor.jpg)
 
 ----
 
@@ -38,11 +49,7 @@ This option will mark the contact from your Personal list as Favorite, enabling 
 
 [![Favorites](/assets/images/favorites-directory.jpg)](/assets/images/favorites-directory.jpg)
 
-#### Global contacts
 
-By clicking the global checkbox when creating a contact, you create global entries/contacts that all agents present in the Instance can see from their directory.
-
-[![Global entries](/assets/images/global-entries.jpg)](/assets/images/global-entries.jpg)
 
 <style>
    h4 {
