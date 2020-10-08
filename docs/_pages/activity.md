@@ -35,29 +35,68 @@ This is located at the top / header of the Activity dashboard:
 
 [![Date&Keyword Filter](/assets/images/date-keyword-filter.jpg)](/assets/images/date-keyword-filter.jpg)
 
+#### Filter bar
+
+Located at the left corner, it's used to filter and sort calls by: 
+
+- Type.
+- Queues. 
+- Users. 
+- Dispositions. 
+- Initiation method. 
+
+[![Filter bar](/assets/images/filter-bar.jpg)](/assets/images/filter-bar.jpg)
+
+#### Configure Activity Table Columns
+
+At the right side of the header you have a gear icon which allows you to configure the order of the columns by drag, or hide/display columns of your interest.
+
+[![Configure activity](/assets/images/configure-activity.jpg)](/assets/images/configure-activity.jpg)
+
+
+#### Export Activity
+
+Located at the left corner, you can click the `Export` button to export current results (this includes filters applied), or all results since the instance started.
+
+[![Export activity](/assets/images/export-activity.jpg)](/assets/images/export-activity.jpg)
+
+ Once created, the activity results will be displayed in the reports page.
+ 
+[![Export activity 2](/assets/images/export-activity2.jpg)](/assets/images/export-activity2.jpg)
+
 ----
+
+### Search
+
+The search box will accept simple searches using `Date Range`, or composite searches where you can specifiy a given value for Keywords.
 
 #### Simple search
 
-The search box will accept simple searches. When a keyword is not specified all available columns are searched with
-the given input.
-
-Ex. `sales` will return all items from both the queue Sales and items with a disposition of Sales
+When a keyword is not specified all available columns are searched with the given input in the Date Range.
 
 [![Simple search](/assets/images/simple-search.jpg)](/assets/images/simple-search.jpg)
+
+When using Keywords, all items that contain the keyword are searched. For example, `sales` will return all items from both the queue Sales and items with a disposition of Sales.
+
+[![Keyword search](/assets/images/keyword-search.jpg)](/assets/images/keyword-search.jpg)
 
 ----
 
 #### Composite search
 
-Alternitively, you can specify which columns are searched. This allows you to be more granular in the records
-you wish to see.
+Alternitively, you can specify which columns are searched. This allows you to be more granular in the records you wish to see.
 
-Ex. `queue: sales` will return only items from the queue Sales
+Ex. `queue: sales` will return only items from the queue Sales.
+
+[![Composite search](/assets/images/composite-search.jpg)](/assets/images/composite-search.jpg)
 
 ##### Chain composite searches with the '&' operator.
 
-Ex. `queue: sales & channel: voice` will return voice items from the queue Sales.
+You can use the `&` operator to link two keywords and their values in the search.
+
+Ex. `queue: basic & channel: voice` will return voice items from the queue BasicQueue.
+
+[![& Operator](/assets/images/and-operator.jpg)](/assets/images/and-operator.jpg)
 
 ##### Searching for attributes
 
@@ -68,6 +107,8 @@ Ex. `attribute: spanishQueue, true` will return all contacts with the Contact At
 ----
 
 #### Available keywords
+
+Here is a list of all available keywords for composite and simple searches:
 
 - agent
 - queue
@@ -80,17 +121,11 @@ Ex. `attribute: spanishQueue, true` will return all contacts with the Contact At
 - system_endpoint
 - transcript
 
-#### Filter bar
+#### Common Searches
 
-Located at the left corner, it's used to filter and sort calls by: 
+There is also a common searches dropdown that will automatically populate the keyword input field with the most common of the composites searches.
 
-- Type.
-- Queues. 
-- Users. 
-- Dispositions. 
-- Initiation method. 
-
-[![Filter bar](/assets/images/filter-bar.jpg)](/assets/images/filter-bar.jpg)
+[![Common Searches](/assets/images/common-search.jpg)](/assets/images/common-search.jpg)
 
 ----
 
