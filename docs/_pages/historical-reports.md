@@ -16,9 +16,13 @@ At the top right corner of the dashboard you can click the `Create Report` butto
 
 [![Create Report](/assets/images/create-report.jpg)](/assets/images/create-report.jpg)
 
-Fill out the `Name`, `Date Range` input fields, and customize them by `Queues` and `Channels`.
+Fill out the `Name`, `Report Period` input fields, and click on the `Run report now` button. You can also filter reports by `Queues` or `Channels`.
 
-[![Create Report 2](/assets/images/create-report2.jpg)](/assets/images/create-report2.jpg)
+### Schedule Report
+
+You can also **Schedule** the release of reports (by day, week, month) and set up the delivery of these by sending a notification to an Email.
+
+[![Schedule Report](/assets/images/schedule-report.jpg)](/assets/images/schedule-report.jpg)
 
 ### Report Dashboard
 
@@ -52,10 +56,6 @@ By clicking the Actions button, you're able to:
 - **Export** the report a PDF. Please take note that all modifications done to the table will be reflected in the PDF file.
 
 [![Export Report](/assets/images/export-report.jpg)](/assets/images/export-report.jpg)
-
-- **Schedule** the release of reports (by day, week, month). You can also set up the delivery of these by sending them to an Email.
-
-[![Schedule Report](/assets/images/schedule-report.jpg)](/assets/images/schedule-report.jpg)
 
 <style>
    h4 {
