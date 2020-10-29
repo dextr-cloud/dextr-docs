@@ -182,7 +182,31 @@ Email flow allows routing from the main email address to the assigned queue, whi
 
 - And finally, set up Initial Response (first automated message that will be emailed to the customer) and Final Response (when conversation is ended, the final message delivered to customer). 
 
-[![Settings Email](/assets/images/emailResponses.jpg)](/assets/images/emailResponses.jpg)
+[![Settings Email Responses](/assets/images/emailResponses.jpg)](/assets/images/emailResponses.jpg)
+
+#### Webhooks Channels & Flow
+
+**Webhook**
+
+To create a Webhook, you need to provide the `Name` of the trigger, `Type`, `Provider` and also add the Provider credentials.
+
+[![Settings Webhook](/assets/images/create-webhook.jpg)](/assets/images/create-webhook.jpg)
+
+**Webhook Flow**
+
+Webhook flow allows you to assign a webhook trigger and set a default queue for receiving and sending SMS. You need to:
+
+- Provide the name of the flow and add the Webhook trigger.
+
+[![Setting Name&Trigger](/assets/images/assign-webhook-trigger.jpg)](/assets/images/assign-webhook-triggers.jpg)
+
+- Select the queues that will serve as the destination and optionally set up keyword mapping for other queues.
+
+[![Setting Destination](/assets/images/webhook-keyword-queue.jpg)](/assets/images/webhook-keyword-queue.jpg)
+
+- Set up Initial Response (first automated message that will be emailed to the customer) and Final Response (when conversation is ended, the final message delivered to customer). 
+
+[![Settings Webhook Responses](/assets/images/webhook-responses.jpg)](/assets/images/webhook-responses.jpg)
 
 ----
 
