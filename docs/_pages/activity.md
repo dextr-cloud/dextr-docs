@@ -56,7 +56,7 @@ At the right side of the header you have a gear icon which allows you to configu
 
 #### Export Activity
 
-Located at the left corner, you can click the `Export` button to export current results (this includes filters applied), or all results since the instance started.
+Located at the right corner, you can click the `Export` button to export current results (this includes filters applied) shown in the table.
 
 [![Export activity](/assets/images/export-activity.jpg)](/assets/images/export-activity.jpg)
 
