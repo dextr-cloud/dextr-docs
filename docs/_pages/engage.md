@@ -64,15 +64,13 @@ When creating contacts from the [Directory](/directory/), you can add them as fa
 
 ----
 
-### SMS & Email
-
-**SMS** is for text message routing while **Email** is for inbound Email routing. 
+### Email, SMS, Omni-Chat
 
 #### Email
 
-When a customer sends an email to the Instance, an incoming modal window will show up asking for permission to engage with the contact.
+This is for inbound Email routing. When a customer sends an email to the Instance, an incoming modal window will show up asking for permission to engage with the contact.
 
-[![Email](/assets/images/emailDocs.jpg)](/assets/images/emailDocs.jpg)
+[![Email Modal](/assets/images/emailDocs.jpg)](/assets/images/emailDocs.jpg)
 
 If an agent accepts, the email will be routed to his inbox (email assigned to Dextr account) and will also be displayed in Dextr Engage TAB. If an agent doesn't accept, the email will be left in queue until an available agent accepts it.
 
@@ -80,10 +78,22 @@ If an agent accepts, the email will be routed to his inbox (email assigned to De
 
 To answer emails and keep a conversation, you must do so with your email account and Dextr will keep track of every response until ***End Conversation*** is clicked. This will put an end to the conversation with the customer, sending an automated final response.  
 
-----
-### Omni-Chat
+#### SMS 
 
-Like Email and SMS, your administrator builds a flow and use it across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) you use for voice engagements since Customers will be put in a Queue and attended by the next available agent.
+This is for text message routing. Like with Email, an incoming modal will show up asking you to either accept or decline.
+
+[![SMS Modal](/assets/images/sms-modal.jpg)](/assets/images/sms-modal.jpg)
+
+After accepting, you're able to directly interact with the customer through the chat interface, and all messages from the customer will be routed to the agent until the conversation is ended. At this point the chat will be cleared, and contact must be established again either through the same agent or another one from the same queue.
+
+[![SMS UI](/assets/images/sms-ui.jpg)](/assets/images/sms-ui.jpg)
+
+#### Omni-Chat
+
+Like Email and SMS, an administrator builds a flow and uses it across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) you use for voice engagements since Customers will be put in a Queue and attended by the next available agent.
+
+[![Chat Modal](/assets/images/chat-modal.jpg)](/assets/images/chat-modal.jpg)
+[![Chat UI](/assets/images/chat-ui.jpg)](/assets/images/chat-ui.jpg)
 
 <style>
    h4 {

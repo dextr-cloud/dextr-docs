@@ -204,7 +204,7 @@ Webhook flow allows you to assign a webhook trigger and set a default queue for 
 
 [![Setting Destination](/assets/images/webhook-keyword-queue.jpg)](/assets/images/webhook-keyword-queue.jpg)
 
-- Set up Initial Response (first automated message that will be emailed to the customer) and Final Response (when conversation is ended, the final message delivered to customer). 
+- Set up Initial Response (first automated message sent to the customer) and Final Response (when conversation is ended, the final message sent to customer). 
 
 [![Settings Webhook Responses](/assets/images/webhook-responses.jpg)](/assets/images/webhook-responses.jpg)
 
