@@ -55,22 +55,21 @@ You require an ***Approved origin*** in Amazon Connect. Through the Amazon Web S
 [![Application Integration](/assets/images/app-integration.png)](/assets/images/app-integration.png)
    
 ----
-#### Step 1.2 - Log into Amazon Connect as Root Administrator
+#### Step 1.2 - Login into Amazon Connect as Root Administrator
 
 - In the Overview tab, click ***Log in for emergency access***.
 
 [![Login As Administrator](/assets/images/connect-login.png)](/assets/images/connect-login.png)
 
 ----
-- This will bring you to the **Amazon Connect Dashboard**. If you still haven't claimed a number remember to do so in the **Claim Phone Number** section, where you'll need to select a country, type and phone number. This allows to set Data Streaming later.
+- This will bring you to the **Amazon Connect Dashboard**. If you still haven't claimed a number remember to do so in the **Claim Phone Number** section, where you'll need to select a country, type and phone number. This allows you to set Data Streaming later.
 
 [![Claim Phone Number](/assets/images/administrator-first-login.png)](/assets/images/administrator-first-login.png)
 ----
 
-- After adding ***Application origin*** and being logged as ***Root Administrator*** , type your Instance Alias and click the Verify button, which will grant you the ***Verified*** status.
+- After adding ***Application origin*** and being logged as ***Root Administrator*** , type the Login URL of your connect instance and click the Verify button, granting you the ***Verified*** status which allows you to proceed to the next step.
 
-
-[![Verified Status](/assets/images/verifiedOwnership.jpg)](/assets/images/verifiedOwnership.jpg)
+[![Login URL](/assets/images/amazonConnectLoginUrl.jpg)](/assets/images/amazonConnectLoginUrl.jpg)
 
 ----
 
