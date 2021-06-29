@@ -12,7 +12,7 @@ sidebar:
 
 After you enter the Dextr dashboard you can see at the top of the screen the header (Component 1), the Team Status Drawer (Component 2) in the right corner, and in the left corner a Side Navigation bar (Component 3).
 
-[![First Look](/assets/images/first-look.jpg)](/assets/images/first-look.jpg)
+[![First Look](/assets/images/Home/first-look.jpg)](/assets/images/Home/first-look.jpg)
 
 ----
 
@@ -26,31 +26,31 @@ Every Dextr Instance has 2 status for you to select after being onboarded: **Ava
 
 Your Dextr Administrator may also enable other status for you to select and to be seen by your teammates.
 
-[![Agent Sttus](/assets/images/agent-status.jpg)](/assets/images/agent-status.jpg)
+[![Agent Sttus](/assets/images/Home/agent-status.jpg)](/assets/images/Home/agent-status.jpg)
 
 #### Quick Dial
 
 
 The Handset is for quick dial and you can input a phone number to make a call. After a call is made, the quick dial will record the recent calls made by you and you'll have a dropdown with the phone numbers in it. Remember to choose the proper flag for calling.
 
-[![Quick dial](/assets/images/quick-dial.jpg)](/assets/images/quick-dial.jpg)
+[![Quick dial](/assets/images/Home/quick-dial.jpg)](/assets/images/Home/quick-dial.jpg)
 
 #### Announcements
 
 By clicking the Bell icon in the header, you'll open the Announcements. Here you can see all the announcements related to your queue. If you're an admin, you're able to post announcements by clicking the pencil icon in the bottom side, or delete them by clicking the trash icon. 
 
-[![Announcements](/assets/images/announcements.jpg)](/assets/images/announcements.jpg)
+[![Announcements](/assets/images/Home/announcements.jpg)](/assets/images/Home/announcements.jpg)
 
 To post an announcement, you need to fill out the Title, select at least one queue, write the body message and choose a delivery method:
 - Screen pop delivers the announcement with an incoming dialogue.
 - Marquee scroller displays the announcement in a new row just below Dextr header.
 - Active calls displays the announcement when you're on an active call, in ***Contact Details***. 
 
-[![Announcements 2](/assets/images/enhanced-announcements.jpg)](/assets/images/enhanced-announcements.jpg)
+[![Announcements 2](/assets/images/Home/enhanced-announcements.jpg)](/assets/images/Home/enhanced-announcements.jpg)
 
-If the Urgency level is **Info**, when announcements are posted the agents will see the the announcements surrounded by a blue colour, while **Emergency** will surround it by a red colour. Clicking an announcement, either in ***Active call*** or ***Marquee*** will open the announcement drawer in the corresponding post.
+If the Urgency level is **Info**, when announcements are posted the agents will see the the announcements highlighted in blue, while **Emergency** will highlight it in red. Clicking an announcement, either in ***Active call*** or ***Marquee*** will open the announcement drawer in the corresponding post.
 
-[![Announcements 3](/assets/images/enhanced-announcements2.jpg)](/assets/images/enhanced-announcements2.jpg)
+[![Announcements 3](/assets/images/Home/enhanced-announcements2.jpg)](/assets/images/Home/enhanced-announcements2.jpg)
 
 ----
 
