@@ -61,57 +61,23 @@ This area is for the display of real time metrics for all queues in near real ti
 
 In the top corner of Home dashboard you can also spot 2 icons at the right side, one for entering fullscreen mode and another one to rearrange your card placement.
 
-![Cards Rearrangement](/assets/images/cards-rearrange.gif)
+[![Queue dropdown](/assets/images/Home/queue-dropdown.jpg)](/assets/images/Home/queue-dropdown.jpg)
 
 ----
 
 #### Contacts in Queue
 
-Here you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the numbers shown. 
+Here you'll be able to see how many contacts are currently on voice and callback. You're also provided with a live look that displays the phone numbers and queues. 
 
-![Contacts in Queue](/assets/images/contact-queue.jpg)
-
-----
-
-#### My Recent Activity
-
-This widget lists all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
-
-You can also click any of the records, and choose the option to call the specified number.
-
-![Recent Activity](/assets/images/recent-activity.gif)
+[![Contacts in Queue](/assets/images/Home/contacts-in-queue.jpg)](/assets/images/Home/contacts-in-queue.jpg)
 
 ----
 
 #### Contacts
 
-This is a Queue widget. You'll be able to see how many calls have been handled, abandoned or transferred by all team members either globally between all Queues, or in your Queue.
+This is a Queue widget. You'll be able to see how many calls have been handled, abandoned or transferred by all team members either globally between all Queues, or in your Queue. It also displays: Avg. Handling Time (average handling time that agents have spent on contacts), Avg. Wait Time (average contact wait time in queue), Avg. Hold Time and Avg. Wrap Time.
 
-![Contacts](/assets/images/contacts.jpg)
-
-----
-
-#### My Perfomance
-
-This shows your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
-
-![My Perfomance](/assets/images/my-perfomance.jpg)
-
-----
-
-#### Handling Time
-
-Also a queue  metric, it displays the average handling time that agents have spent on contacts, including hold time and after contact work.
-
-![Handling Time](/assets/images/handling-time.jpg)
-
-----
-
-#### Wait Time
-
-A queue metric that displays how long the contacts have been waiting on the queue. It shows the average time between all the contacts, and the longest time a contact spent waiting.
-
-![Wait Time](/assets/images/wait-time.jpg)
+[![Contacts](/assets/images/Home/contacts.jpg)](/assets/images/Home/contacts.jpg)
 
 ----
 
@@ -119,14 +85,8 @@ A queue metric that displays how long the contacts have been waiting on the queu
 
 Agent Availability is expanded to include all agents in the Instance and their metrics through the day.
 
-<figure>
-   <a href="/assets/images/agent perfomance.jpg">
-   <img src="{{ '/assets/images/agent perfomance.jpg' }}" alt="Agent Perfomance" style="height: 450px; width: 400px">
-   </a>
-</figure>
+[![Agent perfomance](/assets/images/Home/agent-perfomance.jpg)](/assets/images/Home/agent-perfomance.jpg)
 ----
-
-You can expand the size of the card and have a better look at all metrics:
 
 - **Handled In, Handled Out, and Handled Callbacks** corresponds to the number of Inbound, Outbound and Callbacks handled respectively
 - **AHT** is the average time the agent has been engaged in a call.
@@ -135,13 +95,9 @@ You can expand the size of the card and have a better look at all metrics:
 - **Holds** corresponds to the amount of holds an agent has had through the day.
 - **Hold duration** and **Longest Hold**, stand for the average time the agent has been on Hold, and the max time the agent has been on hold respectively.
 
-You can filter Agents per status (clicking any status below the chart), or sort them by increasing/descending order.
+You can filter Agents per status (clicking any status below the chart), or sort them by increasing/descending order, and also customize the table by hiding and changing the order of the columns.
 
-[![Agent Perfomance Filters](/assets/images/expanded perfomance.jpg)](/assets/images/expanded perfomance.jpg)
-
-You're also able to customize the table to suit your needs by hiding and changing the order of the columns.
-
-[![Customize Agent Perfomance](/assets/images/customize-agent-perfomance.jpg)](/assets/images/customize-agent-perfomance.jpg)
+[![Customize Agent Perfomance](/assets/images/Home/customize-agent-perfomance.jpg)](/assets/images/Home/customize-agent-perfomance.jpg)
 
 ----
 

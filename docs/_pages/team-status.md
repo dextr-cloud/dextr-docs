@@ -78,6 +78,18 @@ At the very bottom of the Status Drawer, you also have a **Search** input to hel
 
 [![Team Status Search](/assets/images/ts-search.jpg)](/assets/images/ts-search.jpg)
 
+### My Recent Activity
+
+This widget lists all your activity through the day as records. You'll see Inbound, Outbound and even your Missed calls. Everytime you make a call or receive one, the list will update.
+
+You can also click any of the records, and choose the option to call the specified number.
+
+### My Perfomance
+
+This shows your perfomance. It displays the amount of ACD (Automatic Call Distributor) and Peer to Peer (Agent to Agent) calls you've had during the day. How many you've handled, missed, and the amount of time.
+
+![My Perfomance](/assets/images/my-perfomance.jpg)
+
 ----
 
 <style>
