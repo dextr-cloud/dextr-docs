@@ -64,6 +64,25 @@ In the top corner of Home dashboard you can also spot 2 icons at the right side,
 [![Queue dropdown](/assets/images/Home/queue-dropdown.jpg)](/assets/images/Home/queue-dropdown.jpg)
 
 ----
+#### At-a-glance
+
+Displays the first list of metrics, which depends of the selected queue:
+
+- **Occupancy**: percentage of time that agents were active on contacts.
+- **Abandoned**: percentage of the contacts disconnected by the customer while in the queue.
+- **Service LVL (90s)**: percentage of contacts that were removed from the queue between 0 and 90s after being added to it. Contacts are removed from the queue when: an agent answers, the customer abandons the contact, or customer requests a callback.
+- **Avg. Abandon Time**: average time that contacts waited in the queue before being abandoned.
+
+[![At a glance](/assets/images/Home/at-a-glance.jpg)](/assets/images/Home/at-a-glance.jpg)
+
+----
+
+#### Agent availability
+
+Displays a chart that updates with the number of online agents and their status: Available, Busy, ACW (After contact work) and Released.
+
+[![Agent Availability](/assets/images/Home/agent-availability.jpg)](/assets/images/Home/agent-availability.jpg)
+
 
 #### Contacts in Queue
 
@@ -80,6 +99,12 @@ This is a Queue widget. You'll be able to see how many calls have been handled, 
 [![Contacts](/assets/images/Home/contacts.jpg)](/assets/images/Home/contacts.jpg)
 
 ----
+
+#### Contacts - Time Series Chart
+
+This is a chart that updates in real time with each call handled by the agents. It shows the number of Abandoned, Inbound and Outbound calls through the day.
+
+[![TimeSeriesChart](/assets/images/Home/contactsTsc.jpg)](/assets/images/Home/contactsTsc.jpg)
 
 #### Agent Perfomance
 
@@ -99,7 +124,37 @@ You can filter Agents per status (clicking any status below the chart), or sort 
 
 [![Customize Agent Perfomance](/assets/images/Home/customize-agent-perfomance.jpg)](/assets/images/Home/customize-agent-perfomance.jpg)
 
-----
+#### Queue Perfomance
+
+As with Agent Perfomance, this includes all the metrics in the Instance but sorted by Queue. It also has the option to customize the table.
+
+[![Queue Perfomance](/assets/images/Home/queue-perfomance.jpg)](/assets/images/Home/queue-perfomance.jpg)
+
+#### Abandoned calls 
+
+This is another form of Time Series Chart that updates with the number of Contacts Abandoned and Avg. Wait Time.
+
+[![Abandoned Calls](/assets/images/Home/abandoned-calls.jpg)](/assets/images/Home/abandoned-calls.jpg)
+
+#### Durations
+
+This is a chart that updates with each of the listed metrics in the right side: Avg. Hold Time, Avg. Wait Time, Avg. Handling Time, Avg. Abandon Time and Avg. Wrap Time.
+
+[![Durations](/assets/images/Home/durations.jpg)](/assets/images/Home/durations.jpg)
+
+#### Real Time & Historical Metrics
+
+At the top side of the dashboard you can find a calendar that switches between Real Time and Historical dependent of the query made. All queries that end with "NOW" will be labeled as Real Time, while queries ending at a specific date and hour will be labeled as Historical. These queries will change both the layout and metrics displayed in the dashboard.
+
+[![Real-Historical](/assets/images/Home/real-historical.jpg)](/assets/images/Home/real-historical.jpg)
+
+
+
+
+
+
+
+
 
 <style>
    h4 {
