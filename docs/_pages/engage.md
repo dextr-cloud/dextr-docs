@@ -8,63 +8,54 @@ sidebar:
   nav: "docs"
 ---
 
-The Engage TAB is one of Dextr main features since it's the place where you'll be interacting with customers. 
+The Engage TAB is Dextr main feature since it's the place where you'll be interacting with customers. It consists of a Phone Tab, Chat Tab, and Tasks. 
 
 ### Phone Tab
 
-When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad** (Component 1), **Recent Calls** (Component 2) and the **Favorites** (Component 3) sections. You can either type or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code.
+When entering the Engage tab you'll see the Phone Tab, which consists of the **Dialpad**. You can either type or click the numbers in the ***Dialpad*** to input the phone number and make a call. Remember to have the correct country code.
 
-[![Engage Tab](/assets/images/engage-tab.jpg)](/assets/images/engage-tab.jpg)
+[![Engage Tab](/assets/images/Engage/engage-tab.jpg)](/assets/images/Engage/engage-tab.jpg)
 
 
 ----
 
 #### Call Transfers
 
-You're able to do call transfers, and as of v0.9.0 Dextr can quick-connect to directory entries through either **Blind** or **Warm** transfers: 
+You're able to do call transfers and quick-connect either through **Blind** or **Warm** transfers: 
 
-- **Blind** transfers gets the call either on a selected Queue or a Directory contact. If the transfer was made to a Queue it will  make the contact wait until is taken by the next Available agent while also leaving you completely out of the call. If it was done to a Directory contact, it will transfer the call directly to it.
+- **Blind** transfers only gets the call in a selected Queue. The contact then waits until is taken by the next Available agent.
 
-- **Warm** transfers on the other hand, allows you to remain and monitor the call, also allowing you join it and enter **Conference Call** mode.
+- **Warm** transfers allows the first agent to remain on call and enter **Conference Call** mode.
 
 A call transfer:
 
-![Call Transfer](/assets/images/transfer-call.gif)
+[![Call Transfer](/assets/images/Engage/transfer-call.jpg)](/assets/images/Engage/transfer-call.jpg)
 
 A conference call:
 
-[![Conference Call](/assets/images/conference-call.jpg)](/assets/images/conference-call.jpg)
+[![Conference Call](/assets/images/Engage/conference-call.jpg)](/assets/images/Engage/conference-call.jpg)
 
 ----
 #### Call dispositions
 
-If the administrator enables this option in [Settings-General](/settings/), when a call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/activity/) tab for a specific call.
+If the administrator enables this option in [Settings](/settings/), when a call ends you'll notice a modal window showing up. The modal window will prompt you to select one of the dispositions in the dropdown to keep track of what the call consisted of. This makes assessments and inquiry easier when checking the [Activity](/activity/) tab for a specific call.
 
-![Call Disposition](/assets/images/call-disposition.gif)]
+[![Call disposition](/assets/images/Engage/call-disposition.jpg)](/assets/images/Engage/call-disposition.jpg)
 
 If you don't select a disposition when timer ends, then no disposition will be assigned to the call.
 
 ----
 
-#### Recent Calls
+### Chat
 
-This panel keeps a track of all your calls. All calls have a label and a timestamp assigned to them. Inbound, Outbound and Missed calls will be registered as such.
+#### Omni-Chat
 
-If you right click any of the records, you can either copy the number or call it. By clicking a record you'll trigger the modal call window.
+An administrator builds a flow and this is used across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) used for voice engagements, then customers will be put in a Queue and attended by the next available agent.
 
-[![Recent Calls](/assets/images/recent-calls.jpg)](/assets/images/recent-calls.jpg)
+[![Chat Modal](/assets/images/Engage/chat-modal.jpg)](/assets/images/Engage/chat-modal.jpg)
+[![Chat UI](/assets/images/Engage/chat-ui.jpg)](/assets/images/Engage/chat-ui.jpg)
 
-----
-
-#### Favorites
-
-When creating contacts from the [Directory](/directory/), you can add them as favorites. All contacts tagged as Favorites will be displayed in this panel. Clicking any of them will give you the option to call them.
-
-[![Engage Favorites](/assets/images/engage-favorites.jpg)](/assets/images/engage-favorites.jpg)
-
-----
-
-### Email, SMS, Omni-Chat
+### Tasks
 
 #### Email
 
@@ -88,12 +79,7 @@ After accepting, you're able to directly interact with the customer through the 
 
 [![SMS UI](/assets/images/sms-ui.jpg)](/assets/images/sms-ui.jpg)
 
-#### Omni-Chat
 
-Like Email and SMS, an administrator builds a flow and uses it across multiple channels. You're able to receive chat requests in the same web-based Contact Control Panel (CCP) you use for voice engagements since Customers will be put in a Queue and attended by the next available agent.
-
-[![Chat Modal](/assets/images/chat-modal.jpg)](/assets/images/chat-modal.jpg)
-[![Chat UI](/assets/images/chat-ui.jpg)](/assets/images/chat-ui.jpg)
 
 <style>
    h4 {
