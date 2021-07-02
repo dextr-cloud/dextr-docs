@@ -10,7 +10,7 @@ sidebar:
 
 Directory is your personal contact list. You can create, edit and delete contacts here.
 
-[![Directory](/assets/images/directory.jpg)](/assets/images/directory.jpg)
+[![Directory](/assets/images/Directory/directory.jpg)](/assets/images/Directory/directory.jpg)
 
 ----
 
@@ -20,7 +20,7 @@ You create contacts by clicking the **Create** button. When creating contacts, y
 
 When a contact is created you can click him from your Directory, which  will open a new window in your right side where you can: call, edit, delete or mark it as favorite.
 
-[![Create contact](/assets/images/create-contact.jpg)](/assets/images/create-contact.jpg)
+[![Create contact](/assets/images/Directory/create-contact.jpg)](/assets/images/Directory/create-contact.jpg)
 
 ----
 
@@ -28,18 +28,18 @@ When a contact is created you can click him from your Directory, which  will ope
 
 By clicking the global checkbox when creating a contact, you create global entries/contacts that all agents in the Instance can see from their directory.
 
-[![Global entries](/assets/images/global-entries.jpg)](/assets/images/global-entries.jpg)
+[![Global entries](/assets/images/Directory/global-entries.jpg)](/assets/images/Directory/global-entries.jpg)
 
 #### Edit and Deletion of contacts
 
 - By clicking the **Edit** option you can add more information, change it, or delete one of the fields.
 - To **delete a contact**, you click the trashcan icon and confirm.
 
-[![Edit & Delete](/assets/images/edit-contact.jpg)](/assets/images/edit-contact.jpg)
+[![Edit & Delete](/assets/images/Directory/edit-contact.jpg)](/assets/images/Directory/edit-contact.jpg)
 
 - If you're a Supervisor, you can also **edit or delete** global contacts no matter who created them. Removing the **Global status** will also return the previously global contact to the creator Personal list.
 
-[![Edit Global Supervisor](/assets/images/edit-global-supervisor.jpg)](/assets/images/edit-global-supervisor.jpg)
+[![Edit Global Supervisor](/assets/images/Directory/edit-global-supervisor.jpg)](/assets/images/Directory/edit-global-supervisor.jpg)
 
 ----
 
@@ -47,7 +47,7 @@ By clicking the global checkbox when creating a contact, you create global entri
 
 This option will mark the contact from your Personal list as Favorite, enabling you to see it from the **Engage tab**.
 
-[![Favorites](/assets/images/favorites-directory.jpg)](/assets/images/favorites-directory.jpg)
+[![Favorites](/assets/images/Directory/favorites-directory.jpg)](/assets/images/Directory/favorites-directory.jpg)
 
 
 

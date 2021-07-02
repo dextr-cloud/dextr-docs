@@ -10,7 +10,7 @@ sidebar:
 
 This TAB will only appear when you have an **Administrator security profile**. You can create, modify and delete users as well as setting up the options for that user.
 
-[![Users dashboard](/assets/images/users-dashboard.jpg)](/assets/images/users-dashboard.jpg)
+[![Users dashboard](/assets/images/Users/users-dashboard.jpg)](/assets/images/Users/users-dashboard.jpg)
 
 ----
 
@@ -18,7 +18,7 @@ This TAB will only appear when you have an **Administrator security profile**. Y
 
 By clicking the **+Users** button you will start the user creation process. 
 
-[![Users Creation](/assets/images/users-creation.jpg)](/assets/images/users-creation.jpg)
+[![Users Creation](/assets/images/Users/users-creation.jpg)](/assets/images/Users/users-creation.jpg)
 
 ----
 
@@ -36,7 +36,7 @@ For more information on creating routing profiles from Amazon Connect, you can c
 
 Security Profiles will grant agents a level of permission to either view, update and create resources or specific tasks.
 
-![Security profile](/assets/images/security-profile.jpg)
+![Security profile](/assets/images/Users/security-profile.jpg)
 
 ----
 
@@ -44,7 +44,7 @@ Security Profiles will grant agents a level of permission to either view, update
 
 You can set the user phone as either Softphone/Desktop, and enable the Auto-Accept call option (by default this is set to OFF).
 
-![Phone type](/assets/images/phone-type.jpg)
+![Phone type](/assets/images/Users/phone-type.jpg)
 
 ----
 
@@ -52,7 +52,7 @@ You can set the user phone as either Softphone/Desktop, and enable the Auto-Acce
 
 The Summary with all the data will show up as the next step. When clicking the **Submit** button, the user will appear as an **Activated User**.
 
-[![Review user](/assets/images/review-user.jpg)](/assets/images/review-user.jpg)
+[![Review user](/assets/images/Users/review-user.jpg)](/assets/images/Users/review-user.jpg)
 
 ----
 
@@ -60,7 +60,7 @@ The Summary with all the data will show up as the next step. When clicking the *
 
 By clicking the pencil icon in the **Action** column, you can edit all the agent fields with the exception of **Phone type** (this is changed in [Settings](/settings/)). Once finished, you can click the check button to save your changes, or you can also press the "x" button to undo them.
 
-[![Users Creation](/assets/images/users-edit.jpg)](/assets/images/users-edit.jpg)
+[![Users Creation](/assets/images/Users/users-edit.jpg)](/assets/images/Users/users-edit.jpg)
 
 ----
 
@@ -68,7 +68,7 @@ By clicking the pencil icon in the **Action** column, you can edit all the agent
 
 This is done by clicking the trashcan icon right beside the edit button. If you delete an user, they'll be forced to log out of Dextr.
 
-[![Deleting User](/assets/images/deleting-users.jpg)](/assets/images/deleting-users.jpg)
+[![Deleting User](/assets/images/Users/deleting-users.jpg)](/assets/images/Users/deleting-users.jpg)
 
 <style>
    h4 {
