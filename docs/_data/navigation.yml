@@ -36,3 +36,5 @@ docs:
     children:
       - title: "Use an existing Kinesis Stream"
         url: /kinesis/
+      - title: "DextrFlex migration"
+        url: /migration/
