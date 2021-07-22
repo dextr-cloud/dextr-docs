@@ -37,11 +37,18 @@ d. generalDaemon
 
 [![generalDaemon](/assets/images/Migration/generalDaemon.jpg)](/assets/images/Migration/generalDaemon.jpg)
 
-#### 3 - Update LiveLook widget for 100% accuracy (optional)
+#### 3 - Add CORS Policy (required for viewing reports)
+
+Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your Dextr reports. This can be located by looking in Dextr > Settings > Instance Details > Reporting Bucket.
+
+[![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
+
+
+#### 4 - Update LiveLook widget for 100% accuracy (optional)
 
 Use the new event bridge data to keep the LiveLook widget 100% accurate. Amazon Connect announced a new feature to stream Contact related events and Flex can consume this data to greatly improve the accuracy of the Live Look widget. Follow the steps outlined in the [AWS documentation page](https://aws.amazon.com/blogs/contact-center/use-amazon-connect-contact-event-stream-to-react-to-contact-state-changes-in-near-real-time/) and use the streamHandler function as the destination. 
 
-#### 4 - Use the new domain
+#### 5 - Use the new domain
 
 Direct agents and supervisors to https://go.dextrflex.com to begin.
 
