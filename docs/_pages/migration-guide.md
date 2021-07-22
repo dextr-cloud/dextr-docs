@@ -42,6 +42,8 @@ d. generalDaemon
 Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your Dextr reports. This can be located by looking in Dextr > Settings > Instance Details > Reporting Bucket.
 
 [![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
+[![CORS policy](/assets/images/Migration/cors.jpg)](/assets/images/Migration/cors.jpg)
+
 
 
 #### 4 - Update LiveLook widget for 100% accuracy (optional)
