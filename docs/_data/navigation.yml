@@ -31,6 +31,8 @@ docs:
         url: /settings/
       - title: "Team Status Drawer"
         url: /teamStatus/
+      - title: "Notifications"
+        url: /notification/
 
   - title: Advanced
     children:
