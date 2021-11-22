@@ -50,7 +50,7 @@ You require an ***Approved origin*** in Amazon Connect. Through the Amazon Web S
 - Go to Amazon Connect and click the name of your instance.
 [![Clicking Instance](/assets/images/Onboarding/clickingInstance.jpg)](/assets/images/Onboarding/clickingInstance.jpg)
 
-- Go to the **Application Integration** tab and click ***Add origin***. Input **https://go.dextr.cloud** and add it.
+- Go to the **Application Integration** tab and click ***Add origin***. Input **https://go.dextrflex.com** and add it.
 
 [![Application Integration](/assets/images/Onboarding/app-integration.png)](/assets/images/Onboarding/app-integration.png)
    
