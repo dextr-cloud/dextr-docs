@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-Within the Historical Reports TAB you can build, schedule, share and export historical reports without any restrictions on time period. YTD, QTD, MTD and numerous other relative time filters. Export in PDF, share with private URL’s and Dextr Flex’s instant messaging.
+Within the Historical Reports TAB you can build, schedule, share and export historical reports without any restrictions on time period. YTD, QTD, MTD and numerous other relative time filters. Export in excel (.xlxs), share with private URL’s and Dextr Flex’s instant messaging.
 
 ### Create Report
 
@@ -26,36 +26,24 @@ You can also **Schedule** the release of reports (by day, week, month) and set u
 
 ### Report Dashboard
 
-At the top side of the page you can see different details (`Generated`, `Time period`, `Requestor` and `Filters`) and an `Action` button that allows you to either build a schedule, or export the report as a PDF file. The report is also composed of 7 different tabs: Summary, DNIS Detail, Queue Detail, Agent Detail, Disposition Detail, Transfer Detail and Hourly Detail.
+At the top side of the page you can see different details (`Timezone`, `Report time period`) and both a `Download` and `Close` button. The report also displays a summary table with general metrics: `All`, `Handled`, `Abandoned`, `Total Time Queued`, `ASA`, `AACW`, `AHT`,  `Total Time Talking`, `Holds`, `Total Time on Hold`, `Longest Hold`, `Avg. Abandon Time` and `Missed`. 
 
 [![Report Dashboard](/assets/images/Reports/report-dashboard.jpg)](/assets/images/Reports/report-dashboard.jpg)
 
-#### Summary
+#### Charts - All, Queue, Agent, Hour and Channel Distribution
 
-The summary tab shows general metrics and charts you can look at to ease the process of keeping track of your Call Center. You can see the agent who has the most influence per period, or the queue that is most active by looking at the `Agent Distribution` and `Queue Distribution` graphs respectively. 
+These are charts displaying the amount of contacts the instance has perceived between a set of different metrics (number of contacts handled by queue, agent, contacts within an specific hour...) in the selected period of time. Each of these has the option to be downloaded either as a **csv**, **svg**, or **png** file.
 
-[![Agent Charts](/assets/images/Reports/agent-queue-distribution.jpg)](/assets/images/Reports/agent-queue-distritbution.jpg)
+[![Charts](/assets/images/Reports/charts.jpg)](/assets/images/Reports/charts.jpg)
 
-You can also look at the amount of contacts attended with Contacts by Interval (Months, Weeks or Days).
+#### Dowload - Excel file
 
-[![Contacts By Interval](/assets/images/Reports/contacts-by-interval.jpg)](/assets/images/Reports/contacts-by-interval.jpg)
+By clicking the download button you get the excel file which depicts in greater detail the values of each chart and metric. 
 
-#### DNIS, Queue Detail, Agent Detail
+[![Download Report](/assets/images/Reports/download-report.jpg)](/assets/images/Reports/download-report.jpg)
 
-These are customizable tables. You can customize them by clicking the `Configure Table` button to hide or change the order of the metadata. Depending of the tab, the metadata will be filtered by either DNIS, Queue or Agents activity.
 
-[![DNIS Customize](/assets/images/Reports/dnis-customize.jpg)](/assets/images/Reports/dnis-customize.jpg)
-
-The metrics found inside of these tables are: `Contacts Handled`, `Missed`, `Avg. Talk Time`, `Talk Time`, `Avg. ACW`, `Holds`, `Holds Duration`, `Longest Hold` and `Abandoned`. 
-
-[![DNIS Details](/assets/images/Reports/dnis-detail.jpg)](/assets/images/Reports/dnis-detail.jpg)
-
-#### Actions
-
-By clicking the Actions button, you're able to:
-- **Export** the report, which will download a PDF. Please take note that all modifications done to the table by customization will be reflected in the PDF file.
-
-[![Export Report](/assets/images/Reports/export-report.jpg)](/assets/images/Reports/export-report.jpg)
+[![Excel file](/assets/images/Reports/excel-file.jpg)](/assets/images/Reports/excel-file.jpg)
 
 <style>
    h4 {
