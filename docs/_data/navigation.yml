@@ -40,3 +40,5 @@ docs:
         url: /kinesis/
       - title: "DextrFlex migration"
         url: /migration/
+      - title: "Email task configuration"
+        url: /emailTask/
