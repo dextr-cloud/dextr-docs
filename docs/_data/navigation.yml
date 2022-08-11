@@ -5,7 +5,10 @@ main:
     url: /release-notes/
   - title: System Requirements
     url: /system-requirements/
-
+  - title: Best Practices
+    url: /best-practices/
+  - title: Troubleshooting
+    url: /troubleshooting/
 docs:
   - title: Getting Started
     children:
