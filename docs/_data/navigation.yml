@@ -3,7 +3,8 @@ main:
     url: /faq/
   - title: Release Notes
     url: /release-notes/
-
+  - title: System Requirements
+    url: /system-requirements/
 
 docs:
   - title: Getting Started
