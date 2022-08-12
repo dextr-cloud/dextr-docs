@@ -4,7 +4,7 @@ permalink: /emailTask/
 layout: single
 toc: true
 toc_sticky: true
-sidebar: 
+sidebar:
   nav: "docs"
 ---
 
@@ -14,7 +14,7 @@ sidebar:
 - Subdomain MX record. (i.e., emaiHandler.companyname.com,  production.dextr.cloud)
 - SMTP host information for your email server
 - Amazon SES Ruleset
-- Amazon Connect Contact Flow 
+- Amazon Connect Contact Flow
 - Report Bucket name (optionally you can create a different S3 bucket exclusively for Email Handling)
 
 ### Setting up Pre-Requisites
@@ -68,13 +68,13 @@ Once the organization has been created, you're required to verify ownership of d
 
 [![DNS](/assets/images/EmailTask/update-records.jpg)](/assets/images/EmailTask/update-records.jpg)
 
-Now that domains are verified, you need to create an email with your subdomain. 
+Now that domains are verified, you need to create an email with your subdomain.
 
 [![DNS](/assets/images/EmailTask/verified-domain.jpg)](/assets/images/EmailTask/verified-domain.jpg)
 
 
 - Head over to "Users" and create a new one:
-- Add details for user (Username, First Name, Last Name, Display name). 
+- Add details for user (Username, First Name, Last Name, Display name).
 - In the next step, set up email address and password. For domain remember to choose the subdomain (test.dextr.cloud), so at the end we will be having "testemail@test.dextr.cloud".
 
 [![DNS](/assets/images/EmailTask/add-user.jpg)](/assets/images/EmailTask/add-user.jpg)
@@ -92,7 +92,7 @@ Now that you have both an email for your company contact and another email with 
 - Enter your main address credentials. Following our example it would be for **customertestsupport@dextr.cloud**
 - Click on Settings -> Email rules.
 - Add a new rule where Condition is "is sent to..." and recipient is our main address "customertestsupport@dextr.cloud". Then in Actions we add **Redirect the message to** and we add as a recipient our email with the subdomain, which is **testemail@test.dextr.cloud**.
-- Save and make sure that the status for this rule is Active. 
+- Save and make sure that the status for this rule is Active.
 
 [![DNS](/assets/images/EmailTask/redirect.jpg)](/assets/images/EmailTask/redirect.jpg)
 
@@ -107,7 +107,7 @@ For email tasks to work you need to provide a Contact Flow to Amazon Connect. Yo
 
 [![DNS](/assets/images/EmailTask/contact-flow.jpg)](/assets/images/EmailTask/contact-flow.jpg)
 
-- Once published, per queue you also need to confirm that the number of tasks that an agent can handle is set to 1. 
+- Once published, per queue you also need to confirm that the number of tasks that an agent can handle is set to 1.
 
 #### 6 - Webhook creation. Dextr flex
 
@@ -124,7 +124,7 @@ Now that you have email and contact flow set up, you're ready to configure the w
 - Set SMTP configuration
 [![DNS](/assets/images/EmailTask/second-step.jpg)](/assets/images/EmailTask/second-step.jpg)
 - Select the Contact flow
-- Setup Auto Responders 
+- Setup Auto Responders
 - Create
 [![DNS](/assets/images/EmailTask/third-step.jpg)](/assets/images/EmailTask/third-step.jpg)
 
@@ -141,14 +141,32 @@ Now you're required to create a rule receipt condition inside of SES from the AW
 [![DNS](/assets/images/EmailTask/rule-settings.jpg)](/assets/images/EmailTask/rule-settings.jpg)
 - Click "Add new recipient condition" and enter the email with the subdomain you created. Following the example the resulting condition: "testemail@test.dextr.cloud".
 [![DNS](/assets/images/EmailTask/recipient-condition.jpg)](/assets/images/EmailTask/recipient-condition.jpg)
-- For Step 3 "Add actions" you'll want two actions: 
-    - **Deliver to Amazon S3 bucket** (you can create another one or use the existing one from your Connect Instance, which you can check by going to Dextr Settings -> Instance Details -> Reporting Bucket) where emails will be stored, and for "Object key prefix" you need to write your company name followed by "/email" (For example "dextr/email"). 
+- For Step 3 "Add actions" you'll want two actions:
+    - **Deliver to Amazon S3 bucket** (you can create another one or use the existing one from your Connect Instance, which you can check by going to Dextr Settings -> Instance Details -> Reporting Bucket) where emails will be stored, and for "Object key prefix" you need to write "dextr/email".
     - Add another action, which is going to be **Invoke AWS Lambda function** and the chosen function will have the following format: ***dextr-instanceAlias-webhookHandler-email***. The invocation type should be "Event invocation".
 [![DNS](/assets/images/EmailTask/add-actions.jpg)](/assets/images/EmailTask/add-actions.jpg)
 
 - Last step is review, so review the information and save the changes.
 
-And that's it! You're now set up to start receiving emails in your instance. 
+And that's it! You're now set up to start receiving emails in your instance.
 
+#### 8 - S3 bucket
 
+The S3 bucket used by SES to store incoming E-Mail needs to have CORS permissions assigned to it:
 
+[
+    {
+        "AllowedHeaders": [],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "https://go.dextrflex.com"
+        ],
+        "ExposeHeaders": []
+    }
+]
+
+#### 9 - SMTP (Outgoing E-Mail) configuration
+
+If you find issues in validating your E-Mail sending setup, there is likely a mismatch in either the port or TLS Toggle. TCP/587 does not need the TLS Toggle set whereas TCP/465 does. TCP/25 is generally filtered by providers and will likely fail with the TLS Toggle set in either position.
