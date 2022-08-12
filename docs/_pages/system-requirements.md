@@ -10,11 +10,11 @@ sidebar:
 
 ### System Requirements
 
-- ***General***
+***General***
 
 - Dextr generally follows AWS' guidance around System Requirements (https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html) with the exception of the following:
 
-- ***Networking***
+***Networking***
 
 - Amazon Connect requires the following network traffic to be permitted to/from your users' workstations, through the Internet:
 https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
@@ -33,6 +33,6 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 - socket.dextrflex.com      TCP/UDP 3478, 49152-65535
 - coturn.dexterflex.com    TCP/UDP 3478, 49152-65535
 
-- ***Browser***
+***Browser***
 
 - Dextr officially supports Chrome, as described in AWS' guidance around System Requirements, however, Microsoft Edge and Mozilla Firefox have been observed to work for customers in the field.

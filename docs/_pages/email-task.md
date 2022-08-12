@@ -148,8 +148,6 @@ Now you're required to create a rule receipt condition inside of SES from the AW
 
 - Last step is review, so review the information and save the changes.
 
-And that's it! You're now set up to start receiving emails in your instance.
-
 #### 8 - S3 bucket
 
 - The S3 bucket used by SES to store incoming E-Mail needs to have CORS permissions assigned to it:
@@ -170,3 +168,5 @@ And that's it! You're now set up to start receiving emails in your instance.
 #### 9 - SMTP (Outgoing E-Mail) configuration
 
 - If you find issues in validating your E-Mail sending setup, there is likely a mismatch in either the port or TLS Toggle. TCP/587 does not need the TLS Toggle set whereas TCP/465 does. TCP/25 is generally filtered by providers and will likely fail with the TLS Toggle set in either position.
+
+And that's it! You're now set up to start receiving emails in your instance.

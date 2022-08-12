@@ -10,7 +10,7 @@ sidebar:
 
 ### Best Practices
 
-- ***Bring your own Channel***
+***Bring your own Channel***
 
 - Routing Profiles that support SMS, Fax and E-Mail Queues should limit concurrent tasks to 1 per Agent.
 

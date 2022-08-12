@@ -10,7 +10,7 @@ sidebar:
 
 ### Troubleshooting
 
-- ***General Troubleshooting Steps***
+***General Troubleshooting Steps***
 
 For Issues with Logging into Dextr, Verify that:
 - Approved origins in Amazon Connect are correctly configured
@@ -49,7 +49,7 @@ For Issues with Recordings not showing up, Verify that:
 For Issues with SAML Integration, Verify that:
 - SamlLoginUrl field has the Single Sign On login URL
 
-- ***Data Collection Guidance***
+***Data Collection Guidance***
 
 When reporting issues with Dextr, it's helpful to collect and provide the following details so that we may be more responsive in addressing your concerns:
 - Agent Name(s)
