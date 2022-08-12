@@ -53,11 +53,17 @@ For Issues with SAML Integration, Verify that:
 
 When reporting issues with Dextr, it's helpful to collect and provide the following details so that we may be more responsive in addressing your concerns:
 - Agent Name(s)
+- Agent Location/Type of Location/Type of Internet Connection
 - Dates/Times of Issue(s)
 - Description of Issue(s)
 - Contact ID related to Issue(s)
+- Type of contact (Inbound/Outbound, Voice/SMS/E-Mail/Fax/Chat, Conference/Transfer)
 - Instance Alias
 - Instance ARN (if available)
+- Actions Taken
+- Behavior Experienced (Lack of functionality/expected behavior, Audio Issue, etc.)
+- If Audio Issue, how would it be described?
+- Impact
 - Is this a systemic issue impacting all users, aliases and regions?
 - Can issue be reproduced the native Amazon Connect CCP?
 - What are the results of the other self-service tests you've run through Dextr?
