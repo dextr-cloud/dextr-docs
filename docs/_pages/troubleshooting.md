@@ -51,13 +51,13 @@ For Issues with SAML Integration, Verify that:
 
 - ***Data Collection Guidance***
 
--Agent Name(s)
--Dates/Times of Issue(s)
--Description of Issue(s)
--Contact ID related to Issue(s)
--Instance Alias
--Instance ARN (if available)
--Questions to Ask:
--- Is this a systemic issue impacting all users, aliases and regions?
--- Can issue be reproduced the native Amazon Connect CCP?
--- What are the results of the other self-service tests you've run through Dextr?
+When reporting issues with Dextr, it's helpful to collect and provide the following details so that we may be more responsive in addressing your concerns:
+- Agent Name(s)
+- Dates/Times of Issue(s)
+- Description of Issue(s)
+- Contact ID related to Issue(s)
+- Instance Alias
+- Instance ARN (if available)
+- Is this a systemic issue impacting all users, aliases and regions?
+- Can issue be reproduced the native Amazon Connect CCP?
+- What are the results of the other self-service tests you've run through Dextr?
