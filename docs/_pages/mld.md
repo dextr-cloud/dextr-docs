@@ -1,3 +1,8 @@
+---
+permalink: /mld/
+title: "Multi Level Dispositions"
+---
+
 # Introducing Multi Level Dispositions
 
 Dispositions, while implementation specific details may vary, and
