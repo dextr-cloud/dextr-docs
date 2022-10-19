@@ -50,3 +50,5 @@ docs:
         url: /migration/
       - title: "Email task configuration"
         url: /emailTask/
+      - title: "Updating Dextr Lambda Function Runtime Version"
+        url: /update-lambda/
