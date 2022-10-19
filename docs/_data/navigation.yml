@@ -42,6 +42,8 @@ docs:
 
   - title: Advanced
     children:
+      - title: "Supplementary Setup Steps"
+        url: /setup-guide/
       - title: "Use an existing Kinesis Stream"
         url: /kinesis/
       - title: "DextrFlex migration"

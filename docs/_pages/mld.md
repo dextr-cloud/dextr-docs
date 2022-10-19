@@ -61,8 +61,7 @@ be the first tier of values that may be selected by an agent. You would
 specify the name (to be displayed to the agent) and the value to be
 written to the CTR:
 
-![Application Description automatically generated with low
-confidence](./mld/media/image6.png){width="6.5in" height="1.94375in"}
+![](./mld/media/image6.png)
 
 Once you have populated Level 1, you will notice each row has a checkbox
 beside it, checking this box will allow you to create or edit options at

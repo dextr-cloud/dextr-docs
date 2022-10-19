@@ -27,9 +27,10 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 
 - In addition to the above, Dextr requires the following hosts, protocols and ports to be permitted from your users' workstations, through the Internet:
 
-- *.appsync-api.us-east-1.amazonaws.com   HTTP/HTTPS
+- *.graphql.flex.dextrflex.com   HTTP/HTTPS
 - *.api.dextr.cloud              HTTP/HTTPS
 - *.dextr.cloud      HTTP/HTTPS
+- go.dextr.cloud      HTTP/HTTPS
 - socket.dexterflex.com    HTTP/HTTPS
 - socket.dextrflex.com      HTTP/HTTPS
 - coturn.dexterflex.com    HTTP/HTTPS
