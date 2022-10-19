@@ -3,8 +3,6 @@ permalink: /update-lambda/
 title: "Updating Dextr Lambda Function Runtime Version"
 ---
 
-# Updating Dextr Lambda Function Runtime Version
-
 If you've received an E-Mail like the below, and wish to act on it, you
 may update the Lambda Function Runtime version used by the Dextr Lambda
 Functions from Node.js 12 to Node.js 16 using the steps contained within
