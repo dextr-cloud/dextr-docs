@@ -29,6 +29,7 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 
 - *.graphql.flex.dextrflex.com   HTTP/HTTPS
 - *.api.dextr.cloud              HTTP/HTTPS
+- *.ws.dextr.cloud              HTTP/HTTPS
 - *.dextr.cloud      HTTP/HTTPS
 - go.dextr.cloud      HTTP/HTTPS
 - socket.dexterflex.com    HTTP/HTTPS
