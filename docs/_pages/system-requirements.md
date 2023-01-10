@@ -29,15 +29,9 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 
 - *.graphql.flex.dextrflex.com   HTTP/HTTPS
 - *.api.dextr.cloud              HTTP/HTTPS
-- *.ws.dextr.cloud              HTTP/HTTPS
+- *.ws.dextrflex.com              HTTP/HTTPS
 - *.dextr.cloud      HTTP/HTTPS
 - go.dextr.cloud      HTTP/HTTPS
-- socket.dexterflex.com    HTTP/HTTPS
-- socket.dextrflex.com      HTTP/HTTPS
-- coturn.dexterflex.com    HTTP/HTTPS
-- socket.dexterflex.com    TCP/UDP 3478, 49152-65535
-- socket.dextrflex.com      TCP/UDP 3478, 49152-65535
-- coturn.dexterflex.com    TCP/UDP 3478, 49152-65535
 
 ***Browser***
 
