@@ -52,3 +52,5 @@ docs:
         url: /emailTask/
       - title: "Updating Dextr Lambda Function Runtime Version"
         url: /update-lambda/
+      - title: "Implementing Live Look in your Amazon Connect Instance"
+        url: /update-live-look/
