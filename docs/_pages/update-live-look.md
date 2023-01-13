@@ -3,7 +3,7 @@ permalink: /update-live-look/
 title: "Implementing Live Look in your Amazon Connect Instance"
 ---
 
-Prior to January 10^th^, 2023, your Amazon Connect Contact Flows needed
+Prior to January 10th, 2023, your Amazon Connect Contact Flows needed
 to invoke a Lambda Function (addCallToQueue) after setting the queue and
 immediately before transferring to said queue to provide accurate
 information in Live Look -- including counts and contact details.
@@ -22,7 +22,7 @@ green traffic lights as displayed below:
 
 ![](./update-live-look/media/image1.png)
 
-With January 10^th^, 2023's release the addCallToQueue Lambda Function
+With January 10th, 2023's release (0.9.96c) the addCallToQueue Lambda Function
 is no longer required (the Event Bridge rule remains required), and has
 instead been replaced with 4 User defined attributes.
 
@@ -87,8 +87,8 @@ Note in the above screenshot we set 3 of the 4 contact attributes before
 branching based on the Channel, and once branched on the Channel we set
 the final attribute, the customer endpoint.
 
-An exploded view of how the 4 contact attributes are set looks like
-this:
+An exploded view of how the 3 contact attributes are set looks like
+this (the 4th, set in another block, has been omitted for brevity).
 
 ![](./update-live-look/media/image6.png)
 
@@ -101,7 +101,7 @@ following would be done in the Customer queue flow:
 Note that we do not have to set all 4 attributes as they were set in the
 inbound flow and only one needs to be overridden (ll_customer_endpoint).
 
-An exploded view of how the 4 contact attributes are set looks like
+An exploded view of how the 1 contact attribute is set looks like
 this:
 
 ![](./update-live-look/media/image8.png)
