@@ -15,30 +15,30 @@ sidebar:
 
 ## Dextr Release Notes, February 2023
 
-### HAR-1358 Add a feature in which a previously offboarded instance can be onboarded again
+### HAR-1358 Add a feature in which a previously off-boarded instance can be onboarded again
 
-A feature has been added in which a previously offboarded instance can be onboarded again.
+A feature has been added in which a previously off-boarded instance can be onboarded again.
 ----
 ### HAR-284 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-1556 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-1861 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-2008 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-738 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-739 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-2020 Add a feature in which activity search result filters can be retroactively applied
-A feature has been added in which activity search result filters can be retroactively applied, allowing the application of fiilters to previously retrieved search results.
+A feature has been added in which activity search result filters can be retroactively applied, allowing the application of filters to previously retrieved search results.
 ----
 ### HAR-1146 Add a feature in which agents can be reassigned to queues via drag and drop
 A feature has been added in which agents can be reassigned to queues via drag and drop based on queue state and status observations made within Dextr. This feature is made available to users who have "all permissions" based Dextr Security Profiles.
@@ -197,7 +197,7 @@ A feature has been added in which Dextr users are presented with a visual indica
 A feature has been added in which Microsoft Edge is officially supported by Dextr.
 ----
 ### HAR-1117 Add a feature in which the Enghouse Interactive SmartDial solution is embedded within Dextr
-A feature has been added in which the Enghouse Interactive SmartDial solution is embedded within Dextr. Dextr administrators may add the unique identifier of their Enghouse Interactive SmartDial solution under the Integration Tab of their Dextr Instance Settings and users, under the Engage tab will see a new sub tab containing call controls and records supplied by the Endhouse Interactive SmartDial solution.
+A feature has been added in which the Enghouse Interactive SmartDial solution is embedded within Dextr. Dextr administrators may add the unique identifier of their Enghouse Interactive SmartDial solution under the Integration Tab of their Dextr Instance Settings and users, under the Engage tab will see a new sub tab containing call controls and records supplied by the Enghouse Interactive SmartDial solution.
 ----
 ### HAR-1127 Add a feature in which the entire chat history of a contact can be displayed to the agent, including past sessions that may have involved other agents
 A feature has been added in which the entire chat history of a contact, based on attribute, will be displayed to the agent, which includes past sessions that may have involved other agents.
