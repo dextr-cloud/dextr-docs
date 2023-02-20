@@ -32,9 +32,9 @@ ConnectPath also can be shaped and moved around to suit your screen real estate 
 
 - - - -
 
-### What is ConnectPath-docs?
+### What is dextr-docs?
 
-ConnectPath-docs is ConnectPath documentation site. In this page, you'll be able to learn all the features present in ConnectPath and how to use them. You can also keep track of the Release Notes, so when an update is released and ConnectPath version is upgraded, you can check the [Release notes](/release-notes/) to stay tuned for the new features.
+dextr-docs is ConnectPath documentation site. In this page, you'll be able to learn all the features present in ConnectPath and how to use them. You can also keep track of the Release Notes, so when an update is released and ConnectPath version is upgraded, you can check the [Release notes](/release-notes/) to stay tuned for the new features.
 
 For an in-depth explanation about ConnectPath features, click any of the items listed in the Menu on your left side. If you're just getting started and haven't finished the onboarding process, you can check the [Onboarding](/onboarding/) section. 
 

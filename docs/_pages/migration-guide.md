@@ -46,9 +46,9 @@ Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that st
 
 
 
-#### 4 - Update LiveLook widget for 100% accuracy (optional)
+#### 4 - Update LiveLook
 
-Use the new event bridge data to keep the LiveLook widget 100% accurate. Amazon Connect announced a new feature to stream Contact related events and Flex can consume this data to greatly improve the accuracy of the Live Look widget. Follow the steps outlined in the [AWS documentation page](https://docs.aws.amazon.com/connect/latest/adminguide/contact-events.html) and use the Kinesis Stream as the destination. 
+Use the new event bridge data to keep the LiveLook widget working. Amazon Connect announced a new feature to stream Contact related events and Flex can consume this data to greatly improve the accuracy of the Live Look widget. Follow the steps outlined in the [AWS documentation page](https://docs.aws.amazon.com/connect/latest/adminguide/contact-events.html) and use the Kinesis Stream as the destination. 
 
 An example of the pattern is below:
 
