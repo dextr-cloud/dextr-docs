@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-If you already have a Kinesis Stream for your Amazon Connect instance, you may wish to keep that in place. In this section you will learn how to use your existing kinesis stream to feed Dextr its required data.
+If you already have a Kinesis Stream for your Amazon Connect instance, you may wish to keep that in place. In this section you will learn how to use your existing kinesis stream to feed ConnectPath its required data.
 
 ### Section 1 - Amazon Connect
 

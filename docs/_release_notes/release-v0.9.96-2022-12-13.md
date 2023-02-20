@@ -13,7 +13,7 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, December 2022
+## ConnectPath Release Notes, December 2022
 
 ### HAR-1379 Add a feature in which a privileged user may update the call disposition, upon review of all call dispositions. This feature may be used in conjunction with our call blocking feature to create a two step call blocking workflow
 
@@ -39,33 +39,33 @@ A feature has been added in which a user may redial the last called phone number
 
 ----
 
-### HAR-1356 Add a feature in which an administrator can reset his/her password to the Dextr admin portal
+### HAR-1356 Add a feature in which an administrator can reset his/her password to the ConnectPath admin portal
 
-A feature has been added in which an administrator can reset his/her password to the Dextr admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
-
-----
-
-### HAR-1436 Add a feature in which an administrator can reset his/her password to the Dextr admin portal
-
-A feature has been added in which an administrator can reset his/her password to the Dextr admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
+A feature has been added in which an administrator can reset his/her password to the ConnectPath admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
 
 ----
 
-### HAR-1626 Add a feature in which an administrator can reset his/her password to the Dextr admin portal
+### HAR-1436 Add a feature in which an administrator can reset his/her password to the ConnectPath admin portal
 
-A feature has been added in which an administrator can reset his/her password to the Dextr admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
-
-----
-
-### HAR-1435 Add a feature in which an administrator who enters an incorrect username and/or password in the Dextr admin portal is notified as such
-
-A feature has been added in which an administrator who enters an incorrect username and/or password in the Dextr admin portal is notified as such.
+A feature has been added in which an administrator can reset his/her password to the ConnectPath admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
 
 ----
 
-### HAR-1527 Add a feature in which an administrators' E-Mail Address used to log into the Dextr admin portal is made case insensitive
+### HAR-1626 Add a feature in which an administrator can reset his/her password to the ConnectPath admin portal
 
-A feature has been added in which an administrators' E-Mail Address used to log into the Dextr admin portal is made case insensitive.
+A feature has been added in which an administrator can reset his/her password to the ConnectPath admin portal. The feature works by sending a forgot password E-Mail which includes a Pin that can be used to change password.
+
+----
+
+### HAR-1435 Add a feature in which an administrator who enters an incorrect username and/or password in the ConnectPath admin portal is notified as such
+
+A feature has been added in which an administrator who enters an incorrect username and/or password in the ConnectPath admin portal is notified as such.
+
+----
+
+### HAR-1527 Add a feature in which an administrators' E-Mail Address used to log into the ConnectPath admin portal is made case insensitive
+
+A feature has been added in which an administrators' E-Mail Address used to log into the ConnectPath admin portal is made case insensitive.
 
 ----
 
@@ -138,193 +138,193 @@ A feature has been added in which using the pre-canned scripts with an E-Mail me
 
 ### HAR-678 Add a feature in which, during onboarding, an administrator no longer needs to provide the AWS Account ID
 
-A feature has been added in which, during onboarding, an administrator no longer needs to provide the AWS Account ID, providing ease of onboarding of Dextr.
+A feature has been added in which, during onboarding, an administrator no longer needs to provide the AWS Account ID, providing ease of onboarding of ConnectPath.
 
 ----
 
-### HAR-871 Add feature in which a user may initiate an SMS or MMS based conversation from within Dextr
+### HAR-871 Add feature in which a user may initiate an SMS or MMS based conversation from within ConnectPath
 
-A feature has been added in which a user may initiate an SMS or MMS based conversation from within Dextr. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
-
-----
-
-### HAR-1431 Add feature in which a user may initiate an SMS or MMS based conversation from within Dextr
-
-A feature has been added in which a user may initiate an SMS or MMS based conversation from within Dextr. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
+A feature has been added in which a user may initiate an SMS or MMS based conversation from within ConnectPath. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
 
 ----
 
-### HAR-1324 Add feature in which a user may initiate an SMS or MMS based conversation from within Dextr
+### HAR-1431 Add feature in which a user may initiate an SMS or MMS based conversation from within ConnectPath
 
-A feature has been added in which a user may initiate an SMS or MMS based conversation from within Dextr. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
-
-----
-
-### HAR-1572 Add feature in which a user may opt to interact with Dextr in Portuguese
-
-A feature has been added in which a user may opt to interact with Dextr in Portuguese.
+A feature has been added in which a user may initiate an SMS or MMS based conversation from within ConnectPath. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
 
 ----
 
-### HAR-1349 Add feature in which a user may opt to interact with Dextr in Portuguese
+### HAR-1324 Add feature in which a user may initiate an SMS or MMS based conversation from within ConnectPath
 
-A feature has been added in which a user may opt to interact with Dextr in Portuguese.
-
-----
-
-### HAR-1574 Add feature in which a user may opt to interact with Dextr in Portuguese
-
-A feature has been added in which a user may opt to interact with Dextr in Portuguese.
+A feature has been added in which a user may initiate an SMS or MMS based conversation from within ConnectPath. The agent needs to be available as the feature Creates a Task against a contact flow that routes the task to the agent. As a result, a brief modal will be displayed that is auto accepted. To setup you need to enable SMS/MMS Webhooks in the instance first (and if SMS/MMS Webhooks are already setup, you will need to add a default phone number prefixed with country code), then Enable Outbound Messages, selecting a purpose built Contact Flow to use. The contact flow should be a simple flow that routes the contact to the current agent. The phone number to initiate conversation with can be Free form or Directory, currently no support for Quick Connects due to their alignment to voice only contacts. After conversation is ended by the agent, further messages from customer follow standard inbound flow. In-line translation and pre-canned scripts are both supported.
 
 ----
 
-### HAR-1584 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1572 Add feature in which a user may opt to interact with ConnectPath in Portuguese
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-1585 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which a user may opt to interact with ConnectPath in Portuguese.
 
 ----
 
-### HAR-1586 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1349 Add feature in which a user may opt to interact with ConnectPath in Portuguese
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-1587 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which a user may opt to interact with ConnectPath in Portuguese.
 
 ----
 
-### HAR-954 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1574 Add feature in which a user may opt to interact with ConnectPath in Portuguese
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-1654 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which a user may opt to interact with ConnectPath in Portuguese.
 
 ----
 
-### HAR-953 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1584 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-955 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-956 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1585 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-957 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-958 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1586 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-959 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-960 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1587 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-961 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-858 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-954 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-1647 Add feature in which permissioned users may generate API requests to manage directories in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-1583 Add feature in which permissioned users may generate API requests to manage directories in Dextr
+### HAR-1654 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage directories in Dextr. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
-
-----
-
-### HAR-1297 Add feature in which permissioned users may generate API requests to manage users in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-1298 Add feature in which permissioned users may generate API requests to manage users in Dextr
+### HAR-953 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
-
-----
-
-### HAR-1299 Add feature in which permissioned users may generate API requests to manage users in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-1300 Add feature in which permissioned users may generate API requests to manage users in Dextr
+### HAR-955 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
-
-----
-
-### HAR-1301 Add feature in which permissioned users may generate API requests to manage users in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-1302 Add feature in which permissioned users may generate API requests to manage users in Dextr
+### HAR-956 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
-
-----
-
-### HAR-1611 Add feature in which permissioned users may generate API requests to manage users in Dextr
-
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
 
 ----
 
-### HAR-1234 Add feature in which permissioned users may generate API requests to manage users in Dextr
+### HAR-957 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
 
-A feature has been added in which permissioned users may generate API requests to manage users in Dextr. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-958 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-959 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-960 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-961 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-858 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-1647 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-1583 Add feature in which permissioned users may generate API requests to manage directories in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage directories in ConnectPath. This may be used for such actions as importing a list of contacts into the Directory, exporting a list of conacts from the Directory or creating a bidirectional syncronization process with the Directory.
+
+----
+
+### HAR-1297 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1298 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1299 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1300 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1301 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1302 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1611 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
+
+----
+
+### HAR-1234 Add feature in which permissioned users may generate API requests to manage users in ConnectPath
+
+A feature has been added in which permissioned users may generate API requests to manage users in ConnectPath. This may be used for such actions as importing a list of contacts into the users table, exporting a list of conacts from the users table or creating a bidirectional syncronization process with the users table.
 
 ----
 
@@ -346,9 +346,9 @@ A feature has been added in which the team status will reflect the longest call 
 
 ----
 
-### HAR-1532 Correct behavior in which administrators in Dextr admin portal may experience inconsistent behavior within the Dextr admin interfaces
+### HAR-1532 Correct behavior in which administrators in ConnectPath admin portal may experience inconsistent behavior within the ConnectPath admin interfaces
 
-A defect has been corrected in which administrators in Dextr admin portal may experience inconsistent behavior within the Dextr admin interfaces.
+A defect has been corrected in which administrators in ConnectPath admin portal may experience inconsistent behavior within the ConnectPath admin interfaces.
 
 ----
 
@@ -382,15 +382,15 @@ A defect has been corrected in which customers may inadvertently create schedule
 
 ----
 
-### HAR-1469 Correct behavior in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the Dextr interfaces
+### HAR-1469 Correct behavior in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the ConnectPath interfaces
 
-A defect has been corrected in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the Dextr interfaces.
+A defect has been corrected in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the ConnectPath interfaces.
 
 ----
 
-### HAR-1514 Correct behavior in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the Dextr interfaces
+### HAR-1514 Correct behavior in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the ConnectPath interfaces
 
-A defect has been corrected in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the Dextr interfaces.
+A defect has been corrected in which customers with a significant amount of queues and/or agent to agent conversations may experience inconsistent behavior within the ConnectPath interfaces.
 
 ----
 

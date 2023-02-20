@@ -1,5 +1,5 @@
 ---
-title: "Dextr Home"
+title: "ConnectPath Home"
 permalink: /home/
 layout: single
 toc: true
@@ -10,7 +10,7 @@ sidebar:
 
 ### First Look
 
-After you enter the Dextr dashboard you can see at the top of the screen the header (Component 1), the Team Status Drawer (Component 2) in the right corner, and in the left corner a Side Navigation bar (Component 3).
+After you enter the ConnectPath dashboard you can see at the top of the screen the header (Component 1), the Team Status Drawer (Component 2) in the right corner, and in the left corner a Side Navigation bar (Component 3).
 
 [![First Look](/assets/images/Home/first-look.jpg)](/assets/images/Home/first-look.jpg)
 
@@ -18,13 +18,13 @@ After you enter the Dextr dashboard you can see at the top of the screen the hea
 
 #### Header
 
-The header is a global section of Dextr that will always be on display. You'll see your Agent Status, a Handset, a Bell and the Instance logo.
+The header is a global section of ConnectPath that will always be on display. You'll see your Agent Status, a Handset, a Bell and the Instance logo.
 
 #### Agent Status
 
-Every Dextr Instance has 2 status for you to select after being onboarded: **Available** and **Offline**. By default your status is set to ***Offline*** on login, so remember to change your status from ***Offline*** to ***Available*** to be able to receive calls.  If you see **Forced Released** as a status is because you missed an incoming call. 
+Every ConnectPath Instance has 2 status for you to select after being onboarded: **Available** and **Offline**. By default your status is set to ***Offline*** on login, so remember to change your status from ***Offline*** to ***Available*** to be able to receive calls.  If you see **Forced Released** as a status is because you missed an incoming call. 
 
-Your Dextr Administrator may also enable other status for you to select and to be seen by your teammates.
+Your ConnectPath Administrator may also enable other status for you to select and to be seen by your teammates.
 
 [![Agent Sttus](/assets/images/Home/agent-status.jpg)](/assets/images/Home/agent-status.jpg)
 
@@ -43,7 +43,7 @@ By clicking the Bell icon in the header, you'll open the Announcements. Here you
 
 To post an announcement, you need to fill out the Title, select at least one queue, write the body message and choose a delivery method:
 - Screen pop delivers the announcement with an incoming dialogue.
-- Marquee scroller displays the announcement in a new row just below Dextr header.
+- Marquee scroller displays the announcement in a new row just below ConnectPath header.
 - Active calls displays the announcement when you're on an active call, in ***Contact Details***. 
 
 [![Announcements 2](/assets/images/Home/enhanced-announcements.jpg)](/assets/images/Home/enhanced-announcements.jpg)

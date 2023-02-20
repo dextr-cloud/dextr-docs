@@ -1,5 +1,5 @@
 ---
-title: "DextrFlex Setup Guide"
+title: "ConectPath Setup Guide"
 permalink: /setup-guide/
 layout: single
 toc: true
@@ -8,11 +8,11 @@ sidebar:
   nav: "docs"
 ---
 
-Setting up Dextr Flex is simple and can be done on your own schedule. The majority of the setup is done through the onboarding process, however, given the evolution of features in Dextr, the following steps will provide access to additional features within Dextr.
+Setting up ConectPath is simple and can be done on your own schedule. The majority of the setup is done through the onboarding process, however, given the evolution of features in ConectPath, the following steps will provide access to additional features within ConectPath.
 
 #### 1 - Add CORS Policy (required for viewing reports)
 
-Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your Dextr reports. This can be located by looking in Dextr > Settings > Instance Details > Reporting Bucket.
+Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConectPath reports. This can be located by looking in ConectPath > Settings > Instance Details > Reporting Bucket.
 
 [![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
 [![CORS policy](/assets/images/Migration/cors.jpg)](/assets/images/Migration/cors.jpg)

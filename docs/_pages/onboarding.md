@@ -10,7 +10,7 @@ sidebar:
 
 ### AWS Marketplace
 
-You can discover Dextr now since it is available in all regions via the AWS Marketplace. We offer
+You can discover ConectPath now since it is available in all regions via the AWS Marketplace. We offer
 subscription (Pay-as-you-go) and contract (Fixed price) products.
 
 [![AWS Marketplace](/assets/images/Onboarding/discover.jpg)](/assets/images/Onboarding/discover.jpg)
@@ -23,11 +23,11 @@ From AWS Marketplace, you can start your subscription process by clicking ***Con
 
 #### Set up your account
 
-After subscribing, you will be redirected to Dextr Admin portal, where you'll set up your account. 
+After subscribing, you will be redirected to ConectPath Admin portal, where you'll set up your account. 
 
-[![Dextr Account](/assets/images/Onboarding/setAccount.jpg)](/assets/images/Onboarding/setAccount.jpg)
+[![ConectPath Account](/assets/images/Onboarding/setAccount.jpg)](/assets/images/Onboarding/setAccount.jpg)
 
-After your subscription to Dextr and setting up your account, you'll be redirected to the Onboarding portal in order to claim your instance.
+After your subscription to ConectPath and setting up your account, you'll be redirected to the Onboarding portal in order to claim your instance.
 
 {% include figure image_path="/assets/images/dextrLoginOnboarding.gif" alt="Onboarding Portal"%}
 
@@ -39,7 +39,7 @@ The Onboarding process consists of 5 steps, and the first 3 steps have an ***Exp
 
 #### Step 1. Verify Ownership
 
-Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.dextr.cloud to allow incoming popups.
+Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.dextrflex.com to allow incoming popups.
 
 [![Verify Ownership](/assets/images/Onboarding/verifyOwnership.jpg)](/assets/images/Onboarding/verifyOwnership.jpg)
 
@@ -131,7 +131,7 @@ After this, you can click the **Finish** button and you'll be redirected to the 
 
 [![Secure Login](/assets/images/Onboarding/onboarder.jpg)](/assets/images/Onboarding/onboarder.jpg)
 
-And That's it! You have now logged in as the Instance Admin and can start using Dextr.
+And That's it! You have now logged in as the Instance Admin and can start using ConectPath.
 
 [![Instance Admin Login](/assets/images/Onboarding/IA-login.jpg)](/assets/images/Onboarding/IA-login.jpg)
 

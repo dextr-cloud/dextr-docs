@@ -66,7 +66,7 @@ By clicking the pencil icon in the **Action** column, you can edit all the agent
 
 ### Section 3 -  Deleting users
 
-This is done by clicking the trashcan icon right beside the edit button. If you delete an user, they'll be forced to log out of Dextr.
+This is done by clicking the trashcan icon right beside the edit button. If you delete an user, they'll be forced to log out of ConnectPath.
 
 [![Deleting User](/assets/images/Users/deleting-users.jpg)](/assets/images/Users/deleting-users.jpg)
 

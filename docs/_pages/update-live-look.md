@@ -9,8 +9,8 @@ immediately before transferring to said queue to provide accurate
 information in Live Look -- including counts and contact details.
 
 Similarly, at the time of onboarding your Amazon Connect Instance on to
-Dextr, an Event Bridge rule was required to send Amazon Connect events
-to the Kinesis Stream ingested by Dextr. This ensured both the
+ConnectPath, an Event Bridge rule was required to send Amazon Connect events
+to the Kinesis Stream ingested by ConnectPath. This ensured both the
 timeliness of events (such as calls being routed to queue and
 subsequently answered by an agent) as well as the depth of data in those
 events (which was provided by the above referenced Lambda Function.

@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-The Engage TAB is Dextr main feature since it's the place where you'll be interacting with customers. It consists of a Phone Tab, Chat Tab, and Tasks. 
+The Engage TAB is the ConnectPath main feature since it's the place where you'll be interacting with customers. It consists of a Phone Tab, Chat Tab, and Tasks. 
 
 ### Phone Tab
 
@@ -63,11 +63,11 @@ This is for inbound Email routing. When a customer sends an email to the Instanc
 
 [![Email Modal](/assets/images/emailDocs.jpg)](/assets/images/emailDocs.jpg)
 
-If an agent accepts, the email will be routed to his inbox (email assigned to Dextr account) and will also be displayed in Dextr Engage TAB. If an agent doesn't accept, the email will be left in queue until an available agent accepts it.
+If an agent accepts, the email will be routed to his inbox (email assigned to the ConnectPath account) and will also be displayed in the ConnectPath Engage TAB. If an agent doesn't accept, the email will be left in queue until an available agent accepts it.
 
 [![Email Tab](/assets/images/emailTab.jpg)](/assets/images/emailTab.jpg)
 
-To answer emails and keep a conversation, you must do so with your email account and Dextr will keep track of every response until ***End Conversation*** is clicked. This will put an end to the conversation with the customer, sending an automated final response.  
+To answer emails and keep a conversation, you must do so with your email account and ConnectPath will keep track of every response until ***End Conversation*** is clicked. This will put an end to the conversation with the customer, sending an automated final response.  
 
 #### SMS 
 

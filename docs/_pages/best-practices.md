@@ -20,6 +20,6 @@ sidebar:
 
 ***Reliability***
 
-- Given Dextr's use in a Contact Center environment, we recommend disabling power saving functions such as hibernation, sleep, suspension, etc. as it may impact a user's ability to use Dextr after resuming from one of these states.
+- Given ConnectPath's use in a Contact Center environment, we recommend disabling power saving functions such as hibernation, sleep, suspension, etc. as it may impact a user's ability to use ConnectPath after resuming from one of these states.
 
-- Additionally, it is recommended that the headset (whether audio jack, USB or Bluetooth) be connected prior to logging into Dextr and not be powered off or disconnected until the user is done using Dextr at the end of his or her shift.
+- Additionally, it is recommended that the headset (whether audio jack, USB or Bluetooth) be connected prior to logging into ConnectPath and not be powered off or disconnected until the user is done using ConnectPath at the end of his or her shift.

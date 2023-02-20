@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-This is a Dextr component that can be displayed in every Dextr TAB. It shows you other agents assigned to your queue or routing profile. 
+This is a ConnectPath component that can be displayed in every ConnectPath TAB. It shows you other agents assigned to your queue or routing profile. 
 
 ### Right click menu
 
@@ -64,7 +64,7 @@ You have the option to hide offline agents or to display all of them by clicking
 
 ### Team Status Durations
 
-Dextr is currently able to show the duration of each agent status. Your Team Status will update whenever an Agent changes status.
+ConnectPath is currently able to show the duration of each agent status. Your Team Status will update whenever an Agent changes status.
 
 [![Team Status Durations](/assets/images/Team-Status-Drawer/agent-status-duration.jpg)](/assets/images/Team-Status-Drawer/agent-status-duration.jpg)
 

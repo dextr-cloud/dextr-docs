@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-Within the Historical Reports TAB you can build, schedule, share and export historical reports without any restrictions on time period. YTD, QTD, MTD and numerous other relative time filters. Export in excel (.xlxs), share with private URL’s and Dextr Flex’s instant messaging.
+Within the Historical Reports TAB you can build, schedule, share and export historical reports without any restrictions on time period. YTD, QTD, MTD and numerous other relative time filters. Export in excel (.xlxs), share with private URL’s and ConnectPath’s instant messaging.
 
 ### Create Report
 

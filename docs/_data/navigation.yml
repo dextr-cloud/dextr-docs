@@ -17,7 +17,7 @@ docs:
       - title: "Login"
         url: /login/
 
-  - title: Dextr Dashboard
+  - title: ConnectPath Dashboard
     children:
       - title: "Home"
         url: /home/
@@ -46,11 +46,11 @@ docs:
         url: /setup-guide/
       - title: "Use an existing Kinesis Stream"
         url: /kinesis/
-      - title: "DextrFlex migration"
+      - title: "Dextr Legacy to ConnectPath Migration"
         url: /migration/
       - title: "Email task configuration"
         url: /emailTask/
-      - title: "Updating Dextr Lambda Function Runtime Version"
+      - title: "Updating ConnectPath Lambda Function Runtime Version"
         url: /update-lambda/
       - title: "Implementing Live Look in your Amazon Connect Instance"
         url: /update-live-look/

@@ -13,7 +13,7 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, September 2022
+## ConnectPath Release Notes, September 2022
 
 ### HAR-640 Add a feature in which a multi level disposition can be defined, selected by an agent and reported on in lieu of a single level disposition:
 
@@ -87,21 +87,21 @@ A feature has been added where a disposition name, value or queue can be updated
 
 ----
 
-### HAR-834 Add feature where additional documentation references are made available within Dextr:
+### HAR-834 Add feature where additional documentation references are made available within ConnectPath:
 
-A feature has been added to provide additional documentation links from within Dextr.
-
-----
-
-### HAR-751 Add feature where additional documentation references are made available within Dextr:
-
-A feature has been added to provide additional documentation links from within Dextr.
+A feature has been added to provide additional documentation links from within ConnectPath.
 
 ----
 
-### HAR-764 Add feature where additional documentation references are made available within Dextr:
+### HAR-751 Add feature where additional documentation references are made available within ConnectPath:
 
-A feature has been added to provide additional documentation links from within Dextr, on the Support page.
+A feature has been added to provide additional documentation links from within ConnectPath.
+
+----
+
+### HAR-764 Add feature where additional documentation references are made available within ConnectPath:
+
+A feature has been added to provide additional documentation links from within ConnectPath, on the Support page.
 
 ----
 
@@ -111,9 +111,9 @@ A feature has been added where an additional column (Queued Calls) is available 
 
 ----
 
-### HAR-653 Add feature where current Dextr version is displayed on Support Page:
+### HAR-653 Add feature where current ConnectPath version is displayed on Support Page:
 
-A feature has been added to display the current Dextr version on the Support page.
+A feature has been added to display the current ConnectPath version on the Support page.
 
 ----
 
@@ -143,7 +143,7 @@ A feature has been added in which the time range used for the filter in Activity
 
 ### HAR-809 Add feature where users will be proactively notified to refresh their session towards the end of their Amazon Connect session:
 
-A feature has been added in where users will be proactively notified to refresh their Dextr session towards the end of their Amazon Connect session, to prevent logouts during an active contact.
+A feature has been added in where users will be proactively notified to refresh their ConnectPath session towards the end of their Amazon Connect session, to prevent logouts during an active contact.
 
 ----
 

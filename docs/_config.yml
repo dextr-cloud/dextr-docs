@@ -96,9 +96,9 @@ author:
 
 footer:
   links:
-    - label: "Dextr"
+    - label: "ConnectPath"
       icon: "fas fa-cloud"
-      url: "https://dextr.cloud"
+      url: "https://www.connectpath.cx"
 
 defaults:
   # _posts

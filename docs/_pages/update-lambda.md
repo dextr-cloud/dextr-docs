@@ -1,10 +1,10 @@
 ---
 permalink: /update-lambda/
-title: "Updating Dextr Lambda Function Runtime Version"
+title: "Updating ConnectPath Lambda Function Runtime Version"
 ---
 
 If you've received an E-Mail like the below, and wish to act on it, you
-may update the Lambda Function Runtime version used by the Dextr Lambda
+may update the Lambda Function Runtime version used by the ConnectPath Lambda
 Functions from Node.js 12 to Node.js 16 using the steps contained within
 this document:
 
@@ -15,7 +15,7 @@ Lambda functions will continue to operate as normal, but the Node
 runtime in question will not receive security updates, nor will AWS
 provide support on the Lambda functions.
 
-At a future date, Dextr will provide the functionality to auto-update
+At a future date, ConnectPath will provide the functionality to auto-update
 the runtime as needed, however, the effort required in updating the
 runtime is envisioned to take no more than 15 minutes.
 
@@ -27,12 +27,12 @@ The first step is to identify the Lambda functions in question, and what
 their current runtime versions are. You can do this by going to the
 Lambda AWS Console (<https://console.aws.amazon.com/lambda>) in the same
 AWS Account and AWS Region that your Amazon Connect instance is in,
-typing Dextr in the search box and pressing enter. The result should be
+typing ConnectPath in the search box and pressing enter. The result should be
 like the result below:
 
 ![](./update-lambda/media/image2.png)
 
-If you have multiple Amazon Connect instances using Dextr you will
+If you have multiple Amazon Connect instances using ConnectPath you will
 notice that for each of those instances, the same set of 4 (or 5 if you
 are using E-Mail Webhooks) Lambda functions will be displayed. In that
 case the steps remain the same but must be repeated for all listed
@@ -56,15 +56,15 @@ selected you will click Save.
 ![](./update-lambda/media/image5.png)
 
 As indicated above, this step will need to be recreated for each of the
-"Dextr" Lambda functions that utilize the "end of support" runtime
+"ConnectPath" Lambda functions that utilize the "end of support" runtime
 version.
 
 After the change has been made, you will want to validate the following
-functions within Dextr continue to work:
+functions within ConnectPath continue to work:
 
 -   Live Look
 
--   Contact Flows that utilize Dextr managed Schedules
+-   Contact Flows that utilize ConnectPath managed Schedules
 
 -   E-Mail Flows (if your instance uses E-Mail)
 
@@ -76,7 +76,7 @@ You may also review the individual Error status of each of the Lambda
 functions by going to the CloudWatch AWS Console
 (<https://console.aws.amazon.com/cloudwatch>) in the same Region as the
 Lambda functions and selecting Metrics \> All Metrics \> Lambda \> By
-Function Name and filtering on "Dextr" and "Errors":
+Function Name and filtering on "ConnectPath" and "Errors":
 
 ![](./update-lambda/media/image7.png)
 

@@ -13,21 +13,21 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, August 2022
+## ConnectPath Release Notes, August 2022
 
 ### HAR-693 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-744 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
-### HAR-245 Correct behavior where recently added Dextr features did not have a default permission set within security profiles:
+### HAR-245 Correct behavior where recently added ConnectPath features did not have a default permission set within security profiles:
 
-As we add new features to Dextr, a default permission will be assigned to Security Profiles, which allows customers to take advantage of new features without having to update their Security Profiles.
+As we add new features to ConnectPath, a default permission will be assigned to Security Profiles, which allows customers to take advantage of new features without having to update their Security Profiles.
 
 ----
 ### HAR-474 Add new feature to provide self-service support:
@@ -35,9 +35,9 @@ As we add new features to Dextr, a default permission will be assigned to Securi
 In addition to being able to create a ticket with our Support team, users now have other methods of self-service support available to them.
 
 ----
-### HAR-600 Correct behavior where users of legacy Amazon Connect instances fail to log into Dextr:
+### HAR-600 Correct behavior where users of legacy Amazon Connect instances fail to log into ConnectPath:
 
-Correct behavior where users of legacy Amazon Connect instances fail to log into Dextr.
+Correct behavior where users of legacy Amazon Connect instances fail to log into ConnectPath.
 
 ----
 ### HAR-662 Correct behavior in which user to user functions (calling, chatting, monitoring, barging) would fail:
@@ -45,44 +45,44 @@ Correct behavior where users of legacy Amazon Connect instances fail to log into
 Correct behavior in which user to user functions (calling, chatting, monitoring, barging) would fail.
 
 ----
-### HAR-675 Correct behavior where users of legacy Amazon Connect instances experience issues when saving Instance settings in Dextr:
+### HAR-675 Correct behavior where users of legacy Amazon Connect instances experience issues when saving Instance settings in ConnectPath:
 
-Correct behavior where users of legacy Amazon Connect instances experience issues when saving Instance settings in Dextr.
+Correct behavior where users of legacy Amazon Connect instances experience issues when saving Instance settings in ConnectPath.
 
 ----
 ### HAR-734 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
-### HAR-735 Correct behavior where refreshing Dextr will result in Team Status Drawer not being displayed:
+### HAR-735 Correct behavior where refreshing ConnectPath will result in Team Status Drawer not being displayed:
 
-Correct behavior where refreshing Dextr will result in Team Status Drawer not being displayed.
+Correct behavior where refreshing ConnectPath will result in Team Status Drawer not being displayed.
 
 ----
 ### HAR-736 (Pre-Release Issue):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-742 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-749 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-750 (Pre-Release Issue):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
-### HAR-42 Correct behavior where users removed from Amazon Connect continue to show in Dextr:
+### HAR-42 Correct behavior where users removed from Amazon Connect continue to show in ConnectPath:
 
-Correct behavior where users removed from Amazon Connect continue to show in Dextr.
+Correct behavior where users removed from Amazon Connect continue to show in ConnectPath.
 
 ----
 ### HAR-208 Correct behavior where in-queue transfers are not properly included in reports:
@@ -97,17 +97,17 @@ Customers may now opt in to using the native Amazon Connect SoftPhone interface 
 ----
 ### HAR-384 (Pre-Release Issue):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
-### HAR-395 Add new feature where users with "long" usernames can be created in Dextr:
+### HAR-395 Add new feature where users with "long" usernames can be created in ConnectPath:
 
 We now support creation of users up to 53 characters in length.
 
 ----
-### HAR-447 Correct behavior in which link to Dextr support on landing page links to an incorrect URL:
+### HAR-447 Correct behavior in which link to ConnectPath support on landing page links to an incorrect URL:
 
-Correct behavior in which link to Dextr support on landing page links to an incorrect URL.
+Correct behavior in which link to ConnectPath support on landing page links to an incorrect URL.
 
 ----
 ### HAR-466 Correct behavior where opening Settings, while on a call, will stop the audio stream between the agent and the customer:
@@ -115,9 +115,9 @@ Correct behavior in which link to Dextr support on landing page links to an inco
 Correct behavior where opening Settings, while on a call, will stop the audio stream between the agent and the customer.
 
 ----
-### HAR-550 Correct behavior where multiple attempts and/or page refreshes are required to log into Dextr:
+### HAR-550 Correct behavior where multiple attempts and/or page refreshes are required to log into ConnectPath:
 
-Correct behavior where multiple attempts and/or page refreshes are required to log into Dextr.
+Correct behavior where multiple attempts and/or page refreshes are required to log into ConnectPath.
 
 ----
 ### HAR-659 Add additional Spanish translations:
@@ -125,9 +125,9 @@ Correct behavior where multiple attempts and/or page refreshes are required to l
 Additional Spanish translations have been added, rounding out our support for Spanish-langage interfaces.
 
 ----
-### HAR-660 Correct behavior where reports are not rendered in Dextr:
+### HAR-660 Correct behavior where reports are not rendered in ConnectPath:
 
-Correct behavior where reports are not rendered in Dextr.
+Correct behavior where reports are not rendered in ConnectPath.
 
 ----
 ### HAR-51 Correct behavior where activity report has no data to display, but generates a report anyway:
@@ -147,7 +147,7 @@ When a customer terminates a contact, an optional tone can be played to notify t
 ----
 ### HAR-257 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-271 Add additional Spanish translations:
@@ -157,7 +157,7 @@ Additional Spanish translations have been added, rounding out our support for Sp
 ----
 ### HAR-340 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-343 Add new feature where attachments can be added to a case, upon new case creation:
@@ -182,7 +182,7 @@ Additional Spanish translations have been added, rounding out our support for Sp
 ----
 ### HAR-436 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-470 Add additional Spanish translations:
@@ -195,24 +195,24 @@ Additional Spanish translations have been added, rounding out our support for Sp
 In addition to being able to create a ticket with our Support team, users now have other methods of self-service support available to them.
 
 ----
-### HAR-478 Add new feature to check microphone/speaker ahead of making/receiving a call in Dextr:
+### HAR-478 Add new feature to check microphone/speaker ahead of making/receiving a call in ConnectPath:
 
-Users can now test their microphone/speaker ahead of making/receiving a call in Dextr.
+Users can now test their microphone/speaker ahead of making/receiving a call in ConnectPath.
 
 ----
-### HAR-480 Add new feature to provide feedback on health of connection to Dextr:
+### HAR-480 Add new feature to provide feedback on health of connection to ConnectPath:
 
-Users can now see the health of their connection to Dextr.
+Users can now see the health of their connection to ConnectPath.
 
 ----
 ### HAR-481 Add new feature to test agent's workstation for connectivity to Amazon Connect endpoints:
 
-Users can now test their workstation's configuration and connectivity to ensure it will work with Dextr/Amazon Connect.
+Users can now test their workstation's configuration and connectivity to ensure it will work with ConnectPath/Amazon Connect.
 
 ----
 ### HAR-482 Add new feature to provide self-service Amazon Connect CCP Log Diagnostics:
 
-Users can now see their Amazon Connect logs and analyze them within Dextr.
+Users can now see their Amazon Connect logs and analyze them within ConnectPath.
 
 ----
 ### HAR-483 Add new feature to provide self-service diagnostics:
@@ -250,19 +250,19 @@ For instances and security profiles in which Wisdom is enabled, Wisdom will now 
 When a user's tickets are loaded, a loading screen will be displayed to indicate they are being loaded, as, depending on the quantity of open tickets, the load may not be instant.
 
 ----
-### HAR-598 Add new feature to display Dextr backend health:
+### HAR-598 Add new feature to display ConnectPath backend health:
 
-Users can now see the health of their connection to Dextr.
+Users can now see the health of their connection to ConnectPath.
 
 ----
 ### HAR-704 (Pre-Release Issue):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-729 (Internal):
 
-This is an internal use case specific to Dextr.
+This is an internal use case specific to ConnectPath.
 
 ----
 ### HAR-754 Add additional Spanish translations:
@@ -272,12 +272,12 @@ Additional Spanish translations have been added, rounding out our support for Sp
 ----
 ### HAR-755 Add new feature to provide self-service Amazon Connect CCP Log Diagnostics:
 
-Users can now see their Amazon Connect logs and analyze them within Dextr.
+Users can now see their Amazon Connect logs and analyze them within ConnectPath.
 
 ----
-### HAR-762 Add new feature to check microphone/speaker ahead of making/receiving a call in Dextr:
+### HAR-762 Add new feature to check microphone/speaker ahead of making/receiving a call in ConnectPath:
 
-Users can now test their microphone/speaker ahead of making/receiving a call in Dextr.
+Users can now test their microphone/speaker ahead of making/receiving a call in ConnectPath.
 
 ----
 ### HAR-764 Add new feature to link to commonly referenced support documentation:

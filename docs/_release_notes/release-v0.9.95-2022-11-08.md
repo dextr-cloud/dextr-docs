@@ -13,7 +13,7 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, November 2022
+## ConnectPath Release Notes, November 2022
 
 ### HAR-1375 Add feature in which a privileged user can add pre-canned responses to non voice contacts that a user may use in response to said contact
 
@@ -35,23 +35,23 @@ A feature has been added in which global (instance level) pre-canned responses c
 
 ### HAR-1094 Add feature in which a privileged user can pre-configure an Iframe URL to be embedded in the Engage page upon receipt/creation of a contact
 
-A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within Dextr. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
+A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within ConnectPath. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
 
 ----
 
 ### HAR-1095 Add feature in which a privileged user can pre-configure an Iframe URL to be embedded in the Engage page upon receipt/creation of a contact
 
-A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within Dextr. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
+A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within ConnectPath. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
 
 ----
 
 ### HAR-1096 Add feature in which a privileged user can pre-configure an Iframe URL to be embedded in the Engage page upon receipt/creation of a contact
 
-A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within Dextr. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
+A feature has been added in which global (instance level) IFrame embedded websites can be defined by a privileged user, allowing up to 5 websites, static or dynamic, to be embedded within ConnectPath. These could include, but are not limited to customer relationship management systems such as Salesforce, Enterprise Service Management systems such as ServiceNow or any other HTTP/HTTPS accessible website that supports GET requests and (optional) parameters from within another application. The URL Definition requires at least one parameter (nullable) contained within double curly braces such as this: {{example}}). Parameters directly reference Amazon Connect Attributes and any combination of static text and parameters can be utilized.
 
 ----
 
-### HAR-678  Add feature in which a user, onboarding to Dextr does not need to provide the AWS Account Number
+### HAR-678  Add feature in which a user, onboarding to ConnectPath does not need to provide the AWS Account Number
 
 A feature has been added in which the AWS Account Number does not need to be provide during onboarding, eliminating an extraneous onboarding step.
 
@@ -63,15 +63,15 @@ A feature has been added in which as user's default country code is utilized whe
 
 ----
 
-### HAR-936  Add feature in which Dextr provides deep links to Amazon Connect, providing streamlined access to Amazon Connect Administrative Features
+### HAR-936  Add feature in which ConnectPath provides deep links to Amazon Connect, providing streamlined access to Amazon Connect Administrative Features
 
-A feature has been added in which Dextr will include, under a new menu bar icon labeled Analytics, links to the native Amazon Connect reporting pages, as well as, under settings, links to the native Amazon Connect configuration pages, providing faster access to these resources.
+A feature has been added in which ConnectPath will include, under a new menu bar icon labeled Analytics, links to the native Amazon Connect reporting pages, as well as, under settings, links to the native Amazon Connect configuration pages, providing faster access to these resources.
 
 ----
 
-### HAR-1353 Add feature in which Dextr provides deep links to Amazon Connect, providing streamlined access to Amazon Connect Administrative Features
+### HAR-1353 Add feature in which ConnectPath provides deep links to Amazon Connect, providing streamlined access to Amazon Connect Administrative Features
 
-A feature has been added in which Dextr will include, under a new menu bar icon labeled Analytics, links to the native Amazon Connect reporting pages, as well as, under settings, links to the native Amazon Connect configuration pages, providing faster access to these resources.
+A feature has been added in which ConnectPath will include, under a new menu bar icon labeled Analytics, links to the native Amazon Connect reporting pages, as well as, under settings, links to the native Amazon Connect configuration pages, providing faster access to these resources.
 
 ----
 
@@ -81,9 +81,9 @@ A feature has been added in which, when a user places a call on Hold, that Hold 
 
 ----
 
-### HAR-341  Add feature in which reporting S3 bucket is created and permissioned during Dextr onboarding process
+### HAR-341  Add feature in which reporting S3 bucket is created and permissioned during ConnectPath onboarding process
 
-A feature has been added in which for new Dextr instances a default S3 bucket is created for report staging (and other purposes), with the permissions predefined, eliminating an extraneous onboarding step.
+A feature has been added in which for new ConnectPath instances a default S3 bucket is created for report staging (and other purposes), with the permissions predefined, eliminating an extraneous onboarding step.
 
 ----
 
@@ -111,13 +111,13 @@ A defect has been corrected in which, upon a user declining a chat, reports may 
 
 ----
 
-### HAR-1105 Correct behavior in which a case created from Dextr results in a truncated description in Service Now
+### HAR-1105 Correct behavior in which a case created from ConnectPath results in a truncated description in Service Now
 
-A defect has been corrected in which a service request created from Dextr results in CloudHesive only seeing a truncated version of that request.
+A defect has been corrected in which a service request created from ConnectPath results in CloudHesive only seeing a truncated version of that request.
 
 ----
 
-### HAR-1372 Correct behavior in which a state of Dextr configuration and CloudFormation template to support E-Mail Webhooks may become out of sync
+### HAR-1372 Correct behavior in which a state of ConnectPath configuration and CloudFormation template to support E-Mail Webhooks may become out of sync
 
 A defect has been corrected in which the CloudFormation template uses to deploy the Lambda Function used for E-Mail Webhooks creates a uniquely Lambda function, avoiding the potential for name collisions.
 
@@ -192,9 +192,9 @@ A defect has been corrected in which an incoming SMS message may fail to be proc
 
 ----
 
-### HAR-1033 Correct behavior in which an instance cannot be offboarded from Dextr, via the admin page
+### HAR-1033 Correct behavior in which an instance cannot be offboarded from ConnectPath, via the admin page
 
-A defect has been corrected in which a user could not offboard their instance from Dextr via the admin page. 
+A defect has been corrected in which a user could not offboard their instance from ConnectPath via the admin page. 
 This feature will remove the CloudFormation template and flag the instance as inactive, preventing the instance from being onboarded a subsequent time.
 
 ----
@@ -241,9 +241,9 @@ A defect has been corrected in which incoming MMS messages with attachments may 
 
 ----
 
-### HAR-1121 Correct behavior in which the Dextr landing page, on occasion, may display a blank white screen
+### HAR-1121 Correct behavior in which the ConnectPath landing page, on occasion, may display a blank white screen
 
-A defect has been corrected in which the Dextr landing page may occasionally display a blank, white screen.
+A defect has been corrected in which the ConnectPath landing page may occasionally display a blank, white screen.
 
 ----
 

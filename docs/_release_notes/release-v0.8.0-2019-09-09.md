@@ -13,10 +13,10 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, September 2019
+## ConnectPath Release Notes, September 2019
 ### Supported Browsers: 
 
-Google Chrome Version 75.0.3770.100 or later. Welcome to the September 2019 release of Dextr. 
+Google Chrome Version 75.0.3770.100 or later. Welcome to the September 2019 release of ConnectPath. 
 
 There are a number of updates in this version that we hope you like, and some of the key highlights include: 
 
@@ -63,15 +63,9 @@ Now that there are favoriting and filtering methods, we can organize this list a
 ### There is also:
 
 - Reduced network utilization. 
-- Routing Profile changes reflect much sooner (much improved reactivity between Connect changes and Dextr changes).
+- Routing Profile changes reflect much sooner (much improved reactivity between Connect changes and ConnectPath changes).
 - Filter Activity by Callbacks (also improved styling).
 - UI rebuild for SMS and Email contact handling. 
 - Sort LiveLook durations independent of queue name. 
 - LiveLook calls are removed onAnswer instead of onPresented. 
 - Report on all calls. 
-
-
-### Insiders: 
-
-Want to see new features as soon as possible? You can enroll in the beta program by emailing your Instance Alias to beta@dextr.cloud.  Try out the latest updates as soon as they are available.  
- 

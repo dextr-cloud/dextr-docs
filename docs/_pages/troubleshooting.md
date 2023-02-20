@@ -12,11 +12,11 @@ sidebar:
 
 ***General Troubleshooting Steps***
 
-For Issues with Logging into Dextr, Verify that:
+For Issues with Logging into ConnectPath, Verify that:
 - Approved origins in Amazon Connect are correctly configured
-- User with issues exist in user lists (Amazon Connect user management, Dextr user list)
+- User with issues exist in user lists (Amazon Connect user management, ConnectPath user list)
 - The Instance Admin can login
-- The Username case as created in Amazon Connect and Dextr matches
+- The Username case as created in Amazon Connect and ConnectPath matches
 
 For Issues with Transferring calls, Verify that:
 - Quick connects are set up in Amazon Connect
@@ -36,7 +36,7 @@ For Issues with Call troubleshooting, Verify that:
 
 For Issues with Reports, Verify that:
 - S3 bucket permissions are set correctly
-- Dextr settings - Instance details - Reporting bucket is set correctly
+- ConnectPath settings - Instance details - Reporting bucket is set correctly
 - Permissions are enabled in the users' security profile
 
 For Issues with User creation, Verify that:
@@ -51,7 +51,7 @@ For Issues with SAML Integration, Verify that:
 
 ***Data Collection Guidance***
 
-When reporting issues with Dextr, it's helpful to collect and provide the following details so that we may be more responsive in addressing your concerns:
+When reporting issues with ConnectPath, it's helpful to collect and provide the following details so that we may be more responsive in addressing your concerns:
 - Agent Name(s)
 - Agent Location/Type of Location/Type of Internet Connection
 - Dates/Times of Issue(s)
@@ -66,4 +66,4 @@ When reporting issues with Dextr, it's helpful to collect and provide the follow
 - Impact
 - Is this a systemic issue impacting all users, aliases and regions?
 - Can issue be reproduced the native Amazon Connect CCP?
-- What are the results of the other self-service tests you've run through Dextr?
+- What are the results of the other self-service tests you've run through ConnectPath?

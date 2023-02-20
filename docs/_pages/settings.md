@@ -27,7 +27,7 @@ You can change your Avatar, First Name, Last Name and Email by editing the field
 
 [![Phone and User](/assets/images/Settings/phone-user-info.jpg)](/assets/images/Settings/phone-user-info.jpg)
 
-There is also the option to enable **Dark mode**. This will change Dextr default theme into a dark one for your eyes comfort.
+There is also the option to enable **Dark mode**. This will change ConectPath default theme into a dark one for your eyes comfort.
 
 [![Dark mode](/assets/images/Settings/dark-mode-settings.jpg)](/assets/images/Settings/dark-mode-settings.jpg)
 
@@ -165,7 +165,7 @@ General information about integrations within the application.
 
 **Core & Extensions**
 
-You can see the already integrated core functionalities within Dextr (Amazon Connect and Kinesis) and the things that are being worked on (Alexa).
+You can see the already integrated core functionalities within ConectPath (Amazon Connect and Kinesis) and the things that are being worked on (Alexa).
 
 [![Integration](/assets/images/Settings/integration.jpg)](/assets/images/Settings/integration.jpg)
 

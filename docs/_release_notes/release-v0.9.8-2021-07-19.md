@@ -13,11 +13,11 @@ sidebar:
   nav: "docs"
 ---
 
-## Dextr Release Notes, July 2021
+## ConnectPath Release Notes, July 2021
 
 ### Supported Browsers: 
 
-Google Chrome Version 75.0.3770.100 or later. Welcome to the July 2021 release of Dextr Flex. There are several updates in this version that we hope you will like. Some of the key 
+Google Chrome Version 75.0.3770.100 or later. Welcome to the July 2021 release of ConnectPath Flex. There are several updates in this version that we hope you will like. Some of the key 
 highlights include:
  
 
@@ -31,14 +31,14 @@ Introducing a new look and feel. While improving the agent’s experience and su
 
 ### Amazon Connect Tasks based Omni-Channel
 
-Dextr’s Omni-Channel offering is now tightly coupled with the Amazon Connect router. This allows for consistent reporting and dynamic contact flow integration. Available channels include Email, SMS, Fax and BYOC (Webhooks).
+ConnectPath’s Omni-Channel offering is now tightly coupled with the Amazon Connect router. This allows for consistent reporting and dynamic contact flow integration. Available channels include Email, SMS, Fax and BYOC (Webhooks).
 
 [![Omni-Channel](/assets/images/Release-notes/0.9.8/omni-channel.jpg)](/assets/images/Release-notes/0.9.8/omni-channel.jpg)
 ----
 
 ### OS Native Notifications
 
-While browsing other tabs or working in other applications, Dextr will notify you when something requires your attention.
+While browsing other tabs or working in other applications, ConnectPath will notify you when something requires your attention.
 
 [![OS Notification](/assets/images/Release-notes/0.9.8/OS-notification.jpg)](/assets/images/Release-notes/0.9.8/OS-notification.jpg)
 
@@ -50,7 +50,7 @@ New Historical reporting around Dispositions and time of day.
 
 ### Start/Stop Recording
 
-Allow agent’s to start and stop recording during an active call. Like all features within Dextr, this is permission based and at the discretion of your admins.
+Allow agent’s to start and stop recording during an active call. Like all features within ConnectPath, this is permission based and at the discretion of your admins.
 
 [![Start/Stop Recording](/assets/images/Release-notes/0.9.8/recording.jpg)](/assets/images/Release-notes/0.9.8/recording.jpg)
 
@@ -63,7 +63,7 @@ Agent’s now have the ability to change their outbound caller ID on a call by c
 
 ### Click-to-call Chrome Extension
 
-While browsing other websites, you can now easily click phone numbers to make outbound calls from Dextr or Amazon Connect CCP, by installing **Connect Companion** from the Chrome extension store.
+While browsing other websites, you can now easily click phone numbers to make outbound calls from ConnectPath or Amazon Connect CCP, by installing **Connect Companion** from the Chrome extension store.
 
 [![Connect Companion](/assets/images/Release-notes/0.9.8/connect-companion.jpg)](/assets/images/Release-notes/0.9.8/connect-companion.jpg)
 
@@ -74,7 +74,3 @@ Overall memory and CPU usage have been dramatically reduced to improve the respo
 ### Improved UI/UX
 
 Numerous quality of life improvements. We’ve implemented feedback to make life easier for your agents and supervisors as they navigate their day-to-day tasks.
-
-### Insiders: 
-
-Want to see new features as soon as possible? You can enroll in the beta program by emailing your Instance Alias to **beta@dextr.cloud**.  Try out the latest updates as soon as they are available.  
