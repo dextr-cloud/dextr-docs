@@ -54,3 +54,5 @@ docs:
         url: /update-lambda/
       - title: "Implementing Live Look in your Amazon Connect Instance"
         url: /update-live-look/
+      - title: "ConnectPath Architecture"
+        url: /architecture/
