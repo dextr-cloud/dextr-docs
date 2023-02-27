@@ -3,8 +3,6 @@ permalink: /architecture/
 title: "ConnectPath - Architecture, Operations and Security"
 ---
 
-# ConnectPath -- Architecture, Operations and Security
-
 The purpose of this document is to provide a high level overview of the
 Architecture, Operations and Security of the Customer-Deployed
 Components that comprise ConnectPath.
