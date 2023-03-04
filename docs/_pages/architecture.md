@@ -168,6 +168,8 @@ in the name.
         -   Attachments, if configured, from Webhook based Channel
             Integrations
 
+    -   We recommend that you utilize your existing backup processes (whether that be lifecycle policies or AWS backup) to back up and retain data contained within this S3 bucket and the Amazon Connect Instance's S3 bucket based on your organizational needs.
+
 -   Amazon DynamoDB
 
     -   Mandatory, Created by CloudFormation
@@ -182,6 +184,8 @@ in the name.
 
     -   Direct create, read, update and delete operations against this
         table are not recommended
+
+    -   We recommend that you utilize your existing backup processes (such as AWS backup) to back up and retain data contained within this table based on your organizational needs.
 
 -   Amazon Simple Email Service (SES)
 

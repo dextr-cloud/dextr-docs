@@ -12,6 +12,9 @@ sidebar:
 
 ***General Troubleshooting Steps***
 
+Chrome Memory Saver
+-Chrome recently added a feature, Memory Saver (https://support.google.com/chrome/answer/12929150?visit_id=638133575825043437-4035008892&p=chrome_memory_saver&rd=1#memory_saver&zippy=%2Cturn-memory-saver-on-or-off), that will suspend inactive tabs to reduce the overall Memory footprint of Chrome. This feature should not impact sites, such as ConnectPath, that are actively in use (e.g. the focused tab) or have actively running content, however, if you are a lower volume user of ConnectPath, it might be necessary for you to follow the steps in the aforementioned URL to avoid disruption to your ConnectPath session.
+
 For Issues with Logging into ConnectPath, Verify that:
 - Approved origins in Amazon Connect are correctly configured
 - User with issues exist in user lists (Amazon Connect user management, ConnectPath user list)
