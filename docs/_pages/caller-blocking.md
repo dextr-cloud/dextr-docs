@@ -102,21 +102,21 @@ Before you can integrate the feature into your Contact Flows, you will
 need to import a Contact Flow Module, which you can do by going to
 Contact Flows, Modules and then clicking Create contact flow module:
 
-![](./images/blocking/image12.png)
+![](./caller-blocking/blocking/image12.png)
 
 Select from the far right drop down Import (beta), and import the
 Contact Flow Module downloaded from [HERE](./caller-blocking/blockedStatus)
 
-![](./images/media/image13.png)
+![](./caller-blocking/media/image13.png)
 
 Once imported, note the name (blockedStatus in this example), set the
 BlockedDisposition value to the one that you wish to use for phone
 numbers that should be blocked (demonstration in this example), and set
 the InstanceName to the name of your instance:
 
-![](./images/media/image14.png)
+![](./caller-blocking/media/image14.png)
 
-![](./images/media/image15.png)
+![](./caller-blocking/media/image15.png)
 
 Once done click Save and Publish.
 

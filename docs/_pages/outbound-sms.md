@@ -3,8 +3,6 @@ permalink: /outbound-sms/
 title: "ConnectPath - Two Way SMS/MMS Configuration with Twilio"
 ---
 
-Two Way SMS/MMS Configuration with Twilio
-
 This document will walk you through the initial setup of Twilio and
 ConnectPath to support the receipt of SMS and MMS messages from Twilio
 into ConnectPath as well as the origination of SMS and MMS messages from

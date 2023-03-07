@@ -3,8 +3,6 @@ permalink: /api/
 title: "ConnectPath - Public APIs"
 ---
 
-Public APIs
-
 ConnectPath exposes several authenticated and authorized APIs to provide
 flexibility to our customer's needs and extend the capabilities of
 ConnectPath.
