@@ -22,21 +22,18 @@ is the same as the "Emergency Access" login from the AWS Console.
 From there, you will go to Settings, then Integrations. At this point
 you'll notice an External API button below:
 
-![Graphical user interface, application, website Description
-automatically generated](./api/media/image1.png)
+![](./api/media/image1.png)
 
 Click on View and then Click on Add New Token:
 
-![Graphical user interface, application Description automatically
-generated](./api/media/image2.png)
+![](./api/media/image2.png)
 
 Give the token a name and then click Save.
 
 You'll now see the token's creation timestamp, name and the token itself
 below:
 
-![Graphical user interface, application Description automatically
-generated](./api/media/image3.png)
+![](./api/media/image3.png)
 
 You may copy the token with the copy button or delete it with the trash
 can button.
@@ -50,12 +47,12 @@ The API Family Swagger Documentation and Postman Collections follow.
 
 Users 
 
-Swagger Documentation <./api/user-api/index.html>
+Swagger Documentation [HERE](./api/user-api/index.html)
 
-Postman Collection <./api/Users.postman_collection.json>
+Postman Collection [HERE](./api/Users.postman_collection.json)
 
 Directory
 
-Swagger Documentation <./api/directory-api/index.html>
+Swagger Documentation [HERE](./api/directory-api/index.html)
 
-Postman Collection <./api/ContactsDirectory.postman_collection.json>
+Postman Collection [HERE](./api/ContactsDirectory.postman_collection.json)

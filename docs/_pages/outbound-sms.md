@@ -32,8 +32,7 @@ message. This creates a new conversation, which follows the same rules
 as SMS/MMS messages received from Twilio, e.g. it is pinned to the agent
 until the agent ends the conversation:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image1.png)
+![](./outbound-sms/media/image1.png)
 
 Setup Twilio Webhook in ConnectPath
 
@@ -47,19 +46,16 @@ creating your Twilio Webhook.
 On the first screen, give it a name and description, and set the type to
 SMS and Provider to Twilio:
 
-![Graphical user interface, text, application, email Description
-automatically generated](./outbound-sms/media/image2.png)
+![](./outbound-sms/media/image2.png)
 
 Click Next and enter the Account SID, API Key (both values are the same)
 and API Secret, which can be found on the Twilio Project's dashboard:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image3.png)
+![](./outbound-sms/media/image3.png)
 
 Click Next:
 
-![Graphical user interface, text, application, email Description
-automatically generated](./outbound-sms/media/image4.png)
+![](./outbound-sms/media/image4.png)
 
 Finally, select a Contact Flow, Sample inbound flow (first contact
 experience), is an out of the box Contact Flow designed to work with
@@ -68,8 +64,7 @@ enter the default SMS/MMS phone number to use when originating SMS/MMS
 messages from ConnectPath (e.164 format without the leading +), and then
 messages for Initial and Final Responses:
 
-![Graphical user interface, text, application, email Description
-automatically generated](./outbound-sms/media/image5.png)
+![](./outbound-sms/media/image5.png)
 
 Once done, click Update.
 
@@ -87,40 +82,34 @@ On your Twilio Project's dashboard, note the Account SID and Auth Token
 -- you'll need to provide this information when you setup the Twilio
 Webhook in ConnectPath:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image3.png)
+![](./outbound-sms/media/image3.png)
 
 Under Phone Numbers, then Buy a number, find a number that suits your
 needs (Country, criteria, etc.) that supports SMS and MMS:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image6.png)
+![](./outbound-sms/media/image6.png)
 
 Under Messaging, then Services, click Create Messaging Service. Upon
 doing so, you will be presented with the following screen:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image7.png)
+![](./outbound-sms/media/image7.png)
 
 Name your messaging service and then select "Engage in a discussion" as
 the Messaging Service use case. After that, click Create Messaging
 Service, then Add Senders, and you will be presented with the following
 screen:
 
-![Graphical user interface, text, application, email, Teams Description
-automatically generated](./outbound-sms/media/image8.png)
+![](./outbound-sms/media/image8.png)
 
 Select Phone Number, then Continue, and you will be presented with the
 following screen:
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image9.png)
+![](./outbound-sms/media/image9.png)
 
 Select the phone number you acquired in a prior step, click Add Phone
 Numbers, then click Set up integration:
 
-![A picture containing timeline Description automatically
-generated](./outbound-sms/media/image10.png)
+![](./outbound-sms/media/image10.png)
 
 Select the radio button "Send a webhook" and enter the URL provided in
 the ConnectPath Twilio Webhook Screen (more details are under the "Setup
@@ -129,8 +118,7 @@ Twilio Webhook in ConnectPath"
 step) in the Request URL and Fallback URL fields. Once done click Add
 Compliance Info and you will be presented with the following screen:
 
-![Graphical user interface, application Description automatically
-generated](./outbound-sms/media/image11.png)
+![](./outbound-sms/media/image11.png)
 
 Finally, click Complete Messaging Service Setup.
 
@@ -149,17 +137,13 @@ In the Amazon Connect Console, go to Contact Flows and then Click Create
 contact flow, the default type of Contact Flow is sufficient and there
 is no need to select one of the other options present:
 
-![Table Description automatically generated with medium
-confidence](./outbound-sms/media/image12.png)
+![](./outbound-sms/media/image12.png)
 
 In the new Contact Flow screen, select Import, and then select the file
-downloaded from HERE:
+downloaded from [HERE](./outbound-sms/assign-to-agent)
 
-![A picture containing chart Description automatically
-generated](./outbound-sms/media/image13.png)
-![Graphical user interface, application,
-Teams Description automatically
-generated](./outbound-sms/media/image14.png)
+![](./outbound-sms/media/image13.png)
+![](./outbound-sms/media/image14.png)
 
 Finally, select Save and Publish, setting the name or noting the name of
 the Contact Flow
@@ -177,8 +161,7 @@ Under Settings, Instance Details, set the Outbound messages toggle to
 Yes and select the Contact Flow previously created (default name is
 "Assign to Agent"):
 
-![Graphical user interface, application, Teams Description automatically
-generated](./outbound-sms/media/image15.png)
+![](./outbound-sms/media/image15.png)
 
 Upon selecting the Contact Flow, the preference should be saved
 automatically, and no additional steps are required to enable the
