@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "15b38e07-0559-4f30-b89f-ab42e34fd757",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19216645"
+	},
+	"item": [
+		{
+			"name": "addUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {     \r\n            \"PhoneConfig\": {\r\n                \"AutoAccept\": false,\r\n                \"PhoneType\": \"SOFT_PHONE\",\r\n                \"DeskPhoneNumber\": null,\r\n                \"AfterContactWorkTimeLimit\": 30\r\n            },\r\n            \"PermissionGroupId\": \"x\",\r\n            \"IdentityInfo\": {\r\n                \"LastName\": \"x\",\r\n                \"Email\": \"x@x.x\",\r\n                \"Mobile\": null,\r\n                \"FirstName\": \"x\"\r\n            },\r\n            \"RoutingProfileId\": \"x\",\r\n            \"Username\": \"x\",\r\n            \"Password\": \"x\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUserByUsermame",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/x",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user",
+						"x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsersList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUserBatch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  [\r\n        {\r\n            \"PhoneConfig\": {\r\n                \"PhoneType\": \"SOFT_PHONE\",\r\n                \"AutoAccept\": false,\r\n                \"AfterContactWorkTimeLimit\": 30\r\n            },\r\n            \"IdentityInfo\": {\r\n                \"FirstName\": \"x\",\r\n                \"Email\": \"x@x.x\",\r\n                \"LastName\": \"x\"\r\n            },\r\n            \"RoutingProfileId\": \"x\",\r\n            \"Username\": \"x\",\r\n            \"Password\": \"x\",\t\t\t\r\n            \"PermissionGroupId\": \"x\"\r\n        }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/batch",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configuration",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {     \r\n            \"PhoneConfig\": {\r\n                \"AutoAccept\": false,\r\n                \"PhoneType\": \"SOFT_PHONE\",\r\n                \"DeskPhoneNumber\": null,\r\n                \"AfterContactWorkTimeLimit\": 30\r\n            },\r\n            \"SecurityGroupId\": \"x\",\r\n            \"IdentityInfo\": {\r\n                \"SecondaryEmail\": null,\r\n                \"LastName\": \"x\",\r\n                \"Email\": \"x@x.x\",\r\n                \"Mobile\": null,\r\n                \"FirstName\": \"x\"\r\n            },\r\n            \"RoutingProfileId\": \"x\",\r\n            \"Username\": \"x\",\r\n            \"Password\": \"x\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/getparameters",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user",
+						"getparameters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByUsermame",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/x@x.x",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user",
+						"x@x.x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IdentityInfo\": {\r\n        \"FirstName\": \"x\",\r\n        \"LastName\": \"x\"\r\n    },\r\n    \"PermissionGroupId\": \"x\",\r\n    \"RoutingProfileId\": \"x\",\r\n    \"PhoneConfig\": {\r\n        \"PhoneType\": \"SOFT_PHONE\",\r\n        \"AutoAccept\": false,\r\n        \"AfterContactWorkTimeLimit\": 10\r\n    },\r\n    \"Username\": \"x@x.x\",\r\n    \"Id\": \"x\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUserBatch Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/batch/x",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"batch",
+						"x"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

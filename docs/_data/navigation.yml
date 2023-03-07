@@ -56,3 +56,12 @@ docs:
         url: /update-live-look/
       - title: "ConnectPath Architecture"
         url: /architecture/
+      - title: "Caller Blocking"
+        url: /caller-blocking/
+      - title: "Outbound SMS"
+        url: /outbound-sms/
+      - title: "Queue Management"
+        url: /queue-management/
+      - title: "API"
+        url: /api/
+

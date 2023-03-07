@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "921bda19-6310-47e5-b9cb-2d0325bea5df",
+		"name": "ContactsDirectory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19216645"
+	},
+	"item": [
+		{
+			"name": "CreateDirectory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"CellPhone\": \"+1234567890\",\n            \"HomePhone\": \"+1234567890\",\n            \"Email\": \"x@x.x\",\n            \"IsGlobal\": false,\n            \"WorkPhone\": \"+1234567890\",\n            \"Name\": \"Sample\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"directory"
+					],
+					"query": [
+						{
+							"key": "InstanceId",
+							"value": "x",
+							"disabled": true
+						},
+						{
+							"key": "Name",
+							"value": "Sample",
+							"disabled": true
+						},
+						{
+							"key": "Email",
+							"value": "x@x.x",
+							"disabled": true
+						},
+						{
+							"key": "HomePhone",
+							"value": "+1234567890",
+							"disabled": true
+						},
+						{
+							"key": "WorkPhone",
+							"value": "+1234567890",
+							"disabled": true
+						},
+						{
+							"key": "CellPhone",
+							"value": "+1234567890",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDriectory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/x",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"directory",
+						"x"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDirectory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"directory",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListDirectory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/x",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"directory",
+						"x"
+					],
+					"query": [
+						{
+							"key": "WorkPhone",
+							"value": "+1234567890",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BatchDirectory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n  \"Name\": \"Sample\",  \n     \"Email\": \"x@x.x\",  \n     \"HomePhone\": \"+1234567890\",  \n     \"WorkPhone\": \"+1234567890\",  \n     \"CellPhone\": \"+1234567890\"  \n}  \n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/batch",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"directory",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batch status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "x",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-east-1.api.dextr.cloud/flex/api/batch/",
+					"protocol": "https",
+					"host": [
+						"us-east-1",
+						"api",
+						"dextr",
+						"cloud"
+					],
+					"path": [
+						"flex",
+						"api",
+						"batch",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

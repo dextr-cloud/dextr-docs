@@ -1,0 +1,404 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "2022-12-30T12:55:53Z",
+        "title": "morgan-bilal"
+    },
+    "host": "eu-central-1.api.bilal.connectpathdev.com",
+    "basePath": "/bilal",
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/api/user": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "Create User",
+                        "description": "API to create user",
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                                "Name, Workphone"
+                            ],
+                            "properties": {
+                                "PhoneConfig": {
+                                    "type": "object",
+                                    "required": [
+                                        ""
+                                    ],
+                                    "properties": {
+                                        "AutoAccept": {
+                                            "type": "boolean"
+                                        },
+                                        "PhoneType": {
+                                            "type": "string"
+                                        },
+                                        "DeskPhoneNumber": {
+                                            "type": "number"
+                                        },
+                                        "AfterContactWorkTimeLimitd": {
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "IdentityInfo": {
+                                    "type": "object",
+                                    "required": [
+                                        ""
+                                    ],
+                                    "properties": {
+                                        "LastName": {
+                                            "type": "string"
+                                        },
+                                        "FirstName": {
+                                            "type": "string"
+                                        },
+                                        "Email": {
+                                            "type": "string"
+                                        },
+                                        "Mobile": {
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "PermissionGroupId": {
+                                    "type": "string"
+                                },
+                                "RoutingProfileId": {
+                                    "type": "string"
+                                },
+                                "Username": {
+                                    "type": "string"
+                                },
+                                "Password": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User Created"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "options": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 response",
+                        "headers": {
+                            "Access-Control-Allow-Origin": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Methods": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Headers": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/batch": {
+            "post": {
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "Batch User",
+                        "description": "Create User in Batch",
+                        "schema": {
+                            "type": "array",
+                            "required": [
+                                "Name, Workphone"
+                            ],
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "Name, Workphone"
+                                ],
+                                "properties": {
+                                    "PhoneConfig": {
+                                        "type": "object",
+                                        "required": [
+                                            ""
+                                        ],
+                                        "properties": {
+                                            "AutoAccept": {
+                                                "type": "boolean"
+                                            },
+                                            "PhoneType": {
+                                                "type": "string"
+                                            },
+                                            "DeskPhoneNumber": {
+                                                "type": "number"
+                                            },
+                                            "AfterContactWorkTimeLimitd": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    },
+                                    "IdentityInfo": {
+                                        "type": "object",
+                                        "required": [
+                                            ""
+                                        ],
+                                        "properties": {
+                                            "LastName": {
+                                                "type": "string"
+                                            },
+                                            "FirstName": {
+                                                "type": "string"
+                                            },
+                                            "Email": {
+                                                "type": "string"
+                                            },
+                                            "Mobile": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    },
+                                    "PermissionGroupId": {
+                                        "type": "string"
+                                    },
+                                    "RoutingProfileId": {
+                                        "type": "string"
+                                    },
+                                    "Username": {
+                                        "type": "string"
+                                    },
+                                    "Password": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "options": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 response",
+                        "headers": {
+                            "Access-Control-Allow-Origin": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Methods": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Headers": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/getparameters": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "options": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 response",
+                        "headers": {
+                            "Access-Control-Allow-Origin": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Methods": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Headers": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/{username}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "delete": {
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User deleted"
+                    },
+                    "404": {
+                        "description": "User not found or has been already deleted"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "publicAPIAuthorizer": []
+                    }
+                ]
+            },
+            "options": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "200 response",
+                        "headers": {
+                            "Access-Control-Allow-Origin": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Methods": {
+                                "type": "string"
+                            },
+                            "Access-Control-Allow-Headers": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "publicAPIAuthorizer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "x-amazon-apigateway-authtype": "custom"
+        }
+    }
+}
