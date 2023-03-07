@@ -3,13 +3,10 @@ permalink: /caller-blocking/
 title: "ConnectPath - Call Blocking Workflow"
 ---
 
-Call Blocking Workflow (Disposition Update in Activity Search &
-Integration with ConnectPath's Database in a Contact Flow via a Lambda
-Function)
-
 ConnectPath allows privileged users to update the Disposition of a
 completed contact, overriding a Disposition previously selected by an
-agent.
+agent and effectively forming a Call Blocking Workflow by integrating with
+ConnectPath's Database in a Contact Flow via a Lambda Function.
 
 Combined with a DynamoDB index, Lambda function and Contact flow, you
 can create a workflow within ConnectPath and your contact flow to block
