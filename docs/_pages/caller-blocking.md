@@ -102,7 +102,7 @@ Before you can integrate the feature into your Contact Flows, you will
 need to import a Contact Flow Module, which you can do by going to
 Contact Flows, Modules and then clicking Create contact flow module:
 
-![](./caller-blocking/blocking/image12.png)
+![](./caller-blocking/media/image12.png)
 
 Select from the far right drop down Import (beta), and import the
 Contact Flow Module downloaded from [HERE](./caller-blocking/blockedStatus)
