@@ -2,10 +2,10 @@
   "swagger" : "2.0",
   "info" : {
     "version" : "2022-11-21T09:31:41Z",
-    "title" : "Directory Public API"
+    "title" : "directory-api"
   },
-  "host" : "us-west-2.api.khaleeq.connectpathdev.com",
-  "basePath" : "/khaleeq",
+  "host" : "us-east-1.api.dextr.cloud",
+  "basePath" : "/flex",
   "schemes" : [ "https" ],
   "paths" : {
     "/api/batch/{batchId}" : {
@@ -64,7 +64,7 @@
            "500" : {
             "description": "Something went wrong"
           }
-          
+
         }
       }
     },
@@ -90,16 +90,16 @@
             "in": "body",
             "name": "directory",
             "description": "the directory to create",
-            "schema": 
+            "schema":
               {
                 "type": "object",
                 "required": ["Name, Workphone"],
-                "properties": 
+                "properties":
                  {
                    "Name":
                       {"type": "string" },
                     "Email":
-                      {"type": "string" },  
+                      {"type": "string" },
                     "WorkPhone":
                       {"type": "string"},
                     "HomePhone":
@@ -195,17 +195,17 @@
             "in": "body",
             "name": "directory",
             "description": "the directory to create",
-            "schema": 
+            "schema":
               {
                 "type": "array",
                 "required": ["Name, Workphone"],
                 "items": {
-                "properties": 
+                "properties":
                   {
                     "Name":
                         {"type": "string" },
                       "Email":
-                        {"type": "string" },  
+                        {"type": "string" },
                       "Workphone":
                         {"type": "string"},
                       "Homehone":

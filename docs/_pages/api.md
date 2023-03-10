@@ -43,14 +43,18 @@ endpoint in those examples accordingly.
 
 The API Family Swagger Documentation and Postman Collections follow.
 
-Users 
+For convenience we also have a hosted copy of the Swagger Editor [HERE](./api/swagger/index.html)
 
-Swagger Documentation [HERE](./api/user-api/index.html)
+
+
+Users
+
+Swagger Documentation [HERE](./api/user-api/user-api.json)
 
 Postman Collection [HERE](./api/Users.postman_collection.json)
 
 Directory
 
-Swagger Documentation [HERE](./api/directory-api/index.html)
+Swagger Documentation [HERE](./api/directory-api/directory-api.json)
 
 Postman Collection [HERE](./api/ContactsDirectory.postman_collection.json)

@@ -2,10 +2,10 @@
     "swagger": "2.0",
     "info": {
         "version": "2022-12-30T12:55:53Z",
-        "title": "morgan-bilal"
+        "title": "user-api"
     },
-    "host": "eu-central-1.api.bilal.connectpathdev.com",
-    "basePath": "/bilal",
+    "host": "us-east-1.api.dextr.cloud",
+    "basePath": "/flex",
     "schemes": [
         "https"
     ],
