@@ -65,4 +65,4 @@ docs:
       - title: "API"
         url: /api/
       - title: "Pinpoint SMS ConnectPath (Chat) Integration"
-        url: /pinpoint-chat-integration/
+        url: /smspinpoint/
