@@ -64,4 +64,5 @@ docs:
         url: /queue-management/
       - title: "API"
         url: /api/
-
+      - title: "Pinpoint SMS ConnectPath (Chat) Integration"
+        url: /pinpoint-chat-integration/

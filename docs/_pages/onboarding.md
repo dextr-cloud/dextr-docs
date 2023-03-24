@@ -31,6 +31,8 @@ After your subscription to ConectPath and setting up your account, you'll be red
 
 {% include figure image_path="/assets/images/dextrLoginOnboarding.gif" alt="Onboarding Portal"%}
 
+Note that for the addition of subsequent instances, you may use the same username and password previously setup to access the ConnectPath Instance Admin Portal (separate from the ConnectPath Portal) and if those instances are in the same AWS account, you may skip the preceeding three steps.
+
 ----
 
 ### Onboarding

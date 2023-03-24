@@ -25,6 +25,13 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 
 - Twilio, which is utilized by ConnectPath for TURN/STUN services requires the following network traffic to be permitted to/from your users' workstations, through the Internet: https://www.twilio.com/docs/stun-turn/regions
 
+- In a future release, we will be replacing Twilio TURN/STUN services with Chime SDK TURN/STUN services and as such, recommend the following hosts, protocols and ports to be permitted from your users' workstations, through the Internet:
+
+- *.chime.aws      HTTP/HTTPS
+- *.amazonaws.com      HTTP/HTTPS
+- *.sdkassets.chime.aws      HTTP/HTTPS
+- *.chime.aws      UDP/3478
+
 - In addition to the above, ConnectPath requires the following hosts, protocols and ports to be permitted from your users' workstations, through the Internet:
 
 - *.graphql.flex.dextrflex.com   HTTP/HTTPS
@@ -32,6 +39,14 @@ https://docs.aws.amazon.com/connect/latest/adminguide/ccp-networking.html
 - *.ws.dextrflex.com              HTTP/HTTPS
 - *.dextr.cloud      HTTP/HTTPS
 - go.dextr.cloud      HTTP/HTTPS
+
+- In a future release, we will be introducing connectpath.cx domains, reflective of our change to the ConnectPath brand and as such recommend the following hosts, protocols and ports to be permitted from your users' workstations, through the Internet:
+
+- *.graphql.flex.connectpath.cx   HTTP/HTTPS
+- *.api.connectpath.cx              HTTP/HTTPS
+- *.ws.connectpath.cx              HTTP/HTTPS
+- *.connectpath.cx      HTTP/HTTPS
+- go.connectpath.cx      HTTP/HTTPS
 
 ***Browser***
 
