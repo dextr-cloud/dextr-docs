@@ -1,6 +1,6 @@
 ---
 permalink: /smspinpoint/
-title: "Pinpoint (CSMS) ConnectPath Integration (Chat)"
+title: "Pinpoint (SMS) ConnectPath Integration (Chat)"
 ---
 
 This document will walk you through the initial setup of Pinpoint and
