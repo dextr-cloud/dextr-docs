@@ -1,5 +1,5 @@
 ---
-title: "ConectPath Migration Guide v0.9.8"
+title: "ConnectPath Migration Guide v0.9.8"
 permalink: /migration/
 layout: single
 toc: true
@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-Migrating to ConectPath is simple and can be done on your own schedule. We recommend making these changes after hours the night before your plan to go-live on ConectPath.
+Migrating to ConnectPath is simple and can be done on your own schedule. We recommend making these changes after hours the night before your plan to go-live on ConnectPath.
 
 #### 1 - Add origin in Amazon Connect (required)
 
@@ -39,7 +39,7 @@ d. generalDaemon
 
 #### 3 - Add CORS Policy (required for viewing reports)
 
-Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConectPath reports. This can be located by looking in ConectPath > Settings > Instance Details > Reporting Bucket.
+Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConnectPath reports. This can be located by looking in ConnectPath > Settings > Instance Details > Reporting Bucket.
 
 [![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
 [![CORS policy](/assets/images/Migration/cors.jpg)](/assets/images/Migration/cors.jpg)

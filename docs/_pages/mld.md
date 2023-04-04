@@ -10,7 +10,7 @@ customer use cases may vary, provide the ability to gain additional
 insight into contacts between your organization and your organization's
 customers.
 
-Until recently, ConectPath has offered a single tier Disposition solution --
+Until recently, ConnectPath has offered a single tier Disposition solution --
 e.g. the agent, based on the queue is presented with a single drop down
 to select one option from.
 

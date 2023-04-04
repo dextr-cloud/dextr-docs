@@ -1,5 +1,5 @@
 ---
-title: "ConectPath Setup Guide"
+title: "ConnectPath Setup Guide"
 permalink: /setup-guide/
 layout: single
 toc: true
@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-Setting up ConectPath is simple and can be done on your own schedule. The majority of the setup is done through the onboarding process, however, given the evolution of features in ConectPath, the following steps will provide access to additional features within ConectPath.
+Setting up ConnectPath is simple and can be done on your own schedule. The majority of the setup is done through the onboarding process, however, given the evolution of features in ConnectPath, the following steps will provide access to additional features within ConnectPath.
 
 #### 1 - Update LiveLook
 
@@ -26,7 +26,7 @@ An example of the pattern is below:
 
 #### 2 - Add CORS Policy (optional if you wish to specify your own S3 bucket for reports)
 
-Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConectPath reports. This can be located by looking in ConectPath > Settings > Instance Details > Reporting Bucket.
+Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConnectPath reports. This can be located by looking in ConnectPath > Settings > Instance Details > Reporting Bucket.
 
 [![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
 [![CORS policy](/assets/images/Migration/cors.jpg)](/assets/images/Migration/cors.jpg)
