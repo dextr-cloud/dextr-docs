@@ -17,7 +17,7 @@ subscription (Pay-as-you-go) and contract (Fixed price) products.
 
 #### Subscription
 
-From AWS Marketplace, you can start your subscription process by clicking ***Continue to Subscribe***.
+From AWS Marketplace, you can start your subscription process by clicking ***View Purchase Options***.
 
 [![AWS Subscription](/assets/images/Onboarding/subscription.jpg)](/assets/images/Onboarding/subscription.jpg)
 
