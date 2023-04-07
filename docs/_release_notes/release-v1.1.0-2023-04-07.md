@@ -1,5 +1,5 @@
 ---
-title: "v0.9.97"
+title: "v1.1.0"
 excerpt_separator: "<!--more-->"
 collection: release_notes
 permalink: /:categories/:title/
