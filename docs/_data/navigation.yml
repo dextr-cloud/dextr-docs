@@ -66,3 +66,11 @@ docs:
         url: /api/
       - title: "Pinpoint SMS ConnectPath (Chat) Integration"
         url: /smspinpoint/
+      - title: "Configuring Scripts (Pre-Canned Responses)"
+        url: /Configuring-Scripts/
+      - title: "Post Contact Surveys"
+        url: /Post-Contact-Surveys/
+      - title: "Self-Service Routing Profile Management"
+        url: /Routing-Profile-Management/
+      - title: "Enabling Native Amazon Connect Silent Monitoring and Barge-In"
+        url: /Enabling-Silent-Monitoring/
