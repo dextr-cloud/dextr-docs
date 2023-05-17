@@ -27,9 +27,7 @@ To get started, you will want to check that the User Permission has been
 set for the users you wish to be able to either approach (referred to as
 supervisors throughout this document):
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](./Enabling-Silent-Monitoring/media/image1.png)
+![](./Enabling-Silent-Monitoring/media/image1.png)
 
 Upon enabling this permission, supervisors will see the following when
 right-clicking on an agent, on a call, under the Team Status drawer.
@@ -39,9 +37,7 @@ Connect Instances does not have Monitor and Barge-In enabled or the
 supervisor is not in an Amazon Connect Security Profile that enables
 access to these features:
 
-![A screenshot of a phone Description automatically generated with
-medium
-confidence](./Enabling-Silent-Monitoring/media/image2.png)
+![](./Enabling-Silent-Monitoring/media/image2.png)
 
 To enable these features, you'll first need to enable the Native Amazon
 Connect Monitoring and Barge-In capabilities by going to the AWS
@@ -55,17 +51,13 @@ you may have additional steps you will need to follow, which are covered
 under
 <https://docs.aws.amazon.com/connect/latest/adminguide/monitor-barge.html>.
 
-![A screenshot of a phone call Description automatically generated with
-low
-confidence](./Enabling-Silent-Monitoring/media/image3.png)
+![](./Enabling-Silent-Monitoring/media/image3.png)
 
 Supervisors who wish to use this feature will also need their Amazon
 Connect Security Profile(s) updated to provide permissions to Real-time
 contact monitoring and Real-time contact barge-in:
 
-![A screenshot of a computer Description automatically generated with
-medium
-confidence](./Enabling-Silent-Monitoring/media/image4.png)
+![](./Enabling-Silent-Monitoring/media/image4.png)
 
 After both changes have been made, when a supervisor right clicks on a
 user who is on an active call in the Team Status Drawer, the options
@@ -74,22 +66,19 @@ are displayed instead. Selecting Silent Monitor/Barge will utilize the
 Native Amazon Connect functionality whereas Whisper Coach will utilize
 the Custom ConnectPath functionality:
 
-![A screenshot of a phone Description automatically
-generated](./Enabling-Silent-Monitoring/media/image5.png)
+![](./Enabling-Silent-Monitoring/media/image5.png)
 
 Upon Clicking Silent Monitor/Barge, the supervisor will see the
 following on the Engage Page, receive an Auto-Accepted Contact and be
 placed in a busy status:
 
-![A screenshot of a phone call Description automatically
-generated](./Enabling-Silent-Monitoring/media/image6.png)
+![](./Enabling-Silent-Monitoring/media/image6.png)
 
 The supervisor may then click Exit to end the Silent Monitor session or
 Barge to introduce themselves into the call, as if they were conferenced
 in. Upon clicking Barge, the supervisor will see the following options:
 
-![A screenshot of a phone call Description automatically
-generated](./Enabling-Silent-Monitoring/media/image7.png)
+![](./Enabling-Silent-Monitoring/media/image7.png)
 
 Note that Exit turns into End Call, and additional options are enabled
 for the supervisor, again, enabling them to participate in the call as
@@ -101,8 +90,7 @@ however, the agent may proceed to handle the call as if it were any
 other conference call and additional actions are not required on behalf
 of the agent:
 
-![A screenshot of a phone call Description automatically
-generated](./Enabling-Silent-Monitoring/media/image8.png)
+![](./Enabling-Silent-Monitoring/media/image8.png)
 
 That concludes the configuration and usage of the Native Amazon Connect
 Monitoring and Barge-In capabilities.
