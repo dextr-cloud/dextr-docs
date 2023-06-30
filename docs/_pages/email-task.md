@@ -168,5 +168,6 @@ Now you're required to create a rule receipt condition inside of SES from the AW
 #### 9 - SMTP (Outgoing E-Mail) configuration
 
 - If you find issues in validating your E-Mail sending setup, there is likely a mismatch in either the port or TLS Toggle. TCP/587 does not need the TLS Toggle set whereas TCP/465 does. TCP/25 is generally filtered by providers and will likely fail with the TLS Toggle set in either position.
+- If you are using Microsoft Office 365 to send E-Mail, you will need to use OAUTH (not Basic) Authentication instead. Please see the relevant documentation at <https://docs.dextr.cloud/emailTask/>
 
 And that's it! You're now set up to start receiving emails in your instance.

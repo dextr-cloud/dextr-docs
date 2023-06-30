@@ -74,3 +74,5 @@ docs:
         url: /Routing-Profile-Management/
       - title: "Enabling Native Amazon Connect Silent Monitoring and Barge-In"
         url: /Enabling-Silent-Monitoring/
+      - title: "Configuring outbound E-Mail using Microsoft Office 365 OAUTH"
+        url: /Microsoft-Office-365-OAUTH/
