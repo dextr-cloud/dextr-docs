@@ -15,7 +15,7 @@ sidebar:
 - SMTP host information for your email server
 - Amazon SES Ruleset
 - Amazon Connect Contact Flow
-- Report Bucket name (optionally you can create a different S3 bucket exclusively for Email Handling)
+- Report Bucket name
 
 ### Setting up Pre-Requisites
 

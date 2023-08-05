@@ -38,7 +38,7 @@ Function by:
     Callbacks) would not invoke the Lambda Function, requiring us to
     fall back on other mechanisms to identify Callbacks
 
-The name and purpose of these attributes is as follows:
+The name and purpose of these attributes is as follows (note that ll is two lower case letter L's):
 
 -   User defined key ll_queue_name value of System Queue Name
 

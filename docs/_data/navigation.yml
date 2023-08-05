@@ -76,3 +76,5 @@ docs:
         url: /Enabling-Silent-Monitoring/
       - title: "Configuring outbound E-Mail using Microsoft Office 365 OAUTH"
         url: /Microsoft-Office-365-OAUTH/
+      - title: "Configuring Microsoft Teams Integration"
+        url: /Microsoft-Teams-Integration/
