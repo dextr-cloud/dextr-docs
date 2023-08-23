@@ -102,7 +102,13 @@ registration.
 
 ![](./Microsoft-Teams-Integration/media/image1.png)
 
-Enter a name for this App registration and click Register.
+Enter a name for this App registration, select the Platform Type of Web and enter a URI following the below pattern:
+
+https://(aws region).api.dextr.cloud/flex/api/office365/authorization
+
+Your AWS Region is the region your Amazon Connect instance is in and follows the AWS regional naming convention. For example if your instance is in us-east-1, the URI you enter would be https://us-east-1.api.dextr.cloud/flex/api/office365/authorization
+
+After that, click Register.
 
 ![](./Microsoft-Teams-Integration/media/image2.png)
 
@@ -130,7 +136,7 @@ configure ConnectPath.
 
 Go to API Permissions, click Add a permission, select Microsoft Graph,
 select Application, search for offline_access, Presence.Read.All,
-Presence.ReadWrite.All, User.ReadWrite.All and User.Read.All and add
+Presence.ReadWrite.All and User.Read.All and add
 them to the App. Once added click Grant admin consent for CloudHesive.
 Once these two steps are completed, your API permissions screen should
 look like the following.
