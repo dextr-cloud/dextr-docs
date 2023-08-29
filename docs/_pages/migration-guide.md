@@ -12,7 +12,7 @@ Migrating to ConnectPath is simple and can be done on your own schedule. We reco
 
 #### 1 - Add origin in Amazon Connect (required)
 
-Head to AWS and add **https://go.dextrflex.com** to your approved origins within the AWS -> Amazon Connect -> Instance console. 
+Head to AWS and add **https://go.connectpath.cx** to your approved origins within the AWS -> Amazon Connect -> Instance console. 
 
 [![Add Origin](/assets/images/Migration/add-origin.jpg)](/assets/images/Migration/add-origin.jpg)
 
@@ -39,7 +39,7 @@ d. generalDaemon
 
 #### 3 - Add CORS Policy (required for viewing reports)
 
-Add **https://go.dextrflex.com** to the CORS bucket policy on the bucket that stores your ConnectPath reports. This can be located by looking in ConnectPath > Settings > Instance Details > Reporting Bucket.
+Add **https://go.connectpath.cx** to the CORS bucket policy on the bucket that stores your ConnectPath reports. This can be located by looking in ConnectPath > Settings > Instance Details > Reporting Bucket.
 
 [![Reporting bucket](/assets/images/Migration/reporting-bucket.jpg)](/assets/images/Migration/reporting-bucket.jpg)
 [![CORS policy](/assets/images/Migration/cors.jpg)](/assets/images/Migration/cors.jpg)
@@ -62,6 +62,6 @@ An example of the pattern is below:
 
 #### 5 - Use the new domain
 
-Direct agents and supervisors to https://go.dextrflex.com to begin.
+Direct agents and supervisors to https://go.connectpath.cx to begin.
 
 [![New domain](/assets/images/Migration/domain.jpg)](/assets/images/Migration/domain.jpg)

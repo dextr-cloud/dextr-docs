@@ -10,13 +10,13 @@ sidebar:
 
 ### Login page
 
-The Login process is the same for all ConnectPath dashboard users.  It assumes that your Amazon Connect Instance administrator has gone through the [Onboarding](/onboarding/) process.  Once this has been accomplished you will be given a login URL that is in the format of **https://go.dextrflex.com/yourcompanylogin** and can click the Secure Login button.
+The Login process is the same for all ConnectPath dashboard users.  It assumes that your Amazon Connect Instance administrator has gone through the [Onboarding](/onboarding/) process.  Once this has been accomplished you will be given a login URL that is in the format of **https://go.connectpath.cx/yourcompanylogin** and can click the Secure Login button.
 
 [![Login Page](/assets/images/Login/login.jpg)](/assets/images/Login/login.jpg)
 
 ----
 
-You can also login by going to **https://go.dextrflex.com**  and entering the name of the Instance chosen by your Administrator. In this example **thedarkside** was typed in the Instance Alias field. 
+You can also login by going to **https://go.connectpath.cx**  and entering the name of the Instance chosen by your Administrator. In this example **thedarkside** was typed in the Instance Alias field. 
 
 [![Login Page 2](/assets/images/Login/login-2.jpg)](/assets/images/Login/login-2.jpg)
 

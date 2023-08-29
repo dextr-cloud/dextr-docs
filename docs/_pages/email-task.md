@@ -159,7 +159,8 @@ Now you're required to create a rule receipt condition inside of SES from the AW
             "GET"
         ],
         "AllowedOrigins": [
-            "https://go.dextrflex.com"
+            "https://go.dextrflex.com",
+            "https://go.connectpath.cx"
         ],
         "ExposeHeaders": []
     }

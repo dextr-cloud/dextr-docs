@@ -41,7 +41,7 @@ The Onboarding process consists of 5 steps, and the first 3 steps have an ***Exp
 
 #### Step 1. Verify Ownership
 
-Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.dextrflex.com to allow incoming popups.
+Verify ownership requires you to add ***Application integration origin***  and ***Login into Connect as Root Administrator***. Remember to also whitelist https://go.connectpath.cx to allow incoming popups.
 
 [![Verify Ownership](/assets/images/Onboarding/verifyOwnership.jpg)](/assets/images/Onboarding/verifyOwnership.jpg)
 
@@ -52,7 +52,7 @@ You require an ***Approved origin*** in Amazon Connect. Through the Amazon Web S
 - Go to Amazon Connect and click the name of your instance.
 [![Clicking Instance](/assets/images/Onboarding/clickingInstance.jpg)](/assets/images/Onboarding/clickingInstance.jpg)
 
-- Go to the **Application Integration** tab and click ***Add origin***. Input **https://go.dextrflex.com** and add it.
+- Go to the **Application Integration** tab and click ***Add origin***. Input **https://go.connectpath.cx** and add it.
 
 [![Application Integration](/assets/images/Onboarding/app-integration.png)](/assets/images/Onboarding/app-integration.png)
    

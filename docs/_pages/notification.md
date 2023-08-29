@@ -28,7 +28,7 @@ If you're in Windows, you also need to make sure that Chrome notifications are o
 
 #### Chrome Settings
 
-If you're still not receiving notifications, you want to ensure that ***https://go.dextrflex.com*** is allowed to send notifications through Chrome. You can check that by going to ***chrome://settings/content/notifications?search=notification*** and confirm that sites can ask for permission to send notifications. On login ConnectPath asks for permission but it is up to you to allow it.
+If you're still not receiving notifications, you want to ensure that ***https://go.connectpath.cx*** is allowed to send notifications through Chrome. You can check that by going to ***chrome://settings/content/notifications?search=notification*** and confirm that sites can ask for permission to send notifications. On login ConnectPath asks for permission but it is up to you to allow it.
 
 [![Chrome Notifications](/assets/images/Notifications/chrome-notifications.jpg)](/assets/images/Notifications/chrome-notifications.jpg)
 
