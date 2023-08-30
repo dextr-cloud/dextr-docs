@@ -102,11 +102,9 @@ registration.
 
 ![](./Microsoft-Teams-Integration/media/image1.png)
 
-Enter a name for this App registration, select the Platform Type of Web and enter a URI following the below pattern:
+Enter a name for this App registration, select the Platform Type of Web and enter the following URI:
 
-https://(aws region).api.dextr.cloud/flex/api/office365/authorization
-
-Your AWS Region is the region your Amazon Connect instance is in and follows the AWS regional naming convention. For example if your instance is in us-east-1, the URI you enter would be https://us-east-1.api.dextr.cloud/flex/api/office365/authorization
+https://us-east-1.api.dextr.cloud/flex/api/office365/authorization
 
 After that, click Register.
 
