@@ -20,6 +20,8 @@ docs:
         url: /notification/
       - title: "Implementing Live Look in your Amazon Connect Instance"
         url: /update-live-look/
+      - title: "Implementing Adhoc/Holiday Closures in your Amazon Connect Instance"
+        url: /Implementing-Adhoc-Holiday-Closures-in-ConnectPath/
 
   - title: ConnectPath Dashboard
     children:
