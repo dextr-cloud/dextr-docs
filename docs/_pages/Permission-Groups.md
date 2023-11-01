@@ -27,7 +27,7 @@ to a defined Permission Group. On new instances this is the admin
 permission group (one of two default permission groups: admin and
 agent), to facilitate initial setup of the ConnectPath instance:
 
-./Permission-Groups/media/image2.png)
+![](./Permission-Groups/media/image2.png)
 
 In the above screenshot you can see the two default groups as well as a
 custom group. The Admin group is the default that all new users get, in
