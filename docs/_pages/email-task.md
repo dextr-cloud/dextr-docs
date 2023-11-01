@@ -8,6 +8,10 @@ sidebar:
   nav: "docs"
 ---
 
+### October 2023 Update
+
+With the October 2023 release we now have an E-Mail Wizard that can assist first time users in setting up E-Mail Channels. Please see the docs site for more details.
+
 ### Pre-Requisites
 
 - DNS

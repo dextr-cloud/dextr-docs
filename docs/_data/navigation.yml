@@ -16,16 +16,22 @@ docs:
         url: /onboarding/
       - title: "Login"
         url: /login/
+      - title: "Enabling Notifications"
+        url: /notification/
+      - title: "Implementing Live Look in your Amazon Connect Instance"
+        url: /update-live-look/
 
   - title: ConnectPath Dashboard
     children:
       - title: "Home"
         url: /home/
+      - title: "Queue Management"
+        url: /queue-management/
       - title: "Engage"
         url: /engage/
-      - title: "Activity"
+      - title: "Activity Search"
         url: /activity/
-      - title: "Historical Reports"
+      - title: "Historical Reporting"
         url: /historicalReports/
       - title: "Directory"
         url: /directory/
@@ -33,48 +39,62 @@ docs:
         url: /users/
       - title: "Settings"
         url: /settings/
-      - title: "Multi Level Dispositions"
-        url: /mld/
       - title: "Team Status Drawer"
         url: /teamStatus/
-      - title: "Notifications"
-        url: /notification/
 
-  - title: Advanced
+  - title: Settings
     children:
+      - title: "Multi Level Dispositions"
+        url: /mld/
+      - title: "Scripts (Pre-Canned Responses)"
+        url: /Configuring-Scripts/
+      - title: "Self-Service Routing Profile Management"
+        url: /Routing-Profile-Management/
+      - title: "Custom Links"
+        url: /Custom-links-in-ConnectPath/
+      - title: "Post Contact Surveys"
+        url: /Post-Contact-Surveys/
+      - title: "Enabling Native Amazon Connect Silent Monitoring and Barge-In"
+        url: /Enabling-Silent-Monitoring/
+      - title: "Permission Groups"
+        url: /Permission-Groups/
+
+  - title: Integrations and Webhooks
+    children:
+      - title: "E-Mail Wizard"
+        url: /E-Mail-Wizard/
+      - title: "Manual E-Mail Configuration"
+        url: /emailTask/
+      - title: "Outbound E-Mail using Microsoft Office 365 OAUTH"
+        url: /Microsoft-Office-365-OAUTH/
+      - title: "Outbound SMS"
+        url: /outbound-sms/
+      - title: "Pinpoint SMS ConnectPath (Chat) Integration"
+        url: /smspinpoint/
+      - title: "Microsoft Teams Integration"
+        url: /Microsoft-Teams-Integration/
+      - title: "Microsoft Dynamics Integration"
+        url: /Microsoft-Dynamics-Integration/
+      - title: "CRM Integration"
+        url: /CRM-Integration/
+      - title: "Video Channel"
+        url: /Video-Channels/
+      - title: "Caller Blocking"
+        url: /caller-blocking/
+      - title: "Anonymous Caller Blocking"
+        url: /Setting-up-a-block-on-Anonymous-callers/
+      - title: "API"
+        url: /api/
+
+  - title: Advanced Topics
+    children:
+      - title: "ConnectPath Architecture"
+        url: /architecture/
       - title: "Supplementary Setup Steps"
         url: /setup-guide/
       - title: "Use an existing Kinesis Stream"
         url: /kinesis/
       - title: "Dextr Legacy to ConnectPath Migration"
         url: /migration/
-      - title: "Email task configuration"
-        url: /emailTask/
       - title: "Updating ConnectPath Lambda Function Runtime Version"
         url: /update-lambda/
-      - title: "Implementing Live Look in your Amazon Connect Instance"
-        url: /update-live-look/
-      - title: "ConnectPath Architecture"
-        url: /architecture/
-      - title: "Caller Blocking"
-        url: /caller-blocking/
-      - title: "Outbound SMS"
-        url: /outbound-sms/
-      - title: "Queue Management"
-        url: /queue-management/
-      - title: "API"
-        url: /api/
-      - title: "Pinpoint SMS ConnectPath (Chat) Integration"
-        url: /smspinpoint/
-      - title: "Configuring Scripts (Pre-Canned Responses)"
-        url: /Configuring-Scripts/
-      - title: "Post Contact Surveys"
-        url: /Post-Contact-Surveys/
-      - title: "Self-Service Routing Profile Management"
-        url: /Routing-Profile-Management/
-      - title: "Enabling Native Amazon Connect Silent Monitoring and Barge-In"
-        url: /Enabling-Silent-Monitoring/
-      - title: "Configuring outbound E-Mail using Microsoft Office 365 OAUTH"
-        url: /Microsoft-Office-365-OAUTH/
-      - title: "Configuring Microsoft Teams Integration"
-        url: /Microsoft-Teams-Integration/
