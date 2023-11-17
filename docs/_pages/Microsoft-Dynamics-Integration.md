@@ -129,8 +129,7 @@ Select the Azure AD Application you previously created:
 Assign the user to the appropriate Business Unit and Security role and
 Click Create:
 
-![](./Microsoft-Dynamics-Integration/media/image15.png){width="6.5in"
-height="1.1236111111111111in"}
+![](./Microsoft-Dynamics-Integration/media/image15.png)
 
 Verify that the Application user was added:
 
