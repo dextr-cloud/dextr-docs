@@ -60,6 +60,8 @@ docs:
         url: /Enabling-Silent-Monitoring/
       - title: "Permission Groups"
         url: /Permission-Groups/
+      - title: "Smart Replies"
+        url: /smartscripts/
 
   - title: Integrations and Webhooks
     children:
@@ -100,3 +102,5 @@ docs:
         url: /migration/
       - title: "Updating ConnectPath Lambda Function Runtime Version"
         url: /update-lambda/
+      - title: "Turning Off Exclusive Control of Audio Devices"
+        url: /Turning-Off-Exclusive-Control-of-Audio-Devices/
