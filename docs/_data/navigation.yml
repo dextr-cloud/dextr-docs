@@ -89,7 +89,8 @@ docs:
         url: /Setting-up-a-block-on-Anonymous-callers/
       - title: "API"
         url: /api/
-
+      - title: "Historical Reports V2"
+        url: /Historical-Reports-V2/
   - title: Advanced Topics
     children:
       - title: "ConnectPath Architecture"
