@@ -54,7 +54,7 @@ A feature has been added in which, in the ConnectPath Datalake and Analytics mod
 ### Add a feature in the ConnectPath Datalake and Analytics module where views no longer need to be manually deployed and are stored in DynamoDB versus Application Code
 HAR-7236
 A feature has been added in which, in the ConnectPath Datalake and Analytics module where views no longer need to be manually deployed and are stored in DynamoDB versus Application Code.
-----
+
 
 ### Supporting Features
  
@@ -129,7 +129,7 @@ HAR-2807
 CS0012148
 HAR-4204
 A feature has been added in which, for Connect instances using multi-party conferencing and early-media is disabled, cold/blind transfers complete immediately.
----- 
+
 ### Defects
  
 
@@ -248,4 +248,3 @@ A defect has been corrected where the scroll bar may be truncated in certain res
 HAR-5093
 CS0016748, CS007134
 A defect has been corrected where users are not deleted from ConnectPath.
-----
