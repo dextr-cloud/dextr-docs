@@ -28,13 +28,7 @@ Once the project is created, with the phone number, you will proceed
 to the ConnectPath Settings then Instance Settings and begin the
 integration steps.
 
-The first integration step requires you to enable integrations, by
-sliding the toggle to yes, as displayed below. This is located under
-the dispositions section of the Instance Settings screen:
-
-![](./pinpoint-chat-integration/media/image1.png)
-
-After that, you will go to the integrations screen and start the
+Go to the integrations screen and start the
 three-step process:
 
 ![](./pinpoint-chat-integration/media/image2.png)

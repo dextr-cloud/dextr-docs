@@ -97,7 +97,7 @@ Each dashboard has its own wallboard, but you can click the wallboard mode on th
  
 ### Pricing Strategy
  
-ConnectPath cost approximately .18 USD per user logged in hour. We offer custom pricing and custom terms for certain circumstances.  Contact us for details.
+ConnectPath cost approximately .252 USD per user logged in hour. We offer custom pricing and custom terms for certain circumstances.  Contact us for details.
 
 - ***Do we pay for an Admin who only logs in periodically?***
 

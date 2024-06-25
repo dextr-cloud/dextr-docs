@@ -93,32 +93,6 @@ will a status of Deployed:
 
 ![](Historical-Reports-V2/media/image3.png)
 
-Once deployed, you will need to log into the AWS Console and go to the
-Athena Service Console for the region that your Amazon Connect instance
-is in. If your region is in us-east-1, for example, you can use this
-URL:
-<https://us-east-1.console.aws.amazon.com/athena/home?region=us-east-1#/query-editor/saved-queries>
-
-Once that page has loaded, you will need to switch your Workgroup to the
-one created by the ConnectPath deployment (which will have connectpath
-in the name). Once done you will see two saved queries:
-
-![](Historical-Reports-V2/media/image4.png)
-
-Each of these saved queries will need to be run once. To do that, click
-on a query and you will be taken to another screen to execute that
-query. The first query may prompt you to acknowledge that this query is
-associated with the Workgroup that you previously changed to:
-
-![](Historical-Reports-V2/media/image5.png)
-
-Once you acknowledge this, click the Orange Run button:
-
-![](Historical-Reports-V2/media/image6.png)
-
-Repeat for the second query located under the saved queries tab, which
-is the last step required for setup of the Datalake.
-
 While in the AWS Console, you will also need to setup the pre-requisites
 for Quicksight, which can be done by going to
 <https://quicksight.aws.amazon.com/> and completing the following steps.
@@ -129,7 +103,7 @@ such:
 
 ![](Historical-Reports-V2/media/image7.png)
 
-On the next screen, you will select Enterprise + Q:
+On the next screen, you may select either option.
 
 ![](Historical-Reports-V2/media/image8.png)
 
