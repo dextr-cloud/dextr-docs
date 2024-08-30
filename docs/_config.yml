@@ -30,7 +30,7 @@ search_provider: algolia
 
 algolia:
   application_id: 4WB8TNS4JV
-  index_name: Main
+  index_name: x
   search_only_api_key: cabc7a74504ee3c3d899d4c480a7b2ec
   powered_by: false
 
