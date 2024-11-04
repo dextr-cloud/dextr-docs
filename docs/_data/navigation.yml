@@ -71,6 +71,8 @@ docs:
         url: /emailTask/
       - title: "Outbound E-Mail using Microsoft Office 365 OAUTH"
         url: /Microsoft-Office-365-OAUTH/
+      - title: "Outbound E-Mail using Google OAUTH"
+        url: /Configuring-Google-OAUTH-for-Outbound-E-Mail/
       - title: "Outbound SMS"
         url: /outbound-sms/
       - title: "Pinpoint SMS ConnectPath (Chat) Integration"
@@ -89,8 +91,11 @@ docs:
         url: /Setting-up-a-block-on-Anonymous-callers/
       - title: "API"
         url: /api/
-      - title: "Historical Reports V2"
+      - title: "Setting Up Historical Reports V2"
         url: /Historical-Reports-V2/
+      - title: "Customizing Historical Reports V2"
+        url: /Customizing-the-out-of-the-box-Reporting-V2/
+       
   - title: Advanced Topics
     children:
       - title: "ConnectPath Architecture"
