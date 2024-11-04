@@ -14,7 +14,8 @@ Customizing the out of the box Reporting V2 (QuickSight) Dashboards
 This document will walk you through the customization of the out of the
 box Reporting V2 (QuickSight) Dashboards
 
-To begin, you will first need to log into Quicksight
+
+To begin, you will first need to log into Quicksight.
 
  
 

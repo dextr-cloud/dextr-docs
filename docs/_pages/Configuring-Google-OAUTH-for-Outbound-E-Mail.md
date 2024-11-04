@@ -17,7 +17,7 @@ Authentication).
 
  
 
-[Create a Project]{.underline}
+[Create a Project]
 
  
 
@@ -29,7 +29,7 @@ Browse to <https://console.cloud.google.com/projectcreate>
 
  
 
-[Enable Gmail API]{.underline}
+[Enable Gmail API]
 
  
 
@@ -49,7 +49,7 @@ of the Gmail API, otherwise, grant permissions for use of the Gmail API.
 
  
 
-[Create OAuth consent screen]{.underline}
+[Create OAuth consent screen]
 
  
 
@@ -74,7 +74,7 @@ information, but you must specify the following authorized domains:
 
  
 
-[Create Credentials]{.underline}
+[Create Credentials]
 
  
 
@@ -114,7 +114,7 @@ Note the Client ID and Client secret above
 
  
 
-[Create Refresh Token]{.underline}
+[Create Refresh Token]
 
  
 
