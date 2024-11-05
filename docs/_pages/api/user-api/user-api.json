@@ -4,7 +4,7 @@
         "version": "2022-12-30T12:55:53Z",
         "title": "user-api"
     },
-    "host": "us-east-1.api.dextr.cloud",
+    "host": "external.us-east-1.api.dextr.cloud",
     "basePath": "/flex",
     "schemes": [
         "https"
