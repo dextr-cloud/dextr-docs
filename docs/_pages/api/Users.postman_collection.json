@@ -31,7 +31,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -64,7 +64,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/x",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user/x",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -98,7 +98,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user/",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -141,7 +141,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/batch",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user/batch",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -187,7 +187,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/getparameters",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user/getparameters",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -221,7 +221,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user/x@x.x",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user/x@x.x",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -264,7 +264,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/user",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/user",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -309,7 +309,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/batch/x",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/batch/x",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
