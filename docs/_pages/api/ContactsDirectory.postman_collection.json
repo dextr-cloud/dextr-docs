@@ -31,7 +31,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/directory",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -96,7 +96,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/x",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/directory/x",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -130,7 +130,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/directory/",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -164,7 +164,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/x",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/directory/x",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -214,7 +214,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/directory/batch",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/directory/batch",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
@@ -248,7 +248,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://us-east-1.api.dextr.cloud/flex/api/batch/",
+					"raw": "https://external.us-east-1.api.dextr.cloud/flex/api/batch/",
 					"protocol": "https",
 					"host": [
 						"us-east-1",
