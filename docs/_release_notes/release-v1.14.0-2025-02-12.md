@@ -13,7 +13,7 @@ sidebar:
 nav: "docs"
 ---
 
-## ConnectPath Release Notes, February 2024
+## ConnectPath Release Notes, February 2025
 
 ## Breaking Changes
 
