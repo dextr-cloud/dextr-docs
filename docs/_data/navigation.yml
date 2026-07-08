@@ -110,3 +110,5 @@ docs:
         url: /update-lambda/
       - title: "Turning Off Exclusive Control of Audio Devices"
         url: /Turning-Off-Exclusive-Control-of-Audio-Devices/
+      - title: "ConnectPath Log Generation"
+        url: /ConnectPath-Log-Generation/
