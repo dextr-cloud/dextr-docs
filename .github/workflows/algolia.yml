@@ -1,0 +1,36 @@
+name: Algolia Index
+
+# Rebuilds and pushes the Jekyll search index to Algolia.
+# Replaces the retired Travis job that ran `jekyll algolia`.
+#
+# Requires a repository secret named ALGOLIA_API_KEY set to the Algolia
+# Admin API key (Settings > Secrets and variables > Actions).
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/**"
+      - ".github/workflows/algolia.yml"
+  workflow_dispatch:
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1.6"
+          working-directory: docs
+          bundler-cache: true
+
+      - name: Push search index to Algolia
+        working-directory: docs
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bundle exec jekyll algolia

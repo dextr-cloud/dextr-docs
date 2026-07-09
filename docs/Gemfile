@@ -2,6 +2,14 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# octokit 4.x (pulled in via github-pages -> jekyll-github-metadata) breaks on
+# faraday 2.x, which removed the bundled default adapter. Pin to faraday 1.x.
+gem "faraday", "~> 1.0"
+
+# webrick was removed from Ruby's default gems in Ruby 3.0; Jekyll's local
+# server (jekyll serve) needs it.
+gem "webrick", "~> 1.8"
+
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
@@ -14,5 +22,4 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
-  gem "jekyll_picture_tag"
 end
