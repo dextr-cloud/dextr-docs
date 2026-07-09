@@ -1,3 +1,3 @@
-[![Build Status](https://travis-ci.org/dextr-cloud/dextr-docs.svg?branch=master)](https://travis-ci.org/dextr-cloud/dextr-docs)
+[![Algolia Index](https://github.com/dextr-cloud/dextr-docs/actions/workflows/algolia.yml/badge.svg)](https://github.com/dextr-cloud/dextr-docs/actions/workflows/algolia.yml)
 
 # ConnectPath Docs
