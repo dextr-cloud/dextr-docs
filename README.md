@@ -1,3 +1,3 @@
 [![Algolia Index](https://github.com/dextr-cloud/dextr-docs/actions/workflows/algolia.yml/badge.svg)](https://github.com/dextr-cloud/dextr-docs/actions/workflows/algolia.yml)
 
-# Dextr-docs
+# ConnectPath Docs
