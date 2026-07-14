@@ -40,10 +40,10 @@ With Live Lens you can enable the Real Time Contact Lens Summarization, which wi
 
 
 
-### Add a feature in which the dashboard filters are now multi-select drop downs
+### ~~Add a feature in which the dashboard filters are now multi-select drop downs~~
 
-CS0018976, CS0011950, CS0028640, CS0032270
-The dashboard filters are now multi-select drop downs that allow you to select multiple items that you would like to view in the dashboard (instead of the one or all options previously available).
+~~CS0018976, CS0011950, CS0028640, CS0032270
+The dashboard filters are now multi-select drop downs that allow you to select multiple items that you would like to view in the dashboard (instead of the one or all options previously available).~~
 
 ---
 
