@@ -185,7 +185,7 @@ HAR-3176
 HAR-3201
 
 
-A feature has been added in which, once configured, Microsoft Teams users will be displayed in the ConnectPath Team Status Drawer. This allows ConnectPath users to call those Teams users (using the e.164 number) through ConnectPath as an outbound, external call as well as see those user's statuses as presented in Teams. Further, if the ConnectPath user also uses Teams, statuses will be synchronized between ConnectPath and Teams so that if a user is in a meeting in Teams (for example) they will be unavailable to receive a contact in ConnectPath and vice versa. Please read more about this feature here: https://docs.dextr.cloud/
+A feature has been added in which, once configured, Microsoft Teams users will be displayed in the ConnectPath Team Status Drawer. This allows ConnectPath users to call those Teams users (using the e.164 number) through ConnectPath as an outbound, external call as well as see those user's statuses as presented in Teams. Further, if the ConnectPath user also uses Teams, statuses will be synchronized between ConnectPath and Teams so that if a user is in a meeting in Teams (for example) they will be unavailable to receive a contact in ConnectPath and vice versa. Please read more about this feature here: https://docs.connectpath.cx/
 
 ----
 

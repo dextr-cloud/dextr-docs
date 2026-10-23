@@ -16,7 +16,7 @@ authentication using an Azure Application Registration.
 
 For inbound E-Mail receiving, which is the first step in configuring an
 E-Mail based Webhook in ConnectPath, please review the following
-document: https://docs.dextr.cloud/emailTask/
+document: https://docs.connectpath.cx/emailTask/
 
 This document is broken up into two sections, the Azure configuration
 and the ConnectPath configuration.
@@ -84,7 +84,7 @@ Go to Settings, then Webhooks, and either click +Webhook or Edit
 ![](./Microsoft-Office-365-OAUTH/media/image10.png)
 
 Once done, click Next (note Step 1 is documented under
-<https://docs.dextr.cloud/emailTask/>). On Step 2 you will note there is
+<https://docs.connectpath.cx/emailTask/>). On Step 2 you will note there is
 an option for Outbound labeled "Basic Auth" or "OAuth", for Microsoft
 Office 365 you will use OAuth and select the Integration you created
 previously.
@@ -93,7 +93,7 @@ previously.
 
 Once done, click Next and complete the setup by populating the fields on
 the Step 3 screen as documented under
-<https://docs.dextr.cloud/emailTask/>).
+<https://docs.connectpath.cx/emailTask/>).
 
 ![](./Microsoft-Office-365-OAUTH/media/image12.png)
 

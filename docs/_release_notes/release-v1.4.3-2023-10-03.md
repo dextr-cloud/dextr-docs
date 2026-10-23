@@ -25,7 +25,7 @@ We are tracking an issue with Cold/Blind Transfers, where a workaround was added
 
 Prior Notice:
 
-As a reminder to customers, with a previous release we have added support for customers to use the go.connectpath.cx domain instead of the go.dextrflex.com domain. While our intentions are not to immediately disable the go.dextrflex.com domain, we do anticipate at some point in the future we will aim to do so (with prior communication) and encourage our customers to make the changes to support that domain. These changes may include updating their identity provider relay state, updating their end users’ bookmarks, updating their firewall settings (more details can be found here https://docs.dextr.cloud/system-requirements/), as well as updating their CORS rules in any S3 buckets used by ConnectPath.
+As a reminder to customers, with a previous release we have added support for customers to use the go.connectpath.cx domain instead of the go.dextrflex.com domain. While our intentions are not to immediately disable the go.dextrflex.com domain, we do anticipate at some point in the future we will aim to do so (with prior communication) and encourage our customers to make the changes to support that domain. These changes may include updating their identity provider relay state, updating their end users’ bookmarks, updating their firewall settings (more details can be found here https://docs.connectpath.cx/system-requirements/), as well as updating their CORS rules in any S3 buckets used by ConnectPath.
  
 Specific to the October 2023 Release, the complete listing of defects and features can be found below:
 

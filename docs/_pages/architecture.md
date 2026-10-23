@@ -70,7 +70,7 @@ in the name.
         customer configurable values or fixed names/values used for
         integration purposes. Examples of those include:
 
-        -   LiveLook - <https://docs.dextr.cloud/update-live-look/>
+        -   LiveLook - <https://docs.connectpath.cx/update-live-look/>
 
         -   Webhook Channels
 
@@ -90,7 +90,7 @@ in the name.
 -   Amazon EventBridge
 
     -   Mandatory, Created by Customer -
-        <https://docs.dextr.cloud/setup-guide/>
+        <https://docs.connectpath.cx/setup-guide/>
 
     -   No quotas are explicitly required to be increased in order for
         ConnectPath to function
@@ -104,7 +104,7 @@ in the name.
         to utilize an existing Kinesis Data Stream (KDS), in the event
         that they have already configured a Kinesis Data Stream (KDS)
         and are utilizing it for other integrations -
-        <https://docs.dextr.cloud/kinesis/>
+        <https://docs.connectpath.cx/kinesis/>
 
     -   No quotas are explicitly required to be increased in order for
         ConnectPath to function
@@ -192,7 +192,7 @@ in the name.
     -   No quotas explicitly required for ConnectPath
 
     -   Optional, Customer Configured -
-        <https://docs.dextr.cloud/emailTask/>
+        <https://docs.connectpath.cx/emailTask/>
 
 In addition to AWS Services, the following Third Party Services are
 utilized:
@@ -206,7 +206,7 @@ utilized:
     Conversation APIs
 
     -   Optional, Customer Configured) -
-        <https://docs.dextr.cloud/settings/>
+        <https://docs.connectpath.cx/settings/>
 
 Security
 

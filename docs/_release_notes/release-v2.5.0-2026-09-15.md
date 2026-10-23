@@ -92,7 +92,7 @@ Using Reply-All to an email no longer adds the receiving email address to the re
 
 ### ConnectPath Management API for users and directory entries
 
-Resolved issues with the API interface for managing users and directory entries via the [ConnectPath Management API](https://docs.dextr.cloud/api/).
+Resolved issues with the API interface for managing users and directory entries via the [ConnectPath Management API](https://docs.connectpath.cx/api/).
 
 ---
 

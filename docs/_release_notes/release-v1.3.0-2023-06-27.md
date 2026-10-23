@@ -78,7 +78,7 @@ A feature has been added in which commas may be used in either the Engage screen
 
 ----
 
-### Add a feature in which customers may access ConnectPath using the connectpath.cx domain; first time customers will have their Amazon Connect instance automatically allow-listed for this new domain and users may opt to use either the old domain or the new domain, please see https://docs.dextr.cloud/system-requirements/ for a listing of the FQDNs under this new domain
+### Add a feature in which customers may access ConnectPath using the connectpath.cx domain; first time customers will have their Amazon Connect instance automatically allow-listed for this new domain and users may opt to use either the old domain or the new domain, please see https://docs.connectpath.cx/system-requirements/ for a listing of the FQDNs under this new domain
 HAR-1182 
 HAR-1186 
 HAR-1187 
@@ -87,7 +87,7 @@ HAR-2657
 HAR-2704 
 HAR-2705 
 HAR-2817 
-A feature has been added in which customers may access ConnectPath using the connectpath.cx domain; first time customers will have their Amazon Connect instance automatically allow-listed for this new domain and users may opt to use either the old domain or the new domain, please see https://docs.dextr.cloud/system-requirements/ for a listing of the FQDNs under this new domain.
+A feature has been added in which customers may access ConnectPath using the connectpath.cx domain; first time customers will have their Amazon Connect instance automatically allow-listed for this new domain and users may opt to use either the old domain or the new domain, please see https://docs.connectpath.cx/system-requirements/ for a listing of the FQDNs under this new domain.
 
 ----
 
@@ -204,7 +204,7 @@ HAR-2779
 HAR-2796 
 HAR-2882 
 HAR-2909 
-A feature has been added for Office 365 OAUTH authentication for SMTP in standard Office 365 Regions for E-Mail Integration. You may read more about it under <https://docs.dextr.cloud/emailTask/>.
+A feature has been added for Office 365 OAUTH authentication for SMTP in standard Office 365 Regions for E-Mail Integration. You may read more about it under <https://docs.connectpath.cx/emailTask/>.
 
 ----
 
