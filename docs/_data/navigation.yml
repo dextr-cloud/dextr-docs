@@ -43,6 +43,10 @@ docs:
         url: /settings/
       - title: "Team Status Drawer"
         url: /teamStatus/
+      - title: "SwarmControl"
+        url: /swarmcontrol/
+      - title: "SwarmControl — AI agent (ACXD) setup"
+        url: /swarmcontrol-acxd-setup/
 
   - title: Settings
     children:
