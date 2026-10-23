@@ -8,33 +8,77 @@ sidebar:
   nav: "docs"
 ---
 
-SwarmControl is the ConnectPath supervisor experience at **`/swarmcontrol`**. It brings **Amazon Connect Agentic CX Designer (ACXD) AI agents** and **human agent voice contacts** onto one grid so supervisors can watch live transcripts and coach AI conversations (whisper, say next, intercept, approvals). Human contacts are **read-only** on this page—supervisor actions apply to AI contacts only.
+SwarmControl is the ConnectPath supervisor experience at **`/swarmcontrol`**. It brings **Amazon Connect Agentic CX Designer (ACXD) AI agents** and **human agent voice contacts** onto one grid so supervisors can watch live transcripts and coach AI conversations (whisper, nudge, override, intercept, approvals). Human contacts are **read-only** on this page. Supervisor actions apply to AI contacts only.
 
-For the full ACXD wiring guide (data requests, hook flows, Connect blocks, runnable scripts), see **[SwarmControl — AI agent (ACXD) setup](/swarmcontrol-acxd-setup/)**.
+For the full ACXD wiring guide (data requests, hook flows, Connect blocks, and the supervision kit), see **[SwarmControl — AI agent (ACXD) setup](/swarmcontrol-acxd-setup/)**.
 
 - - - -
 
 ## What supervisors see
 
-Open **SwarmControl** from the left navigation (robot icon). The page includes:
+Open **SwarmControl** from the left navigation. The page includes:
 
 | UI area | Purpose |
 | --- | --- |
-| **Status badge** | **Simulated data** when the instance is in demo mode; **Live** when connected to real data; **Offline** when live mode is on but the WebSocket is down. |
-| **Tabs** | **Live**, **Done**, **Approvals**, **Escalated**—filter the contact grid by lifecycle and attention state. |
-| **Trail counters** | Quick filters (for example contacts with **Intercept** armed). |
-| **Contact cards** | Channel, status badges, turn count, and preview text. Each card shows a **kind** label: **AI agent** or **Human agent** (human cards ship with [PR #5908](https://github.com/dextr-cloud/dextr/pull/5908)). |
-| **Detail panel** | Live transcript (**Customer** / **AI** roles for AI contacts; Contact Lens segments for humans), plus supervisor controls for AI contacts. |
+| **Status dot** | Green with a pulse when connected to live data. Amber (labeled **Simulated**) in demo mode or when the data source is set to Simulated. Red when live mode is on but the connection is offline. |
+| **Simulated data pill** | Shown next to the status dot in demo mode so nobody mistakes demo contacts for real ones. |
+| **Tabs** | **Live**, **Done**, **Approvals**, **Escalated**. Each tab filters the contact grid by lifecycle and attention state. **Approvals** is the one place to see every contact waiting on a supervisor decision. |
+| **Intercept filter** | A toggle at the right of the tab bar that narrows the active tab to contacts with **Intercept** armed. |
+| **Contact cards** | Channel, status, turn count, and how recently the contact was active. Each card carries a **kind** label, **AI agent** or **Human agent**. A card with no attention flag shows no state chip, dot, or counter. |
+| **Detail panel** | Live transcript (**Customer** and **AI** roles for AI contacts, Contact Lens segments for human contacts) plus supervisor controls for AI contacts. |
+
+Every tab and counter has a tooltip (on hover and on keyboard focus) and a screen-reader label in the form "Label: count". The tab bar follows standard tab keyboard behavior: use the arrow keys, **Home**, and **End** to move between tabs.
+
+### Attention tiers
+
+SwarmControl flags contacts that need a supervisor, so you can scan the grid quickly:
+
+| Tier | Triggered by | Where to find them |
+| --- | --- | --- |
+| **Critical** | A pending approval | **Approvals** tab |
+| **Watch** | Intercept armed, or the contact was escalated | **Escalated** tab and the **Intercept** filter |
+
+Cards show a left accent that matches their tier. Contacts without a flag stay visually quiet.
+
+### Settings
+
+The gear icon in the top bar opens the SwarmControl settings. They are saved in your browser, so they follow you between sessions on the same device.
+
+| Setting | Options |
+| --- | --- |
+| **Data source** | **Live** or **Simulated** (Live is available only when live mode is enabled for your instance) |
+| **Sort** | How contact cards are ordered |
+| **Grid size** | Card density in the grid |
+| **Detail view** | Open a contact in an **overlay** or **inline** |
+
+### The detail panel
+
+Select a card to open its detail panel:
+
+- **Header:** the contact's channel.
+- **Approval banner:** appears when the AI flow is waiting on a supervisor decision, with **Approve** and **Deny** buttons.
+- **Two-sided transcript:** the customer on one side and the AI on the other. For AI turns you see both the **draft** and what was **spoken**.
+- **Action panel:** supervisor controls (see below).
+
+**Transcript scrolling.** The oldest turn is at the top and the newest at the bottom. New turns stay pinned to the bottom. If you scroll up, auto-scroll pauses and a **Jump to latest** button appears. Scroll back to the bottom or click the button to resume. Scrolling is instant when your system is set to reduce motion.
 
 ### Supervisor actions (AI contacts only)
 
 | Action | What it does |
 | --- | --- |
-| **Whisper** | Private weak guidance injected into the ACXD generative step (not spoken verbatim). |
+| **Whisper** | Private, weak guidance injected into the ACXD generative step. It is not spoken verbatim. |
 | **Nudge** | Strong private guidance the AI should follow. |
-| **Override** | **Say next**—one-shot line spoken on the next AI turn, then cleared. |
-| **Intercept** | Hand the contact to a human on the **next customer turn** (flow escalates). |
-| **Approve / Deny** | Resolve an approval raised by the AI flow (sticky gate). |
+| **Override** | **Say next**: a one-shot line spoken on the next AI turn, then cleared. |
+| **Intercept** | A toggle. Hands the contact to a human on the **next customer turn** (the flow escalates). The button stays highlighted while Intercept is on. |
+| **Approve / Deny** | Resolve an approval raised by the AI flow (the sticky gate). Each locks after one click until the server confirms. |
+
+How the action panel behaves:
+
+- One message box grows as you type (up to a maximum height) and is shared by Whisper, Nudge, and Override.
+- **Whisper**, **Nudge**, and **Override** are disabled while the box is empty.
+- Press **Cmd/Ctrl+Enter** to send a Whisper. **Enter** inserts a new line.
+- Active whispers and a pending say-next line show as removable chips under the buttons.
+- Actions are disabled for ended contacts. On the live source they are also disabled while the connection is offline. Actions are never queued for later.
 
 Escalation target can be **Default queue** or **Supervisor queue** where configured.
 
@@ -42,17 +86,19 @@ Escalation target can be **Default queue** or **Supervisor queue** where configu
 
 | Mode | When | Who sees `/swarmcontrol` | Data source |
 | --- | --- | --- | --- |
-| **Demo (Simulated)** | Instance `aiSwarmEnabled` is false or unset | Every authenticated user | Local simulated feed (AI and demo human cards) |
-| **Live** | `aiSwarmEnabled` true **and** admin enabled **Live data** under Settings | Users who pass the live capability gate | Live Lens WebSocket (`subscribe_ai_swarm` for AI; `subscribe_swarm_monitor` for humans when #5908 is merged) |
+| **Demo (Simulated)** | Live mode is not enabled for the instance (the default) | Every authenticated user | A simulated feed of AI and human contacts. No setup required. |
+| **Live** | Live mode is enabled for the instance **and** an admin turned on **Live data** under Settings | Users who meet the live requirements below | Real-time Live Lens connection |
 
-Live capability requires **all** of the following:
+In demo mode a short banner under the tab bar explains that live SwarmControl requires onboarding your Amazon Connect Agentic CX Designer flows.
 
-- Instance **Contact Lens → SwarmControl** toggle set to **Live data** (see below).
-- Security profile **SwarmControl** (`ai_swarm_control`) **Enable**.
-- Security profile **Transcripts** (`transcripts`) **Enable**.
-- Live Lens enabled with a configured **realtime WebSocket URL**.
+Live mode requires **all** of the following:
 
-Until live mode is fully enabled, supervisors can explore the UI with **Simulated data** without stack or ACXD setup.
+- **SwarmControl** set to **Live data** in the Contact Lens settings (see below).
+- Security profile **SwarmControl** (`ai_swarm_control`) set to **Enable**.
+- Security profile **Transcripts** (`transcripts`) set to **Enable**.
+- Live Lens enabled, with a realtime connection configured for your instance.
+
+Until live mode is on, supervisors can explore the full interface with **Simulated** data without any ACXD setup. Once live mode is on, users without the required permissions no longer see SwarmControl in the navigation and are redirected away from `/swarmcontrol`.
 
 - - - -
 
@@ -64,90 +110,83 @@ Use this before turning on live SwarmControl or onboarding ACXD.
 
 | Requirement | Why |
 | --- | --- |
-| **Live Lens** enabled for the instance | Transcript fan-out and WebSocket for SwarmControl and human monitor cards |
-| CloudFormation parameter **`AiSwarmEnabled=true`** | Provisions `AiSwarmApiUrl`, DynamoDB `aiSwarm` table, webhook secret, `llAiControl` Lambda, and Live Lens extensions |
-| Instance field **`aiSwarmEnabled=true`** | Product live-mode gate (set by ops/Debra when the stack is ready—not always customer self-service) |
-| Stack outputs **`AiSwarmApiUrl`** (no trailing slash), **`AiSwarmWebhookSecretArn`**, **`AiSwarmTableName`**, **`RealtimeWebSocketWssUrl`** | ACXD webhooks, storage, and supervisor socket |
-| **Live Lens Lambda artifacts** published for the environment | Customer pipeline does not publish `liveLensAiControl.zip` automatically; ops may need `build-livelens-artifacts.sh` and `publish-livelens-artifacts.sh` from the dextr repo, then a stack update |
+| **Live Lens** enabled for the instance | Transcript fan-out and the realtime connection that SwarmControl uses for AI and human cards |
+| **SwarmControl** enabled for your ConnectPath stack | Provisions the SwarmControl API, storage, webhook secret, and Live Lens extensions. ConnectPath enables this for your account. Contact ConnectPath Support to turn it on. |
+| Stack outputs **`AiSwarmApiUrl`** (no trailing slash), **`AiSwarmWebhookSecretArn`**, **`AiSwarmTableName`**, **`RealtimeWebSocketWssUrl`** | Used by ACXD webhooks, turn storage, and the supervisor connection |
 
 ### Amazon Connect
 
 | Requirement | Why |
 | --- | --- |
-| **Contact Lens** enabled on the Connect instance | Real-time voice analytics for human agents; AI path uses ACXD + SwarmControl HTTP API |
-| **Escalation queue** for AI flows | Connect block error/escalation branch for intercept and failures |
-| ACXD **workspace**, **API key**, and onboarded **applications** | AI agent supervision kit (see [ACXD setup](/swarmcontrol-acxd-setup/)) |
+| **Contact Lens** enabled on the Connect instance | Real-time voice analytics for human agent cards. AI contacts use ACXD and the SwarmControl API instead. |
+| **Escalation queue** for AI flows | The Connect block error and escalation branch uses it for intercept and failures |
+| ACXD **workspace**, **API key**, and onboarded **applications** | Required by the AI agent supervision kit (see [ACXD setup](/swarmcontrol-acxd-setup/)) |
 
 ### Permissions (security profiles)
 
 | Action | Label in UI | Needed for |
 | --- | --- | --- |
-| `ai_swarm_control` | **SwarmControl** | Live SwarmControl page and WebSocket `ai_*` handlers |
-| `transcripts` | **Transcripts** | Live Lens read path (strict gate with SwarmControl live) |
-| `silent_monitor` | **Silent Monitor** | **Human** contact cards on SwarmControl when [PR #5908](https://github.com/dextr-cloud/dextr/pull/5908) is in your build |
+| `ai_swarm_control` | **SwarmControl** | Live SwarmControl page and AI supervisor actions |
+| `transcripts` | **Transcripts** | Reading live transcripts (required together with SwarmControl for live mode) |
+| `silent_monitor` | **Silent Monitor** | **Human** contact cards on SwarmControl |
 
-Configure under **Settings → Security** → edit a profile → **Communications and presence** (SwarmControl, Silent Monitor) and **Quality/Analytics** (Transcripts).
+Configure these under **Settings → Security**. Edit a profile, then use **Communications and presence** (SwarmControl, Silent Monitor) and **Quality/Analytics** (Transcripts). SwarmControl and Silent Monitor support **Enable** only.
 
 - - - -
 
 ## Enable live mode (admins)
 
-Live SwarmControl is layered: stack, instance row, product toggle, then user permissions.
+Live SwarmControl is layered: your ConnectPath stack, the product toggle, then user permissions.
 
-1. **Operations** sets customer stack parameter **`AiSwarmEnabled=true`** and executes the change set (preview first—expect **ADD** of Ai Swarm resources, not replacement of core Live Lens tables).
-2. **Operations** sets **`aiSwarmEnabled=true`** on the Instance item in DynamoDB (or via Debra), when your process requires it alongside the stack.
-3. **ConnectPath admin** opens **Settings → Integrations and extensions → Contact Lens**. With Live Lens connected, use the SwarmControl switch:
-   - **Demo** — simulated data for all users (default).
-   - **Live data** — real contacts for permitted supervisors.
+1. **ConnectPath** enables SwarmControl for your stack and instance. Contact ConnectPath Support to start this.
+2. A **ConnectPath admin** opens **Settings → Integrations and extensions → Contact Lens**. With Live Lens connected, use the SwarmControl switch:
+   - **Demo**: simulated data for all users (the default).
+   - **Live data**: real contacts for permitted supervisors.
 
-Help text in the product: *"SwarmControl uses demo data for everyone by default. Turn on live data only when Live Lens is ready (users need the SwarmControl permission to use live mode)."*
+   Help text in the product: *"SwarmControl uses demo data for everyone by default. Turn on live data only when Live Lens is ready (users need the SwarmControl permission to use live mode)."*
 
-4. Assign supervisors **SwarmControl** and **Transcripts** (and **Silent Monitor** for human cards after #5908).
+3. Assign supervisors **SwarmControl** and **Transcripts**, plus **Silent Monitor** if they should see human agent cards.
 
 ### Error codes when enabling live data
 
 | Code | Message (English UI) | Typical fix |
 | --- | --- | --- |
 | **AS0001** | Turn on Live Lens before enabling live SwarmControl data. | Enable **Contact Lens / Live Lens** on the instance first. |
-| **AS0002** | SwarmControl live mode needs Live Lens installed on this instance (WebSocket URL and Cognito). Update the stack or turn Live Lens on first. | Update the ConnectPath stack to a build with Live Lens plumbing; confirm WebSocket URL and Cognito on the instance. |
+| **AS0002** | SwarmControl live mode needs Live Lens installed on this instance (WebSocket URL and Cognito). Update the stack or turn Live Lens on first. | Update the ConnectPath stack to a version with Live Lens support, and confirm the realtime URL and sign-in settings are in place. Contact ConnectPath Support if you need help. |
 
-Missing **SwarmControl** or **Transcripts** permission does not emit these codes—the nav and route hide live mode for those users instead.
+A missing **SwarmControl** or **Transcripts** permission does not produce these codes. SwarmControl is simply hidden from the navigation for those users.
 
-### Rollback / turning live mode off
+### Turning live mode off
 
 | Step | Effect |
 | --- | --- |
-| Set **Live data** back to **Demo** in Settings | Supervisors return to simulated feed; stack resources remain |
-| Set instance **`aiSwarmEnabled`** false | Frontend treats the instance as demo-only |
-| Stack **`AiSwarmEnabled=false`** change set | **Deletes** the `aiSwarm` DynamoDB table and webhook secret; `ai_*` WebSocket frames stop. **Live Lens for Contact Lens continues.** ACXD data requests still call old URLs until you remove them—disable or repoint flows before stack teardown. |
+| Set **Live data** back to **Demo** in Settings | Supervisors return to the simulated feed. Your stack resources stay in place. |
+| Ask ConnectPath Support to disable SwarmControl on the instance | SwarmControl returns to demo-only for the whole instance. |
+| Ask ConnectPath Support to remove SwarmControl from the stack | **Deletes** the SwarmControl turn storage and webhook secret and stops supervisor actions. **Live Lens for Contact Lens continues.** ACXD data requests keep calling the old URLs until you remove them, so disable or repoint your flows first. |
 
 - - - -
 
 ## Human agent voice contacts
 
-Human cards show **read-only** Contact Lens real-time transcripts on the same grid as AI agents. Supervisors **cannot** whisper, intercept, or approve on human contacts from SwarmControl.
+Human cards show **read-only** Contact Lens real-time transcripts on the same grid as AI agents. Supervisors **cannot** whisper, nudge, intercept, or approve on human contacts from SwarmControl.
 
 ### Setup
 
 1. Enable **Contact Lens** real-time analytics on the Amazon Connect instance and on the **voice contact flows** your agents use.
-2. Enable **Live Lens** on the ConnectPath instance (same foundation as AI SwarmControl).
-3. Grant supervisors **Transcripts**, **SwarmControl**, and **Silent Monitor** (required for human cards when [PR #5908](https://github.com/dextr-cloud/dextr/pull/5908) ships).
+2. Enable **Live Lens** on the ConnectPath instance (the same foundation as AI SwarmControl).
+3. Grant supervisors **Transcripts**, **SwarmControl**, and **Silent Monitor**.
+
+Transcripts begin streaming as soon as the call is queued, including during IVR and queue time, so supervisors see the conversation before an agent connects.
 
 ### Testing
 
-Place a test call to a queue, accept as an agent, and confirm the contact appears on **SwarmControl → Live** with kind **Human agent** and a streaming transcript.
+Place a test call to a queue and accept it as an agent. Confirm the contact appears on **SwarmControl → Live** with kind **Human agent** and a streaming transcript.
 
-{: .notice--warning}
-**Pending release:** Human agent cards on SwarmControl depend on [PR #5908](https://github.com/dextr-cloud/dextr/pull/5908) (open as of this writing). Until that build is deployed, only AI (and simulated human demo) cards apply.
-
-{: .notice--warning}
-**Pending release:** [PR #5912](https://github.com/dextr-cloud/dextr/pull/5912) fixes Live Lens voice transcripts during **queue/IVR** (early `CONTACT_LINK` indexing and longer `CONTACT_NOT_READY` retry). Without it, voice transcripts may fail to start until the agent is connected—relevant for Engage **and** human monitoring on SwarmControl.
-
-### Not supported yet
+### Not supported
 
 - Supervisor actions on human contacts from SwarmControl.
-- Chat human contacts on SwarmControl (voice-focused monitor path).
-- Non–Contact Lens channels for the human grid.
+- Chat contacts handled by human agents (the human monitor is voice only).
+- Channels that do not use Contact Lens.
 
 - - - -
 
@@ -157,20 +196,20 @@ Place a test call to a queue, accept as an agent, and confirm the contact appear
 
 | Step | Pass criteria |
 | --- | --- |
-| Demo UI | Any user opens `/swarmcontrol`, sees **Simulated data**, tabs and demo cards load |
-| Stack | `AiSwarmEnabled=true`; three `AiSwarm*` outputs present |
-| HTTP preflight | `POST /turn` without secret → **401**; with secret and `{}` → **400** `invalid turn request` |
-| ACXD chat e2e | After kit install, `chat-e2e.mjs` passes; DynamoDB `AIC#<contactId>` has `TURN#` rows |
-| Live UI | **Live data** on, supervisor with permissions sees **Live** badge and real `contactId` UUIDs on cards |
-| AI actions | Whisper, say next, intercept, and approval visible on a test AI contact |
+| Demo UI | Any user opens `/swarmcontrol`, sees **Simulated** data, and the tabs and demo cards load |
+| Stack | SwarmControl is enabled, and the three `AiSwarm*` stack outputs are present |
+| HTTP preflight | `POST /turn` without the secret returns **401**. With the secret and `{}` it returns **400** `invalid turn request`. |
+| ACXD chat end to end | After the supervision kit is installed, the chat test passes and your turn storage has `TURN#` rows for the contact |
+| Live UI | **Live data** is on, and a supervisor with the right permissions sees the green **Live** status dot and real contact IDs on cards |
+| AI actions | Whisper, say next, intercept, and approval all work on a test AI contact |
 
-**Live** vs **Simulated** in the settings popover (**Source → Live / Simulated**) mirrors backend vs demo feed when live mode is enabled; in demo instance mode the page is always simulated.
+The **Source** setting in the settings popover (**Live** or **Simulated**) switches between the live feed and the demo feed when live mode is enabled. When the instance is in demo mode the page is always simulated.
 
-### DynamoDB and logs
+### Check stack outputs and logs
 
 ```bash
-export STACK="dextr-connectpathdev-<alias>-<region>"
-export PROFILE="<customer-account-profile>"
+export STACK="<your-connectpath-stack-name>"
+export PROFILE="<your-aws-profile>"
 export REGION="us-east-1"
 
 aws cloudformation describe-stacks --stack-name "$STACK" --profile "$PROFILE" --region "$REGION" \
@@ -183,53 +222,46 @@ aws dynamodb query \
   --profile "$PROFILE" --region "$REGION"
 ```
 
-```bash
-aws logs filter-log-events \
-  --log-group-name "/aws/lambda/dextr-connectpathdev-<alias>-<region>-llAiControl" \
-  --filter-pattern "ERROR" --start-time $(($(date +%s)*1000 - 3600000)) \
-  --profile "$PROFILE" --region "$REGION" --max-items 5
-```
-
 ### Troubleshooting
 
 | Symptom | Likely cause | Action |
 | --- | --- | --- |
-| `401` on `/turn` | Wrong or missing `x-cp-webhook-secret` on ACXD data request | Re-fetch secret from ARN in-process; re-push data requests |
-| Contact missing on grid | Wrong instance on broadcast; no `META` row for contact | Confirm `INSTANCE_ID` on control Lambda; complete a turn |
-| Chat works, voice silent | Voice routed through chat kit hooks or `channel: chat` | Use **turnLoop clone** voice path ([ACXD setup](/swarmcontrol-acxd-setup/#voice-entry-turnloop-clone-only)) |
-| Validate `previous_redirect` | Hook tail uses invalid redirect | Use `cp_returnTo` dispatch registry |
-| `unknown_return` escalate | `cp_swarm_returnTo` mismatch | Re-run install dispatch sync |
-| Stuck **PENDING** approval | Supervisor WebSocket disconnected | Reconnect; approve/deny on detail panel |
-| AS0001 / AS0002 on toggle | Live Lens off or not installed | Enable Live Lens; update stack |
-| Live nav hidden | Live mode on but user lacks permissions | Add **SwarmControl** + **Transcripts** |
+| `401` on `/turn` | Wrong or missing `x-cp-webhook-secret` on the ACXD data request | Re-fetch the secret from its ARN and re-push the data requests |
+| Contact missing on the grid | Wrong instance on the broadcast, or no stored record for the contact yet | Confirm the instance ID and complete at least one turn |
+| Chat works, voice is silent | Voice is routed through chat kit hooks, or the payload says `channel: chat` | Use the **turnLoop clone** voice path ([ACXD setup](/swarmcontrol-acxd-setup/#voice-entry-turnloop-clone-only)) |
+| Validate shows an invalid `previous_redirect` | A hook tail uses an invalid redirect | Use the `cp_returnTo` dispatch registry |
+| `unknown_return` escalation | `cp_swarm_returnTo` does not match a registered site | Re-run the install so the dispatch registry syncs |
+| Approval stuck on **PENDING** | The supervisor connection dropped | Reconnect, then approve or deny from the detail panel |
+| AS0001 or AS0002 when turning on live data | Live Lens is off or not installed | Enable Live Lens and update the stack |
+| SwarmControl missing from the navigation | Live mode is on but the user lacks permissions | Add **SwarmControl** and **Transcripts** to the user's security profile |
+| Human contact does not appear | The supervisor is missing **Silent Monitor**, or Contact Lens real-time is off for the flow | Grant **Silent Monitor** and enable real-time analytics on the voice flow |
 
-Full ACXD validator and runtime table: [operator guide — troubleshooting](https://github.com/dextr-cloud/dextr/blob/docs/swarmcontrol-ai-agent-setup/docs/swarm-control/ai-agents/08-troubleshooting-and-pitfalls.md) (moves to `develop` when [PR #5916](https://github.com/dextr-cloud/dextr/pull/5916) merges).
+For ACXD validator and runtime errors, see [Troubleshooting in the ACXD setup guide](/swarmcontrol-acxd-setup/#troubleshooting-acxd-flows).
 
-### Known gaps
+### Limitations
 
-- **Voice phone audio** end-to-end is **unverified** for some turnLoop clones; DynamoDB may show `channel: voice` without a recorded human audio proof.
-- **Customer-built flow rewriter** outside kit templates is **unverified**.
-- **`GET /escalation/{contactId}`** is implemented; Connect does not consume it on the Escalation branch yet.
-- **Generative Journey** nodes are **not supportable**—migrate to standard generative nodes before hooking.
+- **Voice agents** must use a turnLoop-based flow. Test with a live call before you route production traffic.
+- **Flows with custom structure** may need manual hooking. Work with ConnectPath Support if a flow does not match the standard patterns.
+- **Generative Journey** nodes are not supported. Migrate to standard generative nodes before hooking a flow.
 
 - - - -
 
 ## FAQ
 
-**Where is the page?**  
-`/swarmcontrol` in the ConnectPath web app (not `/aiswarmcontrol`).
+**Where is the page?**
+`/swarmcontrol` in the ConnectPath web app.
 
-**Do agents need SwarmControl permission?**  
-No—only supervisors who should see live AI contacts need **SwarmControl** and **Transcripts**.
+**Do agents need the SwarmControl permission?**
+No. Only supervisors who should see live AI contacts need **SwarmControl** and **Transcripts**.
 
-**Can we use SwarmControl without ACXD?**  
-Demo mode yes. Live AI contacts require ACXD flows wired to the SwarmControl HTTP API. Human voice cards require Contact Lens + Live Lens (+ #5908).
+**Can we use SwarmControl without ACXD?**
+Demo mode, yes. Live AI contacts need ACXD flows wired to the SwarmControl API. Human voice cards need Contact Lens and Live Lens.
 
-**Does disabling Ai Swarm delete Live Lens?**  
-No. It removes Ai Swarm API, table, and secret only.
+**Does turning off SwarmControl remove Live Lens?**
+No. It removes only the SwarmControl API, turn storage, and webhook secret.
 
-**Where are scripts and flow JSON?**  
-In the dextr repo under `docs/swarm-control/ai-agents/` ([PR #5916 branch](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-setup/docs/swarm-control/ai-agents)). Do not commit API keys or webhook secrets.
+**Where do I get the supervision kit?**
+ConnectPath provides the install scripts and flow templates. Contact ConnectPath Support. Never share API keys or webhook secrets in chat, email, or tickets.
 
 - - - -
 
@@ -237,22 +269,11 @@ In the dextr repo under `docs/swarm-control/ai-agents/` ([PR #5916 branch](https
 
 | Term | Meaning |
 | --- | --- |
-| **ACXD** | Amazon Connect Agentic CX Designer—builds AI agent flows invoked by `ConnectParticipantWithAgenticCX`. |
-| **Supervision kit** | Workspace data requests (`turnCaller`, `turnAi`, `requestApproval`), context vars `cp_swarm_*`, hook flows `cpSupervisedInput` / `cpSupervisedOutput`, and customer flow hooks. |
-| **Turn loop** | ACXD cycle: listen → caller `/turn` → generative draft → AI `/turn` → speak. |
-| **Sticky gate** | Approval wait where AI turns return hold lines until a supervisor decides. |
-| **Live Lens** | ConnectPath real-time Contact Lens transcript and WebSocket infrastructure. |
-| **Simulated data** | Demo feed when `aiSwarmEnabled` is off or unset. |
-| **Kind label** | **AI agent** vs **Human agent** on each card. |
-
-- - - -
-
-## Release status (documentation anchors)
-
-| Capability | Status |
-| --- | --- |
-| `AiSwarmEnabled` stack + Settings toggle + AS0001/AS0002 | Merged ([PR #5872](https://github.com/dextr-cloud/dextr/pull/5872))—**pending release** until your ConnectPath version includes it |
-| `/swarmcontrol` UI, demo mode, live gates | Merged ([PR #5895](https://github.com/dextr-cloud/dextr/pull/5895))—**pending release** |
-| Human voice monitor cards | [PR #5908](https://github.com/dextr-cloud/dextr/pull/5908) open—**pending release** |
-| Live Lens queue/IVR voice transcript fix | [PR #5912](https://github.com/dextr-cloud/dextr/pull/5912) open—**pending release** |
-| Published operator ACXD guide in dextr | [PR #5916](https://github.com/dextr-cloud/dextr/pull/5916) open |
+| **ACXD** | Amazon Connect Agentic CX Designer. It builds AI agent flows invoked by `ConnectParticipantWithAgenticCX`. |
+| **Supervision kit** | Workspace data requests (`turnCaller`, `turnAi`, `requestApproval`), context variables `cp_swarm_*`, hook flows `cpSupervisedInput` and `cpSupervisedOutput`, and the hooks added to your customer flows. |
+| **Turn loop** | The ACXD cycle: listen, caller `/turn`, generative draft, AI `/turn`, speak. |
+| **Sticky gate** | An approval wait during which AI turns return hold lines until a supervisor decides. |
+| **Live Lens** | ConnectPath real-time Contact Lens transcripts and the realtime connection behind them. |
+| **Simulated data** | The demo feed shown when live mode is off or the source is set to Simulated. |
+| **Kind label** | **AI agent** or **Human agent** on each card. |
+| **Attention tier** | **Critical** (pending approval) or **Watch** (intercept armed or escalated). |

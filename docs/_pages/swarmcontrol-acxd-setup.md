@@ -8,17 +8,9 @@ sidebar:
   nav: "docs"
 ---
 
-This guide wires **Amazon Connect Agentic CX Designer (ACXD)** voice and chat agents to ConnectPath **SwarmControl**. There is **no Debra installer** for ACXD hooking—use the operator scripts in the dextr repository.
-
-**Canonical operator source (scripts, flow JSON, sandbox notes):**
-
-- Branch: [docs/swarmcontrol-ai-agent-setup](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-setup/docs/swarm-control/ai-agents) ([PR #5916](https://github.com/dextr-cloud/dextr/pull/5916))
-- After merge: `https://github.com/dextr-cloud/dextr/tree/develop/docs/swarm-control/ai-agents/`
+This guide wires **Amazon Connect Agentic CX Designer (ACXD)** voice and chat agents to ConnectPath **SwarmControl**. Hooking is done with the **supervision kit**, a set of install scripts, flow templates, and data-request templates that ConnectPath provides. Contact ConnectPath Support to get the kit for your account.
 
 Prerequisites and admin enablement: **[SwarmControl](/swarmcontrol/)**.
-
-{: .notice--warning}
-**Pending release:** End-to-end steps below match the operator guide in [PR #5916](https://github.com/dextr-cloud/dextr/pull/5916). Confirm your ConnectPath build includes merged SwarmControl backend/UI ([PR #5872](https://github.com/dextr-cloud/dextr/pull/5872), [PR #5895](https://github.com/dextr-cloud/dextr/pull/5895)) before production use.
 
 - - - -
 
@@ -54,7 +46,7 @@ Customer flows are **hooked** at each Listen (input) and Speak (output) site via
 
 | Step | Done when |
 | --- | --- |
-| 1. Prerequisites | Live Lens + `AiSwarmEnabled` + instance `aiSwarmEnabled` + permissions ([overview](/swarmcontrol/#prerequisites-checklist)) |
+| 1. Prerequisites | Live Lens + SwarmControl enabled for your stack and instance + permissions ([overview](/swarmcontrol/#prerequisites-checklist)) |
 | 1b. Runnable install | Backup → teardown (if needed) → `install-supervision-kit.mjs` → chat e2e |
 | 2. Workspace resources | Three data requests + `cp_swarm_*` context variables |
 | 3. Hook flows | `cpSupervisedInput` / `cpSupervisedOutput` Validate-clean |
@@ -67,7 +59,7 @@ Customer flows are **hooked** at each Listen (input) and Speak (output) site via
 
 ## SDK and working directory
 
-Install the ACXD SDK **outside** git (no committed `node_modules` in docs):
+Install the ACXD SDK in its own folder, outside the supervision kit:
 
 ```bash
 export ACXD_SDK_ROOT="${ACXD_SDK_ROOT:-$HOME/.cache/swarmcontrol-acxd-sdk}"
@@ -77,18 +69,17 @@ npm install amazon-connect-acxd-sdk@0.2.0 \
   @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb @aws-sdk/client-secrets-manager ws
 ```
 
-Copy `config.sandbox4.example.json` to a local `config.json` (never commit). Set `REPO_ROOT` to your dextr clone and:
+Copy the example config that ships with the kit to a local `config.json` and fill in your own values. Keep it out of version control. Then:
 
 ```bash
-export REPO_ROOT=/path/to/dextr
-export KIT_DIR="$REPO_ROOT/docs/swarm-control/ai-agents"
+export KIT_DIR=/path/to/supervision-kit
 export SWARM_KIT_CONFIG="$KIT_DIR/config.json"
 cd "$KIT_DIR/scripts"
 ```
 
 **Ground rules**
 
-1. **No API keys or webhook secrets** in chat, git, or tickets. `ACXD_API_KEY` env only; webhook secret fetched in-process from `AiSwarmWebhookSecretArn`.
+1. **No API keys or webhook secrets** in chat, version control, or tickets. Set `ACXD_API_KEY` as an environment variable only. The scripts fetch the webhook secret directly from `AiSwarmWebhookSecretArn`.
 2. **Build + deploy** after every flow change; Connect block **Alias** must match deployment.
 3. **Designer Validate** (toolbar) after every build—target **0 errors** (no validation API).
 4. **Voice:** do not route PSTN through chat kit hooks—clone **turnLoop** instead.
@@ -101,11 +92,10 @@ Replace placeholders with your customer values. **Do not** paste real secrets in
 
 ```bash
 # --- ConnectPath customer account ---
-export AWS_PROFILE=<customer-profile>
+export AWS_PROFILE=<your-aws-profile>
 export AWS_REGION=us-east-1
-export STACK=dextr-connectpathdev-<alias>-<region>
+export STACK=<your-connectpath-stack-name>
 export INSTANCE_ID=<connect-instance-uuid>
-export TABLE_INSTANCES=cp-instances-<stage>
 
 # --- From stack outputs ---
 export AI_SWARM_API_URL="$(aws cloudformation describe-stacks --stack-name "$STACK" \
@@ -122,7 +112,7 @@ export ACXD_API_KEY=...   # read -rs ACXD_API_KEY && export ACXD_API_KEY
 export ACXD_REGION=us-east-1
 export ACXD_WORKSPACE_ID=<workspace-uuid>
 
-export SWARM_PROOF_DIR="$HOME/.aws-history/swarmcontrol-proof-$(date +%Y-%m-%d)"
+export SWARM_PROOF_DIR="$HOME/swarmcontrol-proof-$(date +%Y-%m-%d)"
 mkdir -p "$SWARM_PROOF_DIR"
 export SWARM_KIT_CONFIG="$KIT_DIR/config.json"
 
@@ -135,26 +125,9 @@ Preflight:
 aws cloudformation describe-stacks --stack-name "$STACK" \
   --query "Stacks[0].Parameters[?ParameterKey=='AiSwarmEnabled'].ParameterValue" --output text
 # expect: true
-
-aws dynamodb get-item --table-name "$TABLE_INSTANCES" \
-  --key "{\"hash\":{\"S\":\"$INSTANCE_ID\"},\"range\":{\"S\":\"Instance\"}}" \
-  --projection-expression "aiSwarmEnabled" --output json
 ```
 
-Enable stack parameter (if not already):
-
-```bash
-aws cloudformation create-change-set \
-  --stack-name "$STACK" \
-  --change-set-name "enable-ai-swarm-$(date +%s)" \
-  --use-previous-template \
-  --parameters \
-    ParameterKey=AiSwarmEnabled,ParameterValue=true \
-    ParameterKey=ContactLensEnabled,UsePreviousValue=true \
-  --capabilities CAPABILITY_NAMED_IAM \
-  --profile "$AWS_PROFILE" --region "$AWS_REGION"
-# Review, then execute-change-set
-```
+If the result is not `true`, SwarmControl is not yet enabled on your stack. Contact ConnectPath Support to enable it before you continue.
 
 - - - -
 
@@ -254,7 +227,7 @@ Stack rollback (`AiSwarmEnabled=false`) is **destructive**—see [SwarmControl r
 
 ## Workspace resources (manual reference)
 
-Templates live in the dextr repo: `docs/swarm-control/ai-agents/assets/data-requests/`.
+The supervision kit includes templates for these in `assets/data-requests/`. The install script creates them for you. Use this section as a reference or to create them by hand.
 
 | Id pattern | Notes |
 | --- | --- |
@@ -420,7 +393,7 @@ curl -sS "$AI_SWARM_API_URL/escalation/$CONTACT_ID" \
 
 Or from `scripts/`: `node simulate-turns.mjs --contactId "$CONTACT_ID" --channel chat`.
 
-Full field semantics: [reference-http-api.md](https://github.com/dextr-cloud/dextr/blob/docs/swarmcontrol-ai-agent-setup/docs/swarm-control/ai-agents/reference-http-api.md) and [WebSocket protocol v1](https://github.com/dextr-cloud/dextr/blob/docs/swarmcontrol-ai-agent-setup/docs/live-lens/websocket-protocol-v1.md).
+The supervision kit includes a full field-by-field HTTP reference (`reference-http-api.md`).
 
 - - - -
 
@@ -449,4 +422,47 @@ Full field semantics: [reference-http-api.md](https://github.com/dextr-cloud/dex
 | `simulate-turns.mjs` | HTTP smoke |
 | `chat-e2e.mjs` | Connect StartChatContact e2e |
 
-See [scripts/README.md](https://github.com/dextr-cloud/dextr/blob/docs/swarmcontrol-ai-agent-setup/docs/swarm-control/ai-agents/scripts/README.md) in the dextr repo.
+The kit's `scripts/README.md` describes every option for each script.
+
+- - - -
+
+## Troubleshooting ACXD flows
+
+### Designer Validate and build errors
+
+| Error | Fix |
+| --- | --- |
+| `Unavailable field reference` for `speakText` on a data request | A stale flow from an earlier experiment is still registered on the application. Remove it from the application's flows (the install script can prune stale flows listed in your config), then run the flow-reference check from the kit. |
+| `variableId is not in the expected format` | Use camelCase data-request ids (`acmeturnCaller`), not names with underscores |
+| `previous_redirect` is invalid | Use the `cp_returnTo` dispatch registry |
+| `ne` operator rejected | Use `neq` |
+| Missing define metadata | Add `metadata.define` to every define node |
+| Data-request name differs from its id | `name` must equal `dataRequestId` |
+
+Designer **Validate** and deploy pre-checks run against **every flow on the application**, not only your customer flows. Remove abandoned flows from the application before you validate.
+
+### Runtime and API behavior
+
+| Symptom | Action |
+| --- | --- |
+| `interceptFlag` is undefined | Bind `intercept`. The legacy name is no longer used. |
+| Speech is empty but a draft exists | The output hook must run. Check whether an approval gate is pending. |
+| Duplicate turns on the dashboard | Turn storage de-duplicates repeated turns. The HTTP response is still fresh each time. |
+| `404` when deciding an approval over HTTP | Approvals are decided by supervisors in SwarmControl, not over HTTP. |
+| Calls fail with a malformed URL | Remove any trailing slash from `AiSwarmApiUrl`. |
+
+### Connect and ACXD pitfalls
+
+| Pitfall | What to do |
+| --- | --- |
+| Saving a flow does not change live traffic | Build, deploy, and point the Connect block **Alias** at the new deployment |
+| Application updates overwrite default flows | Merge the `flows` list. Do not replace it. |
+| Voice routed through the chat kit | Use a turnLoop clone for voice |
+| Generative Journey nodes | Not supported. Migrate to standard generative nodes. |
+| Webhook header shows masked in the designer | Expected. Confirm with the `/turn` 401/400 check (P5). |
+
+Expect roughly **1.3 to 2.5 seconds** of added latency per turn from supervision.
+
+### Contacting support
+
+Include the contact id, ACXD build id, Connect flow id, the host of your `AiSwarmApiUrl` (never the secret), a Validate screenshot, and your P5 status codes.
