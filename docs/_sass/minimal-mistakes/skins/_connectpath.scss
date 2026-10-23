@@ -1,22 +1,51 @@
-/* ConnectPath brand skin */
+/* ConnectPath 2026 skin — derived from dextr/docs/design/ui-style-guide.md
+   Navy foundation, teal signal accent, cyan interactive links.
+   Raw hex lives here (and in :root tokens in main.scss) only. */
+
+// Palette anchors
+$cp-navy-950: #000024;
+$cp-navy-900: #0a1732;
+$cp-navy-800: #131e35;
+$cp-teal-400: #08bdba;
+$cp-cyan-500: #008fd0;
+$cp-page-bg: #f8fafc;
+$cp-sidebar-bg: #f1f5f9;
+$cp-sidebar-border: #e2e8f0;
+
+$cp-success-500: #22c55e;
+$cp-warning-500: #f1c21b;
+$cp-danger-500: #ed4739;
+$cp-info-500: #3b82f6;
+
+// Minimal Mistakes variables
 $background-color: #ffffff !default;
-$text-color: #0a1732 !default;
-$muted-text-color: mix(#0a1732, #ffffff, 65%) !default;
-$primary-color: #08bdba !default;
+$text-color: $cp-navy-900 !default;
+$muted-text-color: mix($cp-navy-900, #ffffff, 65%) !default;
+$primary-color: $cp-teal-400 !default;
+$border-color: $cp-sidebar-border !default;
+$body-color: $text-color !default;
+$sidebar-color: $muted-text-color !default;
 
-$border-color: mix(#0a1732, #ffffff, 18%) !default;
-$footer-background-color: #0a1732 !default;
+$masthead-link-color: $cp-navy-900 !default;
+$masthead-link-color-hover: $cp-teal-400 !default;
+$navicon-link-color-hover: $cp-teal-400 !default;
+
+$footer-background-color: $cp-navy-900 !default;
+$footer-link-color: #ffffff !default;
+$footer-link-color-hover: $cp-teal-400 !default;
 $footer-color: #ffffff !default;
-$masthead-link-color: #0a1732 !default;
-$masthead-link-color-hover: #08bdba !default;
 
-$link-color: #008fd0 !default;
-$link-color-hover: #0a1732 !default;
+$link-color: $cp-cyan-500 !default;
+$link-color-hover: $cp-navy-900 !default;
 $link-color-visited: #104d7a !default;
 
-$success-color: #2ecc71 !default;
-$warning-color: #f1c21b !default;
-$danger-color: #ed4739 !default;
-$info-color: #104d7a !default;
+$success-color: $cp-success-500 !default;
+$warning-color: $cp-warning-500 !default;
+$danger-color: $cp-danger-500 !default;
+$info-color: $cp-info-500 !default;
 
-$code-background-color: #f5f8fd !default;
+$code-background-color: $cp-sidebar-bg !default;
+$code-background-color-dark: $cp-navy-900 !default;
+$form-background-color: $cp-page-bg !default;
+$table-border-color: $cp-sidebar-border !default;
+$table-zebra-color: $cp-page-bg !default;
