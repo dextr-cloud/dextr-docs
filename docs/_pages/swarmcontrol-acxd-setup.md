@@ -8,7 +8,14 @@ sidebar:
   nav: "docs"
 ---
 
-This guide wires **Amazon Connect Agentic CX Designer (ACXD)** voice and chat agents to ConnectPath **SwarmControl**. Hooking is done with the **supervision kit**, a set of install scripts, flow templates, and data-request templates that ConnectPath provides. Contact ConnectPath Support to get the kit for your account.
+> **SAMPLE CODE** — The supervision kit in the ConnectPath repository is a **worked example** only. It is not a supported installer and is not intended as a final working solution. Review, adapt, and test in a non-production ACXD workspace before use.
+
+This guide wires **Amazon Connect Agentic CX Designer (ACXD)** voice and chat agents to ConnectPath **SwarmControl**. Hooking uses the **supervision kit**: sample install scripts, flow templates, and data-request templates maintained in the open-source tree:
+
+- [Sample kit guide and scripts](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-sample-setup/docs/swarm-control/ai-agents) (branch `docs/swarmcontrol-ai-agent-sample-setup`)
+- [Pull request #5935](https://github.com/dextr-cloud/dextr/pull/5935) (supersedes the earlier #5916 proof-harness PR)
+
+Contact ConnectPath Support for account-specific enablement and production onboarding.
 
 Prerequisites and admin enablement: **[SwarmControl](/swarmcontrol/)**.
 
@@ -72,8 +79,9 @@ npm install amazon-connect-acxd-sdk@0.2.0 \
 Copy the example config that ships with the kit to a local `config.json` and fill in your own values. Keep it out of version control. Then:
 
 ```bash
-export KIT_DIR=/path/to/supervision-kit
+export KIT_DIR=/path/to/dextr/docs/swarm-control/ai-agents   # clone branch docs/swarmcontrol-ai-agent-sample-setup
 export SWARM_KIT_CONFIG="$KIT_DIR/config.json"
+cp "$KIT_DIR/config.example.json" "$KIT_DIR/config.json"   # edit locally; never commit
 cd "$KIT_DIR/scripts"
 ```
 

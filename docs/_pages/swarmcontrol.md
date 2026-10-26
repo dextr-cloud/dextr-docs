@@ -10,7 +10,9 @@ sidebar:
 
 SwarmControl is the ConnectPath supervisor experience at **`/swarmcontrol`**. It brings **Amazon Connect Agentic CX Designer (ACXD) AI agents** and **human agent voice contacts** onto one grid so supervisors can watch live transcripts and coach AI conversations (whisper, nudge, override, intercept, approvals). Human contacts are **read-only** on this page. Supervisor actions apply to AI contacts only.
 
-For the full ACXD wiring guide (data requests, hook flows, Connect blocks, and the supervision kit), see **[SwarmControl — AI agent (ACXD) setup](/swarmcontrol-acxd-setup/)**.
+For the full ACXD wiring guide (data requests, hook flows, Connect blocks, and the sample supervision kit), see **[SwarmControl — AI agent (ACXD) setup](/swarmcontrol-acxd-setup/)**.
+
+> **Sample kit:** Scripts and docs in [dextr `docs/swarm-control/ai-agents`](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-sample-setup/docs/swarm-control/ai-agents) are **sample code**, not a supported installer. Human agent cards on SwarmControl shipped in ConnectPath **#5908**; Live Lens contact readiness fixes shipped in **#5912** (both merged to `develop`).
 
 - - - -
 
@@ -261,7 +263,7 @@ Demo mode, yes. Live AI contacts need ACXD flows wired to the SwarmControl API. 
 No. It removes only the SwarmControl API, turn storage, and webhook secret.
 
 **Where do I get the supervision kit?**
-ConnectPath provides the install scripts and flow templates. Contact ConnectPath Support. Never share API keys or webhook secrets in chat, email, or tickets.
+Sample scripts and the step-by-step guide live in the [ConnectPath repository](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-sample-setup/docs/swarm-control/ai-agents) (`docs/swarmcontrol-ai-agent-sample-setup` branch). They are a worked example—adapt and test in a non-production workspace. Contact ConnectPath Support for production onboarding. Never share API keys or webhook secrets in chat, email, or tickets.
 
 - - - -
 
