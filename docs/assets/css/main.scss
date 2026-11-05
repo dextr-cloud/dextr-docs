@@ -6,8 +6,8 @@ search: false
 @charset "utf-8";
 
 // Typography roles (ui-style-guide.md):
-//   display  = DM Serif Display (large moments only: page title, H1)
-//   UI/body  = Plus Jakarta Sans (body, nav, dense headings)
+//   display  = Besley, Regular 400 only (all h1 and h2: page title, section headings; italics OK, never bold)
+//   UI/body  = Figtree (everything else: body, nav, h3 and below)
 //   data     = JetBrains Mono (code, IDs, timestamps)
 // Root size needs a unit (a bare `15` is invalid CSS and was silently ignored,
 // leaving the browser default). Reading text stays at 16px on every viewport
@@ -18,7 +18,7 @@ $doc-font-size-large: $doc-font-size !default;
 $doc-font-size-x-large: $doc-font-size !default;
 
 // Raise the theme's smallest steps (12px / 11px) so nav, TOC, captions, and
-// meta text stay legible with Plus Jakarta Sans.
+// meta text stay legible with Figtree.
 $type-size-6: 0.875em !default; // 14px
 $type-size-7: 0.8125em !default; // 13px
 $h-size-1: 2em !default; // 32px
@@ -28,8 +28,8 @@ $h-size-4: 1.125em !default; // 18px
 $h-size-5: 1em !default; // 16px
 $h-size-6: 1em !default; // 16px
 
-$display: "DM Serif Display", Georgia, Times, serif !default;
-$sans-serif: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$display: "Besley", Georgia, Times, serif !default;
+$sans-serif: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
 $monospace: "JetBrains Mono", Menlo, Consolas, Monaco, "Courier New", monospace !default;
 $serif: $display !default;
 $global-font-family: $sans-serif !default;
@@ -99,11 +99,14 @@ body {
 }
 
 // ---------------------------------------------------------------------------
-// Headings: display serif only for the biggest moments
+// Headings: Besley Regular 400 for every h1 and h2 (design team revision); never bold
 // ---------------------------------------------------------------------------
+h1,
+h2,
 .page__title,
 .archive__item-title,
-.page__content h1 {
+.page__content h1,
+.page__content h2 {
   font-family: $display;
   font-weight: 400;
   color: var(--cp-navy-900);
@@ -125,7 +128,10 @@ body {
   font-size: 1.25rem;
 }
 
-.page__content h2,
+.page__content h2 {
+  color: var(--cp-navy-900);
+}
+
 .page__content h3,
 .page__content h4,
 .page__content h5,
@@ -168,7 +174,7 @@ body {
   color: var(--cp-navy-900);
 }
 
-// Full-colour wordmark logo (565x90): size by height, keep aspect ratio.
+// Full-colour wordmark logo (1024x173): size by height, keep aspect ratio.
 .greedy-nav .site-logo img {
   width: auto;
   height: 28px;
@@ -518,9 +524,29 @@ input[type="email"] {
 // Footer: navy foundation, teal hover
 // ---------------------------------------------------------------------------
 .page__footer {
+  // Dark mesh gradient (design team revision); navy fallback colour first.
   background-color: var(--cp-navy-900);
+  // The 35% navy scrim keeps white footer text above WCAG AA over the cyan/teal stops.
+  background-image: linear-gradient(rgba(10, 23, 50, 0.35), rgba(10, 23, 50, 0.35)),
+    radial-gradient(at 90% 20%, #0a1732 0px, transparent 50%),
+    radial-gradient(at 12.5% 92.7%, #0a1732 0px, transparent 50%),
+    radial-gradient(at 11.7% 11.5%, #104d7a 0px, transparent 50%),
+    radial-gradient(at 56.1% 57.7%, #008fd0e6 0px, transparent 50%),
+    radial-gradient(at 94.7% 97.7%, #08bdbae6 0px, transparent 50%);
   border-top: 3px solid var(--cp-teal-400);
   color: #ffffff;
+
+  // Color Knockout logo (white wordmark) on the dark footer.
+  .page__footer-logo {
+    padding: var(--space-4) 0 var(--space-2);
+
+    img {
+      display: block;
+      width: auto;
+      height: 32px;
+      margin: 0 auto;
+    }
+  }
 
   a {
     color: #ffffff;
