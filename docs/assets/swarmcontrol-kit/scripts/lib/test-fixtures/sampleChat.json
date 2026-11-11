@@ -1,0 +1,447 @@
+{
+  "flowId": "sampleChat",
+  "description": "Sample customer chat flow used by the kit unit tests",
+  "untrained": false,
+  "mainLanguageCode": "en-US",
+  "languageCodes": [
+    "en-US"
+  ],
+  "contextVariables": [
+    {
+      "name": "contactId",
+      "type": "text"
+    }
+  ],
+  "nodes": {
+    "02fcf858-ac48-4725-935a-6731158bd877": {
+      "nodeId": "02fcf858-ac48-4725-935a-6731158bd877",
+      "type": "generative_text",
+      "childNodes": [
+        {
+          "nodeId": "1e797079-0620-431c-ad2e-dc1244b5bf2d",
+          "name": "Success",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "success"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "3a10391f-97d2-44da-a3b4-b2b09453a4eb",
+          "name": "Timeout",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "timeout"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "3a10391f-97d2-44da-a3b4-b2b09453a4eb",
+          "name": "Failure",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "failure"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 700,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "generativeText": {
+          "name": "aiReply",
+          "prompt": "You are a helpful live-chat support agent.\nAnswer the customer's latest message in 1-3 sentences.\n\nCustomer message:\n{customerText:NLX.Local}",
+          "modelType": "anthropic.claude-haiku-4-5",
+          "timeout": 90000,
+          "temperature": 0.3,
+          "maxTokens": 400
+        },
+        "name": "Generative text",
+        "stateModifications": []
+      }
+    },
+    "0eefc1da-31ca-452a-80d2-7a2ed1320f8d": {
+      "nodeId": "0eefc1da-31ca-452a-80d2-7a2ed1320f8d",
+      "type": "define",
+      "childNodes": [
+        {
+          "nodeId": "2274d49c-f33b-4663-baf5-7c36014648b8",
+          "name": "",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 400,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "customerText",
+          "value": {
+            "type": "system",
+            "name": "System.utterance"
+          }
+        },
+        "name": "Capture customerText",
+        "stateModifications": []
+      }
+    },
+    "12e64161-b68d-4507-a6cf-2b7081cb2921": {
+      "nodeId": "12e64161-b68d-4507-a6cf-2b7081cb2921",
+      "type": "start",
+      "childNodes": [
+        {
+          "nodeId": "91bb3678-d56b-4c8d-9c64-501de7547678",
+          "name": "Start",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 100,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Start",
+        "stateModifications": []
+      }
+    },
+    "1e797079-0620-431c-ad2e-dc1244b5bf2d": {
+      "nodeId": "1e797079-0620-431c-ad2e-dc1244b5bf2d",
+      "type": "basic",
+      "childNodes": [
+        {
+          "nodeId": "67b48cff-d1ce-4b05-8c19-6530923cacc2",
+          "name": "Loop",
+          "conditions": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "text",
+          "body": "{aiReply:NLX.Local}",
+          "messageId": "b944ad17-2e58-422f-955e-ff9c1aacb4d3"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 800,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Say generative reply",
+        "stateModifications": []
+      }
+    },
+    "2274d49c-f33b-4663-baf5-7c36014648b8": {
+      "nodeId": "2274d49c-f33b-4663-baf5-7c36014648b8",
+      "type": "split",
+      "childNodes": [
+        {
+          "nodeId": "5b0f6f0e-7c1a-4f61-9d0e-2f7d1b3c9a01",
+          "name": "Refund",
+          "conditions": [
+            {
+              "left": {
+                "type": "local",
+                "name": "customerText"
+              },
+              "operator": "contains",
+              "right": {
+                "type": "constant",
+                "value": "refund"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "d29922e9-e1b2-4c38-a0a0-c91b5bb7afbb",
+          "name": "Hours",
+          "conditions": [
+            {
+              "left": {
+                "type": "local",
+                "name": "customerText"
+              },
+              "operator": "contains",
+              "right": {
+                "type": "constant",
+                "value": "hours"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "02fcf858-ac48-4725-935a-6731158bd877",
+          "name": "Generative",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 500,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Route customer",
+        "stateModifications": []
+      }
+    },
+    "3a10391f-97d2-44da-a3b4-b2b09453a4eb": {
+      "nodeId": "3a10391f-97d2-44da-a3b4-b2b09453a4eb",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 1000,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Escalate gen fail",
+        "stateModifications": []
+      }
+    },
+    "67b48cff-d1ce-4b05-8c19-6530923cacc2": {
+      "nodeId": "67b48cff-d1ce-4b05-8c19-6530923cacc2",
+      "type": "user_input",
+      "childNodes": [
+        {
+          "nodeId": "0eefc1da-31ca-452a-80d2-7a2ed1320f8d",
+          "name": "Input",
+          "conditions": [
+            {
+              "left": {
+                "type": "system",
+                "name": "System.utterance"
+              },
+              "operator": "neq",
+              "right": {
+                "type": "constant",
+                "value": ""
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "a4462253-ac91-4ba7-918c-384699657aa2",
+          "name": "Timeout",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "timeout"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": "text",
+          "body": "​",
+          "messageId": "1c2006e3-c125-45fb-a4a6-2b662554e7d3",
+          "skipTranslation": false
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 300,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Listen",
+        "voiceSettings": {
+          "interruptionEnabled": true,
+          "speechInputEnabled": true,
+          "dtmfInputEnabled": false
+        },
+        "stateModifications": [],
+        "timeout": 300
+      }
+    },
+    "91bb3678-d56b-4c8d-9c64-501de7547678": {
+      "nodeId": "91bb3678-d56b-4c8d-9c64-501de7547678",
+      "type": "basic",
+      "childNodes": [
+        {
+          "nodeId": "67b48cff-d1ce-4b05-8c19-6530923cacc2",
+          "name": "Next",
+          "conditions": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "text",
+          "body": "Hello! How can I help you today?",
+          "messageId": "4bbb7d5a-58e3-4524-8290-e1f696b28951"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 200,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Greeting",
+        "stateModifications": []
+      }
+    },
+    "a4462253-ac91-4ba7-918c-384699657aa2": {
+      "nodeId": "a4462253-ac91-4ba7-918c-384699657aa2",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 900,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Escalate timeout",
+        "stateModifications": []
+      }
+    },
+    "d29922e9-e1b2-4c38-a0a0-c91b5bb7afbb": {
+      "nodeId": "d29922e9-e1b2-4c38-a0a0-c91b5bb7afbb",
+      "type": "basic",
+      "childNodes": [
+        {
+          "nodeId": "67b48cff-d1ce-4b05-8c19-6530923cacc2",
+          "name": "Loop",
+          "conditions": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "text",
+          "body": "Our hours are 9 AM to 5 PM Eastern, Monday through Friday.",
+          "messageId": "16eff376-6c6d-4510-b9cf-6cd8194eb1d3"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 600,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Static hours",
+        "stateModifications": []
+      }
+    },
+    "5b0f6f0e-7c1a-4f61-9d0e-2f7d1b3c9a01": {
+      "nodeId": "5b0f6f0e-7c1a-4f61-9d0e-2f7d1b3c9a01",
+      "type": "basic",
+      "childNodes": [
+        {
+          "nodeId": "67b48cff-d1ce-4b05-8c19-6530923cacc2",
+          "name": "Loop",
+          "conditions": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "text",
+          "body": "Your refund has been processed. Is there anything else I can help with?",
+          "messageId": "6c1e2a77-3d4b-4e8f-a1b2-0c9d8e7f6a51"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 700,
+        "y": 520,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Refund processed",
+        "stateModifications": []
+      }
+    }
+  }
+}

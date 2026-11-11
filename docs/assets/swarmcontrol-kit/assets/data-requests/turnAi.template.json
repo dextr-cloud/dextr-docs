@@ -1,0 +1,65 @@
+{
+  "dataRequestId": "{{DR_TURN_AI}}",
+  "type": "object",
+  "description": "ConnectPath SwarmControl: AI turn",
+  "requestSchema": {
+    "type": "object",
+    "properties": {
+      "contactId": { "type": "string" },
+      "role": { "type": "string" },
+      "text": { "type": "string" },
+      "aiDraft": { "type": "string" },
+      "channel": { "type": "string" }
+    }
+  },
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "ok": { "type": "boolean" },
+      "speakText": { "type": "string" },
+      "spokenText": { "type": "string" },
+      "aiDraft": { "type": "string" },
+      "overrideUsed": { "type": "boolean" },
+      "redacted": { "type": "boolean" },
+      "approvalStatus": { "type": "string" },
+      "gate": { "type": "string" },
+      "intercept": { "type": "boolean" },
+      "whisper": { "type": "string" },
+      "whisperMode": { "type": "string" }
+    }
+  },
+  "webhook": {
+    "implementation": "external",
+    "method": "POST",
+    "sendContext": true,
+    "headers": [
+      {
+        "key": "x-cp-webhook-secret",
+        "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+        "sensitive": true
+      }
+    ],
+    "environments": {
+      "development": {
+        "url": "{{AI_SWARM_API_BASE}}/turn",
+        "headers": [
+          {
+            "key": "x-cp-webhook-secret",
+            "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+            "sensitive": true
+          }
+        ]
+      },
+      "production": {
+        "url": "{{AI_SWARM_API_BASE}}/turn",
+        "headers": [
+          {
+            "key": "x-cp-webhook-secret",
+            "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+            "sensitive": true
+          }
+        ]
+      }
+    }
+  }
+}

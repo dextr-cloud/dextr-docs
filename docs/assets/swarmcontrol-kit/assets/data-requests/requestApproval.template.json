@@ -1,0 +1,59 @@
+{
+  "dataRequestId": "{{DR_REQUEST_APPROVAL}}",
+  "type": "object",
+  "description": "ConnectPath SwarmControl: supervisor approval gate",
+  "requestSchema": {
+    "type": "object",
+    "properties": {
+      "contactId": { "type": "string" },
+      "requestId": { "type": "string" },
+      "action": { "type": "string" },
+      "summary": { "type": "string" },
+      "amount": { "type": "string" },
+      "waitSeconds": { "type": "number" }
+    }
+  },
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "requestId": { "type": "string" },
+      "status": { "type": "string" },
+      "decidedBy": { "type": "string" },
+      "note": { "type": "string" }
+    }
+  },
+  "webhook": {
+    "implementation": "external",
+    "method": "POST",
+    "sendContext": true,
+    "headers": [
+      {
+        "key": "x-cp-webhook-secret",
+        "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+        "sensitive": true
+      }
+    ],
+    "environments": {
+      "development": {
+        "url": "{{AI_SWARM_API_BASE}}/approval",
+        "headers": [
+          {
+            "key": "x-cp-webhook-secret",
+            "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+            "sensitive": true
+          }
+        ]
+      },
+      "production": {
+        "url": "{{AI_SWARM_API_BASE}}/approval",
+        "headers": [
+          {
+            "key": "x-cp-webhook-secret",
+            "value": "{{WEBHOOK_SECRET_INJECTED_AT_RUNTIME}}",
+            "sensitive": true
+          }
+        ]
+      }
+    }
+  }
+}
