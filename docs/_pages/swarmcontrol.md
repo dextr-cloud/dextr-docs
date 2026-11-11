@@ -10,9 +10,9 @@ sidebar:
 
 SwarmControl is the ConnectPath supervisor experience at **`/swarmcontrol`**. It brings **Amazon Connect Agentic CX Designer (ACXD) AI agents** and **human agent voice contacts** onto one grid so supervisors can watch live transcripts and coach AI conversations (whisper, nudge, override, intercept, approvals). Human contacts are **read-only** on this page. Supervisor actions apply to AI contacts only.
 
-For the full ACXD wiring guide (data requests, hook flows, Connect blocks, and the sample supervision kit), see **[SwarmControl — AI agent (ACXD) setup](/swarmcontrol-acxd-setup/)**.
+To connect ACXD agents you already run, see **[SwarmControl — connect your ACXD agents](/swarmcontrol-acxd-setup/)**. It includes the SwarmControl kit download.
 
-> **Sample kit:** Scripts and docs in [dextr `docs/swarm-control/ai-agents`](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-sample-setup/docs/swarm-control/ai-agents) are **sample code**, not a supported installer. Human agent cards on SwarmControl shipped in ConnectPath **#5908**; Live Lens contact readiness fixes shipped in **#5912** (both merged to `develop`).
+> **Sample kit:** The [SwarmControl kit](/swarmcontrol-acxd-setup/#download) is **sample code**, not a supported installer. Review and test it in a non-production workspace first.
 
 - - - -
 
@@ -122,7 +122,7 @@ Use this before turning on live SwarmControl or onboarding ACXD.
 | --- | --- |
 | **Contact Lens** enabled on the Connect instance | Real-time voice analytics for human agent cards. AI contacts use ACXD and the SwarmControl API instead. |
 | **Escalation queue** for AI flows | The Connect block error and escalation branch uses it for intercept and failures |
-| ACXD **workspace**, **API key**, and onboarded **applications** | Required by the AI agent supervision kit (see [ACXD setup](/swarmcontrol-acxd-setup/)) |
+| ACXD **workspace**, **API key**, and onboarded **applications** | Required by the SwarmControl kit (see [ACXD setup](/swarmcontrol-acxd-setup/)) |
 
 ### Permissions (security profiles)
 
@@ -201,7 +201,7 @@ Place a test call to a queue and accept it as an agent. Confirm the contact appe
 | Demo UI | Any user opens `/swarmcontrol`, sees **Simulated** data, and the tabs and demo cards load |
 | Stack | SwarmControl is enabled, and the three `AiSwarm*` stack outputs are present |
 | HTTP preflight | `POST /turn` without the secret returns **401**. With the secret and `{}` it returns **400** `invalid turn request`. |
-| ACXD chat end to end | After the supervision kit is installed, the chat test passes and your turn storage has `TURN#` rows for the contact |
+| ACXD end to end | After the SwarmControl kit is installed, `verify.mjs` passes, and a test chat or call has `TURN#` rows in your turn storage |
 | Live UI | **Live data** is on, and a supervisor with the right permissions sees the green **Live** status dot and real contact IDs on cards |
 | AI actions | Whisper, say next, intercept, and approval all work on a test AI contact |
 
@@ -230,19 +230,19 @@ aws dynamodb query \
 | --- | --- | --- |
 | `401` on `/turn` | Wrong or missing `x-cp-webhook-secret` on the ACXD data request | Re-fetch the secret from its ARN and re-push the data requests |
 | Contact missing on the grid | Wrong instance on the broadcast, or no stored record for the contact yet | Confirm the instance ID and complete at least one turn |
-| Chat works, voice is silent | Voice is routed through chat kit hooks, or the payload says `channel: chat` | Use the **turnLoop clone** voice path ([ACXD setup](/swarmcontrol-acxd-setup/#voice-entry-turnloop-clone-only)) |
+| Chat works, voice is silent | The voice Connect block is missing `cp_swarm_channel=voice`, or the flow sets the channel itself | Run `connect-block.mjs` for the voice target and remove any channel assignment from the flow ([Voice](/swarmcontrol-acxd-setup/#voice)) |
 | Validate shows an invalid `previous_redirect` | A hook tail uses an invalid redirect | Use the `cp_returnTo` dispatch registry |
-| `unknown_return` escalation | `cp_swarm_returnTo` does not match a registered site | Re-run the install so the dispatch registry syncs |
+| `unknown_return` escalation | `cp_swarm_returnTo` does not match a registered site | Run `install.mjs` again so the return dispatch is rebuilt |
 | Approval stuck on **PENDING** | The supervisor connection dropped | Reconnect, then approve or deny from the detail panel |
 | AS0001 or AS0002 when turning on live data | Live Lens is off or not installed | Enable Live Lens and update the stack |
 | SwarmControl missing from the navigation | Live mode is on but the user lacks permissions | Add **SwarmControl** and **Transcripts** to the user's security profile |
 | Human contact does not appear | The supervisor is missing **Silent Monitor**, or Contact Lens real-time is off for the flow | Grant **Silent Monitor** and enable real-time analytics on the voice flow |
 
-For ACXD validator and runtime errors, see [Troubleshooting in the ACXD setup guide](/swarmcontrol-acxd-setup/#troubleshooting-acxd-flows).
+For ACXD validator and runtime errors, see [Troubleshooting in the ACXD setup guide](/swarmcontrol-acxd-setup/#troubleshooting).
 
 ### Limitations
 
-- **Voice agents** must use a turnLoop-based flow. Test with a live call before you route production traffic.
+- **Voice agents:** test voice with a live call before you route production traffic.
 - **Flows with custom structure** may need manual hooking. Work with ConnectPath Support if a flow does not match the standard patterns.
 - **Generative Journey** nodes are not supported. Migrate to standard generative nodes before hooking a flow.
 
@@ -262,8 +262,8 @@ Demo mode, yes. Live AI contacts need ACXD flows wired to the SwarmControl API. 
 **Does turning off SwarmControl remove Live Lens?**
 No. It removes only the SwarmControl API, turn storage, and webhook secret.
 
-**Where do I get the supervision kit?**
-Sample scripts and the step-by-step guide live in the [ConnectPath repository](https://github.com/dextr-cloud/dextr/tree/docs/swarmcontrol-ai-agent-sample-setup/docs/swarm-control/ai-agents) (`docs/swarmcontrol-ai-agent-sample-setup` branch). They are a worked example—adapt and test in a non-production workspace. Contact ConnectPath Support for production onboarding. Never share API keys or webhook secrets in chat, email, or tickets.
+**Where do I get the SwarmControl kit?**
+Download it from **[SwarmControl — connect your ACXD agents](/swarmcontrol-acxd-setup/#download)**. It is a worked example—adapt and test it in a non-production workspace. Contact ConnectPath Support for production onboarding. Never share API keys or webhook secrets in chat, email, or tickets.
 
 - - - -
 

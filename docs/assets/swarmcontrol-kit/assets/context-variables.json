@@ -1,0 +1,16 @@
+{
+  "note": "Workspace context variables install.mjs creates. All allow external modification so the Connect block can set cp_swarm_channel and contactId. install.mjs also declares them on every hooked flow and both hook flows.",
+  "workspaceContextVariables": [
+    "cp_swarm_lastCustomerText",
+    "cp_swarm_exitReason",
+    "cp_swarm_customerText",
+    "cp_swarm_replyDraft",
+    "cp_swarm_speakText",
+    "cp_swarm_whisperNote",
+    "cp_swarm_history",
+    "cp_swarm_returnTo",
+    "cp_swarm_approvalStatus",
+    "cp_swarm_approvalRequestId",
+    "cp_swarm_channel"
+  ]
+}

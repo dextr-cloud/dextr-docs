@@ -14,6 +14,8 @@ After you enter the ConnectPath dashboard you can see at the top of the screen t
 
 [![First Look](/assets/images/Home/first-look.jpg)](/assets/images/Home/first-look.jpg)
 
+Supervisors with the right permissions also see **SwarmControl** in the side navigation: one grid for AI agent and human voice contacts. See [SwarmControl](/swarmcontrol/).
+
 ----
 
 #### Header

@@ -1,0 +1,495 @@
+{
+  "flowId": "cpSupervisedInput",
+  "description": "ConnectPath SwarmControl: supervised input hook",
+  "untrained": false,
+  "mainLanguageCode": "en-US",
+  "languageCodes": [
+    "en-US"
+  ],
+  "contextVariables": [
+    {
+      "name": "cp_swarm_lastCustomerText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_exitReason",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_customerText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_replyDraft",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_speakText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_whisperNote",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_history",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_returnTo",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_approvalStatus",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_approvalRequestId",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_channel",
+      "type": "text"
+    }
+  ],
+  "nodes": {
+    "324c1f4e-2332-4249-9ab4-2a61c561435f": {
+      "nodeId": "324c1f4e-2332-4249-9ab4-2a61c561435f",
+      "type": "split",
+      "childNodes": [
+        {
+          "nodeId": "6f28aa00-0575-465f-9718-72392dc26780",
+          "name": "Intercept",
+          "conditions": [
+            {
+              "left": {
+                "type": "variable",
+                "name": "{{DR_TURN_CALLER}}.intercept"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "583bc893-9a4a-4afb-9ec8-76246101700c",
+          "name": "Continue",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 450,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Intercept?",
+        "stateModifications": []
+      }
+    },
+    "583bc893-9a4a-4afb-9ec8-76246101700c": {
+      "nodeId": "583bc893-9a4a-4afb-9ec8-76246101700c",
+      "type": "define",
+      "childNodes": [
+        {
+          "nodeId": "c7a23d42-1930-434a-a307-8285a78376d7",
+          "name": "",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 400,
+        "y": 400,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "cp_swarm_approvalStatus",
+          "value": {
+            "type": "variable",
+            "name": "{{DR_TURN_CALLER}}.approvalStatus"
+          }
+        },
+        "name": "cp:Set approvalStatus",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_approvalStatus",
+            "modification": "set",
+            "value": {
+              "type": "variable",
+              "name": "{{DR_TURN_CALLER}}.approvalStatus"
+            }
+          }
+        ]
+      }
+    },
+    "61ca4a82-205e-4d3f-8c31-bdf03f7eb436": {
+      "nodeId": "61ca4a82-205e-4d3f-8c31-bdf03f7eb436",
+      "type": "define",
+      "childNodes": [],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 630,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "cp_swarm_history",
+          "value": {
+            "type": "variable",
+            "name": "{{DR_TURN_CALLER}}.transcriptHistory"
+          }
+        },
+        "name": "cp:Set history",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_history",
+            "modification": "set",
+            "value": {
+              "type": "variable",
+              "name": "{{DR_TURN_CALLER}}.transcriptHistory"
+            }
+          }
+        ]
+      }
+    },
+    "6f28aa00-0575-465f-9718-72392dc26780": {
+      "nodeId": "6f28aa00-0575-465f-9718-72392dc26780",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 810,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Escalate intercept",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_exitReason",
+            "modification": "set",
+            "value": {
+              "type": "constant",
+              "value": "intercept"
+            }
+          }
+        ]
+      }
+    },
+    "718852ae-4a2e-452f-b2b2-27633fa969ad": {
+      "nodeId": "718852ae-4a2e-452f-b2b2-27633fa969ad",
+      "type": "data_request",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "in_progress"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "324c1f4e-2332-4249-9ab4-2a61c561435f",
+          "name": "Success",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "success"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "cdf02d8e-fe32-4e48-9446-be200aea6e33",
+          "name": "Timeout",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "timeout"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "cdf02d8e-fe32-4e48-9446-be200aea6e33",
+          "name": "Failure",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "failure"
+              }
+            }
+          ]
+        }
+      ],
+      "dataRequests": [
+        {
+          "dataRequestId": "{{DR_TURN_CALLER}}",
+          "urlParams": {},
+          "headers": {},
+          "payload": {
+            "type": "recursive",
+            "value": {
+              "channel": {
+                "name": "cp_swarm_channel",
+                "type": "context"
+              },
+              "contactId": {
+                "name": "System.conversationId",
+                "type": "system"
+              },
+              "role": {
+                "type": "constant",
+                "value": "caller"
+              },
+              "text": {
+                "name": "utteranceCap",
+                "type": "local"
+              }
+            }
+          },
+          "alwaysRetrigger": false,
+          "name": "{{DR_TURN_CALLER}}"
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 360,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:POST /turn caller",
+        "stateModifications": [],
+        "timeout": 30000
+      }
+    },
+    "79300fd4-1111-4d65-92a2-2044ea900bc5": {
+      "nodeId": "79300fd4-1111-4d65-92a2-2044ea900bc5",
+      "type": "split",
+      "childNodes": [
+        {
+          "nodeId": "718852ae-4a2e-452f-b2b2-27633fa969ad",
+          "name": "Continue",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 270,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Publish cp_swarm_customerText",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_customerText",
+            "modification": "set",
+            "value": {
+              "type": "local",
+              "name": "utteranceCap"
+            }
+          }
+        ]
+      }
+    },
+    "c7a23d42-1930-434a-a307-8285a78376d7": {
+      "nodeId": "c7a23d42-1930-434a-a307-8285a78376d7",
+      "type": "define",
+      "childNodes": [
+        {
+          "nodeId": "61ca4a82-205e-4d3f-8c31-bdf03f7eb436",
+          "name": "",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 540,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "cp_swarm_whisperNote",
+          "value": {
+            "type": "variable",
+            "name": "{{DR_TURN_CALLER}}.whisper"
+          }
+        },
+        "name": "cp:Set whisperNote",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_whisperNote",
+            "modification": "set",
+            "value": {
+              "type": "variable",
+              "name": "{{DR_TURN_CALLER}}.whisper"
+            }
+          }
+        ]
+      }
+    },
+    "cae3f1e5-3d81-4341-a779-694109ee95f7": {
+      "nodeId": "cae3f1e5-3d81-4341-a779-694109ee95f7",
+      "type": "define",
+      "childNodes": [
+        {
+          "nodeId": "79300fd4-1111-4d65-92a2-2044ea900bc5",
+          "name": "",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 180,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "utteranceCap",
+          "value": {
+            "type": "system",
+            "name": "System.utterance"
+          }
+        },
+        "name": "cp:Capture utterance",
+        "stateModifications": []
+      }
+    },
+    "cdf02d8e-fe32-4e48-9446-be200aea6e33": {
+      "nodeId": "cdf02d8e-fe32-4e48-9446-be200aea6e33",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 900,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Escalate DR fail",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_exitReason",
+            "modification": "set",
+            "value": {
+              "type": "constant",
+              "value": "failure"
+            }
+          }
+        ]
+      }
+    },
+    "d8793607-174e-412d-b009-0fe25f379b90": {
+      "nodeId": "d8793607-174e-412d-b009-0fe25f379b90",
+      "type": "start",
+      "childNodes": [
+        {
+          "nodeId": "cae3f1e5-3d81-4341-a779-694109ee95f7",
+          "name": "Start",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 200,
+        "y": 90,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Start",
+        "stateModifications": []
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "aws": {
+    "profile": "your-aws-profile",
+    "region": "us-east-1",
+    "connectInstanceId": "CONNECT_INSTANCE_UUID",
+    "escalationQueueId": "CONNECT_QUEUE_UUID"
+  },
+  "connectPath": {
+    "stackName": "YOUR_CONNECTPATH_STACK_NAME"
+  },
+  "acxd": {
+    "workspaceId": "ACXD_WORKSPACE_UUID",
+    "languageCode": "en-US",
+    "apiKeyEnv": "ACXD_API_KEY"
+  },
+  "naming": {
+    "dataRequestPrefix": "acme",
+    "contextPrefix": "cp_swarm_"
+  },
+  "targets": [
+    {
+      "channel": "chat",
+      "applicationId": "ACXD_CHAT_APPLICATION_UUID",
+      "deploymentId": "ACXD_CHAT_DEPLOYMENT_UUID",
+      "connectContactFlowId": "CONNECT_CHAT_FLOW_UUID",
+      "flows": ["yourChatFlowId"],
+      "approvalSites": [
+        {
+          "flowId": "yourChatFlowId",
+          "fromNodeId": "NODE_UUID_OF_THE_SPLIT_BEFORE_THE_ACTION",
+          "edgeName": "Refund",
+          "action": "refund"
+        }
+      ]
+    },
+    {
+      "channel": "voice",
+      "applicationId": "ACXD_VOICE_APPLICATION_UUID",
+      "deploymentId": "ACXD_VOICE_DEPLOYMENT_UUID",
+      "connectContactFlowId": "CONNECT_VOICE_FLOW_UUID",
+      "flows": ["yourVoiceFlowId"],
+      "approvalSites": []
+    }
+  ]
+}

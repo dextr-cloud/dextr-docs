@@ -29,6 +29,12 @@ ConnectPath also can be shaped and moved around to suit your screen real estate 
    <img src="{{ '/assets/images/dextr-features.gif' }}" alt="ConnectPath Features">
 </figure>
 
+- - - -
+
+### SwarmControl
+
+SwarmControl puts your Amazon Connect Agentic CX Designer (ACXD) AI agents and your human voice contacts on one supervisor grid. Supervisors watch live transcripts and can whisper, nudge, override, intercept, or approve actions on AI conversations. See [SwarmControl](/swarmcontrol/) to get started, and [connect your ACXD agents](/swarmcontrol-acxd-setup/) to add supervision to agents you already run.
+
 
 - - - -
 

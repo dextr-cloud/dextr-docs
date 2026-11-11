@@ -1,0 +1,22 @@
+{
+  "Identifier": "{{EXISTING_BLOCK_ID}}",
+  "Type": "ConnectParticipantWithAgenticCX",
+  "Parameters": {
+    "AgentConfiguration": {
+      "WorkspaceId": "{{ACXD_WORKSPACE_ID}}",
+      "ApplicationId": "{{ACXD_CHAT_APPLICATION_ID}}",
+      "Alias": "{{ACXD_CHAT_DEPLOYMENT_ALIAS}}"
+    },
+    "SpeechRecognitionConfiguration": { "SpeechRecognitionEngine": "AMAZON_AGENTIC_VOICE" },
+    "AudioFillerConfiguration": { "Enabled": false },
+    "ContextVariables": {
+      "contactId": "$.ContactId",
+      "cp_swarm_channel": "chat"
+    }
+  },
+  "Transitions": {
+    "NextAction": "{{YOUR_EXISTING_NEXT_ACTION}}",
+    "Errors": [{ "ErrorType": "NoMatchingError", "NextAction": "{{YOUR_EXISTING_ERROR_ACTION}}" }],
+    "Conditions": [{ "NextAction": "{{YOUR_ESCALATION_ACTION}}", "Condition": { "Operator": "Equals", "Operands": ["Escalation"] } }]
+  }
+}

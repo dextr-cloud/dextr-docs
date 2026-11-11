@@ -1,0 +1,464 @@
+{
+  "flowId": "cpSupervisedOutput",
+  "description": "ConnectPath SwarmControl: supervised output hook",
+  "untrained": false,
+  "mainLanguageCode": "en-US",
+  "languageCodes": [
+    "en-US"
+  ],
+  "contextVariables": [
+    {
+      "name": "cp_swarm_lastCustomerText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_exitReason",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_customerText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_replyDraft",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_speakText",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_whisperNote",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_history",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_returnTo",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_approvalStatus",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_approvalRequestId",
+      "type": "text"
+    },
+    {
+      "name": "cp_swarm_channel",
+      "type": "text"
+    }
+  ],
+  "nodes": {
+    "211ac3f4-ed01-4f28-9789-ba9dfb829985": {
+      "nodeId": "211ac3f4-ed01-4f28-9789-ba9dfb829985",
+      "type": "split",
+      "childNodes": [
+        {
+          "nodeId": "955a8ceb-6e00-4a58-91bc-56b234d5f780",
+          "name": "Intercept",
+          "conditions": [
+            {
+              "left": {
+                "type": "variable",
+                "name": "{{DR_TURN_AI}}.intercept"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "7210f781-4ba4-4e4c-b73d-b2e7e82f5786",
+          "name": "Continue",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 270,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Intercept ai?",
+        "stateModifications": []
+      }
+    },
+    "7210f781-4ba4-4e4c-b73d-b2e7e82f5786": {
+      "nodeId": "7210f781-4ba4-4e4c-b73d-b2e7e82f5786",
+      "type": "split",
+      "childNodes": [
+        {
+          "nodeId": "a00aa1b4-7844-4c7c-a64b-562f385e9d1f",
+          "name": "speakText",
+          "conditions": [
+            {
+              "left": {
+                "type": "variable",
+                "name": "{{DR_TURN_AI}}.speakText"
+              },
+              "operator": "neq",
+              "right": {
+                "type": "constant",
+                "value": ""
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "c988416c-1b18-4602-8052-d8ec55e15983",
+          "name": "Empty speakText",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 360,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Speak source",
+        "stateModifications": []
+      }
+    },
+    "94e3ac5c-d2d3-49e2-a5d1-19b0cfc1a82a": {
+      "nodeId": "94e3ac5c-d2d3-49e2-a5d1-19b0cfc1a82a",
+      "type": "start",
+      "childNodes": [
+        {
+          "nodeId": "eac64afd-4060-4a98-b811-6257e2e96333",
+          "name": "Start",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 90,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "Start",
+        "stateModifications": []
+      }
+    },
+    "955a8ceb-6e00-4a58-91bc-56b234d5f780": {
+      "nodeId": "955a8ceb-6e00-4a58-91bc-56b234d5f780",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 810,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Escalate intercept",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_exitReason",
+            "modification": "set",
+            "value": {
+              "type": "constant",
+              "value": "intercept"
+            }
+          }
+        ]
+      }
+    },
+    "a00aa1b4-7844-4c7c-a64b-562f385e9d1f": {
+      "nodeId": "a00aa1b4-7844-4c7c-a64b-562f385e9d1f",
+      "type": "define",
+      "childNodes": [
+        {
+          "nodeId": "f592fc6a-5432-444c-976c-4218527da399",
+          "name": "",
+          "conditions": []
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 450,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "define": {
+          "name": "cp_swarm_speakText",
+          "value": {
+            "type": "variable",
+            "name": "{{DR_TURN_AI}}.speakText"
+          }
+        },
+        "name": "cp:Set cp_swarm_speakText",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_speakText",
+            "modification": "set",
+            "value": {
+              "type": "variable",
+              "name": "{{DR_TURN_AI}}.speakText"
+            }
+          }
+        ]
+      }
+    },
+    "c988416c-1b18-4602-8052-d8ec55e15983": {
+      "nodeId": "c988416c-1b18-4602-8052-d8ec55e15983",
+      "type": "basic",
+      "childNodes": [],
+      "messages": [
+        {
+          "type": "text",
+          "body": "Thanks for your message. I'm looking into that and will follow up shortly.",
+          "messageId": "b00ff16e-dd57-432b-93f3-b39c6ec2af48"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 630,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Say safe generic",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_speakText",
+            "modification": "set",
+            "value": {
+              "type": "constant",
+              "value": "Thanks for your message. I'm looking into that and will follow up shortly."
+            }
+          }
+        ]
+      }
+    },
+    "e9f1c4e8-130f-44f9-81b6-1bfb78aacebf": {
+      "nodeId": "e9f1c4e8-130f-44f9-81b6-1bfb78aacebf",
+      "type": "escalate",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "continuation"
+              }
+            }
+          ]
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 900,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Escalate DR fail",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_exitReason",
+            "modification": "set",
+            "value": {
+              "type": "constant",
+              "value": "failure"
+            }
+          }
+        ]
+      }
+    },
+    "eac64afd-4060-4a98-b811-6257e2e96333": {
+      "nodeId": "eac64afd-4060-4a98-b811-6257e2e96333",
+      "type": "data_request",
+      "childNodes": [
+        {
+          "name": "",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "in_progress"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "211ac3f4-ed01-4f28-9789-ba9dfb829985",
+          "name": "Success",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "success"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "e9f1c4e8-130f-44f9-81b6-1bfb78aacebf",
+          "name": "Timeout",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "timeout"
+              }
+            }
+          ]
+        },
+        {
+          "nodeId": "e9f1c4e8-130f-44f9-81b6-1bfb78aacebf",
+          "name": "Failure",
+          "conditions": [
+            {
+              "left": {
+                "type": "node_status"
+              },
+              "operator": "eq",
+              "right": {
+                "type": "constant",
+                "value": "failure"
+              }
+            }
+          ]
+        }
+      ],
+      "dataRequests": [
+        {
+          "dataRequestId": "{{DR_TURN_AI}}",
+          "urlParams": {},
+          "headers": {},
+          "payload": {
+            "type": "recursive",
+            "value": {
+              "aiDraft": {
+                "name": "cp_swarm_replyDraft",
+                "type": "context"
+              },
+              "channel": {
+                "name": "cp_swarm_channel",
+                "type": "context"
+              },
+              "contactId": {
+                "name": "System.conversationId",
+                "type": "system"
+              },
+              "role": {
+                "type": "constant",
+                "value": "ai"
+              }
+            }
+          },
+          "alwaysRetrigger": false,
+          "name": "{{DR_TURN_AI}}"
+        }
+      ],
+      "messages": [],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 180,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:POST /turn ai",
+        "stateModifications": [
+          {
+            "type": "context",
+            "name": "cp_swarm_lastCustomerText",
+            "modification": "set",
+            "value": {
+              "type": "context",
+              "name": "cp_swarm_customerText"
+            }
+          }
+        ],
+        "timeout": 30000
+      }
+    },
+    "f592fc6a-5432-444c-976c-4218527da399": {
+      "nodeId": "f592fc6a-5432-444c-976c-4218527da399",
+      "type": "basic",
+      "childNodes": [],
+      "messages": [
+        {
+          "type": "text",
+          "body": "{cp_swarm_speakText:NLX.Context}",
+          "messageId": "57b28240-3eee-45f8-bec6-9e769ea5824a"
+        }
+      ],
+      "modalities": {},
+      "canvasMetadata": {
+        "x": 520,
+        "y": 540,
+        "width": 180,
+        "height": 72
+      },
+      "metadata": {
+        "name": "cp:Say speakText",
+        "stateModifications": []
+      }
+    }
+  }
+}

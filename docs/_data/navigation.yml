@@ -45,7 +45,7 @@ docs:
         url: /teamStatus/
       - title: "SwarmControl"
         url: /swarmcontrol/
-      - title: "SwarmControl — AI agent (ACXD) setup"
+      - title: "SwarmControl - connect your ACXD agents"
         url: /swarmcontrol-acxd-setup/
 
   - title: Settings
