@@ -306,6 +306,8 @@ An approval gate holds an action until a supervisor approves it in SwarmControl.
 
 When the edge is taken, the flow asks ConnectPath for approval. If the supervisor approves or denies, the flow continues along the original edge with the decision in `cp_swarm_approvalStatus`. While it is pending, the customer hears a hold line, and the Listen after it re-checks every 8 seconds. The gated flow needs at least one supervised Speak that leads back to a Listen.
 
+Gate the edge into the step that writes the AI reply, so the reply can read `cp_swarm_approvalStatus` and tell the customer the decision. Do not gate an edge that leads straight into the action itself (for example the data request that issues a refund): a denial continues on the same edge, so that action would still run.
+
 Run `node install.mjs --dry-run` after editing the gate; it reports a missing node or edge before anything changes.
 
 - - - -

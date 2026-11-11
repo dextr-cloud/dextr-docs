@@ -171,9 +171,11 @@ function hookListen(nodes, flowId, listenId, CTX, hooks) {
     { left: paySys("System.utterance"), operator: "neq", right: payConst("") },
     { left: paySys("System.utterance"), operator: "neq", right: payContext(CTX.lastCustomerText) },
   ];
-  const existing = (edge.conditions ?? []).filter(
-    (c) => !(c.left?.name === "System.utterance" && (c.right?.value === "" || c.right?.type === "context"))
-  );
+  const isDedupe = (c) =>
+    c.left?.name === "System.utterance" &&
+    c.operator === "neq" &&
+    ((c.right?.type === "constant" && c.right.value === "") || (c.right?.type === "context" && c.right.name === CTX.lastCustomerText));
+  const existing = (edge.conditions ?? []).filter((c) => !isDedupe(c));
   edge.conditions = [...dedupe, ...existing];
   edge.nodeId = setRt;
   return { id: siteId, flowId, resumeNodeId: after, hook: "input", listenId };

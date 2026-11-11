@@ -59,6 +59,17 @@ describe("hookCustomerFlow", () => {
     assert.equal(hooked.nodes[input.nodeId].metadata.name, `cp:Set ${CTX.returnTo} (input)`);
   });
 
+  it("keeps the customer's own System.utterance conditions", () => {
+    const f = structuredClone(chat);
+    const listen = Object.values(f.nodes).find((n) => n.type === "user_input");
+    const own = { left: { type: "system", name: "System.utterance" }, operator: "neq", right: { type: "context", name: "acmeLastText" } };
+    listen.childNodes.find((c) => c.name === "Input").conditions = [own];
+    const out = hookCustomerFlow("sampleChat", f, CTX, hooks);
+    const input = Object.values(out.nodes).find((n) => n.type === "user_input").childNodes.find((c) => c.name === "Input");
+    assert.equal(input.conditions.length, 3);
+    assert.ok(input.conditions.some((c) => c.right?.name === "acmeLastText"));
+  });
+
   it("stubs supervised Speak nodes and keeps the greeting", () => {
     assert.equal(byName(hooked.nodes, "Greeting")[1].messages[0].body, "Hello! How can I help you today?");
     assert.equal(byName(hooked.nodes, "cp:(stub) Say generative reply")[1].messages[0].body, "\u200b");

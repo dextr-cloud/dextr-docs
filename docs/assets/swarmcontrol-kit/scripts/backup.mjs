@@ -26,7 +26,7 @@ run(async () => {
     const paths = backupPaths(t.applicationId);
     const app = await client.send(new sdk.GetApplicationCommand({ applicationIdentifier: t.applicationId }));
     const deps = await client.send(new sdk.ListApplicationDeploymentsCommand({ applicationIdentifier: t.applicationId }));
-    const installed = (app.flows ?? []).some((f) => f.flowId === "cpSupervisedInput");
+    const installed = (app.flows ?? []).some((f) => f.flowId === t.hooks.input);
     if (!installed || !existsSync(paths.app)) {
       save(paths.app, app);
       save(paths.deployments, deps);
