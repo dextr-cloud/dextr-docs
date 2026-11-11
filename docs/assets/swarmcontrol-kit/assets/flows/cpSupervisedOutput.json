@@ -46,10 +46,6 @@
     {
       "name": "cp_swarm_approvalRequestId",
       "type": "text"
-    },
-    {
-      "name": "cp_swarm_channel",
-      "type": "text"
     }
   ],
   "nodes": {
@@ -396,8 +392,8 @@
                 "type": "context"
               },
               "channel": {
-                "name": "cp_swarm_channel",
-                "type": "context"
+                "type": "constant",
+                "value": "{{CHANNEL}}"
               },
               "contactId": {
                 "name": "System.conversationId",

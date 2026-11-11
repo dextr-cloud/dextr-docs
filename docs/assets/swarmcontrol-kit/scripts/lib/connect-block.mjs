@@ -10,10 +10,10 @@ export function findAcxBlock(content, applicationId) {
 }
 
 /**
- * Point the block at the new deployment alias and add the context variables SwarmControl needs.
+ * Point the block at the new deployment alias and pass contactId in.
  * Every other parameter and transition is left as the customer built it.
  */
-export function patchAcxBlock(content, { applicationId, alias, channel, channelContextName }) {
+export function patchAcxBlock(content, { applicationId, alias }) {
   const next = JSON.parse(JSON.stringify(content));
   const block = findAcxBlock(next, applicationId);
   if (!block) throw new Error(`No ${ACX_BLOCK_TYPE} block for application ${applicationId}`);
@@ -22,7 +22,6 @@ export function patchAcxBlock(content, { applicationId, alias, channel, channelC
   block.Parameters.ContextVariables = {
     ...(block.Parameters.ContextVariables ?? {}),
     contactId: "$.ContactId",
-    [channelContextName]: channel,
   };
   return { content: next, blockId: block.Identifier, before, after: block.Parameters };
 }

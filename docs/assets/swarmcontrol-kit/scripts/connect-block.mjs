@@ -32,12 +32,7 @@ run(async () => {
     }
     const { alias } = JSON.parse(readFileSync(statePath, "utf8"));
     const flow = describeContactFlow(cfg, t.connectContactFlowId);
-    const patch = patchAcxBlock(JSON.parse(flow.Content), {
-      applicationId: t.applicationId,
-      alias,
-      channel: t.channel,
-      channelContextName: cfg.CTX.channel,
-    });
+    const patch = patchAcxBlock(JSON.parse(flow.Content), { applicationId: t.applicationId, alias });
     const unchanged = JSON.stringify(patch.before) === JSON.stringify(patch.after);
     log("connect-block", {
       contactFlow: flow.Name,

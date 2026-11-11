@@ -230,7 +230,7 @@ aws dynamodb query \
 | --- | --- | --- |
 | `401` on `/turn` | Wrong or missing `x-cp-webhook-secret` on the ACXD data request | Re-fetch the secret from its ARN and re-push the data requests |
 | Contact missing on the grid | Wrong instance on the broadcast, or no stored record for the contact yet | Confirm the instance ID and complete at least one turn |
-| Chat works, voice is silent | The voice Connect block is missing `cp_swarm_channel=voice`, or the flow sets the channel itself | Run `connect-block.mjs` for the voice target and remove any channel assignment from the flow ([Voice](/swarmcontrol-acxd-setup/#voice)) |
+| Contact card shows channel Unknown | The hook flows were installed by an older kit that read the channel from the Connect block | Run `install.mjs` again ([Voice](/swarmcontrol-acxd-setup/#voice)) |
 | Validate shows an invalid `previous_redirect` | A hook tail uses an invalid redirect | Use the `cp_returnTo` dispatch registry |
 | `unknown_return` escalation | `cp_swarm_returnTo` does not match a registered site | Run `install.mjs` again so the return dispatch is rebuilt |
 | Approval stuck on **PENDING** | The supervisor connection dropped | Reconnect, then approve or deny from the detail panel |

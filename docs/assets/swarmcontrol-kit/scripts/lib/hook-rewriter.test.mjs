@@ -15,7 +15,7 @@ const load = (p) => JSON.parse(readFileSync(p, "utf8"));
 
 const cp = "cp_swarm_";
 const CTX = Object.fromEntries(
-  ["lastCustomerText", "exitReason", "customerText", "replyDraft", "speakText", "whisperNote", "history", "returnTo", "approvalStatus", "approvalRequestId", "channel"].map((k) => [k, `${cp}${k}`])
+  ["lastCustomerText", "exitReason", "customerText", "replyDraft", "speakText", "whisperNote", "history", "returnTo", "approvalStatus", "approvalRequestId"].map((k) => [k, `${cp}${k}`])
 );
 const DR = { turnCaller: "acmeturnCaller", turnAi: "acmeturnAi", requestApproval: "acmerequestApproval" };
 const hooks = hookFlowIds({ channel: "chat" });
@@ -29,14 +29,6 @@ describe("analyzeCustomerFlow", () => {
     assert.equal(a.listenSites.length, 1);
     const names = a.speakSites.map((id) => chat.nodes[id].metadata.name).sort();
     assert.deepEqual(names, ["Refund processed", "Say generative reply", "Static hours"]);
-  });
-
-  it("blocks a flow that sets the channel", () => {
-    const f = structuredClone(chat);
-    byName(f.nodes, "Capture customerText")[1].metadata.stateModifications = [
-      { type: "context", name: CTX.channel, modification: "set", value: { type: "constant", value: "chat" } },
-    ];
-    assert.match(analyzeCustomerFlow("sampleChat", f, CTX).blockers.join(), /sets cp_swarm_channel/);
   });
 
   it("blocks Generative Journey nodes", () => {
@@ -95,11 +87,27 @@ describe("hookCustomerFlow", () => {
 describe("attachDispatch", () => {
   it("routes the hook flow tail to a dispatch with one branch per site plus unknown", () => {
     const hooked = hookCustomerFlow("sampleChat", chat, CTX, hooks);
-    const tpl = prepareHookFlow(load(join(ASSETS, "cpSupervisedInput.json")), { DR, CONTEXT_PREFIX: cp });
+    const tpl = prepareHookFlow(load(join(ASSETS, "cpSupervisedInput.json")), { DR, CONTEXT_PREFIX: cp }, "chat");
     const nodes = attachDispatch(tpl.nodes, hooked.sites.filter((s) => s.hook === "input"), CTX);
     const dispatch = byName(nodes, "cp:Return dispatch")[1];
     assert.equal(dispatch.childNodes.length, 2);
     assert.ok(!JSON.stringify(nodes).includes("{{DR_"));
+  });
+});
+
+describe("prepareHookFlow", () => {
+  for (const file of ["cpSupervisedInput.json", "cpSupervisedOutput.json"]) {
+    it(`posts the target channel as a constant in ${file}`, () => {
+      const tpl = prepareHookFlow(load(join(ASSETS, file)), { DR, CONTEXT_PREFIX: cp }, "voice");
+      const s = JSON.stringify(tpl);
+      assert.ok(s.includes('"channel":{"type":"constant","value":"voice"}'));
+      assert.ok(!s.includes("{{CHANNEL}}"));
+      assert.ok(!s.includes(`${cp}channel`));
+    });
+  }
+
+  it("requires a channel", () => {
+    assert.throws(() => prepareHookFlow(load(join(ASSETS, "cpSupervisedInput.json")), { DR, CONTEXT_PREFIX: cp }), /channel/);
   });
 });
 

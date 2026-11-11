@@ -117,17 +117,13 @@ export function loadKitConfig(path = configPath()) {
       returnTo: `${cp}returnTo`,
       approvalStatus: `${cp}approvalStatus`,
       approvalRequestId: `${cp}approvalRequestId`,
-      channel: `${cp}channel`,
     },
     CONTEXT_PREFIX: cp,
     SDK_PATH: acxdSdkPath(),
   };
 }
 
-/**
- * Workspace context variables the kit creates (all prefixed). The Connect block sets
- * cp_swarm_channel, so every kit variable keeps external modification allowed.
- */
+/** Workspace context variables the kit creates (all prefixed). */
 export function kitContextNames(cfg) {
   return Object.values(cfg.CTX);
 }

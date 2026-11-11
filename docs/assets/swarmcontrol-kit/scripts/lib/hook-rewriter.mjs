@@ -70,12 +70,6 @@ function listenInputEdge(node) {
   );
 }
 
-function setsChannel(node, CTX) {
-  const mods = node.metadata?.stateModifications ?? [];
-  if (mods.some((m) => m.type === "context" && m.name === CTX.channel)) return true;
-  return node.metadata?.define?.name === CTX.channel;
-}
-
 /**
  * Read-only analysis. `blockers` means the installer must stop; nothing is changed.
  */
@@ -100,9 +94,6 @@ export function analyzeCustomerFlow(flowId, flow, CTX) {
     if (!SUPPORTED_NODE_TYPES.has(n.type)) {
       blockers.push(`${flowId}: node "${name}" has unsupported type "${n.type}".`);
       continue;
-    }
-    if (setsChannel(n, CTX)) {
-      blockers.push(`${flowId}: node "${name}" sets ${CTX.channel}. The Connect block sets the channel; remove this assignment from the flow.`);
     }
     if (n.type === "user_input") {
       const edge = listenInputEdge(n);
@@ -274,9 +265,14 @@ export function withKitContext(contextVariables, CTX) {
   return out;
 }
 
-/** Substitute data-request ids and the context prefix into a hook flow template. */
-export function prepareHookFlow(template, { DR, CONTEXT_PREFIX }) {
+/**
+ * Substitute data-request ids, the context prefix, and the target's channel into a hook flow template.
+ * The channel is a constant because Connect block context variables do not reach the flow.
+ */
+export function prepareHookFlow(template, { DR, CONTEXT_PREFIX }, channel) {
+  if (!channel) throw new Error("prepareHookFlow needs the target channel");
   let s = JSON.stringify(template);
+  s = s.split("{{CHANNEL}}").join(channel);
   s = s.split("{{DR_TURN_CALLER}}").join(DR.turnCaller);
   s = s.split("{{DR_TURN_AI}}").join(DR.turnAi);
   s = s.split("{{DR_REQUEST_APPROVAL}}").join(DR.requestApproval);

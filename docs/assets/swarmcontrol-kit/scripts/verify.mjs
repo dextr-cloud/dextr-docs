@@ -85,9 +85,9 @@ run(async () => {
     if (t.connectContactFlowId && !hasFlag("--skip-connect")) {
       const block = findAcxBlock(JSON.parse(describeContactFlow(cfg, t.connectContactFlowId).Content), t.applicationId);
       const p = block?.Parameters ?? {};
-      const ok = p.AgentConfiguration?.Alias === state.alias && p.ContextVariables?.[cfg.CTX.channel] === t.channel && p.ContextVariables?.contactId === "$.ContactId";
+      const ok = p.AgentConfiguration?.Alias === state.alias && p.ContextVariables?.contactId === "$.ContactId";
       check("V6", `Connect block (${t.channel})`, ok,
-        block ? `alias ${p.AgentConfiguration?.Alias}, ${cfg.CTX.channel}=${p.ContextVariables?.[cfg.CTX.channel]}` : "block not found");
+        block ? `alias ${p.AgentConfiguration?.Alias}, contactId=${p.ContextVariables?.contactId}` : "block not found");
     }
   }
 

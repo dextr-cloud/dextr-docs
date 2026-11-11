@@ -38,7 +38,7 @@ This guide assumes your ACXD agents are already built and taking contacts. It do
 - Hooks in the flows you list: every Listen and every Speak after the first Listen is routed through the hook flows. Your greeting is left alone.
 - Optionally, an approval gate on the edges you choose.
 
-**And in Amazon Connect:** on each Connect flow you list, the ACXD block gets `ContextVariables.cp_swarm_channel` (`chat` or `voice`) and `contactId`. No other block, queue, or phone number is changed.
+**And in Amazon Connect:** on each Connect flow you list, the ACXD block gets `ContextVariables.contactId`. No other block, queue, or phone number is changed.
 
 - - - -
 
@@ -51,7 +51,7 @@ Customer speaks  -> Listen -> cpSupervisedInput<Channel>  -> POST /turn (role: c
 Your flow drafts -> Speak  -> cpSupervisedOutput<Channel> -> POST /turn (role: ai)     -> approved line is spoken
 ```
 
-The same design works for chat and voice. The channel comes from the Connect block (`cp_swarm_channel`), never from the flow.
+The same design works for chat and voice. Each application's hook flows report its `targets[].channel` to ConnectPath, so SwarmControl shows the contact as chat or voice.
 
 | Data request | HTTP route | Role |
 | --- | --- | --- |
@@ -151,7 +151,7 @@ Edit `../config.json`. It holds ids only, never secrets. Keep it out of version 
 | `naming.dataRequestPrefix` | yes | camelCase letters and digits, for example `acme`. Becomes `acmeturnCaller`. |
 | `naming.contextPrefix` | no | Default `cp_swarm_`. Leave it unless ConnectPath Support says otherwise. |
 | `targets[]` | yes | One entry per ACXD application to supervise. |
-| `targets[].channel` | yes | `chat` or `voice`. Written into the Connect block as `cp_swarm_channel`. |
+| `targets[].channel` | yes | `chat` or `voice`. The hook flows report it on every turn; SwarmControl shows it on the contact card. |
 | `targets[].key` | no | Defaults to the channel. Set it only when two targets share a channel; it names the hook flows. |
 | `targets[].applicationId` | yes | The ACXD application. |
 | `targets[].deploymentId` | yes | The deployment your Connect block uses. Install builds and points this deployment at the new build. |
@@ -243,7 +243,6 @@ For each target it prints the block's alias and `ContextVariables` before and af
 | --- | --- |
 | `AgentConfiguration.Alias` | Your deployment's alias (normally unchanged) |
 | `ContextVariables.contactId` | `$.ContactId` |
-| `ContextVariables.cp_swarm_channel` | `chat` or `voice`, from `targets[].channel` |
 
 Then apply it. It asks you to type `yes`.
 
@@ -268,7 +267,7 @@ node verify.mjs
 | V3 | Install state exists and the hook flows and your flows are on the application |
 | V4 | Each listed flow is hooked |
 | V5 | Your deployment runs the build install made |
-| V6 | The Connect block has the alias, `contactId`, and `cp_swarm_channel` |
+| V6 | The Connect block has the alias and `contactId` |
 | V7 | A simulated caller and AI turn succeed |
 
 The last line must show `"failed":0`. Run `node verify.mjs --skip-connect` before you have applied the Connect block.
@@ -279,9 +278,9 @@ Then test with a real contact: start a chat, or call your number, and open **Swa
 
 ## Voice
 
-Voice uses exactly the same steps as chat. List your voice application as a target with `"channel": "voice"`, and list the flows it runs. The kit hooks them the same way, and `connect-block.mjs` sets `cp_swarm_channel` to `voice` on your voice Connect flow.
+Voice uses exactly the same steps as chat. List your voice application as a target with `"channel": "voice"`, and list the flows it runs. The kit hooks them the same way, and the voice target's hook flows report `voice`.
 
-Your flows must not set `cp_swarm_channel` themselves. If one does, install stops and names the node.
+Keep chat and voice in separate applications, one target each. A target reports a single channel.
 
 Test voice with a live call before you route production traffic.
 
@@ -346,7 +345,7 @@ Turning SwarmControl off on your ConnectPath stack is a separate step, covered o
 | `preflight.mjs` | nothing | Checks P1–P7, saves stack outputs |
 | `backup.mjs` | nothing | Pristine copies of your flows and Connect blocks |
 | `install.mjs` | ACXD | Data requests, context variables, hook flows, hooks, build, deploy |
-| `connect-block.mjs` | Connect, with `--apply` | `cp_swarm_channel` and `contactId` on the ACXD block |
+| `connect-block.mjs` | Connect, with `--apply` | Alias and `contactId` on the ACXD block |
 | `verify.mjs` | nothing | Checks V1–V7 |
 | `check-flow-references.mjs` | nothing | The reference check install runs before every build |
 | `rollback.mjs` | ACXD | Redeploys the pre-install build |
@@ -425,7 +424,6 @@ Every message below starts with `Install blocked; nothing was changed:`.
 | --- | --- |
 | `node "<name>" is already a ConnectPath hook` | The flow in your backup is already hooked. Restore the flow by hand, then run `backup.mjs` again. |
 | `node "<name>" is a Generative Journey` | Generative Journey nodes are not supported. Migrate to generative text nodes. |
-| `node "<name>" sets cp_swarm_channel` | Remove that assignment. The Connect block sets the channel. |
 | `Listen node "<name>" has no Input edge to hook` | Give the Listen an Input edge. |
 | `Speak node "<name>" must have exactly one text message` / `one next node` | Split the node, or leave it before the first Listen. |
 | `Speak node "<name>" mixes text and variables` | Speak a single local, for example compose the line into `{aiReply:NLX.Local}` first. |

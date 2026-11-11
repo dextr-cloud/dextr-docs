@@ -10,7 +10,6 @@ import { join } from "node:path";
 import { loadKitConfig, stateDir } from "./lib/kit-config.mjs";
 import { acxdClient } from "./lib/acxd-client.mjs";
 import { describeContactFlow } from "./lib/aws-cli.mjs";
-import { findAcxBlock } from "./lib/connect-block.mjs";
 import { isKitNode } from "./lib/flow-helpers.mjs";
 import { backupPaths } from "./lib/backup-paths.mjs";
 import { log, run } from "./lib/cli.mjs";
@@ -47,13 +46,11 @@ run(async () => {
       log("backup-flow", { applicationId: t.applicationId, flowId, path });
     }
     if (t.connectContactFlowId) {
-      const flow = describeContactFlow(cfg, t.connectContactFlowId);
-      const block = findAcxBlock(JSON.parse(flow.Content), t.applicationId);
-      const patched = Boolean(block?.Parameters?.ContextVariables?.[cfg.CTX.channel]);
       const path = paths.connect(t.connectContactFlowId);
-      if (patched && existsSync(path)) {
-        log("backup-keep", { contactFlowId: t.connectContactFlowId, reason: "block already patched; keeping the earlier backup", path });
+      if (existsSync(path)) {
+        log("backup-keep", { contactFlowId: t.connectContactFlowId, reason: "keeping the first backup, taken before connect-block.mjs", path });
       } else {
+        const flow = describeContactFlow(cfg, t.connectContactFlowId);
         save(path, { Name: flow.Name, Id: flow.Id, Content: flow.Content, savedAt: new Date().toISOString() });
         log("backup-connect", { contactFlowId: t.connectContactFlowId, name: flow.Name, path });
       }

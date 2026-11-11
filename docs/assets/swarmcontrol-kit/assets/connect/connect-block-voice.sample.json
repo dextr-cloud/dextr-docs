@@ -10,8 +10,7 @@
     "SpeechRecognitionConfiguration": { "SpeechRecognitionEngine": "AMAZON_AGENTIC_VOICE" },
     "AudioFillerConfiguration": { "Enabled": false },
     "ContextVariables": {
-      "contactId": "$.ContactId",
-      "cp_swarm_channel": "voice"
+      "contactId": "$.ContactId"
     }
   },
   "Transitions": {

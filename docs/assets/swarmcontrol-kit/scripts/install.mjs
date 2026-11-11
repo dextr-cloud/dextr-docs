@@ -34,13 +34,13 @@ const argValue = (name) => {
 
 /** Pure plan from backups and assets. Throws on any blocker before anything is changed. */
 function planInstall(cfg) {
-  const hookTemplates = {
-    input: prepareHookFlow(readAsset("flows/cpSupervisedInput.json"), cfg),
-    output: prepareHookFlow(readAsset("flows/cpSupervisedOutput.json"), cfg),
-  };
   const targets = [];
   const blockers = [];
   for (const t of cfg.TARGETS) {
+    const hookTemplates = {
+      input: prepareHookFlow(readAsset("flows/cpSupervisedInput.json"), cfg, t.channel),
+      output: prepareHookFlow(readAsset("flows/cpSupervisedOutput.json"), cfg, t.channel),
+    };
     const paths = backupPaths(t.applicationId);
     const flows = [];
     const sites = [];
